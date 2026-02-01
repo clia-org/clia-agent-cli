@@ -103,7 +103,7 @@ become more agentic while staying traceable and human‑overridable.
 
 ### Directory
 
-- ``` .clia/agents/clia/ clia.agent.md    # mandate (this file) clia.agency.md   # decision log specific to clia clia.agenda.md   # backlog/roadmap for agentic features ```
+- ``` .clia/agents/clia/ clia.agent.triad.md    # mandate (this file) clia.agency.triad.md   # decision log specific to clia clia.agenda.triad.md   # backlog/roadmap for agentic features ```
 
 - ---
 

@@ -100,11 +100,11 @@
   "sections" : [
     {
       "items" : [
-        "> Forward-looking roadmap for the iOS Engineer agent. Complements `ios-engineer.agent.md` (mandate) > and `ios-engineer.agency.md` (memory), fulfilling the AGENTS/AGENCY/AGENDA triad."
+        "> Forward-looking roadmap for the iOS Engineer agent. Complements `ios-engineer.agent.triad.md` (mandate) > and `ios-engineer.agency.triad.md` (memory), fulfilling the AGENTS/AGENCY/AGENDA triad."
       ],
       "kind" : "paragraphs",
       "slug" : "ios-engineeragendamd-long-term-roadmap",
-      "title" : "📱 ios-engineer.agenda.md — Long-Term Roadmap"
+      "title" : "📱 ios-engineer.agenda.triad.md — Long-Term Roadmap"
     },
     {
       "items" : [
@@ -117,7 +117,7 @@
     },
     {
       "items" : [
-        "Each milestone logs context in `ios-engineer.agency.md` and references `ios-engineer.agent.md`.",
+        "Each milestone logs context in `ios-engineer.agency.triad.md` and references `ios-engineer.agent.triad.md`.",
         "Roadmap revisions occur alongside triad updates to preserve institutional continuity."
       ],
       "kind" : "bullets",
@@ -126,11 +126,11 @@
     }
   ],
   "slug" : "ios-engineer",
-  "sourcePath" : ".clia/agents/templates/ios-engineer/ios-engineer.agenda.md",
+  "sourcePath" : ".clia/agents/templates/ios-engineer/ios-engineer.agenda.triad.md",
   "status" : "draft",
   "tags" : [
 
   ],
-  "title" : "📱 ios-engineer.agenda.md — Long-Term Roadmap",
+  "title" : "📱 ios-engineer.agenda.triad.md — Long-Term Roadmap",
   "updated" : "2025-09-22T03:36:15Z"
 }

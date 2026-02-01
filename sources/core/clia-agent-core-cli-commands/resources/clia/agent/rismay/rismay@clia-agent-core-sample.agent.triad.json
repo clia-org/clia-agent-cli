@@ -82,8 +82,8 @@
     }
   ],
   "persona" : {
-    "profilePath" : ".clia/agents/rismay/rismay@clia-agent-core-sample.agent.persona.md",
-    "reveriesPath" : ".clia/agents/rismay/rismay@clia-agent-core-sample.agent.reveries.md"
+    "profilePath" : ".clia/agents/rismay/rismay@clia-agent-core-sample.persona.agent.triad.md",
+    "reveriesPath" : ".clia/agents/rismay/rismay@clia-agent-core-sample.reveries.agent.triad.md"
   },
   "purpose" : "Sample agent modeled on Rismay: pragmatic, typed-CLI-first, and safety-forward. Use as the public starting point.",
   "responsibilities" : [
@@ -96,11 +96,11 @@
 
   ],
   "slug" : "rismay",
-  "sourcePath" : ".clia/agents/rismay/.generated/rismay.agent.md",
+  "sourcePath" : ".clia/agents/rismay/.generated/rismay.agent.triad.md",
   "status" : "draft",
   "systemInstructions" : {
-    "compactPath" : ".clia/agents/rismay/rismay@clia-agent-core-sample.agent.system-instructions.compact.md",
-    "fullPath" : ".clia/agents/rismay/rismay@clia-agent-core-sample.agent.system-instructions.full.md",
+    "compactPath" : ".clia/agents/rismay/rismay@clia-agent-core-sample.system-instructions-compact.agent.triad.md",
+    "fullPath" : ".clia/agents/rismay/rismay@clia-agent-core-sample.system-instructions-full.agent.triad.md",
     "lastUpdated" : "2026-01-25"
   },
   "tags" : [

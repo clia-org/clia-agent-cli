@@ -316,21 +316,21 @@ extension Agents {
         try fm.createDirectory(at: generatedDir, withIntermediateDirectories: true)
         try renderTemplate(
           named: "agent.md.stencil",
-          to: generatedDir.appendingPathComponent("\(normalizedSlug).agent.md"),
+          to: generatedDir.appendingPathComponent("\(normalizedSlug).agent.triad.md"),
           role: role,
           values: values,
           templatesRoot: templatesRoot
         )
         try renderTemplate(
           named: "agenda.md.stencil",
-          to: generatedDir.appendingPathComponent("\(normalizedSlug).agenda.md"),
+          to: generatedDir.appendingPathComponent("\(normalizedSlug).agenda.triad.md"),
           role: role,
           values: values,
           templatesRoot: templatesRoot
         )
         try renderTemplate(
           named: "agency.md.stencil",
-          to: generatedDir.appendingPathComponent("\(normalizedSlug).agency.md"),
+          to: generatedDir.appendingPathComponent("\(normalizedSlug).agency.triad.md"),
           role: role,
           values: values,
           templatesRoot: templatesRoot
@@ -606,9 +606,9 @@ extension Agents {
 
       let now = isoDate()
 
-      let agentMD = agentDir.appendingPathComponent("\(slug).agent.md")
-      let agendaMD = agentDir.appendingPathComponent("\(slug).agenda.md")
-      let agencyMD = agentDir.appendingPathComponent("\(slug).agency.md")
+      let agentMD = agentDir.appendingPathComponent("\(slug).agent.triad.md")
+      let agendaMD = agentDir.appendingPathComponent("\(slug).agenda.triad.md")
+      let agencyMD = agentDir.appendingPathComponent("\(slug).agency.triad.md")
 
       func rel(_ url: URL) -> String? {
         guard fm.fileExists(atPath: url.path) else { return nil }

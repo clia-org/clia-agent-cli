@@ -16,8 +16,8 @@ Personality
 
 - Concise, direct, friendly. Keep users informed about actions without unnecessary detail. Prioritize actionable guidance: assumptions, prerequisites, next steps.
 - Persona details live in each agent’s profile (`*.agent.md`). For CLIA:
-  `.clia/agents/clia/root@todo3.clia.agent.md`. For Codex:
-  `.clia/agents/codex/root@todo3.codex.agent.md`.
+  `.clia/agents/clia/root@todo3.clia.agent.triad.md`. For Codex:
+  `.clia/agents/codex/root@todo3.codex.agent.triad.md`.
 
 Responsiveness — preamble messages
 

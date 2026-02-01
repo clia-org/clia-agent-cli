@@ -29,7 +29,7 @@ Repo‑level
 
 Per‑agent (for each `<slug>`, sorted ascending)
 
-- `agent-<slug>-files` — requires `<slug>.agent.md`, `<slug>.agenda.md`, `<slug>.agency.md`; agent.md must include “> Slug: `<slug>`” (blocking)
+- `agent-<slug>-files` — requires `<slug>.agent.triad.md`, `<slug>.agenda.triad.md`, `<slug>.agency.triad.md`; agent.md must include “> Slug: `<slug>`” (blocking)
 - `agent-<slug>-placeholders` — flags template phrases in mirrors (advisory)
 - `agent-<slug>-json` — checks presence of `*.agent.json`, `*.agenda.json`, `*.agency.json` (advisory)
 - `agent-<slug>-json-core` — `purpose`, `responsibilities`, `guardrails` must be set (advisory)

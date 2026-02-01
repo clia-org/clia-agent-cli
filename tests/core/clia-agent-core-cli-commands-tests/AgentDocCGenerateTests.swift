@@ -124,7 +124,7 @@ func agentDocCGenerateWritesGeneratedBundle() throws {
     .appendingPathComponent("s-type/articles/\(slug)-s-type-overview.md")
   #expect(FileManager.default.fileExists(atPath: generatedSTypeOverview.path))
 
-  let generatedAvatar = generatedDocc.appendingPathComponent("Resources/avatar.png")
+  let generatedAvatar = generatedDocc.appendingPathComponent("resources/avatar.png")
   #expect(FileManager.default.fileExists(atPath: generatedAvatar.path))
 }
 

@@ -104,8 +104,8 @@
   "sections" : [
     {
       "items" : [
-        "Partners with [iOS Engineer](../ios-engineer/ios-engineer.agent.md) to validate feasibility and",
-        "Coordinates with [Project Manager](../project-manager/project-manager.agent.md) on milestone",
+        "Partners with [iOS Engineer](../ios-engineer/ios-engineer.agent.triad.md) to validate feasibility and",
+        "Coordinates with [Project Manager](../project-manager/project-manager.agent.triad.md) on milestone",
         "Global governance resides in [AGENTS.md](../../../../AGENTS.md),"
       ],
       "kind" : "bullets",
@@ -136,7 +136,7 @@
     },
     {
       "items" : [
-        "``` .clia/agents/product-manager/ product-manager.agent.md       # mandate — this file product-manager.agency.md      # institutional memory product-manager.agenda.md      # strategic roadmap product_spec.md                # Authoritative product specification roadmap.md                     # Milestones and release plan release_notes/                 # Archival release documentation decisions.log.md               # Decision records in ADR format risks_register.md              # Log of assumptions, risks, and mitigations metrics.md                     # KPIs and measurement data checklists/ dor.md                       # Definition of Ready dod.md                       # Definition of Done templates/ spec_section.md user_story.md acceptance_criteria.md sync/ ios-engineer_contract.md     # Contract of expectations with engineering compliance_trace.md          # Mapping of features to controls and evidence reports/ stakeholder_updates.md       # Stakeholder communications retrospective.md             # Iteration retrospectives and insights ```",
+        "``` .clia/agents/product-manager/ product-manager.agent.triad.md       # mandate — this file product-manager.agency.triad.md      # institutional memory product-manager.agenda.triad.md      # strategic roadmap product_spec.md                # Authoritative product specification roadmap.md                     # Milestones and release plan release_notes/                 # Archival release documentation decisions.log.md               # Decision records in ADR format risks_register.md              # Log of assumptions, risks, and mitigations metrics.md                     # KPIs and measurement data checklists/ dor.md                       # Definition of Ready dod.md                       # Definition of Done templates/ spec_section.md user_story.md acceptance_criteria.md sync/ ios-engineer_contract.md     # Contract of expectations with engineering compliance_trace.md          # Mapping of features to controls and evidence reports/ stakeholder_updates.md       # Stakeholder communications retrospective.md             # Iteration retrospectives and insights ```",
         "---"
       ],
       "kind" : "paragraphs",
@@ -322,7 +322,7 @@
     }
   ],
   "slug" : "product-manager",
-  "sourcePath" : ".clia/agents/templates/product-manager/product-manager.agent.md",
+  "sourcePath" : ".clia/agents/templates/product-manager/product-manager.agent.triad.md",
   "status" : "draft",
   "tags" : [
 

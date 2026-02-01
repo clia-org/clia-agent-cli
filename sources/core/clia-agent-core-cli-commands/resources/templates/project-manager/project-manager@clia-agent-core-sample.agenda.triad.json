@@ -98,9 +98,9 @@
     },
     {
       "items" : [
-        "**project-manager.agent.md** → operational mandates and immediate obligations.",
-        "**project-manager.agency.md** → archival repository of deliberation, negotiation, and",
-        "**project-manager.agenda.md** → aspirational roadmap and philosophical horizon."
+        "**project-manager.agent.triad.md** → operational mandates and immediate obligations.",
+        "**project-manager.agency.triad.md** → archival repository of deliberation, negotiation, and",
+        "**project-manager.agenda.triad.md** → aspirational roadmap and philosophical horizon."
       ],
       "kind" : "bullets",
       "slug" : "the-stewardship-triad",
@@ -166,11 +166,11 @@
     }
   ],
   "slug" : "project-manager",
-  "sourcePath" : ".clia/agents/templates/project-manager/project-manager.agenda.md",
+  "sourcePath" : ".clia/agents/templates/project-manager/project-manager.agenda.triad.md",
   "status" : "draft",
   "tags" : [
 
   ],
-  "title" : "🌍 project-manager.agenda.md — Strategic Roadmap and Horizon",
+  "title" : "🌍 project-manager.agenda.triad.md — Strategic Roadmap and Horizon",
   "updated" : "2025-09-22T03:36:15Z"
 }

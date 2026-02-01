@@ -19,7 +19,7 @@ As a developer, I want to convert Mermaid diagram definitions into SVG files so 
 As a technical writer, I want to generate SVG placeholders for missing DocC assets so that I can see the layout of my documentation before final assets are ready.
 
 **Acceptance Scenarios**:
-1. **Given** a DocC bundle with missing images referenced in Markdown, **When** I run `swift-svg-render placeholder --bundle path.docc --apply`, **Then** `.placeholder.svg` files are created in the `Resources/` directory.
+1. **Given** a DocC bundle with missing images referenced in Markdown, **When** I run `swift-svg-render placeholder --bundle path.docc --apply`, **Then** `.placeholder.svg` files are created in the `resources/` directory.
 2. **Given** missing placeholders, **When** I run with `--link`, **Then** the Markdown files are updated to point to the new placeholder assets.
 
 ## Requirements

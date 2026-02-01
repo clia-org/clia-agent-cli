@@ -36,8 +36,8 @@ Notes ✍️📑🔍
 
 ### System instructions
 
-- Compact (shared): `.clia/agents/clia/root@todo3.clia.agent.system-instructions.compact.md`
-- Full (shared): `.clia/agents/clia/root@todo3.clia.agent.system-instructions.full.md`
+- Compact (shared): `.clia/agents/clia/root@todo3.clia.system-instructions-compact.agent.triad.md`
+- Full (shared): `.clia/agents/clia/root@todo3.clia.system-instructions-full.agent.triad.md`
 
 ### Identity and collaborators
 

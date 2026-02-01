@@ -78,12 +78,12 @@ clia agents set-contribution-mix \
 
 Notes
 
-- Agent mirrors write `.generated/<slug>.agent.md` and embed, when present:
+- Agent mirrors write `.generated/<slug>.agent.triad.md` and embed, when present:
   - agent source (`sourcePath`),
-  - persona (`persona.profilePath`, typically `*agent.persona.md`),
-  - reveries micro‑behaviors (`persona.reveriesPath`, `*agent.reveries.md`),
+  - persona (`persona.profilePath`, typically `*.persona.agent.triad.md`),
+  - reveries micro‑behaviors (`persona.reveriesPath`, `*.reveries.agent.triad.md`),
   - compact system instructions (`systemInstructions.compactPath`).
-- Agenda/Agency mirrors write `.generated/<slug>.agenda.md` and `.generated/<slug>.agency.md` respectively.
+- Agenda/Agency mirrors write `.generated/<slug>.agenda.triad.md` and `.generated/<slug>.agency.triad.md` respectively.
 
 Plan a transfer (move/rename):
 

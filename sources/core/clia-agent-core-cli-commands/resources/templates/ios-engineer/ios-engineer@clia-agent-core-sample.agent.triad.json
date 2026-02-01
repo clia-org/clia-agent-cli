@@ -213,8 +213,8 @@
     },
     {
       "items" : [
-        "Coordinates with [Project Manager](../project-manager/project-manager.agent.md) on cadence and",
-        "Aligns with [Product Manager](../product-manager/product-manager.agent.md) to keep specifications",
+        "Coordinates with [Project Manager](../project-manager/project-manager.agent.triad.md) on cadence and",
+        "Aligns with [Product Manager](../product-manager/product-manager.agent.triad.md) to keep specifications",
         "Global governance lives in [AGENTS.md](../../../../AGENTS.md), [AGENCY.md](../../../../AGENCY.md),"
       ],
       "kind" : "bullets",
@@ -223,7 +223,7 @@
     },
     {
       "items" : [
-        "``` .clia/agents/ios-engineer/ ios-engineer.agent.md      # this file ios-engineer.agency.md     # decision log (child) ios-engineer.agenda.md     # roadmap (child) ```",
+        "``` .clia/agents/ios-engineer/ ios-engineer.agent.triad.md      # this file ios-engineer.agency.triad.md     # decision log (child) ios-engineer.agenda.triad.md     # roadmap (child) ```",
         "---"
       ],
       "kind" : "paragraphs",
@@ -242,7 +242,7 @@
     }
   ],
   "slug" : "ios-engineer",
-  "sourcePath" : ".clia/agents/templates/ios-engineer/ios-engineer.agent.md",
+  "sourcePath" : ".clia/agents/templates/ios-engineer/ios-engineer.agent.triad.md",
   "status" : "draft",
   "tags" : [
 

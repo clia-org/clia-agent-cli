@@ -108,8 +108,8 @@
     },
     {
       "items" : [
-        "Syncs with [iOS Engineer](../ios-engineer/ios-engineer.agent.md) to sequence deliverables and",
-        "Partners with [Product Manager](../product-manager/product-manager.agent.md) on backlog priorities",
+        "Syncs with [iOS Engineer](../ios-engineer/ios-engineer.agent.triad.md) to sequence deliverables and",
+        "Partners with [Product Manager](../product-manager/product-manager.agent.triad.md) on backlog priorities",
         "Global governance is defined in [AGENTS.md](../../../../AGENTS.md),"
       ],
       "kind" : "bullets",
@@ -118,7 +118,7 @@
     },
     {
       "items" : [
-        "``` .clia/agents/project-manager/ project-manager.agent.md   # mandate — this file project-manager.agency.md  # institutional memory project-manager.agenda.md  # strategic roadmap ```",
+        "``` .clia/agents/project-manager/ project-manager.agent.triad.md   # mandate — this file project-manager.agency.triad.md  # institutional memory project-manager.agenda.triad.md  # strategic roadmap ```",
         "---"
       ],
       "kind" : "paragraphs",
@@ -127,8 +127,8 @@
     },
     {
       "items" : [
-        "Draft `project-manager.agency.md` to establish the inaugural record of milestone structures,",
-        "Compose `project-manager.agenda.md` to articulate Q3–Q4 priorities, long-term cadence strategies,",
+        "Draft `project-manager.agency.triad.md` to establish the inaugural record of milestone structures,",
+        "Compose `project-manager.agenda.triad.md` to articulate Q3–Q4 priorities, long-term cadence strategies,",
         "Establish a shared inter-agent milestone board linking Apple-level deliverables with iOS Engineer",
         "Formalize governance review protocols aligned with payroll cadence and lender reporting cycles.",
         "Convene an inaugural cross-role summit of execution agents to calibrate KPIs, synchronize",
@@ -148,11 +148,11 @@
     }
   ],
   "slug" : "project-manager",
-  "sourcePath" : ".clia/agents/templates/project-manager/project-manager.agent.md",
+  "sourcePath" : ".clia/agents/templates/project-manager/project-manager.agent.triad.md",
   "status" : "draft",
   "tags" : [
 
   ],
-  "title" : "📋 PROJECT_MANAGER.agent.md — Comprehensive Parent Role Specification",
+  "title" : "📋 PROJECT_MANAGER.agent.triad.md — Comprehensive Parent Role Specification",
   "updated" : "2025-09-22T03:36:15Z"
 }

@@ -25,7 +25,7 @@ func triadsRenderWritesAgendaMirror() throws {
   ])
   try command.run()
 
-  let outputURL = root.appendingPathComponent(".clia/agents/\(slug)/.generated/\(slug).agenda.md")
+  let outputURL = root.appendingPathComponent(".clia/agents/\(slug)/.generated/\(slug).agenda.triad.md")
   #expect(FileManager.default.fileExists(atPath: outputURL.path))
   let contents = try String(contentsOf: outputURL, encoding: .utf8)
   #expect(contents.contains("# Render Agenda — Agenda"))
@@ -45,7 +45,7 @@ func triadsRenderWritesAgentMirror() throws {
   ])
   try command.run()
 
-  let outputURL = root.appendingPathComponent(".clia/agents/\(slug)/.generated/\(slug).agent.md")
+  let outputURL = root.appendingPathComponent(".clia/agents/\(slug)/.generated/\(slug).agent.triad.md")
   #expect(FileManager.default.fileExists(atPath: outputURL.path))
   let contents = try String(contentsOf: outputURL, encoding: .utf8)
   #expect(contents.contains("# Render Agent — Agent Profile"))
@@ -66,7 +66,7 @@ func triadsRenderWritesAgencyMirror() throws {
   ])
   try command.run()
 
-  let outputURL = root.appendingPathComponent(".clia/agents/\(slug)/.generated/\(slug).agency.md")
+  let outputURL = root.appendingPathComponent(".clia/agents/\(slug)/.generated/\(slug).agency.triad.md")
   #expect(FileManager.default.fileExists(atPath: outputURL.path))
   let contents = try String(contentsOf: outputURL, encoding: .utf8)
   #expect(contents.contains("# Render Agency — Agency"))

@@ -20,7 +20,7 @@ import Glibc
 // Providers
 
 // Local provider protocol & implementations
-// Note: these files live under Sources/Providers
+// Note: these files live under sources/core/clia-agent-tool/providers
 // - AIProvider.swift
 // - OpenAIProvider.swift
 

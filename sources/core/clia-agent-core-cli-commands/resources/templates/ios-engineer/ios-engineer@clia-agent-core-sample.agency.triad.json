@@ -2,8 +2,8 @@
   "entries" : [
     {
       "details" : [
-        "> tradeoffs, breakthroughs, and lessons learned. It complements `ios-engineer.agent.md` (mandate)",
-        "> and `ios-engineer.agenda.md` (roadmap).",
+        "> tradeoffs, breakthroughs, and lessons learned. It complements `ios-engineer.agent.triad.md` (mandate)",
+        "> and `ios-engineer.agenda.triad.md` (roadmap).",
         "---"
       ],
       "summary" : "> This file is the **institutional memory** of the iOS Engineer agent. It records decisions,",
@@ -26,7 +26,7 @@
     {
       "details" : [
         "**Date / Time**: 2025-08-17",
-        "**Context**: Parent `ios-engineer.agent.md` authored; established dual-hat role (trader mentor +",
+        "**Context**: Parent `ios-engineer.agent.triad.md` authored; established dual-hat role (trader mentor +",
         "**Key Insight**: Success requires simultaneous _trading-aware design_ and _entity-safe",
         "compliance_.",
         "---"
@@ -108,9 +108,9 @@
     {
       "details" : [
         ".clia/agents/ios-engineer/",
-        "ios-engineer.agent.md   # role mandate",
-        "ios-engineer.agency.md  # this file, memory log",
-        "ios-engineer.agenda.md  # roadmap",
+        "ios-engineer.agent.triad.md   # role mandate",
+        "ios-engineer.agency.triad.md  # this file, memory log",
+        "ios-engineer.agenda.triad.md  # roadmap",
         "```"
       ],
       "summary" : "```",
@@ -147,7 +147,7 @@
   "sections" : [
     {
       "items" : [
-        "> This file is the **institutional memory** of the iOS Engineer agent. It records decisions, > tradeoffs, breakthroughs, and lessons learned. It complements `ios-engineer.agent.md` (mandate) > and `ios-engineer.agenda.md` (roadmap)."
+        "> This file is the **institutional memory** of the iOS Engineer agent. It records decisions, > tradeoffs, breakthroughs, and lessons learned. It complements `ios-engineer.agent.triad.md` (mandate) > and `ios-engineer.agenda.triad.md` (roadmap)."
       ],
       "kind" : "paragraphs",
       "slug" : "ios-engineer-agencymd-parent-memory",
@@ -163,7 +163,7 @@
     },
     {
       "items" : [
-        "``` .clia/agents/ios-engineer/ ios-engineer.agent.md   # role mandate ios-engineer.agency.md  # this file, memory log ios-engineer.agenda.md  # roadmap ```"
+        "``` .clia/agents/ios-engineer/ ios-engineer.agent.triad.md   # role mandate ios-engineer.agency.triad.md  # this file, memory log ios-engineer.agenda.triad.md  # roadmap ```"
       ],
       "kind" : "paragraphs",
       "slug" : "directory-placement",
@@ -171,7 +171,7 @@
     }
   ],
   "slug" : "ios-engineer",
-  "sourcePath" : ".clia/agents/templates/ios-engineer/ios-engineer.agency.md",
+  "sourcePath" : ".clia/agents/templates/ios-engineer/ios-engineer.agency.triad.md",
   "status" : "draft",
   "tags" : [
 

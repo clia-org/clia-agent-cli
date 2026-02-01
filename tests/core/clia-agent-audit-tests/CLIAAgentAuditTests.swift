@@ -31,11 +31,11 @@ func localAuditPassesForWellFormedAgent() throws {
   let agendaMD = "# iOS Engineer — Agenda\n"
   let agencyMD = "# iOS Engineer — Agency\n"
   try agentMD.write(
-    to: agentDir.appendingPathComponent("\(slug).agent.md"), atomically: true, encoding: .utf8)
+    to: agentDir.appendingPathComponent("\(slug).agent.triad.md"), atomically: true, encoding: .utf8)
   try agendaMD.write(
-    to: agentDir.appendingPathComponent("\(slug).agenda.md"), atomically: true, encoding: .utf8)
+    to: agentDir.appendingPathComponent("\(slug).agenda.triad.md"), atomically: true, encoding: .utf8)
   try agencyMD.write(
-    to: agentDir.appendingPathComponent("\(slug).agency.md"), atomically: true, encoding: .utf8)
+    to: agentDir.appendingPathComponent("\(slug).agency.triad.md"), atomically: true, encoding: .utf8)
 
   // Triads (schema 0.2.0 defaults)
   let f = ISO8601DateFormatter()

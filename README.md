@@ -252,7 +252,7 @@ first to see the planned changes.
 ## Notes
 
 - All-Contributors mapping file:
-  `./sources/core/clia-agent-core-cli-commands/Resources/all-contributors-types.v1.json`
+  `./sources/core/clia-agent-core-cli-commands/resources/all-contributors-types.v1.json`
   (override by providing `.clia/specs/all-contributors-types.v1.json`).
 
 ### Synonyms (common)

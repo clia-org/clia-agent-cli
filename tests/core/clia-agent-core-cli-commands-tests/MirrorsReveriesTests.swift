@@ -19,8 +19,8 @@ struct MirrorsReveriesTests {
     try fm.createDirectory(at: agentDir, withIntermediateDirectories: true)
 
     // Persona + reveries files (repo- or agent-relative paths)
-    let persona = agentDir.appendingPathComponent("demo@sample.agent.persona.md")
-    let reveries = agentDir.appendingPathComponent("demo@sample.agent.reveries.md")
+    let persona = agentDir.appendingPathComponent("demo@sample.persona.agent.triad.md")
+    let reveries = agentDir.appendingPathComponent("demo@sample.reveries.agent.triad.md")
     try "Persona line".write(to: persona, atomically: true, encoding: .utf8)
     try "- tiny hook".write(to: reveries, atomically: true, encoding: .utf8)
 
@@ -44,7 +44,7 @@ struct MirrorsReveriesTests {
     let outputs = try MirrorRenderer.mirrorAgents(at: agentsRoot, dryRun: false)
     #expect(!outputs.isEmpty)
 
-    let out = agentDir.appendingPathComponent(".generated/demo.agent.md")
+    let out = agentDir.appendingPathComponent(".generated/demo.agent.triad.md")
     #expect(fm.fileExists(atPath: out.path))
     let md = try String(contentsOf: out, encoding: .utf8)
     #expect(md.contains("## Persona"))

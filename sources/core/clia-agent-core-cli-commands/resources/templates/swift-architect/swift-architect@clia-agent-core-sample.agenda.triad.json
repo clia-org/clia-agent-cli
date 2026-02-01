@@ -33,7 +33,7 @@
         "[ ] Audit code/spm packages for layering and concurrency gaps.",
         "owner: swift-architect",
         "outcome: report with module boundaries and pain points",
-        "done-when: summary logged in swift-architect.agency.md",
+        "done-when: summary logged in swift-architect.agency.triad.md",
         "links: code/spm/.clia/agents"
       ],
       "kind" : "bullets",
@@ -66,7 +66,7 @@
     }
   ],
   "slug" : "swift-architect",
-  "sourcePath" : ".clia/agents/templates/swift-architect/swift-architect.agenda.md",
+  "sourcePath" : ".clia/agents/templates/swift-architect/swift-architect.agenda.triad.md",
   "status" : "draft",
   "tags" : [
 

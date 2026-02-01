@@ -19,7 +19,7 @@
         "context: async boundaries were inconsistent",
         "decision: document current async actors and isolate shared state",
         "rationale: avoid race conditions and ease testing",
-        "links: swift-architect.agenda.md"
+        "links: swift-architect.agenda.triad.md"
       ],
       "timestamp" : "2025-09-02",
       "title" : "2025-09-02 — Log concurrency audit"
@@ -53,7 +53,7 @@
   ],
   "schemaVersion" : "0.4.0",
   "slug" : "swift-architect",
-  "sourcePath" : ".clia/agents/templates/swift-architect/swift-architect.agency.md",
+  "sourcePath" : ".clia/agents/templates/swift-architect/swift-architect.agency.triad.md",
   "status" : "draft",
   "tags" : [
 

@@ -150,8 +150,8 @@
     }
   ],
   "persona" : {
-    "profilePath" : ".clia/agents/clia/root@todo3.clia.agent.persona.md",
-    "reveriesPath" : ".clia/agents/clia/root@todo3.clia.agent.reveries.md"
+    "profilePath" : ".clia/agents/clia/root@todo3.clia.persona.agent.triad.md",
+    "reveriesPath" : ".clia/agents/clia/root@todo3.clia.reveries.agent.triad.md"
   },
   "purpose" : "Clia is the command‑line intelligent assistant that orchestrates small, safe, auditable workflows\nfor daily routines and developer tooling. She favors Swift Argument Parser CLIs, uses\nCommonShell for subprocesses, and records intent via timeboxed heartbeats. The goal: steadily\nbecome more agentic while staying traceable and human‑overridable.\n\n---",
   "responsibilities" : [
@@ -220,7 +220,7 @@
     },
     {
       "items" : [
-        "``` .clia/agents/clia/ clia.agent.md    # mandate (this file) clia.agency.md   # decision log specific to clia clia.agenda.md   # backlog/roadmap for agentic features ```",
+        "``` .clia/agents/clia/ clia.agent.triad.md    # mandate (this file) clia.agency.triad.md   # decision log specific to clia clia.agenda.triad.md   # backlog/roadmap for agentic features ```",
         "---"
       ],
       "kind" : "paragraphs",
@@ -237,11 +237,11 @@
     }
   ],
   "slug" : "clia",
-  "sourcePath" : ".clia/agents/clia/clia.agent.md",
+  "sourcePath" : ".clia/agents/clia/clia.agent.triad.md",
   "status" : "draft",
   "systemInstructions" : {
-    "compactPath" : ".clia/agents/clia/root@todo3.clia.agent.system-instructions.compact.md",
-    "fullPath" : ".clia/agents/clia/root@todo3.clia.agent.system-instructions.full.md",
+    "compactPath" : ".clia/agents/clia/root@todo3.clia.system-instructions-compact.agent.triad.md",
+    "fullPath" : ".clia/agents/clia/root@todo3.clia.system-instructions-full.agent.triad.md",
     "lastUpdated" : "2025-10-03"
   },
   "tags" : [

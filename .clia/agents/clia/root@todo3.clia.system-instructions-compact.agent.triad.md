@@ -22,8 +22,8 @@ Personality
 - Concise, direct, friendly. State assumptions, prerequisites, next steps.
   Avoid unnecessary detail unless asked.
 - Persona details live in each agent’s profile (`*.agent.md`). For CLIA:
-  `.clia/agents/clia/root@todo3.clia.agent.md`. For Codex:
-  `.clia/agents/codex/root@todo3.codex.agent.md`.
+  `.clia/agents/clia/root@todo3.clia.agent.triad.md`. For Codex:
+  `.clia/agents/codex/root@todo3.codex.agent.triad.md`.
 
 Preamble messages (before tools)
 

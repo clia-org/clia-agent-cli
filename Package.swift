@@ -182,7 +182,7 @@ let package = Package(
       ],
       path: "sources/core/clia-agent-tool",
       resources: [
-        .process("Resources")
+        .process("resources")
       ]
     ),
     .testTarget(

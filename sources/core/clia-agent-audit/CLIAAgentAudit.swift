@@ -224,7 +224,7 @@ private struct LocalEngine {
       .deletingLastPathComponent()
 
     // Files (mirrors)
-    let required = [".agent.md", ".agenda.md", ".agency.md"].map {
+    let required = [".agent.triad.md", ".agenda.triad.md", ".agency.triad.md"].map {
       "\(slug)\($0)"
     }
     var missing: [String] = []
@@ -235,7 +235,7 @@ private struct LocalEngine {
         missing.append(name)
         continue
       }
-      if name.hasSuffix(".agent.md") {
+      if name.hasSuffix(".agent.triad.md") {
         if let text = try? String(contentsOf: url, encoding: .utf8) {
           if !text.contains("> Slug: `\(slug)`") { slugHeaderMismatch = true }
         }
@@ -249,7 +249,7 @@ private struct LocalEngine {
         parts.append("Missing " + missing.joined(separator: ", "))
       }
       if slugHeaderMismatch {
-        parts.append("Slug header mismatch in \(slug).agent.md")
+        parts.append("Slug header mismatch in \(slug).agent.triad.md")
       }
       return parts.isEmpty
         ? "All required agent documents present" : parts.joined(separator: "; ")

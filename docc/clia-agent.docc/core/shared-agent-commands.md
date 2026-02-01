@@ -23,7 +23,7 @@ Client CLIs can register them via ``AgentCoreCommands.standard`` or
   - `--kind agenda`: triad kind to render (required).
   - `--slug <agent>`: agent slug (required).
   - `--path <dir>`: working directory for lineage resolution (default CWD).
-  - `-w, --write`: write `.generated/<slug>.agenda.md` next to JSON.
+  - `-w, --write`: write `.generated/<slug>.agenda.triad.md` next to JSON.
 - Notes: uses lineage to prefer nearest context.
 
 ## Triads Aggregate (Agenda) — `Triads Aggregate --Kind Agenda`

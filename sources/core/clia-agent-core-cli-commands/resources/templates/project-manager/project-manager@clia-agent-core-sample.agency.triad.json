@@ -2,15 +2,15 @@
   "entries" : [
     {
       "details" : [
-        "> history and institutional reasoning. Together with `project-manager.agent.md` (mandate) and",
-        "> `project-manager.agenda.md` (roadmap), it ensures continuity across temporal horizons by",
+        "> history and institutional reasoning. Together with `project-manager.agent.triad.md` (mandate) and",
+        "> `project-manager.agenda.triad.md` (roadmap), it ensures continuity across temporal horizons by",
         "> preserving not merely the operational outcomes but the intellectual rationales, negotiations, and",
         "> methodological innovations that informed them. Its role is to safeguard institutional memory as an",
         "> evolving corpus of insights that future stewards can inherit, extend, and refine.",
         "---"
       ],
       "summary" : "> This document constitutes the archival repository of the Project Manager agent’s deliberative",
-      "title" : "📓 project-manager.agency.md — Institutional Memory"
+      "title" : "📓 project-manager.agency.triad.md — Institutional Memory"
     },
     {
       "details" : [
@@ -183,9 +183,9 @@
     {
       "details" : [
         ".clia/agents/project-manager/",
-        "project-manager.agent.md   # mandate",
-        "project-manager.agency.md  # this file — institutional memory",
-        "project-manager.agenda.md  # strategic roadmap",
+        "project-manager.agent.triad.md   # mandate",
+        "project-manager.agency.triad.md  # this file — institutional memory",
+        "project-manager.agenda.triad.md  # strategic roadmap",
         "```"
       ],
       "summary" : "```",
@@ -222,11 +222,11 @@
   "sections" : [
     {
       "items" : [
-        "> This document constitutes the archival repository of the Project Manager agent’s deliberative > history and institutional reasoning. Together with `project-manager.agent.md` (mandate) and > `project-manager.agenda.md` (roadmap), it ensures continuity across temporal horizons by > preserving not merely the operational outcomes but the intellectual rationales, negotiations, and > methodological innovations that informed them. Its role is to safeguard institutional memory as an > evolving corpus of insights that future stewards can inherit, extend, and refine."
+        "> This document constitutes the archival repository of the Project Manager agent’s deliberative > history and institutional reasoning. Together with `project-manager.agent.triad.md` (mandate) and > `project-manager.agenda.triad.md` (roadmap), it ensures continuity across temporal horizons by > preserving not merely the operational outcomes but the intellectual rationales, negotiations, and > methodological innovations that informed them. Its role is to safeguard institutional memory as an > evolving corpus of insights that future stewards can inherit, extend, and refine."
       ],
       "kind" : "paragraphs",
       "slug" : "project-manageragencymd-institutional-memory",
-      "title" : "📓 project-manager.agency.md — Institutional Memory"
+      "title" : "📓 project-manager.agency.triad.md — Institutional Memory"
     },
     {
       "items" : [
@@ -238,7 +238,7 @@
     },
     {
       "items" : [
-        "``` .clia/agents/project-manager/ project-manager.agent.md   # mandate project-manager.agency.md  # this file — institutional memory project-manager.agenda.md  # strategic roadmap ```"
+        "``` .clia/agents/project-manager/ project-manager.agent.triad.md   # mandate project-manager.agency.triad.md  # this file — institutional memory project-manager.agenda.triad.md  # strategic roadmap ```"
       ],
       "kind" : "paragraphs",
       "slug" : "directory-placement",
@@ -246,7 +246,7 @@
     }
   ],
   "slug" : "project-manager",
-  "sourcePath" : ".clia/agents/templates/project-manager/project-manager.agency.md",
+  "sourcePath" : ".clia/agents/templates/project-manager/project-manager.agency.triad.md",
   "status" : "draft",
   "tags" : [
 

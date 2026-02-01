@@ -46,7 +46,7 @@ struct MirrorsSlugFilterTests {
       #expect(!url.path.contains("/two/.generated/"))
     }
     // Ensure at least one mirror file for the selected slug exists
-    let expected = a1.appendingPathComponent(".generated/one.agent.md")
+    let expected = a1.appendingPathComponent(".generated/one.agent.triad.md")
     #expect(fm.fileExists(atPath: expected.path))
   }
 }

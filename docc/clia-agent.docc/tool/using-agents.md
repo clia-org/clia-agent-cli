@@ -39,7 +39,7 @@ Options:
 clia core triads render --kind agenda --path . --write
 ```
 
-Writes `.generated/<slug>.agenda.md` next to each agenda JSON file. Mirrors are
+Writes `.generated/<slug>.agenda.triad.md` next to each agenda JSON file. Mirrors are
 non‑canonical; edit the JSON and regenerate.
 
 Implementation note: agenda rendering is centralized in `CLIAAgentCore.MirrorRenderer.agendaMarkdown(_:)`.

@@ -36,7 +36,7 @@ struct MirrorsFocusDomainsTests {
     let outputs = try MirrorRenderer.mirrorAgents(at: agentsRoot, dryRun: false)
     #expect(!outputs.isEmpty)
 
-    let out = agentDir.appendingPathComponent(".generated/demo.agent.md")
+    let out = agentDir.appendingPathComponent(".generated/demo.agent.triad.md")
     #expect(fm.fileExists(atPath: out.path))
     let md = try String(contentsOf: out, encoding: .utf8)
 

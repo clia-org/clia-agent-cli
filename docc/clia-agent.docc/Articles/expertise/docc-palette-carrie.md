@@ -102,7 +102,7 @@ aside.important { background: var(--docc-callout-important-bg); border-left: 3px
 ## Theme Settings (Catalog Wiring)
 
 - Theme settings live at `.clia/agents/carrie/docc/memory.docc/theme-settings.json`.
-- The CSS file lives under `.clia/agents/carrie/docc/memory.docc/Resources/` (for example,
+- The CSS file lives under `.clia/agents/carrie/docc/memory.docc/resources/` (for example,
   `carrie.docc.css`).
 - DocC preview reads `theme-settings.json` and maps values to CSS custom properties; static hosting
   still needs a CSS link injection or custom renderer to apply selector mappings.

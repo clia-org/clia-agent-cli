@@ -8,7 +8,7 @@
       ],
       "complianceTrace" : "Controls: logging, data retention notes, payroll optics for lender-facing metrics.",
       "consequences" : "- Clear audit trail and faster onboarding.\n− Slight clerical overhead per change.",
-      "context" : "Establish canonical separation of responsibilities between `product-manager.agent.md` (mandate)\nand this AGENCY (evidence/memory).",
+      "context" : "Establish canonical separation of responsibilities between `product-manager.agent.triad.md` (mandate)\nand this AGENCY (evidence/memory).",
       "date" : "2025-08-26",
       "decision" : "Adopt ADR/Experiment/Incident/Update taxonomy for all entries; require compliance trace per change\nthat touches data or financial optics.",
       "evidence" : [
@@ -68,7 +68,7 @@
   "sections" : [
     {
       "items" : [
-        "Version: 0.1 Owner: product-manager agent Home: `.clia/agents/product-manager/` Related: `product-manager.agent.md`, `product-manager.agenda.md`, parent `AGENTS.md`, parent `AGENCY.md`, parent `AGENDA.md`",
+        "Version: 0.1 Owner: product-manager agent Home: `.clia/agents/product-manager/` Related: `product-manager.agent.triad.md`, `product-manager.agenda.triad.md`, parent `AGENTS.md`, parent `AGENCY.md`, parent `AGENDA.md`",
         "---"
       ],
       "kind" : "paragraphs",
@@ -200,7 +200,7 @@
     },
     {
       "items" : [
-        "Establish canonical separation of responsibilities between `product-manager.agent.md` (mandate)",
+        "Establish canonical separation of responsibilities between `product-manager.agent.triad.md` (mandate)",
         "Adopt ADR/Experiment/Incident/Update taxonomy for all entries; require compliance trace per change",
         "- Clear audit trail and faster onboarding.",
         "− Slight clerical overhead per change.",
@@ -249,7 +249,7 @@
     }
   ],
   "slug" : "product-manager",
-  "sourcePath" : ".clia/agents/templates/product-manager/product-manager.agency.md",
+  "sourcePath" : ".clia/agents/templates/product-manager/product-manager.agency.triad.md",
   "status" : "draft",
   "tags" : [
 

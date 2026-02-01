@@ -109,7 +109,7 @@ extension AgentDocCCommandGroup {
       }
 
       // New conventions:
-      // - No Articles/ subfolders.
+      // - No articles/ subfolders.
       // - Expertise/journal roots are plain index pages (no @TechnologyRoot).
       // - Memory root is memory.docc/index.md (sole @TechnologyRoot).
       let expertiseRoot = try findIndexMarkdown(
@@ -541,8 +541,8 @@ extension AgentDocCCommandGroup {
       write: Bool,
       outputs: inout [URL]
     ) throws {
-      let generatedArticles = generatedDocc.appendingPathComponent("Articles", isDirectory: true)
-      let generatedResources = generatedDocc.appendingPathComponent("Resources", isDirectory: true)
+      let generatedArticles = generatedDocc.appendingPathComponent("articles", isDirectory: true)
+      let generatedResources = generatedDocc.appendingPathComponent("resources", isDirectory: true)
 
       let agentMarkdown = try MirrorRenderer.agentMarkdown(from: triadFiles.agentURL).markdown
       let agendaMarkdown = try MirrorRenderer.agendaMarkdown(from: triadFiles.agendaURL).markdown
@@ -1042,8 +1042,8 @@ extension AgentDocCCommandGroup {
       var updated = content
       for mapping in mappings {
         updated = updated.replacingOccurrences(
-          of: "Resources/\(mapping.originalFileName)",
-          with: "Resources/\(mapping.newFileName)")
+          of: "resources/\(mapping.originalFileName)",
+          with: "resources/\(mapping.newFileName)")
         updated = updated.replacingOccurrences(
           of: "source: \"\(mapping.originalBaseName)\"",
           with: "source: \"\(mapping.newBaseName)\"")

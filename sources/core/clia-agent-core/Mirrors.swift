@@ -42,7 +42,7 @@ public enum MirrorRenderer {
             file.lastPathComponent.hasSuffix("agent.json")
             ? "agent" : (file.lastPathComponent.hasSuffix("agenda.json") ? "agenda" : "agency")
           // Output filename: write legacy-consistent agent.md for agent profile mirrors
-          let mdName = type == "agent" ? "\(slug).agent.md" : "\(slug).\(type).md"
+          let mdName = type == "agent" ? "\(slug).agent.triad.md" : "\(slug).\(type).md"
           let generatedDir = dir.appendingPathComponent(".generated")
           if !dryRun {
             try? fm.createDirectory(at: generatedDir, withIntermediateDirectories: true)

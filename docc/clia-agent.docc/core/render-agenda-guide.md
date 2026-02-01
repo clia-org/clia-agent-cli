@@ -21,7 +21,7 @@ Render a single agent's agenda to Markdown for quick status visibility.
 # Print to stdout
 triads render --kind agenda --slug dot
 
-# Write .generated/<slug>.agenda.md next to JSON
+# Write .generated/<slug>.agenda.triad.md next to JSON
 triads render --kind agenda --slug dot --write
 
 # Resolve from a different working root
