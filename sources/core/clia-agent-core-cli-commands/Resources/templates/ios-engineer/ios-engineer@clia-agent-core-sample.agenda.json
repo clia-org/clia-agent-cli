@@ -1,0 +1,136 @@
+{
+  "agent" : {
+    "role" : "ios-engineer"
+  },
+  "horizons" : [
+    {
+      "key" : "near",
+      "label" : "Near-Term"
+    },
+    {
+      "key" : "mid",
+      "label" : "Mid-Term"
+    },
+    {
+      "key" : "far",
+      "label" : "Long-Term"
+    }
+  ],
+  "links" : [
+
+  ],
+  "mentors" : [
+
+  ],
+  "milestones" : [
+    {
+      "due" : "2025-10-15T00:00:00Z",
+      "id" : "near-1",
+      "status" : "planned",
+      "title" : "Q1: Options Chain + Greeks Panel; Calendar/Diagonal constructor; Notion journal writes."
+    },
+    {
+      "due" : "2025-10-15T00:00:00Z",
+      "id" : "near-2",
+      "status" : "planned",
+      "title" : "Q2: Sleeve Capacity module; Unusual Flow radar; Exit Whisper integration."
+    },
+    {
+      "due" : "2025-10-15T00:00:00Z",
+      "id" : "near-3",
+      "status" : "planned",
+      "title" : "Q3: Portfolio risk overlays; EOD recap composer."
+    },
+    {
+      "due" : "2025-10-15T00:00:00Z",
+      "id" : "near-4",
+      "status" : "planned",
+      "title" : "Q4: Performance hardening; accessibility AA; institutional compliance pack."
+    },
+    {
+      "due" : "2025-10-31T00:00:00Z",
+      "id" : "mid-1",
+      "status" : "planned",
+      "title" : "Expand broker adapters and Keychain/OAuth gateways."
+    },
+    {
+      "due" : "2025-10-31T00:00:00Z",
+      "id" : "mid-2",
+      "status" : "planned",
+      "title" : "Layer vanna/volga surfaces and voice/visionOS interfaces into the risk console."
+    },
+    {
+      "due" : "2025-10-31T00:00:00Z",
+      "id" : "mid-3",
+      "status" : "planned",
+      "title" : "Automate CI perf tests and encryption questionnaires."
+    },
+    {
+      "due" : "2025-12-30T00:00:00Z",
+      "id" : "far-1",
+      "status" : "planned",
+      "title" : "Deliver cross-entity trading suite with real-time sleeve governance."
+    },
+    {
+      "due" : "2025-12-30T00:00:00Z",
+      "id" : "far-2",
+      "status" : "planned",
+      "title" : "Auto-generate audit trails and lender-ready reporting."
+    },
+    {
+      "due" : "2025-12-30T00:00:00Z",
+      "id" : "far-3",
+      "status" : "planned",
+      "title" : "Ship modular UI toolkit enabling external investor extensions."
+    }
+  ],
+  "notes" : [
+    {
+      "author" : "",
+      "blocks" : [
+
+      ],
+      "date" : ""
+    }
+  ],
+  "principles" : [
+    "Automation: use Swift-based launchpad/scratch tools (SPM) and avoid Python for repository automation."
+  ],
+  "schemaVersion" : "0.3.1",
+  "sections" : [
+    {
+      "items" : [
+        "> Forward-looking roadmap for the iOS Engineer agent. Complements `ios-engineer.agent.md` (mandate) > and `ios-engineer.agency.md` (memory), fulfilling the AGENTS/AGENCY/AGENDA triad."
+      ],
+      "kind" : "paragraphs",
+      "slug" : "ios-engineeragendamd-long-term-roadmap",
+      "title" : "📱 ios-engineer.agenda.md — Long-Term Roadmap"
+    },
+    {
+      "items" : [
+        "Translate trader-aware and CFO/COO stewardship into actionable milestones.",
+        "Maintain roadmap continuity so releases uphold entity segregation and compliance."
+      ],
+      "kind" : "bullets",
+      "slug" : "purpose",
+      "title" : "Purpose"
+    },
+    {
+      "items" : [
+        "Each milestone logs context in `ios-engineer.agency.md` and references `ios-engineer.agent.md`.",
+        "Roadmap revisions occur alongside triad updates to preserve institutional continuity."
+      ],
+      "kind" : "bullets",
+      "slug" : "alignment",
+      "title" : "Alignment"
+    }
+  ],
+  "slug" : "ios-engineer",
+  "sourcePath" : ".clia/agents/templates/ios-engineer/ios-engineer.agenda.md",
+  "status" : "draft",
+  "tags" : [
+
+  ],
+  "title" : "📱 ios-engineer.agenda.md — Long-Term Roadmap",
+  "updated" : "2025-09-22T03:36:15Z"
+}

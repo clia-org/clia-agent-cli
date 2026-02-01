@@ -1,0 +1,181 @@
+{
+  "entries" : [
+    {
+      "details" : [
+        "> tradeoffs, breakthroughs, and lessons learned. It complements `ios-engineer.agent.md` (mandate)",
+        "> and `ios-engineer.agenda.md` (roadmap).",
+        "---"
+      ],
+      "summary" : "> This file is the **institutional memory** of the iOS Engineer agent. It records decisions,",
+      "title" : "📓 iOS Engineer — AGENCY.md (Parent Memory)"
+    },
+    {
+      "details" : [
+        "**Deliberation Log** → capture why certain technical, design, or compliance decisions were made.",
+        "**Breakthroughs** → document moments of ingenuity, elegant Swift solutions, or new trading-aware",
+        "**Tradeoffs** → explicitly note compromises (performance vs. compliance, UI fidelity vs. delivery",
+        "cadence).",
+        "**Institutional Continuity** → ensure future maintainers inherit not just artifacts but reasoning",
+        "and context.",
+        "**Team Pride** → preserve wow-moments, ingenuity, and collaborative wins.",
+        "---"
+      ],
+      "summary" : "UI paradigms.",
+      "title" : "Purpose"
+    },
+    {
+      "details" : [
+        "**Date / Time**: 2025-08-17",
+        "**Context**: Parent `ios-engineer.agent.md` authored; established dual-hat role (trader mentor +",
+        "**Key Insight**: Success requires simultaneous _trading-aware design_ and _entity-safe",
+        "compliance_.",
+        "---"
+      ],
+      "summary" : "CFO/COO steward).",
+      "timestamp" : "2025-08-17",
+      "title" : "Origin"
+    },
+    {
+      "title" : "Recorded Entries"
+    },
+    {
+      "details" : [
+        "**Date**: 2025-08-17",
+        "**Decision**: Adopted triad structure (`AGENT.md` mandate, `AGENCY.md` memory, `AGENDA.md`",
+        "**Rationale**: Matches parent charter triad (AGENTS/AGENCY/AGENDA) ensuring temporal stewardship",
+        "(past/present/future).",
+        "**Impact**: Guarantees decisions on architecture, UI, and compliance are journaled for",
+        "auditability."
+      ],
+      "summary" : "roadmap).",
+      "timestamp" : "2025-08-17",
+      "title" : "Entry 1 — Framework Alignment"
+    },
+    {
+      "details" : [
+        "**Date**: 2025-08-17",
+        "**Decision**: Standardize on Swift 6.2 for async/await, value-semantics, and modern idioms.",
+        "**Rationale**: Ensures concurrency correctness and future-proofing; aligns with Wrkstrm canon of",
+        "**Impact**: Increases stability, improves CI/CD reliability, and avoids fragmentation."
+      ],
+      "summary" : "building in Swift.",
+      "timestamp" : "2025-08-17",
+      "title" : "Entry 2 — Swift 6.2 as Baseline"
+    },
+    {
+      "details" : [
+        "**Date**: 2025-08-17",
+        "**Decision**: All PEM files must be loaded using `Data(contentsOf:)` instead of NIO APIs (e.g.,",
+        "**Rationale**: Prevents TLS errors on macCatalyst; simpler, more portable.",
+        "**Impact**: Improves cross-platform stability, lowers incident risk during authentication."
+      ],
+      "summary" : "`fromPEMFile(_:)`).",
+      "timestamp" : "2025-08-17",
+      "title" : "Entry 3 — PEM/Keychain Loading Standard"
+    },
+    {
+      "details" : [
+        "**Date**: 2025-08-17",
+        "**Decision**: Sleeve capacity (# theta structures supported per Vega anchor) logged alongside",
+        "**Rationale**: Creates real-time governance metric linking UI features with family office risk",
+        "management.",
+        "**Impact**: Enables quarterly compliance packs to show strategy discipline + ROC visibility.",
+        "---"
+      ],
+      "summary" : "strategy state.",
+      "timestamp" : "2025-08-17",
+      "title" : "Entry 4 — Sleeve Metrics Logging"
+    },
+    {
+      "details" : [
+        "This file is the living proof of that evolution — the story of how the iOS Engineer agent advanced",
+        "trading-aware, Swift-first interfaces while protecting institutional foundation.",
+        "---"
+      ],
+      "summary" : "**If we win, you will evolve.**",
+      "title" : "Guiding Principle"
+    },
+    {
+      "details" : [
+        "Record CI/CD performance breaches and hotfix strategies.",
+        "Capture usability insights (e.g., Dynamic Type, VoiceOver adjustments).",
+        "Document entity-segregation decisions when new accounts/entities are onboarded.",
+        "Preserve architectural inflection points (e.g., SQLite → CloudKit transitions)."
+      ],
+      "summary" : "---",
+      "title" : "Future Memory Hooks"
+    },
+    {
+      "details" : [
+        ".clia/agents/ios-engineer/",
+        "ios-engineer.agent.md   # role mandate",
+        "ios-engineer.agency.md  # this file, memory log",
+        "ios-engineer.agenda.md  # roadmap",
+        "```"
+      ],
+      "summary" : "```",
+      "title" : "Directory Placement"
+    }
+  ],
+  "links" : [
+
+  ],
+  "mentors" : [
+
+  ],
+  "notes" : [
+    {
+      "author" : "",
+      "blocks" : [
+
+      ],
+      "date" : ""
+    },
+    {
+      "author" : "policy",
+      "blocks" : [
+        {
+          "kind" : "paragraph",
+          "text" : [
+            "Automation: use Swift-based launchpad/scratch tools (SPM) and avoid Python for repository automation."
+          ]
+        }
+      ]
+    }
+  ],
+  "schemaVersion" : "0.4.0",
+  "sections" : [
+    {
+      "items" : [
+        "> This file is the **institutional memory** of the iOS Engineer agent. It records decisions, > tradeoffs, breakthroughs, and lessons learned. It complements `ios-engineer.agent.md` (mandate) > and `ios-engineer.agenda.md` (roadmap)."
+      ],
+      "kind" : "paragraphs",
+      "slug" : "ios-engineer-agencymd-parent-memory",
+      "title" : "📓 iOS Engineer — AGENCY.md (Parent Memory)"
+    },
+    {
+      "items" : [
+        "This file is the living proof of that evolution — the story of how the iOS Engineer agent advanced trading-aware, Swift-first interfaces while protecting institutional foundation."
+      ],
+      "kind" : "paragraphs",
+      "slug" : "guiding-principle",
+      "title" : "Guiding Principle"
+    },
+    {
+      "items" : [
+        "``` .clia/agents/ios-engineer/ ios-engineer.agent.md   # role mandate ios-engineer.agency.md  # this file, memory log ios-engineer.agenda.md  # roadmap ```"
+      ],
+      "kind" : "paragraphs",
+      "slug" : "directory-placement",
+      "title" : "Directory Placement"
+    }
+  ],
+  "slug" : "ios-engineer",
+  "sourcePath" : ".clia/agents/templates/ios-engineer/ios-engineer.agency.md",
+  "status" : "draft",
+  "tags" : [
+
+  ],
+  "title" : "Ios Engineer Agency",
+  "updated" : "2025-09-22T03:36:15Z"
+}

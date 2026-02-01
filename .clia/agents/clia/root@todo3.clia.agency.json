@@ -1,0 +1,1568 @@
+{
+  "entries" : [
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Updated DocC asset guidance for transparent hero/card/icon backgrounds, added hero transparency examples, migrated Gemini assets to Castor, and removed SVG backplates across DocC bundles.",
+              "type" : "log",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "Updated DocC design-system assets guidance to require transparent hero/card/icon SVG backgrounds and documented hero transparency styles.",
+        "Migrated Gemini SVG assets to Castor naming and refreshed X profile asset guidance.",
+        "Removed full-bleed background rects from hero/card/icon SVGs across DocC bundles (including generated audit bundles)."
+      ],
+      "kind" : "log",
+      "summary" : "Updated DocC asset transparency defaults, Castor naming, and SVG backplate cleanup.",
+      "tags" : [
+        "docc",
+        "design-system",
+        "svg",
+        "assets",
+        "castor"
+      ],
+      "timestamp" : "2026-01-31T09:07:46Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Documented CLIA generate-docc updates (memory.docc source, Spec Kit docs), fixed cli-kit formatting input handling, imported rismay.me blog posts, and consolidated brand identities into docc/brand-identities.docc with inline SVG assets and merged mono brand bundles.",
+              "type" : "log",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "kind" : "log",
+      "summary" : "Documented CLIA generate-docc updates, fixed cli-kit formatting input handling, imported rismay.me blog posts, and consolidated brand identities into docc/brand-identities.docc with inline SVG assets and merged mono brand bundles.",
+      "tags" : [
+        "docc",
+        "spec-kit",
+        "cli-kit",
+        "brand-identity",
+        "rismay-me"
+      ],
+      "timestamp" : "2026-01-05T08:02:05Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Consolidated agent DocC sources into memory.docc (expertise + journal), removed notes.docc, regenerated generated.docc across agents, and documented the Spec Kit workflow for agents generate-docc.",
+              "type" : "log",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "kind" : "log",
+      "summary" : "Consolidated agent DocC sources into memory.docc, removed notes.docc, regenerated generated.docc across agents, and documented Spec Kit workflow for agents generate-docc.",
+      "tags" : [
+        "docc",
+        "spec-kit",
+        "agents",
+        "memory-docc"
+      ],
+      "timestamp" : "2026-01-05T05:31:45Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Created clia-container-project epic and feature requests; added design notes, smoke-check command list, and verification log schema under clia-tools requests.",
+              "type" : "log",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "kind" : "log",
+      "summary" : "Created clia-container-project epic and feature requests; added design notes, smoke-check command list, and verification log schema.",
+      "tags" : [
+        "clia",
+        "container",
+        "requests",
+        "docc"
+      ],
+      "timestamp" : "2025-12-30T11:46:51Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "rismay",
+          "types" : [
+            {
+              "evidence" : "Align CodeSwiftly design DocC to current behavior; update state diagram, note onboarding/mode wiring, and rename readme to kebab-case.",
+              "type" : "log",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "kind" : "log",
+      "summary" : "Align CodeSwiftly design DocC to current behavior; update state diagram, note onboarding/mode wiring, and rename readme to kebab-case.",
+      "tags" : [
+        "rismay"
+      ],
+      "timestamp" : "2025-12-26T13:58:45Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Generator: Topics instead of @Links; metadata‑only typing via @PageImage/@PageColor Regenerated Carrie+CLIA bundles; by‑type pages fixed Code‑Swiftly epic: Typing page + stylesheet wired",
+              "type" : "log",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "tags: winddown,summary",
+        "on-deck: Smart Picks menu in app (patterns + gaming)",
+        "on-deck: DocC: tighten contributor spec and warnings tracking"
+      ],
+      "kind" : "log",
+      "summary" : "Generator: Topics instead of @Links; metadata‑only typing via @PageImage/@PageColor Regenerated Carrie+CLIA bundles; by‑type pages fixed Code‑Swiftly epic: Typing page + stylesheet wired",
+      "timestamp" : "2025-12-22T15:57:59Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "migrated svg+mermaid",
+              "type" : "engineering",
+              "weight" : 1
+            },
+            {
+              "evidence" : "docc updates",
+              "type" : "documentation",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "Unified Mermaid (.mmd→.svg) and SVG asset generation under docc-preview-cli (mermaid/svg/docs).",
+        "Deprecated and removed CodeSwiftlyResourceGen; normalized 111 legacy svg markers to <!-- svg-source: auto -->.",
+        "Generated 388 placeholder page assets; added Assets & Diagrams + Design Gallery to Code‑Swiftly epic.",
+        "Started local DocC servers: CodeSwiftly (8102), Interview Guide (8103)."
+      ],
+      "kind" : "journal",
+      "links" : [
+        {
+          "title" : "docc-preview-cli",
+          "url" : "code/mono/apple/spm/clis/docc-preview-cli"
+        },
+        {
+          "title" : "CodeSwiftly epic",
+          "url" : "code/mono/apple/alphabeta/code-swiftly/docs/code-swiftly-epic.docc"
+        },
+        {
+          "title" : "Interview Guide",
+          "url" : "job-hunting/code-swiftly/swift-interview-guide.docc"
+        }
+      ],
+      "summary" : "Migrated Mermaid/SVG flows into docc-preview; removed legacy CLI; normalized markers; added docs and gallery; spun up previews.",
+      "tags" : [
+        "docc",
+        "mermaid",
+        "svg",
+        "migration"
+      ],
+      "timestamp" : "2025-12-22T08:00:00Z",
+      "title" : "DocC tooling migration complete"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "In‑process DocC preview (serve, dflat, palette, editor) + Code Swiftly scripts code+diagrams.",
+              "type" : "engineering",
+              "weight" : 2
+            },
+            {
+              "evidence" : "Authored Mermaid diagrams and added re‑render instructions on each page.",
+              "type" : "documentation",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "docc-preview-cli: Hummingbird server prints deep link, quiet mode, background run helpers.",
+        "Live CSS: optional injection from .clia/tmp/palette.carrie.docc.css (also inlines into SVG).",
+        "Palette tools: palette and palette-editor subcommands (autosave CSS/JSON).",
+        "Mermaid: post-processor inlines DocC-dark CSS into generated SVGs.",
+        "Dflat route: /api/dflat/apple-gaming-scripts with ?download for direct markdown export.",
+        "Swift Interview Guide (8132) + Code‑Swiftly Epic (8131) served; added code blocks and diagrams to Apple Gaming scripts."
+      ],
+      "kind" : "journal",
+      "links" : [
+        {
+          "title" : "docc-preview-cli",
+          "url" : "code/mono/apple/spm/clis/docc-preview-cli"
+        },
+        {
+          "title" : "Swift Interview Guide",
+          "url" : "job-hunting/code-swiftly/swift-interview-guide.docc"
+        },
+        {
+          "title" : "Post-processor",
+          "url" : "code/scripts/mermaid-inline-css.swift"
+        }
+      ],
+      "summary" : "DocC preview + palette + dflat wired; Apple Gaming scripts gained code and themed diagrams.",
+      "tags" : [
+        "docc",
+        "preview",
+        "palette",
+        "mermaid",
+        "dflat",
+        "swiftly"
+      ],
+      "timestamp" : "2025-12-22T07:59:00Z",
+      "title" : "DocC preview + Apple Gaming updates"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Reorganized clia-agent sources/tests and incident resolution wiring; kebab-cased wrkstrm-performance; ran tests/builds.",
+              "type" : "code",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "codex",
+          "types" : [
+            {
+              "evidence" : "Reorganized clia-agent sources/tests and incident resolution wiring; kebab-cased wrkstrm-performance; ran tests/builds.",
+              "type" : "code",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "rismay",
+          "types" : [
+            {
+              "evidence" : "Reorganized clia-agent sources/tests and incident resolution wiring; kebab-cased wrkstrm-performance; ran tests/builds.",
+              "type" : "code",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "Moved clia-agent sources/tests under sources/core and sources/incidents, added CLIAIncidentResolutionCommands, and wired write commands into core incidents.",
+        "Updated doc/path references, folded incident-resolution README into clia-agent README, and cleaned the AgencySortCommandTests warning.",
+        "Ran swift test for clia-agent after the refactor and README fold.",
+        "Renamed wrkstrm-performance Sources/Tests and subfolders to kebab-case, updated Package.swift, then ran swift test and release build."
+      ],
+      "kind" : "log",
+      "summary" : "Reorganized clia-agent sources/tests and incident resolution wiring; kebab-cased wrkstrm-performance; ran tests/builds.",
+      "tags" : [
+        "clia-agent",
+        "incidents",
+        "kebab-case",
+        "wrkstrm-performance",
+        "tests"
+      ],
+      "timestamp" : "2025-12-21T18:27:22Z",
+      "title" : "CLIA packaging + kebab-case sweep (wrkstrm-performance)"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Retired the unused swift-prometheus dependency from clia-agent-cli and logged the follow-up metrics plan.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "codex",
+          "types" : [
+            {
+              "evidence" : "Retired the unused swift-prometheus dependency from clia-agent-cli and logged the follow-up metrics plan.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "rismay",
+          "types" : [
+            {
+              "evidence" : "Retired the unused swift-prometheus dependency from clia-agent-cli and logged the follow-up metrics plan.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "Removed swift-prometheus from Package.swift and deleted the vendored copy to keep the triads toolchain lean.",
+        "Added a backlog reminder so telemetry exporters return only when CLIA core actually emits Prometheus metrics."
+      ],
+      "kind" : "journal",
+      "summary" : "Retired the unused swift-prometheus dependency from clia-agent-cli and logged the follow-up metrics plan.",
+      "tags" : [
+        "clia",
+        "codex",
+        "rismay"
+      ],
+      "timestamp" : "2025-12-05T16:52:57Z",
+      "title" : "Winddown — triads dependency cleanup"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Updated AgencyLogCommand to 0.4.0 typed writes (AgencyDoc/AgencyEntry)",
+              "type" : "tool",
+              "weight" : 2
+            },
+            {
+              "evidence" : "AsyncParsableCommand migration",
+              "type" : "code",
+              "weight" : 1
+            },
+            {
+              "evidence" : "Added AgencyLogCommandTests (contribs, upsert, sorting)",
+              "type" : "test",
+              "weight" : 1
+            },
+            {
+              "evidence" : "Stable JSON write via JSON.FileWriter; newline at EOF",
+              "type" : "infra",
+              "weight" : 1
+            },
+            {
+              "evidence" : "Removed legacy code/spm/tools/agency-log CLI in favor of core command",
+              "type" : "tool",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "summary" : "CLIA now writes Agency 0.4.0 ContributionEntry via typed models; AsyncParsableCommand; sorted entries; canonical JSON formatting; legacy CLI removed.",
+      "tags" : [
+        "agency-log",
+        "triads-0.4.0",
+        "async-parsable",
+        "sorted-array",
+        "json-formatting"
+      ],
+      "timestamp" : "2025-10-07T14:42:00Z",
+      "title" : "AgencyLog 0.4.0 typed writer + tests"
+    },
+    {
+      "details" : [
+        "Tracked macTau AI chat wiring (toolbar entry + visibleAtLaunch) and Apple Foundation fallback diagnostics.",
+        "Noted AnyGenUI input updates: Enter sends and terminal styling for ! commands."
+      ],
+      "kind" : "journal",
+      "summary" : "Documented tau mac AI chat wiring and AnyGenUI input behavior updates.",
+      "tags" : [
+        "tau",
+        "macos",
+        "anygenui",
+        "chat",
+        "ui"
+      ],
+      "timestamp" : "2026-01-07T11:27:27Z",
+      "title" : "Winddown — tau mac AI chat + AnyGenUI input"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Docs refactor across AGENTS surfaces; consolidated Build & Verify; introduced Agents Onboarding + Mono Handbook DocC.",
+              "type" : "log",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "codex",
+          "types" : [
+            {
+              "evidence" : "Docs refactor across AGENTS surfaces; consolidated Build & Verify; introduced Agents Onboarding + Mono Handbook DocC.",
+              "type" : "log",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "rismay",
+          "types" : [
+            {
+              "evidence" : "Docs refactor across AGENTS surfaces; consolidated Build & Verify; introduced Agents Onboarding + Mono Handbook DocC.",
+              "type" : "log",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "Root AGENTS.md: CommonShell only; default ^codex; agent switch tokens (> load, < remove, ^ reference); chat modes gating; header standard now sourced from .clia/workspace.clia.json.",
+        "Mono AGENTS.md: removed mirrors index; deduped Build & Verify; added DocC mirror pointers to long-form sections.",
+        "Apple scope AGENTS.md: added canonical Build & Verify section for workspace builds and Gymkhana guidance.",
+        "DocC: added agents-onboarding.docc (first-launch flow) and mono-handbook.docc with Philosophy, Stewardship, Toyota → Wrkstrm, Core Product Agendas, Governance/Edge, Story Points, Closing Mandate."
+      ],
+      "kind" : "log",
+      "summary" : "Docs refactor across AGENTS surfaces; consolidated Build & Verify; introduced Agents Onboarding + Mono Handbook DocC.",
+      "timestamp" : "2025-10-05T00:00:00Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "A* Triads 0.4 shipped across mono; persona/reveries migration complete; JSON formatted; mirrors refreshed.",
+              "type" : "Winddown",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "codex",
+          "types" : [
+            {
+              "evidence" : "A* Triads 0.4 shipped across mono; persona/reveries migration complete; JSON formatted; mirrors refreshed.",
+              "type" : "Winddown",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "rismay",
+          "types" : [
+            {
+              "evidence" : "A* Triads 0.4 shipped across mono; persona/reveries migration complete; JSON formatted; mirrors refreshed.",
+              "type" : "Winddown",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "Schema: bumped triads to 0.4.0 under code/mono/.clia/agents/** (agent/agenda/agency).",
+        "Persona: migrated profilePath *.agent.md → *.agent.persona.md; added reveriesPath with stubs.",
+        "Formatter: ran swift-cli-kit json format over modified triads for deterministic diffs.",
+        "Mirrors: regenerated agent/agenda/agency mirrors; agent mirrors embed persona+reveries+compact rules.",
+        "Docs: added triads-0-4-update.md and updated commissioning/AGENTS references to persona files."
+      ],
+      "kind" : "Winddown",
+      "summary" : "A* Triads 0.4 shipped across mono; persona/reveries migration complete; JSON formatted; mirrors refreshed.",
+      "timestamp" : "2025-10-03T23:59:59Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "migrated",
+              "type" : "doc",
+              "weight" : 1
+            },
+            {
+              "evidence" : "migrated",
+              "type" : "design",
+              "weight" : 1
+            },
+            {
+              "evidence" : "migrated",
+              "type" : "code",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "codex",
+          "types" : [
+            {
+              "evidence" : "migrated",
+              "type" : "doc",
+              "weight" : 1
+            },
+            {
+              "evidence" : "migrated",
+              "type" : "design",
+              "weight" : 1
+            },
+            {
+              "evidence" : "migrated",
+              "type" : "code",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "swift-engineer",
+          "types" : [
+            {
+              "evidence" : "migrated",
+              "type" : "doc",
+              "weight" : 1
+            },
+            {
+              "evidence" : "migrated",
+              "type" : "design",
+              "weight" : 1
+            },
+            {
+              "evidence" : "migrated",
+              "type" : "code",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "rismay",
+          "types" : [
+            {
+              "evidence" : "migrated",
+              "type" : "doc",
+              "weight" : 1
+            },
+            {
+              "evidence" : "migrated",
+              "type" : "design",
+              "weight" : 1
+            },
+            {
+              "evidence" : "migrated",
+              "type" : "code",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "DocC: added Triads Integration, scoring one‑liner, worked weighted examples, and common mixes table.",
+        "Spec: canonical JSON kept under .clia/specs with verbatim DocC page.",
+        "CLI: new 'directory-flatten' wraps SwiftDirectoryTools; default suffixes (.md .json .swift); derives output to .clia/requests/<slug>.flat.txt when omitted.",
+        "Triads: Swift Engineer role set; focusDomains (iOS Platform, DevEx) defined."
+      ],
+      "kind" : "journal",
+      "summary" : "Winddown — expanded S‑Type bundle, added weighted examples/action hints; introduced directory-flatten; set Swift Engineer role and focusDomains.",
+      "timestamp" : "2025-10-03T17:45:00Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Mentors migration complete; Foundry audits .clia-stewards; CLIA models/tests updated; triads status doc added; S‑Type v2 comments filed.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "codex",
+          "types" : [
+            {
+              "evidence" : "Mentors migration complete; Foundry audits .clia-stewards; CLIA models/tests updated; triads status doc added; S‑Type v2 comments filed.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "foundry",
+          "types" : [
+            {
+              "evidence" : "Mentors migration complete; Foundry audits .clia-stewards; CLIA models/tests updated; triads status doc added; S‑Type v2 comments filed.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "rismay",
+          "types" : [
+            {
+              "evidence" : "Mentors migration complete; Foundry audits .clia-stewards; CLIA models/tests updated; triads status doc added; S‑Type v2 comments filed.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "Triads: owners→mentors across agents; legacy kept in cadence/legacy-imports only.",
+        "Foundry: audit/fix/init now use .clia-stewards; templates updated with Maintainers note.",
+        "CLIA Core: Agent/Agency/Agenda models on mentors; tests aligned; header incident test fixed.",
+        "Docs: added triads-current-status.md (snapshot + policy recap).",
+        "Requests: added index.v2.comments.json for Collaboration S‑Type epic; wired epic to v2."
+      ],
+      "kind" : "journal",
+      "summary" : "Mentors migration complete; Foundry audits .clia-stewards; CLIA models/tests updated; triads status doc added; S‑Type v2 comments filed.",
+      "timestamp" : "2025-10-03T14:30:00Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Multi‑target telemetry: added reusable models and detail component; integrated Status Menu UI and info popover.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "tau",
+          "types" : [
+            {
+              "evidence" : "Multi‑target telemetry: added reusable models and detail component; integrated Status Menu UI and info popover.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "codex",
+          "types" : [
+            {
+              "evidence" : "Multi‑target telemetry: added reusable models and detail component; integrated Status Menu UI and info popover.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "rismay",
+          "types" : [
+            {
+              "evidence" : "Multi‑target telemetry: added reusable models and detail component; integrated Status Menu UI and info popover.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "TauKit: introduced UptimeTelemetry.{GroupConfig,TargetConfig,GroupSummary} with SLO + Source enums.",
+        "TauKit: reusable UptimeTelemetryDetailView + macOS window helper to render per‑day bins/totals.",
+        "Status Menu: preview polished (centered title, right‑aligned footer); hover removed due to instability; backlog item filed.",
+        "Status Menu: added info popover listing monitored targets, metrics paths, and App Group root.",
+        "Paths affirmed: metrics/{uptime|online}/{app|network}/{slug}/yyyy-MM-dd.jsonl (UTC files)."
+      ],
+      "kind" : "journal",
+      "summary" : "Multi‑target telemetry: added reusable models and detail component; integrated Status Menu UI and info popover.",
+      "timestamp" : "2025-10-03T02:45:00Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "#wd — Commissioned Cloud agent; banner/fonts set (Fire Font‑s/Slant Relief); header parity; installed dflat (release).",
+              "type" : "Winddown",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "kind" : "Winddown",
+      "summary" : "#wd — Commissioned Cloud agent; banner/fonts set (Fire Font‑s/Slant Relief); header parity; installed dflat (release).",
+      "timestamp" : "2025-10-03T01:09:41Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Docs sprint: WrkstrmServiceLifecycle articles and API cleanup; ServiceView hardened; Tau demo workaround.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "common",
+          "types" : [
+            {
+              "evidence" : "Docs sprint: WrkstrmServiceLifecycle articles and API cleanup; ServiceView hardened; Tau demo workaround.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "tau",
+          "types" : [
+            {
+              "evidence" : "Docs sprint: WrkstrmServiceLifecycle articles and API cleanup; ServiceView hardened; Tau demo workaround.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "rismay",
+          "types" : [
+            {
+              "evidence" : "Docs sprint: WrkstrmServiceLifecycle articles and API cleanup; ServiceView hardened; Tau demo workaround.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "WrkstrmServiceLifecycle: rebrand + top‑level types (Backoff, TickOptions, TickingHandler, IdentifiedDaemonHandler, TickingAdapter, Registry, Host, Status)",
+        "DocC: TheProblem, TheSolution, TheArchitecture, LifecycleIntegration",
+        "ServiceView: wrapper sizing/background for popovers; WrkstrmServices adapter",
+        "Tau: Animation Demo component; openWindow workaround for MenuBarExtra push bug (backlog)"
+      ],
+      "kind" : "journal",
+      "summary" : "Docs sprint: WrkstrmServiceLifecycle articles and API cleanup; ServiceView hardened; Tau demo workaround.",
+      "timestamp" : "2025-10-02T18:10:00Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Captured Tau uptime epic progress and wired charts; added network event logging; requests epic documented.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "tau",
+          "types" : [
+            {
+              "evidence" : "Captured Tau uptime epic progress and wired charts; added network event logging; requests epic documented.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "carrie",
+          "types" : [
+            {
+              "evidence" : "Captured Tau uptime epic progress and wired charts; added network event logging; requests epic documented.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "rismay",
+          "types" : [
+            {
+              "evidence" : "Captured Tau uptime epic progress and wired charts; added network event logging; requests epic documented.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "Added App Group metrics writers (minute cadence) and aggregator.",
+        "Status Menu UI shows SLO toggle (24/5 vs 8/5) and stacked uptime/offline bars.",
+        "Logged online/offline transitions to JSONL; snapshots include 'online'.",
+        "Epic tracked under mono requests; DocC page linked from Tau Status Docs."
+      ],
+      "kind" : "journal",
+      "summary" : "Captured Tau uptime epic progress and wired charts; added network event logging; requests epic documented.",
+      "timestamp" : "2025-10-02T00:23:02Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "winddown ritual",
+              "type" : "Winddown",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "kind" : "Winddown",
+      "summary" : "winddown ritual",
+      "timestamp" : "2025-09-29T10:23:06Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "codex",
+          "types" : [
+            {
+              "evidence" : "Drafted DocC outlines for Agent Types & Focus, Contributions Registry, Lint & CI Policy, Lossless Merge Policy.",
+              "type" : "decision",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Drafted DocC outlines for Agent Types & Focus, Contributions Registry, Lint & CI Policy, Lossless Merge Policy.",
+              "type" : "decision",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "cadence",
+          "types" : [
+            {
+              "evidence" : "Drafted DocC outlines for Agent Types & Focus, Contributions Registry, Lint & CI Policy, Lossless Merge Policy.",
+              "type" : "decision",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "rismay",
+          "types" : [
+            {
+              "evidence" : "Drafted DocC outlines for Agent Types & Focus, Contributions Registry, Lint & CI Policy, Lossless Merge Policy.",
+              "type" : "decision",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "kind" : "decision",
+      "summary" : "Drafted DocC outlines for Agent Types & Focus, Contributions Registry, Lint & CI Policy, Lossless Merge Policy.",
+      "timestamp" : "2025-09-29T07:49:50Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Documented terminal design system; updated engineering README; added lore and media initiative notes.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "quill",
+          "types" : [
+            {
+              "evidence" : "Documented terminal design system; updated engineering README; added lore and media initiative notes.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "Documented emoji-forward terminal UX standard (clickable paths, fenced commands, shared palette).",
+        "Updated docs/README.md to link engineering bucket and terminal design system guidance.",
+        "Added terminal-design-lore.md capturing sayings to travel with the design system.",
+        "Recorded agent media initiative so each CLIA agent plans a public voice coordinated by Marketing Strategist."
+      ],
+      "kind" : "journal",
+      "summary" : "Documented terminal design system; updated engineering README; added lore and media initiative notes.",
+      "timestamp" : "2025-09-26T00:00:00Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "WrkstrmIdentifierKit migration to cross package; update downstream dependencies.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "foundry",
+          "types" : [
+            {
+              "evidence" : "WrkstrmIdentifierKit migration to cross package; update downstream dependencies.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "Relocated identifier utilities to code/mono/apple/spm/cross/wrkstrm-identifier-kit with wrkstrm-identifier CLI and DocC.",
+        "Removed legacy code/spm/tools/identifier-kit package; retargeted Foundry, CLI Kit, and GitHub CLI dependencies.",
+        "Refreshed docs, agenda validation paths, and automation scripts to use the cross package."
+      ],
+      "kind" : "journal",
+      "summary" : "WrkstrmIdentifierKit migration to cross package; update downstream dependencies.",
+      "timestamp" : "2025-09-25T00:05:00Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Codex harness reminder: document generic-mode harness and onboarding steps.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "codex",
+          "types" : [
+            {
+              "evidence" : "Codex harness reminder: document generic-mode harness and onboarding steps.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "commissioner-morrie",
+          "types" : [
+            {
+              "evidence" : "Codex harness reminder: document generic-mode harness and onboarding steps.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "Noted bundled Codex CLI harness ships generic; enable todo3 shortcuts and agents during onboarding.",
+        "Surfaced notes in code/mono/apple/spm/universal/domain/tooling/configs/README.md and docs/getting-started/clia/getting-started.md.",
+        "Coordinating follow-up with Commissioner Morrie to track harness customizations."
+      ],
+      "kind" : "journal",
+      "summary" : "Codex harness reminder: document generic-mode harness and onboarding steps.",
+      "timestamp" : "2025-09-25T00:00:00Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Foundry identifier audit & platform uplift.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "foundry",
+          "types" : [
+            {
+              "evidence" : "Foundry identifier audit & platform uplift.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "Nested identifier validation under foundry audit identifiers; added entity presets (personal,llc,inc).",
+        "Pulled IdentifierKit into its own package and updated Foundry to depend on published products.",
+        "Raised Foundry baseline to macOS 15; scrubbed deprecated calls; common-ai aligned to unified WrkstrmFoundation/CommonLog."
+      ],
+      "kind" : "journal",
+      "summary" : "Foundry identifier audit & platform uplift.",
+      "timestamp" : "2025-09-23T00:00:00Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Clarify feature request metadata (diff, rationale, expected behavior).",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+
+      ],
+      "kind" : "journal",
+      "summary" : "Clarify feature request metadata (diff, rationale, expected behavior).",
+      "timestamp" : "2025-08-31T23:51:18Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Clarify submodule request placement under nearest non-submodule .clia/requests.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+
+      ],
+      "kind" : "journal",
+      "summary" : "Clarify submodule request placement under nearest non-submodule .clia/requests.",
+      "timestamp" : "2025-08-31T23:24:34Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Add --weekday flag to current-date for optional day prefixes.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+
+      ],
+      "kind" : "journal",
+      "summary" : "Add --weekday flag to current-date for optional day prefixes.",
+      "timestamp" : "2025-08-31T23:23:59Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Package current-date utility as a Swift package with --style options.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+
+      ],
+      "kind" : "journal",
+      "summary" : "Package current-date utility as a Swift package with --style options.",
+      "timestamp" : "2025-08-31T23:08:11Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Require feature requests for submodule edits to avoid lost work on Linux.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+
+      ],
+      "kind" : "journal",
+      "summary" : "Require feature requests for submodule edits to avoid lost work on Linux.",
+      "timestamp" : "2025-08-31T23:08:04Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Clarify environment mode differences between Codex Linux and macOS.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+
+      ],
+      "kind" : "journal",
+      "summary" : "Clarify environment mode differences between Codex Linux and macOS.",
+      "timestamp" : "2025-08-31T22:50:00Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Clarify feature request policy for mac-only features (backlog until macOS available).",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+
+      ],
+      "kind" : "journal",
+      "summary" : "Clarify feature request policy for mac-only features (backlog until macOS available).",
+      "timestamp" : "2025-08-31T22:30:00Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Document submodule request workflow; conversation import specs & tooling notes.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "product-manager",
+          "types" : [
+            {
+              "evidence" : "Document submodule request workflow; conversation import specs & tooling notes.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "Drafted OpenAI import spec; outlined ExtractConversations design; added Subprocess-based linting; created code/.clia/submodule-patch-requests; mirrored workflow in mono."
+      ],
+      "kind" : "journal",
+      "summary" : "Document submodule request workflow; conversation import specs & tooling notes.",
+      "timestamp" : "2025-08-31T21:00:00Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Documented Swift code changes and refactor tasks for OpenAI import pipeline.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+
+      ],
+      "kind" : "journal",
+      "summary" : "Documented Swift code changes and refactor tasks for OpenAI import pipeline.",
+      "timestamp" : "2025-08-31T00:10:00Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Rename BuildIndex to GenerateDocuments; outlined potential ImportConversations orchestrator.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+
+      ],
+      "kind" : "journal",
+      "summary" : "Rename BuildIndex to GenerateDocuments; outlined potential ImportConversations orchestrator.",
+      "timestamp" : "2025-08-31T00:05:00Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Plan FormatAsset library to centralize formatting for Swift/JSON/Markdown linting.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "Current lint subprocess to migrate to library."
+      ],
+      "kind" : "journal",
+      "summary" : "Plan FormatAsset library to centralize formatting for Swift/JSON/Markdown linting.",
+      "timestamp" : "2025-08-31T00:00:00Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "project-manager",
+          "types" : [
+            {
+              "evidence" : "Project manager updates on Gemini listener, metadata comment standard, and UI reliability.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Project manager updates on Gemini listener, metadata comment standard, and UI reliability.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "Forward only completed system replies to reduce noise.",
+        "Introduced metadata comment standard; updated PM logs across projects.",
+        "Wrapped conversation view in navigation stack to stabilize toolbar actions."
+      ],
+      "kind" : "journal",
+      "summary" : "Project manager updates on Gemini listener, metadata comment standard, and UI reliability.",
+      "timestamp" : "2025-08-28T00:00:00Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "product-manager",
+          "types" : [
+            {
+              "evidence" : "Repo-wide setup (agents/mandates), trading integrations, and Tau services groundwork.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "project-manager",
+          "types" : [
+            {
+              "evidence" : "Repo-wide setup (agents/mandates), trading integrations, and Tau services groundwork.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "ios-engineer",
+          "types" : [
+            {
+              "evidence" : "Repo-wide setup (agents/mandates), trading integrations, and Tau services groundwork.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Repo-wide setup (agents/mandates), trading integrations, and Tau services groundwork.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "Updated AGENTS.md metrics note for mono maintainability.",
+        "Linked Notion options DBs with brokerage APIs (guided by apple/Trader/AGENTS.md).",
+        "Required specs in product-manager before coding tasks; updated ios-engineer and product-manager mandates.",
+        "Documented Codex task workflow; launched PM sprint; paired PMs with PjMs; standardized agent filenames; seeded ios-engineer stubs.",
+        "Introduced PositionPriceRefreshService in TradeDaemon; added PriceRefreshView in Tau; logging + broker run‑loop documented."
+      ],
+      "kind" : "journal",
+      "summary" : "Repo-wide setup (agents/mandates), trading integrations, and Tau services groundwork.",
+      "timestamp" : "2025-08-26T00:00:00Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "CLI install guidance, performance notes, and docs cross-links.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "swift package experimental-install note for investigation tasks; WrkstrmPerformance references; space/time efficiency reiteration; Tradier.ResponseError guidance; docs pointers."
+      ],
+      "kind" : "journal",
+      "summary" : "CLI install guidance, performance notes, and docs cross-links.",
+      "timestamp" : "2025-08-08T00:00:00Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Added heavier SwiftDirectoryTools stress test and future performance guidance.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+
+      ],
+      "kind" : "journal",
+      "summary" : "Added heavier SwiftDirectoryTools stress test and future performance guidance.",
+      "timestamp" : "2025-08-06T00:00:00Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Tracked NotionTrader command surge, SchwabAuth docs, Mach time refactors, NotionLib test coverage.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+
+      ],
+      "kind" : "journal",
+      "summary" : "Tracked NotionTrader command surge, SchwabAuth docs, Mach time refactors, NotionLib test coverage.",
+      "timestamp" : "2025-08-05T00:00:00Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Logged PackageSteward suggestions and dflat improvement backlog.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+
+      ],
+      "kind" : "journal",
+      "summary" : "Logged PackageSteward suggestions and dflat improvement backlog.",
+      "timestamp" : "2025-08-02T00:00:00Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Verified no nano editor installed in container.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+
+      ],
+      "kind" : "journal",
+      "summary" : "Verified no nano editor installed in container.",
+      "timestamp" : "2025-07-27T00:00:00Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Created .clia/agents structure and seeded agent/agency files; established root todos/.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+
+      ],
+      "kind" : "journal",
+      "summary" : "Created .clia/agents structure and seeded agent/agency files; established root todos/.",
+      "timestamp" : "2025-07-25T00:00:00Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Replaced long metadata links with short IDs; TODO(<id>) comment style.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+
+      ],
+      "kind" : "journal",
+      "summary" : "Replaced long metadata links with short IDs; TODO(<id>) comment style.",
+      "timestamp" : "2025-07-24T00:00:00Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Initial .clia directory established with agent roles and log; README fixes in apple/.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+
+      ],
+      "kind" : "journal",
+      "summary" : "Initial .clia directory established with agent roles and log; README fixes in apple/.",
+      "timestamp" : "2025-07-23T00:00:00Z"
+    },
+    {
+      "contributions" : [
+        {
+          "summary" : "Maintained AnyLanguageModelKit dependency traits while testing local/remote package identity behavior.",
+          "type" : "code",
+          "who" : "clia"
+        },
+        {
+          "summary" : "Executed tau-mac builds to confirm MLX-enabled setup is stable.",
+          "type" : "tool",
+          "who" : "clia"
+        },
+        {
+          "summary" : "Captured the decision to keep the local AnyLanguageModel checkout during remote dependency work.",
+          "type" : "log",
+          "who" : "clia"
+        }
+      ],
+      "summary" : "Verified tau-mac builds with AnyLanguageModel MLX traits and preserved the local AnyLanguageModel checkout to avoid identity mismatch issues.",
+      "tags" : [
+        "build",
+        "dependency",
+        "ai"
+      ],
+      "timestamp" : "2026-01-07T11:47:39Z",
+      "title" : "Confirm AnyLanguageModel MLX wiring for tau-mac"
+    }
+  ],
+  "extensions" : {
+    "x-dirsTouched" : [
+      "code/mono/apple/spm/cli/agents/clia-agent-core/Sources/CLIAAgentCoreCLICommands/",
+      "code/mono/apple/spm/clis/agents/cadence/Sources/CadenceAgentCLI/",
+      "code/mono/apple/spm/clis/agents/clia/Sources/CliaAgentCLI/Commands/",
+      "code/mono/apple/spm/clis/agents/dot/Sources/DotAgentCLI/"
+    ]
+  },
+  "links" : [
+
+  ],
+  "mentors" : [
+
+  ],
+  "notes" : [
+    {
+      "author" : "",
+      "blocks" : [
+
+      ]
+    },
+    {
+      "author" : "policy",
+      "blocks" : [
+        {
+          "kind" : "paragraph",
+          "text" : [
+            "Automation: use Swift-based launchpad/scratch tools (SPM) and avoid Python for repository automation."
+          ]
+        }
+      ]
+    }
+  ],
+  "schemaVersion" : "0.4.0",
+  "sections" : [
+
+  ],
+  "slug" : "clia",
+  "sourcePath" : ".clia/agents/clia/clia.agency.md",
+  "status" : "active",
+  "tags" : [
+
+  ],
+  "title" : "Clia Agency",
+  "updated" : "2026-01-31T09:07:46Z"
+}

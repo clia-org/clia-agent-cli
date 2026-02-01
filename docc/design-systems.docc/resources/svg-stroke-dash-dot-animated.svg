@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="180" viewBox="0 0 900 180">
+  <title>Stroke dash-dot: animated</title>
+  <style>
+    .stroke { stroke: #1f2328; stroke-width: 3; stroke-linecap: round; stroke-dasharray: 10 8 3 8; fill: none; }
+  </style>
+  <rect width="900" height="180" fill="#f9fafb"/>
+  <line class="stroke" x1="80" y1="90" x2="820" y2="90" stroke-dashoffset="48">
+    <animate attributeName="stroke-dashoffset" values="48;0;48" dur="3s" repeatCount="indefinite"/>
+  </line>
+</svg>

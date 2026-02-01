@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" role="img" aria-label="Philographic: Curious (Gemini Edition)">
+  <title>Philographic: Curious (Gemini Edition)</title>
+  <defs>
+    <radialGradient id="eye-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#C084FC" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#581C87" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="clip">
+      <rect width="512" height="512" rx="72"/>
+    </clipPath>
+    <style>
+      @keyframes orbit-search {
+        0% { transform: rotate(0deg) translateX(100px) rotate(0deg); }
+        100% { transform: rotate(360deg) translateX(100px) rotate(-360deg); }
+      }
+      @keyframes blink-eye {
+        0%, 90%, 100% { transform: scaleY(1); }
+        95% { transform: scaleY(0.1); }
+      }
+      .orbiter { animation: orbit-search 8s linear infinite; }
+      .eye { animation: blink-eye 4s infinite; transform-origin: 256px 256px; }
+    </style>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="512" height="512" fill="#3B0764"/> <!-- Deep Purple -->
+    
+    <!-- Orbital Path -->
+    <circle cx="256" cy="256" r="100" stroke="#A855F7" stroke-width="2" stroke-dasharray="10 10" opacity="0.4"/>
+    
+    <!-- Central "Idea" -->
+    <circle cx="256" cy="256" r="40" fill="#E879F9" opacity="0.2"/>
+    <circle cx="256" cy="256" r="20" fill="#E879F9" opacity="0.6"/>
+
+    <!-- The Seeker -->
+    <g transform="translate(256, 256)">
+       <g class="orbiter">
+          <circle r="16" fill="url(#eye-glow)"/>
+          <circle r="6" fill="#fff" class="eye"/>
+       </g>
+    </g>
+  </g>
+</svg>

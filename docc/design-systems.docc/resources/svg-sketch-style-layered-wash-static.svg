@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
+  <title>Sketch color wash: layered static</title>
+  <style>
+    .yellow { fill: #ffe066; fill-opacity: 0.35; }
+    .blue { fill: #247ba0; fill-opacity: 0.25; }
+    .red { fill: #f25f5c; fill-opacity: 0.28; }
+  </style>
+  <path class="yellow" d="M140 190 C300 90, 620 80, 840 180 C820 260, 520 270, 140 190 Z"/>
+  <path class="blue" d="M200 175 C340 120, 640 110, 900 180 C860 240, 560 250, 200 175 Z"/>
+  <path class="red" d="M320 120 C460 90, 700 110, 980 180 C940 220, 660 220, 320 120 Z"/>
+</svg>

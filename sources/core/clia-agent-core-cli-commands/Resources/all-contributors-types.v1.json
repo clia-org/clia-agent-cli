@@ -1,0 +1,366 @@
+{
+  "$schema" : "clia://specs/all-contributors-types.v1",
+  "generated" : "2025-10-06",
+  "types" : {
+    "a11y" : {
+      "description" : "Accessibility research, fixes, or advocacy work that improves inclusive access.",
+      "emoji" : "♿️",
+      "synonyms" : [
+        "a11y",
+        "accessibility",
+        "inclusive-design"
+      ],
+      "title" : "Accessibility"
+    },
+    "app" : {
+      "description" : "Building and maintaining user-facing applications or app targets.",
+      "emoji" : "📱",
+      "synonyms" : [
+        "app",
+        "apps",
+        "application"
+      ],
+      "title" : "Applications"
+    },
+    "audio" : {
+      "description" : "Podcasts, background music, sound design, or other audio production contributions.",
+      "emoji" : "🔊",
+      "synonyms" : [
+        "audio",
+        "sound",
+        "podcast",
+        "audio-production"
+      ],
+      "title" : "Audio"
+    },
+    "blog" : {
+      "description" : "Authoring or editing published blog posts about the project.",
+      "emoji" : "📝",
+      "synonyms" : [
+        "blog",
+        "blogpost",
+        "blog-post",
+        "post"
+      ],
+      "title" : "Blogposts"
+    },
+    "bug" : {
+      "description" : "Capturing, reproducing, or triaging defects that impact the project.",
+      "emoji" : "🐛",
+      "synonyms" : [
+        "bug",
+        "bugs",
+        "bug-report",
+        "bug-reporting"
+      ],
+      "title" : "Bug Reports"
+    },
+    "business" : {
+      "description" : "Executing on partnerships, sales, or other business development efforts.",
+      "emoji" : "💼",
+      "synonyms" : [
+        "business",
+        "bizdev",
+        "business-development"
+      ],
+      "title" : "Business Development"
+    },
+    "code" : {
+      "description" : "Writing or reviewing source code for the project.",
+      "emoji" : "💻",
+      "synonyms" : [
+        "code",
+        "coding",
+        "implementation"
+      ],
+      "title" : "Code"
+    },
+    "content" : {
+      "description" : "Writing or polishing narrative content such as site copy or release notes.",
+      "emoji" : "🖋",
+      "synonyms" : [
+        "content",
+        "copywriting",
+        "copy",
+        "editorial"
+      ],
+      "title" : "Content"
+    },
+    "data" : {
+      "description" : "Creating or curating datasets, analytics pipelines, or statistical artifacts.",
+      "emoji" : "🔣",
+      "synonyms" : [
+        "data",
+        "dataset",
+        "analytics"
+      ],
+      "title" : "Data"
+    },
+    "design" : {
+      "description" : "Visual design, branding, UX flows, or other human interface work.",
+      "emoji" : "🎨",
+      "synonyms" : [
+        "design",
+        "designer",
+        "visual-design",
+        "ux"
+      ],
+      "title" : "Design"
+    },
+    "doc" : {
+      "description" : "Maintaining documentation, references, or knowledge bases.",
+      "emoji" : "📖",
+      "synonyms" : [
+        "doc",
+        "docs",
+        "documentation",
+        "documentation-writing"
+      ],
+      "title" : "Documentation"
+    },
+    "eventOrganizing" : {
+      "description" : "Planning or running events, meetups, or workshops for the community.",
+      "emoji" : "📋",
+      "synonyms" : [
+        "event-organizing",
+        "event-organizer",
+        "meetup",
+        "event"
+      ],
+      "title" : "Event Organizing"
+    },
+    "example" : {
+      "description" : "Providing runnable examples or starter templates that demonstrate usage.",
+      "emoji" : "💡",
+      "synonyms" : [
+        "example",
+        "samples",
+        "demo",
+        "example-code"
+      ],
+      "title" : "Examples"
+    },
+    "financial" : {
+      "description" : "Providing direct funding or handling sponsorship logistics.",
+      "emoji" : "💵",
+      "synonyms" : [
+        "financial",
+        "funding",
+        "sponsorship"
+      ],
+      "title" : "Financial Support"
+    },
+    "fundingFinding" : {
+      "description" : "Researching and securing grants, donors, or other funding sources.",
+      "emoji" : "🔍",
+      "synonyms" : [
+        "funding-finding",
+        "funding",
+        "grant",
+        "grant-writing"
+      ],
+      "title" : "Funding Finders"
+    },
+    "ideas" : {
+      "description" : "Contributing product strategy, roadmapping, or ideation artifacts.",
+      "emoji" : "🤔",
+      "synonyms" : [
+        "ideas",
+        "planning",
+        "strategy",
+        "roadmap"
+      ],
+      "title" : "Ideas & Planning"
+    },
+    "infra" : {
+      "description" : "Build systems, deployment, hosting, or operational tooling work.",
+      "emoji" : "🚇",
+      "synonyms" : [
+        "infra",
+        "infrastructure",
+        "devops",
+        "operations"
+      ],
+      "title" : "Infrastructure"
+    },
+    "maintenance" : {
+      "description" : "Keeping dependencies current, pruning debt, or polishing internal quality.",
+      "emoji" : "🚧",
+      "synonyms" : [
+        "maintenance",
+        "maintainer",
+        "sustainability"
+      ],
+      "title" : "Maintenance"
+    },
+    "mentoring" : {
+      "description" : "Guiding newcomers or coaching contributors through onboarding.",
+      "emoji" : "🧑‍🏫",
+      "synonyms" : [
+        "mentoring",
+        "mentor",
+        "coaching",
+        "teaching"
+      ],
+      "title" : "Mentoring"
+    },
+    "platform" : {
+      "description" : "Porting or packaging the project for new platforms or distributions.",
+      "emoji" : "📦",
+      "synonyms" : [
+        "platform",
+        "packaging",
+        "porting"
+      ],
+      "title" : "Packaging"
+    },
+    "plugin" : {
+      "description" : "Building integrations, plugins, or utility libraries that extend the project.",
+      "emoji" : "🔌",
+      "synonyms" : [
+        "plugin",
+        "add-on",
+        "extension",
+        "integration"
+      ],
+      "title" : "Plugins"
+    },
+    "projectManagement" : {
+      "description" : "Coordinating scope, timelines, and accountability for the project team.",
+      "emoji" : "📆",
+      "synonyms" : [
+        "project-management",
+        "project manager",
+        "pm",
+        "program-management"
+      ],
+      "title" : "Project Management"
+    },
+    "promotion" : {
+      "description" : "Evangelizing or marketing the project through campaigns and outreach.",
+      "emoji" : "📣",
+      "synonyms" : [
+        "promotion",
+        "marketing",
+        "outreach"
+      ],
+      "title" : "Promotion"
+    },
+    "question" : {
+      "description" : "Answering support questions in issues, chat, or forums.",
+      "emoji" : "💬",
+      "synonyms" : [
+        "question",
+        "support",
+        "q&a",
+        "helpdesk"
+      ],
+      "title" : "Answering Questions"
+    },
+    "research" : {
+      "description" : "Performing literature review, experiments, or academic collaboration.",
+      "emoji" : "🔬",
+      "synonyms" : [
+        "research",
+        "r&d",
+        "research-and-development"
+      ],
+      "title" : "Research"
+    },
+    "review" : {
+      "description" : "Reviewing pull requests or ensuring code quality through approval workflows.",
+      "emoji" : "👀",
+      "synonyms" : [
+        "review",
+        "code-review",
+        "pr-review"
+      ],
+      "title" : "Code Review"
+    },
+    "security" : {
+      "description" : "Identifying security risks, privacy improvements, or compliance updates.",
+      "emoji" : "🛡️",
+      "synonyms" : [
+        "security",
+        "infosec",
+        "gdpr",
+        "privacy"
+      ],
+      "title" : "Security"
+    },
+    "talk" : {
+      "description" : "Public talks, conference presentations, or recorded lectures.",
+      "emoji" : "📢",
+      "synonyms" : [
+        "talk",
+        "presentation",
+        "conference",
+        "speaker"
+      ],
+      "title" : "Talks"
+    },
+    "test" : {
+      "description" : "Creating or maintaining automated tests, QA plans, or validation suites.",
+      "emoji" : "⚠️",
+      "synonyms" : [
+        "test",
+        "testing",
+        "qa"
+      ],
+      "title" : "Tests"
+    },
+    "tool" : {
+      "description" : "Authoring supporting tooling such as CLIs, scripts, or automation.",
+      "emoji" : "🔧",
+      "synonyms" : [
+        "tool",
+        "tooling",
+        "automation"
+      ],
+      "title" : "Tools"
+    },
+    "translation" : {
+      "description" : "Localizing content or interfaces for additional languages.",
+      "emoji" : "🌍",
+      "synonyms" : [
+        "translation",
+        "localization",
+        "l10n"
+      ],
+      "title" : "Translation"
+    },
+    "tutorial" : {
+      "description" : "Authoring tutorials, walkthroughs, or educational lab content.",
+      "emoji" : "✅",
+      "synonyms" : [
+        "tutorial",
+        "guide",
+        "walkthrough",
+        "how-to"
+      ],
+      "title" : "Tutorials"
+    },
+    "userTesting" : {
+      "description" : "Running usability sessions or collecting qualitative feedback from users.",
+      "emoji" : "📓",
+      "synonyms" : [
+        "user-testing",
+        "usability",
+        "ux-research"
+      ],
+      "title" : "User Testing"
+    },
+    "video" : {
+      "description" : "Producing or editing videos and motion content about the project.",
+      "emoji" : "📹",
+      "synonyms" : [
+        "video",
+        "livestream",
+        "recording",
+        "video-production"
+      ],
+      "title" : "Video"
+    }
+  },
+  "version" : "1"
+}

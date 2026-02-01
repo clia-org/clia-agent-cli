@@ -1,0 +1,259 @@
+{
+  "entries" : [
+    {
+      "authors" : [
+        {
+          "name" : "product-manager"
+        }
+      ],
+      "complianceTrace" : "Controls: logging, data retention notes, payroll optics for lender-facing metrics.",
+      "consequences" : "- Clear audit trail and faster onboarding.\n− Slight clerical overhead per change.",
+      "context" : "Establish canonical separation of responsibilities between `product-manager.agent.md` (mandate)\nand this AGENCY (evidence/memory).",
+      "date" : "2025-08-26",
+      "decision" : "Adopt ADR/Experiment/Incident/Update taxonomy for all entries; require compliance trace per change\nthat touches data or financial optics.",
+      "evidence" : [
+        {
+          "href" : "This document; link to AGENT spec."
+        }
+      ],
+      "id" : "ADR-2025-08-26-product-manager-agent-canon",
+      "rollout" : "Effective immediately; reversible by superseding ADR.",
+      "status" : "accepted",
+      "type" : "decision"
+    },
+    {
+      "date" : "2025-08-26",
+      "finance" : "Improves audit posture and lender optics via traceable release notes.",
+      "id" : "UPDATE-2025-08-26",
+      "next" : "Populate `risks_register.md` seed entries for API rate limits and low-theta regime UI\nsafeguards.",
+      "progress" : "Baseline structure complete.",
+      "scope" : "Initialized product manager AGENCY and linked templates; no user-facing changes.",
+      "type" : "update",
+      "variances" : "None."
+    },
+    {
+      "date" : "2025-08-27",
+      "id" : "UPDATE-2025-08-27",
+      "scope" : "Paired project-manager agents with product-manager counterparts across apple projects. Progress\nCoverage established; logs initialized. Variances\nNone. Next Window\nPopulate local product specs as projects evolve. Finance & Optics\nStrengthens audit trace by coupling product and project oversight.\n--\nAdd `evidence/` subfolder conventions (screen recordings, benchmark CSVs).\nDefine redaction process for PII in screenshots and logs.\nAutomate entry scaffolding via a CLI (`wrkstrm-agency new <type> <slug>`).\nIntegrate with Notion to sync ADR index and stakeholder updates.",
+      "type" : "update"
+    }
+  ],
+  "links" : [
+
+  ],
+  "mentors" : [
+
+  ],
+  "notes" : [
+    {
+      "author" : "",
+      "blocks" : [
+
+      ],
+      "date" : ""
+    },
+    {
+      "author" : "policy",
+      "blocks" : [
+        {
+          "kind" : "paragraph",
+          "text" : [
+            "Automation: use Swift-based launchpad/scratch tools (SPM) and avoid Python for repository automation."
+          ]
+        }
+      ]
+    }
+  ],
+  "schemaVersion" : "0.4.0",
+  "sections" : [
+    {
+      "items" : [
+        "Version: 0.1 Owner: product-manager agent Home: `.clia/agents/product-manager/` Related: `product-manager.agent.md`, `product-manager.agenda.md`, parent `AGENTS.md`, parent `AGENCY.md`, parent `AGENDA.md`",
+        "---"
+      ],
+      "kind" : "paragraphs",
+      "slug" : "productmanager-agency-evidence-memory-and-traceability",
+      "title" : "PRODUCT_MANAGER AGENCY — Evidence, Memory, and Traceability"
+    },
+    {
+      "items" : [
+        "Preserve the institutional memory of product decisions, experiments, and outcomes. This document is the audit-friendly narrative that links the living spec to the code, builds, releases, compliance artifacts, and business outcomes (trading alpha and entity-level finance).",
+        "---"
+      ],
+      "kind" : "paragraphs",
+      "slug" : "1-mandate",
+      "title" : "1) Mandate"
+    },
+    {
+      "items" : [
+        "Decision (ADR)",
+        "Experiment (hypothesis, method, result)",
+        "Risk (assumption, exposure, mitigation)",
+        "Incident (impact, root cause, remedy)",
+        "Stakeholder Update (scope, progress, variances)",
+        "Compliance Check (control, evidence, status)",
+        "Date (ISO 8601, PT), Author, Area (spec, design, API, data, compliance)",
+        "Links: PR(s), commit hash(es), build IDs, TestFlight/App build numbers",
+        "Spec pointers: section anchors in `product_spec.md`",
+        "Impact tags: Trading (delta/vega/theta, sleeve capacity), Entity (cost center, payroll, lender",
+        "Evidence: screenshots, logs, test reports, Notion page IDs, broker logs"
+      ],
+      "kind" : "bullets",
+      "slug" : "2-logging-canon",
+      "title" : "2) Logging Canon"
+    },
+    {
+      "items" : [
+        "<problem statement, constraints, prior art>",
+        "<chosen option>",
+        "Positive: <benefits>",
+        "Negative: <tradeoffs>",
+        "<option A/B/C>",
+        "PRs, commits, benchmarks, test runs, user feedback links",
+        "Controls touched, evidence links, retention/redaction implications",
+        "Flag name(s), rollout plan, rollback path, deprecation timeline"
+      ],
+      "kind" : "bullets",
+      "slug" : "3-decision-record-template-adr",
+      "title" : "3) Decision Record Template (ADR)"
+    },
+    {
+      "items" : [
+        "<falsifiable statement>",
+        "<sample, metrics, duration, test/feature flag>",
+        "<measured metrics, deltas vs baseline>",
+        "<support/refute hypothesis, risks, follow-ups>",
+        "<theta/vega/delta effects, sleeve capacity, cost centers>"
+      ],
+      "kind" : "bullets",
+      "slug" : "4-experiment-template",
+      "title" : "4) Experiment Template"
+    },
+    {
+      "items" : [
+        "<what happened, who was affected, duration>",
+        "<S0|S1|S2> and user/business impact",
+        "<key events with timestamps>",
+        "5 Whys summary; contributing factors",
+        "Immediate fixes, follow-up work items, owner, due dates",
+        "Evidence captured; data retention and notification, if any",
+        "Playbook updates, tests, alerts, guardrails"
+      ],
+      "kind" : "bullets",
+      "slug" : "5-incident-template-postmortem-no-blame",
+      "title" : "5) Incident Template (Postmortem, no-blame)"
+    },
+    {
+      "items" : [
+        "<features in flight, changes to plan>",
+        "<percent complete, burndown, risks>",
+        "<scope/time/cost variances and rationale>",
+        "<what will ship, acceptance gate>",
+        "<run-rate, payroll cadence effects, lender optics, CAC/LTV if applicable>"
+      ],
+      "kind" : "bullets",
+      "slug" : "6-stakeholder-update-template",
+      "title" : "6) Stakeholder Update Template"
+    },
+    {
+      "items" : [
+        "``` RISK-<id> Title: <short label> Owner: <name> Likelihood: Low|Med|High Impact: Low|Med|High Surface: API|Data|UX|Perf|Compliance|Vendor|Market Assumption: <if any> Mitigation: <concrete action> Trigger: <what flips this risk> Status: Open|Tracking|Mitigating|Closed ```",
+        "---"
+      ],
+      "kind" : "paragraphs",
+      "slug" : "7-risk-assumption-register-structure",
+      "title" : "7) Risk & Assumption Register (structure)"
+    },
+    {
+      "items" : [
+        "Data classification and PII boundaries",
+        "Consent flows and retention schedules",
+        "SEC/IRS-relevant artifacts: audit logs, payroll alignment, margin interest documentation",
+        "Feature flags and kill switches with owners",
+        "Notion links to governance and tax planning notes"
+      ],
+      "kind" : "bullets",
+      "slug" : "8-governance-compliance-trace",
+      "title" : "8) Governance & Compliance Trace"
+    },
+    {
+      "items" : [
+        "**Daily**: log notable decisions and experiments; attach evidence.",
+        "**Weekly**: summarize stakeholder update; close or escalate risks.",
+        "**Per Release**: add release evidence, compliance trace, and ADR references.",
+        "One entry per section, immutable after 72 hours except to append ‘Evidence’ or mark ‘Superseded’.",
+        "Cross-link to `product_spec.md`, `roadmap.md`, and `release_notes/`."
+      ],
+      "kind" : "bullets",
+      "slug" : "9-operating-rhythm",
+      "title" : "9) Operating Rhythm"
+    },
+    {
+      "items" : [
+        "Entries named with date-first slugs for chronological sorting.",
+        "Always deep-link to commit hashes, PRs, and spec anchors.",
+        "Supersede instead of rewriting historical rationale."
+      ],
+      "kind" : "bullets",
+      "slug" : "10-naming-linking-and-versioning",
+      "title" : "10) Naming, Linking, and Versioning"
+    },
+    {
+      "items" : [
+        "Establish canonical separation of responsibilities between `product-manager.agent.md` (mandate)",
+        "Adopt ADR/Experiment/Incident/Update taxonomy for all entries; require compliance trace per change",
+        "- Clear audit trail and faster onboarding.",
+        "− Slight clerical overhead per change.",
+        "This document; link to AGENT spec.",
+        "Controls: logging, data retention notes, payroll optics for lender-facing metrics.",
+        "Effective immediately; reversible by superseding ADR."
+      ],
+      "kind" : "bullets",
+      "slug" : "adr-2025-08-26-product-manager-agent-canon",
+      "title" : "ADR-2025-08-26-product-manager-agent-canon"
+    },
+    {
+      "items" : [
+        "Initialized product manager AGENCY and linked templates; no user-facing changes.",
+        "Baseline structure complete.",
+        "None.",
+        "Populate `risks_register.md` seed entries for API rate limits and low-theta regime UI",
+        "Improves audit posture and lender optics via traceable release notes."
+      ],
+      "kind" : "bullets",
+      "slug" : "update-2025-08-26",
+      "title" : "UPDATE-2025-08-26"
+    },
+    {
+      "items" : [
+        "Paired project-manager agents with product-manager counterparts across apple projects. Progress",
+        "Coverage established; logs initialized. Variances",
+        "None. Next Window",
+        "Populate local product specs as projects evolve. Finance & Optics",
+        "Strengthens audit trace by coupling product and project oversight."
+      ],
+      "kind" : "bullets",
+      "slug" : "update-2025-08-27",
+      "title" : "UPDATE-2025-08-27"
+    },
+    {
+      "items" : [
+        "Add `evidence/` subfolder conventions (screen recordings, benchmark CSVs).",
+        "Define redaction process for PII in screenshots and logs.",
+        "Automate entry scaffolding via a CLI (`wrkstrm-agency new <type> <slug>`).",
+        "Integrate with Notion to sync ADR index and stakeholder updates."
+      ],
+      "kind" : "bullets",
+      "slug" : "12-backlog-for-agency-enhancements",
+      "title" : "12) Backlog for AGENCY Enhancements"
+    }
+  ],
+  "slug" : "product-manager",
+  "sourcePath" : ".clia/agents/templates/product-manager/product-manager.agency.md",
+  "status" : "draft",
+  "tags" : [
+
+  ],
+  "title" : "Product Manager Agency",
+  "updated" : "2025-09-22T03:36:15Z"
+}

@@ -1,0 +1,197 @@
+{
+  "abstract" : "Rituals: morning, day, and night.",
+  "arguments" : [
+
+  ],
+  "discussion" : "Super-command that hosts subcommands: morning (environment snapshot + detached timer + update today's note), day (midday check-in), and night (wind-down to agency triad plus optional update to tomorrow's note 'On deck').",
+  "examples" : [
+    {
+      "args" : [
+        "--no-banner",
+        "morning",
+        "--did",
+        "Showered.",
+        "--news",
+        "Markets at ATHs."
+      ]
+    },
+    {
+      "args" : [
+        "--no-banner",
+        "day",
+        "--append-agency"
+      ]
+    },
+    {
+      "args" : [
+        "--no-banner",
+        "night",
+        "--message",
+        "Ship safely.",
+        "--on-deck",
+        "Finish release notes"
+      ]
+    },
+    {
+      "args" : [
+        "--no-banner",
+        "m"
+      ]
+    },
+    {
+      "args" : [
+        "--no-banner",
+        "d"
+      ]
+    },
+    {
+      "args" : [
+        "--no-banner",
+        "n",
+        "--message",
+        "Closing note."
+      ]
+    }
+  ],
+  "executionPlan" : [
+    {
+      "action" : "morning|day|night",
+      "step" : "subcommands"
+    }
+  ],
+  "io" : {
+    "stdout" : "varies by mode (plain text)",
+    "writes" : [
+      ".wrkstrm/tmp/task-heartbeat.json",
+      "notes/YYYY/YYYY-MM-DD.md (morning)",
+      ".clia/agents/<slug>/root@todo3.<slug>.agency.json (night)",
+      "notes/YYYY/YYYY-MM-DD.md (tomorrow on night when --on-deck provided)"
+    ],
+    "writesFiles" : true
+  },
+  "options" : [
+
+  ],
+  "schema" : "https://wrkstrm.dev/schemas/clia/command-spec.v1.json",
+  "subcommand" : "good",
+  "subcommands" : [
+    {
+      "abstract" : "Morning ritual: print environment, start timer, update today’s note.",
+      "aliases" : [
+        "m"
+      ],
+      "name" : "morning",
+      "options" : [
+        {
+          "default" : true,
+          "help" : "Render wake text in On Kawara style.",
+          "inversion" : "prefixedNo",
+          "name" : "kawara-style",
+          "type" : "flag"
+        },
+        {
+          "default" : "",
+          "help" : "One-line news summary to record today.",
+          "name" : "news",
+          "type" : "string"
+        },
+        {
+          "default" : [
+
+          ],
+          "help" : "Activities already done (repeatable).",
+          "name" : "did",
+          "repeatable" : true,
+          "type" : "string[]"
+        },
+        {
+          "default" : false,
+          "help" : "Do not write to notes; print only.",
+          "name" : "no-note",
+          "type" : "flag"
+        },
+        {
+          "default" : false,
+          "help" : "Do not start task timer.",
+          "name" : "no-timer",
+          "type" : "flag"
+        }
+      ]
+    },
+    {
+      "abstract" : "Midday check-in: print current heartbeat summary and optional note.",
+      "aliases" : [
+        "d"
+      ],
+      "name" : "day",
+      "options" : [
+        {
+          "default" : "",
+          "help" : "Optional note to include in printed summary.",
+          "name" : "note",
+          "type" : "string"
+        },
+        {
+          "default" : "",
+          "help" : "Agent slug to write to (default: auto)",
+          "name" : "slug",
+          "type" : "string"
+        },
+        {
+          "default" : false,
+          "help" : "Append a concise check-in entry to agency triad (JSON).",
+          "name" : "append-agency",
+          "type" : "flag"
+        }
+      ]
+    },
+    {
+      "abstract" : "Wind‑down: append to agency triad (JSON) and update tomorrow’s On deck.",
+      "aliases" : [
+        "n"
+      ],
+      "name" : "night",
+      "options" : [
+        {
+          "default" : "",
+          "help" : "Nightly takeaway/inspirational note (logged to agency triad)",
+          "name" : "message",
+          "required" : true,
+          "type" : "string"
+        },
+        {
+          "default" : [
+
+          ],
+          "help" : "Items for tomorrow's 'On deck' section (repeatable)",
+          "name" : "on-deck",
+          "repeatable" : true,
+          "type" : "string[]"
+        },
+        {
+          "default" : "",
+          "help" : "Agent slug to write to (default: auto)",
+          "name" : "slug",
+          "type" : "string"
+        },
+        {
+          "default" : false,
+          "help" : "Also append a JSON journal entry for the active agent",
+          "name" : "append-journal",
+          "type" : "flag"
+        },
+        {
+          "default" : [
+
+          ],
+          "help" : "Directories touched (repeatable); stored as x-dirsTouched in journal",
+          "name" : "dirs-touched",
+          "repeatable" : true,
+          "type" : "string[]"
+        }
+      ]
+    }
+  ],
+  "tool" : "clia",
+  "version" : 1
+}

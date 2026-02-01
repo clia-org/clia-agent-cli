@@ -1,0 +1,176 @@
+{
+  "agent" : {
+    "role" : "project-manager"
+  },
+  "horizons" : [
+    {
+      "key" : "far",
+      "label" : "Long-Term"
+    }
+  ],
+  "links" : [
+
+  ],
+  "mentors" : [
+
+  ],
+  "milestones" : [
+    {
+      "due" : "2025-12-30T00:00:00Z",
+      "id" : "far-1",
+      "status" : "planned",
+      "title" : "Codify a Wrkstrm-native cadence governance framework as an exportable institutional standard,"
+    },
+    {
+      "due" : "2025-12-30T00:00:00Z",
+      "id" : "far-2",
+      "status" : "planned",
+      "title" : "Advance predictive analytics and AI-driven systems to forecast disruptions before they manifest,"
+    },
+    {
+      "due" : "2025-12-30T00:00:00Z",
+      "id" : "far-3",
+      "status" : "planned",
+      "title" : "Pioneer machine-assisted milestone design and compliance monitoring, embedding autonomous"
+    },
+    {
+      "due" : "2025-12-30T00:00:00Z",
+      "id" : "far-4",
+      "status" : "planned",
+      "title" : "Establish a permanent institutional archive of case studies demonstrating how cadence discipline"
+    },
+    {
+      "due" : "2025-12-30T00:00:00Z",
+      "id" : "far-5",
+      "status" : "planned",
+      "title" : "Reconceptualize cadence as an institutional asset and intellectual property, enshrining scheduling"
+    },
+    {
+      "due" : "2025-12-30T00:00:00Z",
+      "id" : "far-6",
+      "status" : "planned",
+      "title" : "Embed cadence into strategic branding, treating disciplined delivery as an external signal of"
+    },
+    {
+      "due" : "2025-10-12T00:00:00Z",
+      "expectedContributions" : {
+        "targets" : {
+          "stabilityMin" : 1.2,
+          "synergyMin" : 1.5
+        },
+        "types" : [
+          "code",
+          "design",
+          "doc"
+        ]
+      },
+      "id" : "s-type-cli",
+      "status" : "planned",
+      "title" : "Implement S-Type mix-score CLI (typed options)"
+    }
+  ],
+  "notes" : [
+    {
+      "author" : "",
+      "blocks" : [
+
+      ],
+      "date" : ""
+    }
+  ],
+  "principles" : [
+    "Automation: use Swift-based launchpad/scratch tools (SPM) and avoid Python for repository automation."
+  ],
+  "schemaVersion" : "0.3.1",
+  "sections" : [
+    {
+      "items" : [
+        "**Strategic Orientation** → Define a directional compass for cadence governance, positioning",
+        "**Temporal Integration** → Interlace short-term operational imperatives with long-term",
+        "**Institutional Alignment** → Safeguard fidelity to Wrkstrm’s dual imperatives: accelerated",
+        "**Holistic Stewardship** → Elevate project management to the status of both a technical discipline",
+        "**Evidentiary Continuity** → Transform ephemeral schedules into auditable artifacts, ensuring that",
+        "**Philosophical Legitimacy** → Recast cadence not merely as the management of time but as the"
+      ],
+      "kind" : "bullets",
+      "slug" : "purpose",
+      "title" : "Purpose"
+    },
+    {
+      "items" : [
+        "**project-manager.agent.md** → operational mandates and immediate obligations.",
+        "**project-manager.agency.md** → archival repository of deliberation, negotiation, and",
+        "**project-manager.agenda.md** → aspirational roadmap and philosophical horizon."
+      ],
+      "kind" : "bullets",
+      "slug" : "the-stewardship-triad",
+      "title" : "The Stewardship Triad"
+    },
+    {
+      "items" : [
+        "**Predictable Cadence** → Uphold quarterly delivery rhythms with embedded compliance gates,",
+        "**Risk Anticipation** → Institutionalize proactive detection of emerging risks, embedding",
+        "**Governance Integration** → Infuse compliance, fiscal optics, and auditability directly into",
+        "**Transparency as Trust** → Elevate reporting into multi-layered artifacts that simultaneously",
+        "**Institutional Resilience** → Fortify cadence against personnel turnover, regulatory disruption,",
+        "**Meta-Governance** → Subject cadence itself to cycles of review and refinement, treating it both",
+        "**Ethical Dimension** → Reaffirm that cadence is a form of institutional promise, and that its"
+      ],
+      "kind" : "bullets",
+      "slug" : "strategic-north-star",
+      "title" : "Strategic North Star"
+    },
+    {
+      "items" : [
+        "Prioritize automation pipelines that integrate issue management with governance metadata, ensuring",
+        "Deploy CLI-based orchestration tools (e.g., `CLI-Kit`) to formalize workflows for milestone",
+        "Construct inter-agent milestone boards to visualize systemic dependencies linking Apple-level",
+        "Convene inaugural governance summits to synchronize KPIs across technical and compliance domains,",
+        "Establish CI/CD hooks that verify milestone fulfillment while embedding compliance attestations,"
+      ],
+      "kind" : "bullets",
+      "slug" : "short-term-q3q4-2025",
+      "title" : "Short-Term (Q3–Q4 2025)"
+    },
+    {
+      "items" : [
+        "Expand cadence reporting to include automated visualizations—dependency graphs, predictive",
+        "Institutionalize comparative analyses of planning methodologies, assessing the efficacy of Gantt",
+        "Develop structured knowledge transfer protocols that preserve institutional memory during",
+        "Synchronize quarterly governance reviews with entity-level compliance audits and payroll optics to",
+        "Introduce cadence stress-testing simulations to evaluate resilience under adverse market or"
+      ],
+      "kind" : "bullets",
+      "slug" : "medium-term-2026",
+      "title" : "Medium-Term (2026)"
+    },
+    {
+      "items" : [
+        "**Cadence as Contract** → Delivery schedules serve as institutional compacts binding technical",
+        "**Governance as Compass** → Oversight operates not as obstruction but as orientation, steering",
+        "**Memory as Infrastructure** → Institutional memory becomes infrastructural, the foundational",
+        "**Rhythm as Resilience** → Cadence functions as an enduring rhythm, surviving personnel changes,",
+        "**Cadence as Ethos** → Project rhythm reflects and reproduces organizational values, translating"
+      ],
+      "kind" : "bullets",
+      "slug" : "guiding-metaphors",
+      "title" : "Guiding Metaphors"
+    },
+    {
+      "items" : [
+        "This agenda articulates the aspirational horizon of the Project Manager agent: cadence is not reducible to an operational rhythm but must be regarded as a structural guarantee of institutional trust. By fusing speed with stewardship—velocity of execution with resilience of compliance—the Project Manager sustains Wrkstrm’s legitimacy across technical, fiscal, and governance domains. Each milestone thus transcends its immediate purpose, becoming an institutionally defensible act substantiated by governance, transparent in its optics, and durable in its memory. Through this synthesis, the Project Manager agent demonstrates how cadence itself matures into a cultural asset, an epistemic framework, and a durable cornerstone of institutional identity."
+      ],
+      "kind" : "paragraphs",
+      "slug" : "closing-compass",
+      "title" : "Closing Compass"
+    }
+  ],
+  "slug" : "project-manager",
+  "sourcePath" : ".clia/agents/templates/project-manager/project-manager.agenda.md",
+  "status" : "draft",
+  "tags" : [
+
+  ],
+  "title" : "🌍 project-manager.agenda.md — Strategic Roadmap and Horizon",
+  "updated" : "2025-09-22T03:36:15Z"
+}

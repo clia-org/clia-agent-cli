@@ -1,0 +1,186 @@
+{
+  "agent" : {
+    "role" : "clia"
+  },
+  "backlog" : [
+    {
+      "title" : "Standardize agent discovery across roots and submodules; define patterns and precedence."
+    },
+    {
+      "title" : "Expose roster command with --kinds/--paths and JSON output for tooling."
+    },
+    {
+      "title" : "Centralize discovery in core library; remove ad-hoc scans across CLIs."
+    },
+    {
+      "title" : "Add fixture-based tests: submodule boundaries, hidden dirs, case sensitivity."
+    },
+    {
+      "title" : "Publish DocC page documenting discovery spec and examples."
+    },
+    {
+      "title" : "Roster facets: group/filter by agentType and contributionTypes; JSON/text output."
+    },
+    {
+      "title" : "Uptime support: expose SLO toggle and offline minutes in Status Menu via CLIA profile commands (docs-first)."
+    },
+    {
+      "title" : "Adapter polish (MVP): implement basic listModels(), keep non-stream v1 for startChat(), friendlier errors, document overrides (base URL, model)."
+    },
+    {
+      "expectedContributions" : {
+        "targets" : {
+          "stabilityMin" : 1.2,
+          "synergyMin" : 1.5
+        },
+        "types" : [
+          "code",
+          "design",
+          "doc"
+        ]
+      },
+      "title" : "S-Type: sync DocC spec with canonical weights and wire CLI scoring to the matrix"
+    },
+    {
+      "title" : "Mentors column: add mentors to key agents (clia, codex) and document process."
+    },
+    {
+      "title" : "Insert 'See also: Mono Handbook (DocC)' cross-links in code/mono package READMEs and AGENTS."
+    },
+    {
+      "title" : "Replace duplicated Build & Verify blocks in package docs with a pointer to apple scope canonical section."
+    },
+    {
+      "title" : "Track Promo telemetry metrics plan; reintroduce swift-prometheus only when CLIA core uses exporter."
+    }
+  ],
+  "dependencies" : [
+
+  ],
+  "horizons" : [
+
+  ],
+  "initiatives" : [
+
+  ],
+  "links" : [
+
+  ],
+  "mentors" : [
+
+  ],
+  "milestones" : [
+    {
+      "due" : "2025-10-04T00:00:00Z",
+      "slug" : "triads-status-doc",
+      "status" : "planned",
+      "title" : "Publish Triads Current Status (DocC)"
+    },
+    {
+      "due" : "2025-10-07T00:00:00Z",
+      "slug" : "stewards-adoption",
+      "status" : "planned",
+      "title" : "Adopt .clia-stewards across new packages"
+    },
+    {
+      "due" : "2025-10-12T00:00:00Z",
+      "expectedContributions" : {
+        "targets" : {
+          "stabilityMin" : 1.2,
+          "synergyMin" : 1.5
+        },
+        "types" : [
+          "code",
+          "design",
+          "doc"
+        ]
+      },
+      "slug" : "s-type-cli",
+      "status" : "planned",
+      "title" : "Implement S-Type mix-score CLI (typed options)"
+    }
+  ],
+  "notes" : [
+    {
+      "author" : "",
+      "blocks" : [
+
+      ]
+    }
+  ],
+  "principles" : [
+    "Automation: use Swift-based launchpad/scratch tools (SPM) and avoid Python for repository automation."
+  ],
+  "risks" : [
+
+  ],
+  "schemaVersion" : "0.4.0",
+  "sections" : [
+    {
+      "items" : [
+        "Promote docc-preview palette + editor into documented workflow for theming across catalogs.",
+        "Publish Mermaid theming guidelines and the inline-CSS post-processor as a reusable script.",
+        "Implement --css option on docc-preview mermaid subcommand for one-shot themed renders.",
+        "Add watch-mode note to Swift Interview Guide QUICKSTART once implemented."
+      ],
+      "kind" : "bullets",
+      "slug" : "followups-2025-12-22",
+      "title" : "Follow-ups (2025‑12‑22)"
+    },
+    {
+      "items" : [
+        "Keep items small, explicit, and testable. Update weekly."
+      ],
+      "kind" : "paragraphs",
+      "slug" : "clia-agent-agenda",
+      "title" : "Clia Agent — AGENDA"
+    },
+    {
+      "items" : [
+        "Implement UptimeTelemetry.Aggregator.summarize: read JSONL, merge UTC splits, clamp today, compute KPIs for 24/5 (Local) and 8/5 (ET).",
+        "Introduce GroupViewModel to adapt GroupConfig for preview; pass selected Source (Uptime|Online) into detail window.",
+        "Persist SLO and Source toggles via UserDefaults; default from GroupConfig.",
+        "Add Swift Testing for scoring (uptime+online), DST edges, UTC day joins, and ‘today’ clamp.",
+        "DocC: add ‘Multi‑Target Telemetry’ quickstart in TauKit with two‑target example and file layout rules.",
+        "Info popover: optionally show resolved UTC filenames for current day per target."
+      ],
+      "kind" : "bullets",
+      "slug" : "next",
+      "title" : "Next"
+    },
+    {
+      "items" : [
+        "Summarize \"What did I do yesterday?\" using prior notes and recent activity files.",
+        "Auto-link to mono activity file when present (e.g., `[[YYYY-MM-DD-mono-activity]]`).",
+        "Add `--notes-path` override; default remains `notes/YYYY/YYYY-MM-DD.md`.",
+        "Add `--wake-format` option with presets: `plain`, `kawara`."
+      ],
+      "kind" : "bullets",
+      "slug" : "later",
+      "title" : "Later"
+    },
+    {
+      "items" : [
+        "CLIA banner: add banner subcommand (Slant Relief; --font/--no-color) and wire to --no-banner semantics",
+        "CloudAgentCLI: add status --with-banner and tests for contributions aggregator (emoji mapping, order)",
+        "Cloud agent docs: draft AWS/GCP primitives catalog (minimal; no Terraform)",
+        "Secrets policy: env-first guidance + keychain migration plan under cloud agent notes",
+        "Dflat: run a score over repo docs; file follow-ups (no auto-fixes)"
+      ],
+      "kind" : "bullets",
+      "slug" : "on-deck-2025-10-03",
+      "title" : "On deck 2025-10-03"
+    }
+  ],
+  "slug" : "clia",
+  "sourcePath" : ".clia/agents/clia/clia.agenda.md",
+  "status" : "draft",
+  "tags" : [
+
+  ],
+  "themes" : [
+
+  ],
+  "title" : "Clia Agent — AGENDA",
+  "updated" : "2025-10-05T00:00:00Z"
+}

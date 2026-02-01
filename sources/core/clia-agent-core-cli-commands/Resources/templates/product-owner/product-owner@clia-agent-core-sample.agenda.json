@@ -1,0 +1,125 @@
+{
+  "agent" : {
+    "role" : "product-manager"
+  },
+  "horizons" : [
+    {
+      "key" : "near",
+      "label" : "Horizon 0"
+    },
+    {
+      "key" : "mid",
+      "label" : "Horizon 2"
+    },
+    {
+      "key" : "far",
+      "label" : "Horizon 3"
+    }
+  ],
+  "links" : [
+
+  ],
+  "mentors" : [
+
+  ],
+  "milestones" : [
+    {
+      "due" : "2025-10-15T00:00:00Z",
+      "id" : "near-1",
+      "status" : "planned",
+      "title" : "Ensure `product_spec.md` stays authoritative and versioned."
+    },
+    {
+      "due" : "2025-10-15T00:00:00Z",
+      "id" : "near-2",
+      "status" : "planned",
+      "title" : "Sync active work with `roadmap.md`."
+    },
+    {
+      "due" : "2025-10-15T00:00:00Z",
+      "id" : "near-1",
+      "status" : "planned",
+      "title" : "Establish theta-harvest tooling and broker integrations."
+    },
+    {
+      "due" : "2025-10-15T00:00:00Z",
+      "id" : "near-2",
+      "status" : "planned",
+      "title" : "Link product specifications to compliance traces and release artifacts."
+    },
+    {
+      "due" : "2025-10-31T00:00:00Z",
+      "id" : "mid-1",
+      "status" : "planned",
+      "title" : "Expand roadmap for cross-platform parity and regulatory contingencies."
+    },
+    {
+      "due" : "2025-10-31T00:00:00Z",
+      "id" : "mid-2",
+      "status" : "planned",
+      "title" : "Introduce metrics to anticipate market volatility and entity constraints."
+    },
+    {
+      "due" : "2025-12-30T00:00:00Z",
+      "id" : "far-1",
+      "status" : "planned",
+      "title" : "Evolve roadmap and metrics to respond to regulatory shifts and market volatility."
+    },
+    {
+      "due" : "2025-12-30T00:00:00Z",
+      "id" : "far-2",
+      "status" : "planned",
+      "title" : "Preserve institutional continuity by updating this agenda with AGENT and AGENCY records."
+    },
+    {
+      "due" : "2025-10-12T00:00:00Z",
+      "expectedContributions" : {
+        "targets" : {
+          "stabilityMin" : 1.2,
+          "synergyMin" : 1.5
+        },
+        "types" : [
+          "code",
+          "design",
+          "doc"
+        ]
+      },
+      "id" : "s-type-cli",
+      "status" : "planned",
+      "title" : "Implement S-Type mix-score CLI (typed options)"
+    }
+  ],
+  "notes" : [
+    {
+      "author" : "",
+      "blocks" : [
+
+      ],
+      "date" : ""
+    }
+  ],
+  "principles" : [
+    "Automation: use Swift-based launchpad/scratch tools (SPM) and avoid Python for repository automation."
+  ],
+  "schemaVersion" : "0.3.1",
+  "sections" : [
+    {
+      "items" : [
+        "Outline major product milestones and governance themes.",
+        "Maintain alignment with trading strategy and entity-level compliance.",
+        "Anchor features to [product_spec.md](product_spec.md) and [roadmap.md](roadmap.md)."
+      ],
+      "kind" : "bullets",
+      "slug" : "purpose",
+      "title" : "Purpose"
+    }
+  ],
+  "slug" : "product-manager",
+  "sourcePath" : ".clia/agents/templates/product-manager/product-manager.agenda.md",
+  "status" : "draft",
+  "tags" : [
+
+  ],
+  "title" : "🧭 product-manager.agenda.md — Strategic Horizon",
+  "updated" : "2025-09-22T03:36:15Z"
+}

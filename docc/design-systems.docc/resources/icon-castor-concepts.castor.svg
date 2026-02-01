@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" role="img" aria-label="Icon: Gemini Concepts">
+  <!-- Mosaic Icon -->
+  <g transform="translate(256, 256)">
+     <circle r="220" fill="#0F172A"/>
+     
+     <!-- Sectors -->
+     <path d="M0 0 L0 -180 A 180 180 0 0 1 155 -90 Z" fill="#34D399"/> <!-- Calm -->
+     <path d="M0 0 L155 -90 A 180 180 0 0 1 155 90 Z" fill="#F59E0B"/> <!-- Focus -->
+     <path d="M0 0 L155 90 A 180 180 0 0 1 0 180 Z" fill="#EF4444"/> <!-- Danger -->
+     
+     <circle r="60" fill="#fff"/>
+  </g>
+</svg>

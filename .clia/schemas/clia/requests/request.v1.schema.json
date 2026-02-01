@@ -1,0 +1,139 @@
+{
+  "$id" : "https://wrkstrm.dev/schemas/clia/requests/request.v1.schema.json",
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties" : true,
+  "properties" : {
+    "acceptanceCriteria" : {
+      "default" : [
+
+      ],
+      "items" : {
+        "type" : "string"
+      },
+      "type" : "array"
+    },
+    "attachments" : {
+      "default" : [
+
+      ],
+      "items" : {
+        "type" : [
+          "string",
+          "object"
+        ]
+      },
+      "type" : "array"
+    },
+    "created" : {
+      "format" : "date-time",
+      "type" : "string"
+    },
+    "id" : {
+      "type" : "string"
+    },
+    "labels" : {
+      "default" : [
+
+      ],
+      "items" : {
+        "type" : "string"
+      },
+      "type" : "array"
+    },
+    "links" : {
+      "default" : [
+
+      ],
+      "items" : {
+        "type" : "object"
+      },
+      "type" : "array"
+    },
+    "log" : {
+      "default" : [
+
+      ],
+      "items" : {
+        "additionalProperties" : true,
+        "properties" : {
+          "action" : {
+            "type" : "string"
+          },
+          "by" : {
+            "type" : "string"
+          },
+          "note" : {
+            "type" : "string"
+          },
+          "ts" : {
+            "format" : "date-time",
+            "type" : "string"
+          }
+        },
+        "required" : [
+          "ts",
+          "by",
+          "action"
+        ],
+        "type" : "object"
+      },
+      "type" : "array"
+    },
+    "milestones" : {
+      "default" : [
+
+      ],
+      "items" : {
+        "type" : [
+          "string",
+          "object"
+        ]
+      },
+      "type" : "array"
+    },
+    "owner" : {
+      "type" : "string"
+    },
+    "priority" : {
+      "enum" : [
+        "P0",
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "type" : "string"
+    },
+    "schemaVersion" : {
+      "pattern" : "^0\\.[0-9]+\\.[0-9]+$",
+      "type" : "string"
+    },
+    "status" : {
+      "enum" : [
+        "proposal",
+        "inProgress",
+        "blocked",
+        "completed",
+        "sunset"
+      ],
+      "type" : "string"
+    },
+    "storyPoints" : {
+      "type" : [
+        "number",
+        "integer"
+      ]
+    },
+    "title" : {
+      "type" : "string"
+    }
+  },
+  "required" : [
+    "id",
+    "title",
+    "status",
+    "created",
+    "owner"
+  ],
+  "title" : "CLIA Request",
+  "type" : "object"
+}

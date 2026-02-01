@@ -1,0 +1,30 @@
+{
+  "agentHandle" : "CLIA",
+  "attempts" : 0,
+  "author" : "Rismay",
+  "created" : "2025-09-26T01:35:17Z",
+  "id" : "2025-09-26T01:35:17Z-clia-motto-b47f",
+  "includeChats" : true,
+  "length" : "long",
+  "maxChats" : 2,
+  "motto" : "Ship safely; debug with intent.",
+  "notes" : [
+    "Draft created locally; queued for manual publish.",
+    "No network actions performed."
+  ],
+  "schema" : "https://wrkstrm.dev/schemas/clia/motto-publish-queue.v1.json",
+  "slug" : "clia",
+  "sources" : {
+    "blog" : ".clia/agents/clia/.generated/mottos/2025-09-26/01-35-17/blog.md"
+  },
+  "state" : "queued",
+  "targets" : {
+    "blog" : {
+      "dest" : "docs/blog/2025/09/clia-2025-09-26-motto.md",
+      "enabled" : true
+    },
+    "twitter" : {
+      "enabled" : false
+    }
+  }
+}

@@ -1,0 +1,628 @@
+{
+  "$schema" : "wrkspec://clia/gfm-emoji-shortcodes.v1",
+  "coverage" : "curated",
+  "modifiers" : {
+    "skin-tone-2" : "🏻",
+    "skin-tone-3" : "🏼",
+    "skin-tone-4" : "🏽",
+    "skin-tone-5" : "🏾",
+    "skin-tone-6" : "🏿"
+  },
+  "notes" : "Curated subset of common GitHub shortcodes for docs, issues, PRs. Keys are GFM shortcodes; values include the Unicode emoji and useful synonyms for search.",
+  "shortcodes" : {
+    "-1" : {
+      "emoji" : "👎",
+      "synonyms" : [
+        "thumbsdown",
+        "reject",
+        "dislike"
+      ]
+    },
+    "+1" : {
+      "emoji" : "👍",
+      "synonyms" : [
+        "thumbsup",
+        "approve",
+        "like",
+        "ack"
+      ]
+    },
+    "ballot_box_with_check" : {
+      "emoji" : "☑️",
+      "synonyms" : [
+        "checked",
+        "task-done",
+        "complete"
+      ]
+    },
+    "bar_chart" : {
+      "emoji" : "📊",
+      "synonyms" : [
+        "metrics",
+        "stats",
+        "analytics"
+      ]
+    },
+    "beetle" : {
+      "emoji" : "🪲",
+      "synonyms" : [
+        "bug-alt",
+        "regression"
+      ]
+    },
+    "bell" : {
+      "emoji" : "🔔",
+      "synonyms" : [
+        "notify",
+        "alert",
+        "reminder"
+      ]
+    },
+    "bellhop_bell" : {
+      "emoji" : "🛎️",
+      "synonyms" : [
+        "notify",
+        "ping",
+        "nudge"
+      ]
+    },
+    "bookmark" : {
+      "emoji" : "🔖",
+      "synonyms" : [
+        "mark",
+        "save"
+      ]
+    },
+    "bookmark_tabs" : {
+      "emoji" : "📑",
+      "synonyms" : [
+        "index",
+        "tabs",
+        "sections"
+      ]
+    },
+    "boom" : {
+      "emoji" : "💥",
+      "synonyms" : [
+        "breaking",
+        "impact",
+        "crash"
+      ]
+    },
+    "bug" : {
+      "emoji" : "🐛",
+      "synonyms" : [
+        "defect",
+        "issue",
+        "regression"
+      ]
+    },
+    "bulb" : {
+      "emoji" : "💡",
+      "synonyms" : [
+        "idea",
+        "tip",
+        "insight"
+      ]
+    },
+    "calendar" : {
+      "emoji" : "📆",
+      "synonyms" : [
+        "schedule",
+        "plan",
+        "pjm",
+        "project management"
+      ]
+    },
+    "chart_with_downwards_trend" : {
+      "emoji" : "📉",
+      "synonyms" : [
+        "decline",
+        "decrease",
+        "regress"
+      ]
+    },
+    "chart_with_upwards_trend" : {
+      "emoji" : "📈",
+      "synonyms" : [
+        "growth",
+        "increase",
+        "improve"
+      ]
+    },
+    "clap" : {
+      "emoji" : "👏",
+      "synonyms" : [
+        "applause",
+        "kudos",
+        "well-done"
+      ]
+    },
+    "clipboard" : {
+      "emoji" : "📋",
+      "synonyms" : [
+        "task",
+        "checklist",
+        "organize"
+      ]
+    },
+    "computer" : {
+      "emoji" : "💻",
+      "synonyms" : [
+        "code",
+        "coding",
+        "implementation"
+      ]
+    },
+    "construction" : {
+      "emoji" : "🚧",
+      "synonyms" : [
+        "maintenance",
+        "wip",
+        "blocked"
+      ]
+    },
+    "crescent_moon" : {
+      "emoji" : "🌙",
+      "synonyms" : [
+        "night",
+        "good-night"
+      ]
+    },
+    "exclamation" : {
+      "emoji" : "❗",
+      "synonyms" : [
+        "important",
+        "alert"
+      ]
+    },
+    "eyes" : {
+      "emoji" : "👀",
+      "synonyms" : [
+        "review",
+        "look",
+        "watch"
+      ]
+    },
+    "file_folder" : {
+      "emoji" : "📁",
+      "synonyms" : [
+        "folder",
+        "directory"
+      ]
+    },
+    "fire" : {
+      "emoji" : "🔥",
+      "synonyms" : [
+        "hotfix",
+        "incident",
+        "spike"
+      ]
+    },
+    "gear" : {
+      "emoji" : "⚙️",
+      "synonyms" : [
+        "settings",
+        "config",
+        "engine"
+      ]
+    },
+    "grey_exclamation" : {
+      "emoji" : "❕",
+      "synonyms" : [
+        "note",
+        "important"
+      ]
+    },
+    "grey_question" : {
+      "emoji" : "❔",
+      "synonyms" : [
+        "clarify",
+        "follow-up"
+      ]
+    },
+    "hammer_and_wrench" : {
+      "emoji" : "🛠️",
+      "synonyms" : [
+        "build",
+        "refactor",
+        "tools"
+      ]
+    },
+    "heart" : {
+      "emoji" : "❤️",
+      "synonyms" : [
+        "love",
+        "like"
+      ]
+    },
+    "heavy_check_mark" : {
+      "emoji" : "✔️",
+      "synonyms" : [
+        "check",
+        "tick",
+        "acknowledged"
+      ]
+    },
+    "hourglass" : {
+      "emoji" : "⌛️",
+      "synonyms" : [
+        "deadline",
+        "timebox",
+        "timer"
+      ]
+    },
+    "hourglass_flowing_sand" : {
+      "emoji" : "⏳",
+      "synonyms" : [
+        "pending",
+        "in-progress",
+        "waiting"
+      ]
+    },
+    "inbox_tray" : {
+      "emoji" : "📥",
+      "synonyms" : [
+        "incoming",
+        "inbound",
+        "receive"
+      ]
+    },
+    "information_source" : {
+      "emoji" : "ℹ️",
+      "synonyms" : [
+        "info",
+        "details",
+        "note"
+      ]
+    },
+    "iphone" : {
+      "emoji" : "📱",
+      "synonyms" : [
+        "mobile",
+        "ios",
+        "app"
+      ]
+    },
+    "joystick" : {
+      "emoji" : "🕹️",
+      "synonyms" : [
+        "control",
+        "interactive",
+        "manual"
+      ]
+    },
+    "key" : {
+      "emoji" : "🔑",
+      "synonyms" : [
+        "credential",
+        "token",
+        "secret"
+      ]
+    },
+    "link" : {
+      "emoji" : "🔗",
+      "synonyms" : [
+        "url",
+        "reference",
+        "crosslink"
+      ]
+    },
+    "lock" : {
+      "emoji" : "🔒",
+      "synonyms" : [
+        "security",
+        "privacy",
+        "locked"
+      ]
+    },
+    "loudspeaker" : {
+      "emoji" : "📢",
+      "synonyms" : [
+        "announce",
+        "broadcast"
+      ]
+    },
+    "mag" : {
+      "emoji" : "🔍",
+      "synonyms" : [
+        "search",
+        "investigate",
+        "inspect"
+      ]
+    },
+    "mag_right" : {
+      "emoji" : "🔎",
+      "synonyms" : [
+        "search",
+        "inspect",
+        "zoom"
+      ]
+    },
+    "mega" : {
+      "emoji" : "📣",
+      "synonyms" : [
+        "promotion",
+        "comms",
+        "marketing"
+      ]
+    },
+    "memo" : {
+      "emoji" : "📝",
+      "synonyms" : [
+        "note",
+        "notes",
+        "docs",
+        "write"
+      ]
+    },
+    "open_file_folder" : {
+      "emoji" : "📂",
+      "synonyms" : [
+        "folder-open",
+        "directory-open"
+      ]
+    },
+    "outbox_tray" : {
+      "emoji" : "📤",
+      "synonyms" : [
+        "outgoing",
+        "outbound",
+        "send"
+      ]
+    },
+    "package" : {
+      "emoji" : "📦",
+      "synonyms" : [
+        "release",
+        "artifact",
+        "package"
+      ]
+    },
+    "page_facing_up" : {
+      "emoji" : "📄",
+      "synonyms" : [
+        "doc",
+        "document",
+        "spec"
+      ]
+    },
+    "paperclip" : {
+      "emoji" : "📎",
+      "synonyms" : [
+        "attach",
+        "attachment"
+      ]
+    },
+    "pencil2" : {
+      "emoji" : "✏️",
+      "synonyms" : [
+        "edit",
+        "update",
+        "revise"
+      ]
+    },
+    "pushpin" : {
+      "emoji" : "📌",
+      "synonyms" : [
+        "pin",
+        "pinned",
+        "bookmark"
+      ]
+    },
+    "question" : {
+      "emoji" : "❓",
+      "synonyms" : [
+        "help",
+        "query",
+        "unknown"
+      ]
+    },
+    "recycle" : {
+      "emoji" : "♻️",
+      "synonyms" : [
+        "reuse",
+        "cleanup",
+        "sustainability"
+      ]
+    },
+    "robot" : {
+      "emoji" : "🤖",
+      "synonyms" : [
+        "bot",
+        "automation",
+        "android"
+      ]
+    },
+    "rocket" : {
+      "emoji" : "🚀",
+      "synonyms" : [
+        "launch",
+        "ship",
+        "deploy",
+        "go-live"
+      ]
+    },
+    "satellite" : {
+      "emoji" : "🛰️",
+      "synonyms" : [
+        "telemetry",
+        "signal",
+        "monitoring"
+      ]
+    },
+    "seedling" : {
+      "emoji" : "🌱",
+      "synonyms" : [
+        "start",
+        "init",
+        "new"
+      ]
+    },
+    "sparkles" : {
+      "emoji" : "✨",
+      "synonyms" : [
+        "shine",
+        "glitter",
+        "polish"
+      ]
+    },
+    "speech_balloon" : {
+      "emoji" : "💬",
+      "synonyms" : [
+        "discussion",
+        "comment",
+        "chat"
+      ]
+    },
+    "stopwatch" : {
+      "emoji" : "⏱️",
+      "synonyms" : [
+        "timer",
+        "duration",
+        "measure"
+      ]
+    },
+    "sunny" : {
+      "emoji" : "☀️",
+      "synonyms" : [
+        "day",
+        "good-day",
+        "sun"
+      ]
+    },
+    "sunrise" : {
+      "emoji" : "🌅",
+      "synonyms" : [
+        "morning",
+        "start",
+        "good-morning"
+      ]
+    },
+    "tada" : {
+      "emoji" : "🎉",
+      "synonyms" : [
+        "celebrate",
+        "congrats",
+        "party"
+      ]
+    },
+    "test_tube" : {
+      "emoji" : "🧪",
+      "synonyms" : [
+        "experiment",
+        "test",
+        "lab"
+      ]
+    },
+    "thought_balloon" : {
+      "emoji" : "💭",
+      "synonyms" : [
+        "brainstorm",
+        "idea",
+        "thinking"
+      ]
+    },
+    "toolbox" : {
+      "emoji" : "🧰",
+      "synonyms" : [
+        "tools",
+        "kit",
+        "utilities"
+      ]
+    },
+    "traffic_light" : {
+      "emoji" : "🚦",
+      "synonyms" : [
+        "gate",
+        "approval",
+        "status"
+      ]
+    },
+    "triangular_flag_on_post" : {
+      "emoji" : "🚩",
+      "synonyms" : [
+        "flag",
+        "milestone",
+        "risk"
+      ]
+    },
+    "truck" : {
+      "emoji" : "🚚",
+      "synonyms" : [
+        "deliver",
+        "shipment",
+        "distribution"
+      ]
+    },
+    "unlock" : {
+      "emoji" : "🔓",
+      "synonyms" : [
+        "unlocked",
+        "open",
+        "access"
+      ]
+    },
+    "warning" : {
+      "emoji" : "⚠️",
+      "synonyms" : [
+        "caution",
+        "risk",
+        "attention"
+      ]
+    },
+    "wave" : {
+      "emoji" : "👋",
+      "synonyms" : [
+        "hello",
+        "hi",
+        "welcome"
+      ]
+    },
+    "white_check_mark" : {
+      "emoji" : "✅",
+      "synonyms" : [
+        "pass",
+        "done",
+        "success",
+        "complete",
+        "ok"
+      ]
+    },
+    "wrench" : {
+      "emoji" : "🔧",
+      "synonyms" : [
+        "tool",
+        "fix",
+        "maintenance"
+      ]
+    },
+    "x" : {
+      "emoji" : "❌",
+      "synonyms" : [
+        "fail",
+        "error",
+        "no",
+        "blocked"
+      ]
+    },
+    "zap" : {
+      "emoji" : "⚡️",
+      "synonyms" : [
+        "fast",
+        "performance",
+        "power"
+      ]
+    },
+    "zzz" : {
+      "emoji" : "💤",
+      "synonyms" : [
+        "sleep",
+        "winddown",
+        "rest"
+      ]
+    }
+  },
+  "source" : "https://github.com/github/gemoji",
+  "version" : "1.0.0"
+}

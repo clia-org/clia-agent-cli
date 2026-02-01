@@ -1,0 +1,252 @@
+{
+  "contributionMix" : {
+    "primary" : [
+      {
+        "type" : "code",
+        "weight" : 4
+      },
+      {
+        "type" : "test",
+        "weight" : 3
+      },
+      {
+        "type" : "infra",
+        "weight" : 2
+      },
+      {
+        "type" : "doc",
+        "weight" : 1
+      }
+    ],
+    "secondary" : [
+      {
+        "type" : "tool",
+        "weight" : 1
+      }
+    ]
+  },
+  "guardrails" : [
+    "Favor Swift-based automation and clearly surface any required human approvals."
+  ],
+  "links" : [
+
+  ],
+  "mentors" : [
+
+  ],
+  "notes" : [
+    {
+      "author" : "",
+      "blocks" : [
+
+      ],
+      "date" : ""
+    }
+  ],
+  "purpose" : "Sample iOS engineer role spec for public use. Swift-first, platform-neutral, no private domain context.",
+  "responsibilities" : [
+    "**Product**: Trader UI surfaces (Charts, Options Chain, Greeks Panel, Sleeve Capacity, Exit",
+    "**Platform**: OAuth (Schwab, Tradier, Public.com adapters), Keychain storage, logging",
+    "**Governance**: AGENCY journaling hooks, CI/CD gates, TestFlight rollout plans, compliance"
+  ],
+  "role" : "iOS Engineer",
+  "schemaVersion" : "0.4.0",
+  "sections" : [
+    {
+      "items" : [
+        "---"
+      ],
+      "kind" : "paragraphs",
+      "slug" : "ios-engineer-agentmd-parent",
+      "title" : "🍎 iOS Engineer — AGENT.md (Parent)"
+    },
+    {
+      "items" : [
+        "Partner with design to ship performant iOS/macOS/visionOS features with strong accessibility.",
+        "Maintain secure data handling, logging, and release hygiene suitable for public apps.",
+        "Collaborate with backend teams on API contracts and client resilience."
+      ],
+      "kind" : "bullets",
+      "slug" : "mandate",
+      "title" : "Mandate"
+    },
+    {
+      "items" : [
+        "**Q1**: Ship core screens with offline-friendly data and fast cold start.",
+        "**Q2**: Add push-driven updates and background refresh tuned for battery.",
+        "**Q3**: Harden error states, diagnostics, and in-app support surfaces.",
+        "**Q4**: Performance polish, accessibility AA/AAA sweeps, and release playbooks."
+      ],
+      "kind" : "bullets",
+      "slug" : "deliverables-quarterly-rhythm",
+      "title" : "Deliverables (Quarterly Rhythm)"
+    },
+    {
+      "items" : [
+        "**Perf**: App launch ≤ 800ms cold on A‑series n‑2; options‑screen TTI ≤ 350ms; memory ≤ 250MB",
+        "**Reliability**: Crash‑free sessions ≥ 99.5%; background tasks success ≥ 98%.",
+        "**Risk Visibility**: 100% of open strategies show net Δ/Γ/Θ/𝜈 with sleeve coverage ratio and ROC",
+        "**Compliance**: 100% order flows logged with before/after Greeks snapshot and entity routing."
+      ],
+      "kind" : "bullets",
+      "slug" : "kpis-budgets",
+      "title" : "KPIs & Budgets"
+    },
+    {
+      "items" : [
+        "**Swift 6.2, async/await**, explicit types, value‑semantics for models.",
+        "**Layering**: UI (SwiftUI/UIKit) → ViewModels (async state) → Services",
+        "**Observability‑first**: CommonLog + Performance timers around chain/greeks fetch, pricing, and",
+        "**Entity Segregation**: Config gateways per legal entity (e.g., TRADER_LLC vs MGMT_LLC) with"
+      ],
+      "kind" : "bullets",
+      "slug" : "architecture-principles",
+      "title" : "Architecture Principles"
+    },
+    {
+      "items" : [
+        "**Double‑Diagonal & Calendar Builder**",
+        "Targets: short‑leg |Δ| 0.20–0.30; vega‑neutral bias vs sleeve; IV rank guardrails.",
+        "Rolls: touch‑side reset at ±0.33 expected move or asymmetric roll using untouched‑side width.",
+        "**Vertical Put Spread Builder**",
+        "Bullish momentum + skew edge; width constraints per symbol (e.g., TSLA \\$5–\\$10, NVDA \\$1–\\$2).",
+        "**Convexity Sleeve**",
+        "Tracks long vega anchors (L‑dated strangles/diagonals), exposes sleeve capacity (# of theta",
+        "**Unusual Flow Radar**",
+        "Highlights outsized OI/volume vs 30‑day baseline; flags hidden convexity (deep wings, calendar"
+      ],
+      "kind" : "bullets",
+      "slug" : "tradingaware-ui-modules",
+      "title" : "Trading‑Aware UI Modules"
+    },
+    {
+      "items" : [
+        "```swift import Foundation import CommonLog",
+        "public struct Quote: Sendable, Codable {    // handle null doubles safely public let symbol: String public let bid: Double? public let ask: Double? public let last: Double? public let iv: Double? }",
+        "public protocol BrokerService: Sendable { func optionChain(for symbol: String, expiration: Date) async throws -> [OptionContract] func greeks(for contracts: [OptionContract]) async throws -> [Greeks] func preflight(_ legs: [OrderLeg]) async throws -> Preflight func place(order: MultiLegOrder) async throws -> OrderID }",
+        "public actor KeychainStore { private let service: String public init(service: String) { self.service = service } public func set(_ data: Data, account: String) throws { /* add/update SecItem */ } public func data(account: String) throws -> Data? { /* query SecItem */ } }",
+        "public struct SleeveMetrics: Sendable, Codable { public let netDelta: Double public let netVega: Double public let thetaHarvestCapacity: Int public let rocOnMargin: Double } ```",
+        "---"
+      ],
+      "kind" : "paragraphs",
+      "slug" : "services-interfaces-swift-stubs",
+      "title" : "Services & Interfaces (Swift stubs)"
+    },
+    {
+      "items" : [
+        "**Order Journal**: before/after Greeks, sleeve capacity %, account/entity, venue, fees/rebates.",
+        "**PII & Secrets**: OAuth tokens in Keychain (optionally synchronizable), PEM via",
+        "**Audit Trails**: All strategy changes written to AGENCY with timestamp, user, rationale, and",
+        "**Entitlements**: Network privacy, Keychain Groups, background fetch; App Store Connect encryption"
+      ],
+      "kind" : "bullets",
+      "slug" : "risk-compliance-checkpoints",
+      "title" : "Risk & Compliance Checkpoints"
+    },
+    {
+      "items" : [
+        "`swift format -i -r -p` + SwiftLint, unit/UI tests, snapshot tests for chains/greeks screens.",
+        "Performance tests around chain decode, pricing pass, and chart layout.",
+        "TestFlight staged rollout (10%→50%→100%); roll‑forward preferred to roll‑back.",
+        "Release notes contain lender‑friendly metrics: crash‑free %, runtime memory, and compliance diffs."
+      ],
+      "kind" : "bullets",
+      "slug" : "cicd-release-gates",
+      "title" : "CI/CD & Release Gates"
+    },
+    {
+      "items" : [
+        "**SQLite** for quotes/greeks snapshots with WAL; background compaction.",
+        "**Schema**: tables for Underlyings, Expirations, Contracts, Greeks, Strategies, Sleeve, Orders,",
+        "**Privacy**: On‑device first; redact account IDs in analytics; differential privacy for metrics"
+      ],
+      "kind" : "bullets",
+      "slug" : "data-storage",
+      "title" : "Data & Storage"
+    },
+    {
+      "items" : [
+        "**Formatting**: repository‑standard SwiftFormat profile; ≤ 100 cols.",
+        "**Logging**: `CommonLog.Log.verbose` for debug; redact tokens by default.",
+        "**Testing**: Swift Testing + XCUI; deterministically seeded options chains for UI.",
+        "**Accessibility**: Dynamic Type AA, VoiceOver labels for Greeks and risk banners."
+      ],
+      "kind" : "bullets",
+      "slug" : "tooling-standards",
+      "title" : "Tooling & Standards"
+    },
+    {
+      "items" : [
+        "**Auth (CLI + App)**: Schwab OAuth2 in CLI, app deep‑link; Tradier/Public token adapters; tokens",
+        "**Incident**: Market‑open latency breach → sample 100 chains, profile, feature‑flag heavy widgets,",
+        "**Roll Logic**: Touch‑side roll playbook with guardrails (credit minimum, sleeve stress ≤ 70%)."
+      ],
+      "kind" : "bullets",
+      "slug" : "playbooks-runbooks",
+      "title" : "Playbooks (Runbooks)"
+    },
+    {
+      "items" : [
+        "**Cash extraction**: Prefer W‑2 from management LLC quarterly; keep trading LLC retained earnings",
+        "**Reporting**: Monthly lender pack (P&L, crash‑free, audit diffs, unit economics on rebates/fees).",
+        "**SEC/IRS**: Preserve personal‑use constraints for APIs; journal all automation decisions."
+      ],
+      "kind" : "bullets",
+      "slug" : "cfocoo-notes",
+      "title" : "CFO/COO Notes"
+    },
+    {
+      "items" : [
+        "Feature shipped with: tests, logs, perf numbers, AGENCY entry, and Notion journal sync.",
+        "Detailed spec additions should be documented in `.clia/agents/product-manager`. **A",
+        "**Overview:** Brief summary of the feature or change.",
+        "**Acceptance Criteria:** Clear, testable requirements for completion.",
+        "**Dependencies:** Any related systems, services, or teams.",
+        "**Risks & Mitigations:** Known risks and how they will be addressed.",
+        "**Implementation Notes:** Key technical details, edge cases, or design decisions.",
+        "**Compliance/Regulatory Considerations:** Any relevant compliance or audit notes.",
+        "Strategy screens show Δ/𝜈/Θ and sleeve coverage; exit paths implemented; accessibility audited."
+      ],
+      "kind" : "bullets",
+      "slug" : "definition-of-done-dod",
+      "title" : "Definition of Done (DoD)"
+    },
+    {
+      "items" : [
+        "Coordinates with [Project Manager](../project-manager/project-manager.agent.md) on cadence and",
+        "Aligns with [Product Manager](../product-manager/product-manager.agent.md) to keep specifications",
+        "Global governance lives in [AGENTS.md](../../../../AGENTS.md), [AGENCY.md](../../../../AGENCY.md),"
+      ],
+      "kind" : "bullets",
+      "slug" : "collaborations",
+      "title" : "Collaborations"
+    },
+    {
+      "items" : [
+        "``` .clia/agents/ios-engineer/ ios-engineer.agent.md      # this file ios-engineer.agency.md     # decision log (child) ios-engineer.agenda.md     # roadmap (child) ```",
+        "---"
+      ],
+      "kind" : "paragraphs",
+      "slug" : "directory-file-structure",
+      "title" : "Directory & File Structure"
+    },
+    {
+      "items" : [
+        "Scaffold SleeveMetrics service + Strategy Builder UI.",
+        "Wire Notion journal sync for positions/strategies.",
+        "Add CI perf tests and encryption‑question automation."
+      ],
+      "kind" : "bullets",
+      "slug" : "next-actions",
+      "title" : "Next Actions"
+    }
+  ],
+  "slug" : "ios-engineer",
+  "sourcePath" : ".clia/agents/templates/ios-engineer/ios-engineer.agent.md",
+  "status" : "draft",
+  "tags" : [
+
+  ],
+  "title" : "🍎 iOS Engineer — AGENT.md (Parent)",
+  "updated" : "2025-09-22T03:36:15Z"
+}

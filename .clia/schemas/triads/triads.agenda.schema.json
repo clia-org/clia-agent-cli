@@ -1,0 +1,594 @@
+{
+  "$defs" : {
+    "BacklogItem" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "blockedBy" : {
+          "items" : {
+            "type" : "string"
+          },
+          "type" : "array"
+        },
+        "focusPoints" : {
+          "type" : "number"
+        },
+        "id" : {
+          "type" : "string"
+        },
+        "labels" : {
+          "items" : {
+            "type" : "string"
+          },
+          "type" : "array"
+        },
+        "priority" : {
+          "enum" : [
+            "p0",
+            "p1",
+            "p2",
+            "p3",
+            "p4"
+          ],
+          "type" : "string"
+        },
+        "storyPoints" : {
+          "type" : "number"
+        },
+        "title" : {
+          "type" : "string"
+        }
+      },
+      "required" : [
+        "id",
+        "title"
+      ],
+      "type" : "object"
+    },
+    "CrossLinks" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "agents" : {
+          "items" : {
+            "type" : "string"
+          },
+          "type" : "array"
+        },
+        "docc" : {
+          "items" : {
+            "type" : "string"
+          },
+          "type" : "array"
+        },
+        "docs" : {
+          "items" : {
+            "type" : "string"
+          },
+          "type" : "array"
+        },
+        "issues" : {
+          "items" : {
+            "type" : "string"
+          },
+          "type" : "array"
+        },
+        "packages" : {
+          "items" : {
+            "type" : "string"
+          },
+          "type" : "array"
+        }
+      },
+      "type" : "object"
+    },
+    "Dependency" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "kind" : {
+          "enum" : [
+            "internal-package",
+            "external-service",
+            "human-approval",
+            "platform",
+            "other"
+          ],
+          "type" : "string"
+        },
+        "ref" : {
+          "type" : "string"
+        },
+        "version" : {
+          "type" : "string"
+        }
+      },
+      "required" : [
+        "id",
+        "kind"
+      ],
+      "type" : "object"
+    },
+    "ExtensionValue" : {
+      "type" : [
+        "string",
+        "number",
+        "boolean",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "GovernanceCadence" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "reviews" : {
+          "items" : {
+            "additionalProperties" : false,
+            "properties" : {
+              "frequency" : {
+                "type" : "string"
+              },
+              "kind" : {
+                "enum" : [
+                  "weekly",
+                  "monthly",
+                  "quarterly",
+                  "ad-hoc"
+                ],
+                "type" : "string"
+              },
+              "roles" : {
+                "items" : {
+                  "type" : "string"
+                },
+                "type" : "array"
+              }
+            },
+            "required" : [
+              "kind",
+              "frequency"
+            ],
+            "type" : "object"
+          },
+          "type" : "array"
+        }
+      },
+      "type" : "object"
+    },
+    "Horizon" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "key" : {
+          "type" : "string"
+        },
+        "label" : {
+          "type" : "string"
+        },
+        "window" : {
+          "type" : "string"
+        }
+      },
+      "required" : [
+        "key"
+      ],
+      "type" : "object"
+    },
+    "I18n" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "defaultLocale" : {
+          "default" : "en-US",
+          "type" : "string"
+        },
+        "strings" : {
+          "additionalProperties" : {
+            "additionalProperties" : {
+              "type" : [
+                "string",
+                "null"
+              ]
+            },
+            "type" : "object"
+          },
+          "type" : "object"
+        }
+      },
+      "type" : "object"
+    },
+    "Initiative" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "dependsOn" : {
+          "items" : {
+            "type" : "string"
+          },
+          "type" : "array"
+        },
+        "description" : {
+          "type" : "string"
+        },
+        "id" : {
+          "type" : "string"
+        },
+        "metricsRef" : {
+          "items" : {
+            "type" : "string"
+          },
+          "type" : "array"
+        },
+        "owner" : {
+          "$ref" : "triads.core.json#/$defs/PersonRef"
+        },
+        "status" : {
+          "enum" : [
+            "planned",
+            "in-progress",
+            "blocked",
+            "done",
+            "dropped"
+          ],
+          "type" : "string"
+        },
+        "title" : {
+          "type" : "string"
+        }
+      },
+      "required" : [
+        "id",
+        "title"
+      ],
+      "type" : "object"
+    },
+    "KPI" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "higherIsBetter" : {
+          "default" : true,
+          "type" : "boolean"
+        },
+        "id" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "target" : {
+          "type" : "number"
+        },
+        "unit" : {
+          "type" : "string"
+        }
+      },
+      "required" : [
+        "id",
+        "name"
+      ],
+      "type" : "object"
+    },
+    "Metrics" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "coverageTargets" : {
+          "additionalProperties" : false,
+          "properties" : {
+            "branches" : {
+              "maximum" : 100,
+              "minimum" : 0,
+              "type" : "number"
+            },
+            "lines" : {
+              "maximum" : 100,
+              "minimum" : 0,
+              "type" : "number"
+            }
+          },
+          "type" : "object"
+        },
+        "kpis" : {
+          "items" : {
+            "$ref" : "#/$defs/KPI"
+          },
+          "type" : "array"
+        },
+        "pointsPolicy" : {
+          "additionalProperties" : false,
+          "properties" : {
+            "notes" : {
+              "type" : "string"
+            },
+            "pointsPerMinute" : {
+              "default" : 0.20000000000000001,
+              "type" : "number"
+            },
+            "storyPointsScale" : {
+              "default" : "modified-fibonacci",
+              "type" : "string"
+            }
+          },
+          "type" : "object"
+        }
+      },
+      "type" : "object"
+    },
+    "Milestone" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "acceptance" : {
+          "items" : {
+            "type" : "string"
+          },
+          "type" : "array"
+        },
+        "due" : {
+          "type" : "string"
+        },
+        "id" : {
+          "type" : "string"
+        },
+        "links" : {
+          "items" : {
+            "$ref" : "triads.core.json#/$defs/Link"
+          },
+          "type" : "array"
+        },
+        "status" : {
+          "enum" : [
+            "planned",
+            "in-progress",
+            "at-risk",
+            "done",
+            "dropped"
+          ],
+          "type" : "string"
+        },
+        "title" : {
+          "type" : "string"
+        }
+      },
+      "required" : [
+        "id",
+        "title"
+      ],
+      "type" : "object"
+    },
+    "Risk" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "likelihood" : {
+          "enum" : [
+            "unlikely",
+            "possible",
+            "likely"
+          ],
+          "type" : "string"
+        },
+        "mitigation" : {
+          "type" : "string"
+        },
+        "owner" : {
+          "$ref" : "triads.core.v0.json#/$defs/PersonRef"
+        },
+        "severity" : {
+          "enum" : [
+            "low",
+            "medium",
+            "high",
+            "critical"
+          ],
+          "type" : "string"
+        },
+        "title" : {
+          "type" : "string"
+        }
+      },
+      "required" : [
+        "id",
+        "title",
+        "severity"
+      ],
+      "type" : "object"
+    },
+    "Theme" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "measures" : {
+          "items" : {
+            "type" : "string"
+          },
+          "type" : "array"
+        },
+        "outcome" : {
+          "type" : "string"
+        },
+        "slug" : {
+          "pattern" : "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "type" : "string"
+        },
+        "title" : {
+          "type" : "string"
+        }
+      },
+      "required" : [
+        "slug",
+        "title"
+      ],
+      "type" : "object"
+    }
+  },
+  "$id" : "https://wrkstrm.dev/schemas/triads/agenda.schema.json",
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties" : false,
+  "description" : "Roadmap (future) for a single agent. Canonical source for <slug>.agenda.md.",
+  "properties" : {
+    "agent" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "lLevel" : {
+          "enum" : [
+            "L0",
+            "L1",
+            "L2",
+            "L3",
+            "L4"
+          ],
+          "type" : "string"
+        },
+        "role" : {
+          "type" : "string"
+        },
+        "scope" : {
+          "type" : "string"
+        }
+      },
+      "required" : [
+        "role"
+      ],
+      "type" : "object"
+    },
+    "backlog" : {
+      "items" : {
+        "$ref" : "#/$defs/BacklogItem"
+      },
+      "type" : "array"
+    },
+    "cadence" : {
+      "$ref" : "#/$defs/GovernanceCadence"
+    },
+    "crossLinks" : {
+      "$ref" : "#/$defs/CrossLinks"
+    },
+    "dependencies" : {
+      "items" : {
+        "$ref" : "#/$defs/Dependency"
+      },
+      "type" : "array"
+    },
+    "documentVersion" : {
+      "type" : "string"
+    },
+    "extensions" : {
+      "additionalProperties" : {
+        "$ref" : "#/$defs/ExtensionValue"
+      },
+      "propertyNames" : {
+        "pattern" : "^x-"
+      },
+      "type" : "object"
+    },
+    "horizons" : {
+      "items" : {
+        "$ref" : "#/$defs/Horizon"
+      },
+      "type" : "array"
+    },
+    "initiatives" : {
+      "items" : {
+        "$ref" : "#/$defs/Initiative"
+      },
+      "type" : "array"
+    },
+    "links" : {
+      "items" : {
+        "$ref" : "triads.core.json#/$defs/Link"
+      },
+      "type" : "array"
+    },
+    "localization" : {
+      "$ref" : "#/$defs/I18n"
+    },
+    "metrics" : {
+      "$ref" : "#/$defs/Metrics"
+    },
+    "milestones" : {
+      "items" : {
+        "$ref" : "#/$defs/Milestone"
+      },
+      "type" : "array"
+    },
+    "northStar" : {
+      "type" : "string"
+    },
+    "owners" : {
+      "items" : {
+        "$ref" : "triads.core.json#/$defs/PersonRef"
+      },
+      "minItems" : 1,
+      "type" : "array"
+    },
+    "principles" : {
+      "items" : {
+        "type" : "string"
+      },
+      "type" : "array"
+    },
+    "risks" : {
+      "items" : {
+        "$ref" : "#/$defs/Risk"
+      },
+      "type" : "array"
+    },
+    "schemaVersion" : {
+      "type" : "string"
+    },
+    "sections" : {
+      "items" : {
+        "$ref" : "triads.core.json#/$defs/Section"
+      },
+      "type" : "array"
+    },
+    "slug" : {
+      "pattern" : "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "type" : "string"
+    },
+    "sourcePath" : {
+      "description" : "Optional repo-relative path to the authoritative source (e.g., Markdown mirror).",
+      "type" : "string"
+    },
+    "status" : {
+      "enum" : [
+        "draft",
+        "proposed",
+        "active",
+        "paused",
+        "deprecated",
+        "archived"
+      ],
+      "type" : "string"
+    },
+    "subtitle" : {
+      "type" : "string"
+    },
+    "tags" : {
+      "items" : {
+        "type" : "string"
+      },
+      "type" : "array"
+    },
+    "themes" : {
+      "items" : {
+        "$ref" : "#/$defs/Theme"
+      },
+      "type" : "array"
+    },
+    "title" : {
+      "type" : "string"
+    },
+    "updated" : {
+      "format" : "date-time",
+      "type" : "string"
+    }
+  },
+  "required" : [
+    "schemaVersion",
+    "slug",
+    "title",
+    "updated",
+    "status"
+  ],
+  "title" : "CLIA Agent Agenda (0.4.0)",
+  "type" : "object"
+}

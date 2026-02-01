@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520">
+  <title>SVG line endings animated</title>
+  <style>
+    .label { font: 16px Helvetica, Arial, sans-serif; fill: #1f2328; }
+    .stroke { stroke: #1f2328; stroke-width: 4; fill: none; }
+  </style>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#1f2328"/>
+    </marker>
+    <marker id="circle" viewBox="0 0 12 12" refX="6" refY="6" markerWidth="10" markerHeight="10" orient="auto">
+      <circle cx="6" cy="6" r="4" fill="#1f2328"/>
+    </marker>
+    <marker id="diamond" viewBox="0 0 14 14" refX="7" refY="7" markerWidth="12" markerHeight="12" orient="auto">
+      <path d="M7 0 L14 7 L7 14 L0 7 Z" fill="#1f2328"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="520" fill="#f9fafb"/>
+
+  <text class="label" x="80" y="90">Cap: butt</text>
+  <line class="stroke" x1="320" y1="84" x2="1040" y2="84" stroke-linecap="butt" stroke-dasharray="100 100" stroke-dashoffset="100" pathLength="100">
+    <animate id="a1" attributeName="stroke-dashoffset" values="100;0" dur="1s" begin="0s" fill="freeze"/>
+  </line>
+
+  <text class="label" x="80" y="170">Cap: round</text>
+  <line class="stroke" x1="320" y1="164" x2="1040" y2="164" stroke-linecap="round" stroke-dasharray="100 100" stroke-dashoffset="100" pathLength="100">
+    <animate id="a2" attributeName="stroke-dashoffset" values="100;0" dur="1s" begin="a1.end" fill="freeze"/>
+  </line>
+
+  <text class="label" x="80" y="250">Cap: square</text>
+  <line class="stroke" x1="320" y1="244" x2="1040" y2="244" stroke-linecap="square" stroke-dasharray="100 100" stroke-dashoffset="100" pathLength="100">
+    <animate id="a3" attributeName="stroke-dashoffset" values="100;0" dur="1s" begin="a2.end" fill="freeze"/>
+  </line>
+
+  <text class="label" x="80" y="340">Marker: arrow</text>
+  <line class="stroke" x1="320" y1="334" x2="1040" y2="334" stroke-linecap="round" marker-end="url(#arrow)" stroke-dasharray="100 100" stroke-dashoffset="100" pathLength="100">
+    <animate id="a4" attributeName="stroke-dashoffset" values="100;0" dur="1s" begin="a3.end" fill="freeze"/>
+  </line>
+
+  <text class="label" x="80" y="420">Marker: circle</text>
+  <line class="stroke" x1="320" y1="414" x2="1040" y2="414" stroke-linecap="round" marker-end="url(#circle)" stroke-dasharray="100 100" stroke-dashoffset="100" pathLength="100">
+    <animate id="a5" attributeName="stroke-dashoffset" values="100;0" dur="1s" begin="a4.end" fill="freeze"/>
+  </line>
+
+  <text class="label" x="80" y="500">Marker: diamond</text>
+  <line class="stroke" x1="320" y1="494" x2="1040" y2="494" stroke-linecap="round" marker-end="url(#diamond)" stroke-dasharray="100 100" stroke-dashoffset="100" pathLength="100">
+    <animate id="a6" attributeName="stroke-dashoffset" values="100;0" dur="1s" begin="a5.end" fill="freeze"/>
+  </line>
+</svg>

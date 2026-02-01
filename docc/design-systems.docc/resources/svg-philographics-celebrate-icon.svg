@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" role="img" aria-label="Icon: Celebrate">
+  <g transform="translate(256, 256)">
+     <circle r="240" fill="#450A0A"/>
+     <circle r="40" fill="#FCD34D"/>
+     <line x1="0" y1="-120" x2="0" y2="120" stroke="#FCD34D" stroke-width="20"/>
+     <line x1="-120" y1="0" x2="120" y2="0" stroke="#FCD34D" stroke-width="20"/>
+     <line x1="-85" y1="-85" x2="85" y2="85" stroke="#FCD34D" stroke-width="20"/>
+     <line x1="85" y1="-85" x2="-85" y2="85" stroke="#FCD34D" stroke-width="20"/>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<!-- generator: codex -->
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" fill="none">
+  <rect width="900" height="520" rx="24" fill="#FAFAFA"/>
+  <rect x="140" y="120" width="620" height="280" rx="18" fill="#FFFFFF" stroke="#1E1E1E" stroke-width="2"/>
+  <path d="M140 200H760" stroke="#D0D0D0" stroke-width="1.5"/>
+  <path d="M140 280H760" stroke="#D0D0D0" stroke-width="1.5"/>
+  <path d="M310 120V400" stroke="#D0D0D0" stroke-width="1.5"/>
+  <path d="M480 120V400" stroke="#D0D0D0" stroke-width="1.5"/>
+  <path d="M650 120V400" stroke="#D0D0D0" stroke-width="1.5"/>
+  <text x="165" y="165" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1E1E1E">Agent</text>
+  <text x="345" y="165" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1E1E1E">Agenda</text>
+  <text x="515" y="165" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1E1E1E">Agency</text>
+  <text x="690" y="165" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1E1E1E">Meta</text>
+  <circle cx="215" cy="245" r="6" fill="#1E1E1E"/>
+  <circle cx="385" cy="245" r="6" fill="#1E1E1E"/>
+  <circle cx="555" cy="245" r="6" fill="#1E1E1E"/>
+  <circle cx="725" cy="245" r="6" fill="#1E1E1E"/>
+  <circle cx="215" cy="325" r="6" fill="#1E1E1E"/>
+  <circle cx="385" cy="325" r="6" fill="#1E1E1E"/>
+  <circle cx="555" cy="325" r="6" fill="#1E1E1E"/>
+  <circle cx="725" cy="325" r="6" fill="#1E1E1E"/>
+</svg>

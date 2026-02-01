@@ -1,0 +1,12 @@
+<!-- generator: codex -->
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" fill="none">
+  <rect width="900" height="520" rx="24" fill="#FAFAFA"/>
+  <circle cx="450" cy="260" r="160" fill="#FFFFFF" stroke="#1E1E1E" stroke-width="2"/>
+  <path d="M450 100C540 100 610 170 610 260C610 350 540 420 450 420" stroke="#1E1E1E" stroke-width="2"/>
+  <path d="M450 420C360 420 290 350 290 260C290 170 360 100 450 100" stroke="#1E1E1E" stroke-width="2"/>
+  <path d="M610 260L590 250L590 270Z" fill="#1E1E1E"/>
+  <path d="M290 260L310 250L310 270Z" fill="#1E1E1E"/>
+  <text x="418" y="210" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1E1E1E">Signal</text>
+  <text x="420" y="275" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1E1E1E">Ritual</text>
+  <text x="420" y="340" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#1E1E1E">Audit</text>
+</svg>

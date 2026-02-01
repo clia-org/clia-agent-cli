@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" role="img" aria-label="Icon: Balance">
+  <g transform="translate(256, 256)">
+     <circle r="240" fill="#042F2E"/>
+     <rect x="-160" y="0" width="320" height="20" rx="10" fill="#2DD4BF"/>
+     <path d="M-20 0 L0 -60 L20 0 Z" fill="#2DD4BF" transform="translate(0, 20)"/>
+     <circle cx="-120" cy="-30" r="30" fill="#FDBA74"/>
+     <rect x="90" y="-60" width="60" height="60" fill="#5EEAD4"/>
+  </g>
+</svg>

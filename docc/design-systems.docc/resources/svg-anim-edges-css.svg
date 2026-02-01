@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" role="img"
+  aria-label="Edge traversal (CSS)">
+  <title>Edge traversal (CSS)</title>
+  <style>
+    :root {
+      --loop: 3s;
+      --ink: #2B2B2B;
+      --hit: #00A3FF;
+    }
+    .edge {
+      stroke: var(--ink);
+      stroke-width: 4;
+      animation: glow var(--loop) ease-in-out infinite;
+    }
+    .s1 { animation-delay: 0s; }
+    .s2 { animation-delay: 1s; }
+    .s3 { animation-delay: 2s; }
+    @keyframes glow {
+      0%, 100% { stroke: var(--ink); }
+      40% { stroke: var(--hit); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .edge { animation: none; }
+    }
+  </style>
+  <line class="edge s1" x1="30" y1="30" x2="90" y2="30" />
+  <line class="edge s2" x1="110" y1="30" x2="170" y2="30" />
+  <line class="edge s3" x1="190" y1="30" x2="210" y2="30" />
+</svg>

@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <style>
+    .label { font: 16px Helvetica, Arial, sans-serif; fill: #1f2328; }
+    .box-fill { fill: #f9fafb; }
+    .soft { stroke: #1f2328; stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+    .double { stroke: #1f2328; stroke-width: 4; stroke-linejoin: round; stroke-linecap: round; }
+    .double-inner { stroke: #1f2328; stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round; stroke-opacity: 0.5; }
+    .dashed { stroke: #1f2328; stroke-width: 3; stroke-dasharray: 10 8; stroke-linecap: round; }
+    .dotted { stroke: #1f2328; stroke-width: 3; stroke-dasharray: 2 10; stroke-linecap: round; }
+    .offset { stroke: #1f2328; stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+    .offset-shadow { stroke: #1f2328; stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; stroke-opacity: 0.25; }
+    .sketch { stroke: #1f2328; stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; stroke-opacity: 0.65; }
+    .scallop { stroke: #1f2328; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+    .notch { stroke: #1f2328; stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; }
+    .ribbon { stroke: #1f2328; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+    .ribbon-fill { fill: #f1f5f9; }
+    .inset { stroke: #1f2328; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; stroke-opacity: 0.35; }
+  </style>
+
+  <rect x="0" y="0" width="1200" height="720" fill="#f9fafb"/>
+
+  <text class="label" x="90" y="92">Soft</text>
+  <rect class="box-fill" x="260" y="50" width="280" height="110" rx="20"/>
+  <rect class="soft" x="260" y="50" width="280" height="110" rx="20" fill="none"/>
+
+  <text class="label" x="650" y="92">Double</text>
+  <rect class="box-fill" x="780" y="50" width="280" height="110" rx="18"/>
+  <rect class="double" x="780" y="50" width="280" height="110" rx="18" fill="none"/>
+  <rect class="double-inner" x="792" y="62" width="256" height="86" rx="14" fill="none"/>
+
+  <text class="label" x="90" y="242">Dashed</text>
+  <rect class="box-fill" x="260" y="200" width="280" height="110" rx="18"/>
+  <rect class="dashed" x="260" y="200" width="280" height="110" rx="18" fill="none"/>
+
+  <text class="label" x="650" y="242">Dotted</text>
+  <rect class="box-fill" x="780" y="200" width="280" height="110" rx="18"/>
+  <rect class="dotted" x="780" y="200" width="280" height="110" rx="18" fill="none"/>
+
+  <text class="label" x="90" y="392">Offset</text>
+  <rect class="box-fill" x="260" y="350" width="280" height="110" rx="18"/>
+  <rect class="offset-shadow" x="270" y="360" width="280" height="110" rx="18" fill="none"/>
+  <rect class="offset" x="260" y="350" width="280" height="110" rx="18" fill="none"/>
+
+  <text class="label" x="650" y="392">Sketch</text>
+  <rect class="box-fill" x="780" y="350" width="280" height="110" rx="18"/>
+  <rect class="sketch" x="780" y="350" width="280" height="110" rx="18" fill="none"/>
+  <rect class="sketch" x="776" y="354" width="288" height="110" rx="20" fill="none"/>
+  <rect class="sketch" x="784" y="346" width="272" height="110" rx="16" fill="none"/>
+
+  <text class="label" x="90" y="542">Scalloped</text>
+  <rect class="box-fill" x="260" y="500" width="280" height="110" rx="18"/>
+  <path class="scallop" fill="none"
+        d="M280 500
+           L520 500
+           C530 500 540 510 540 520
+           L540 590
+           C540 600 530 610 520 610
+           L280 610
+           C270 610 260 600 260 590
+           L260 520
+           C260 510 270 500 280 500
+           Z" />
+  <path class="scallop" fill="none"
+        d="M260 520
+           C260 505 275 490 290 490
+           L510 490
+           C525 490 540 505 540 520" />
+  <path class="scallop" fill="none"
+        d="M260 590
+           C260 605 275 620 290 620
+           L510 620
+           C525 620 540 605 540 590" />
+
+  <text class="label" x="650" y="542">Notched</text>
+  <rect class="box-fill" x="780" y="500" width="280" height="110" rx="8"/>
+  <path class="notch" fill="none"
+        d="M800 500
+           L1040 500
+           L1060 520
+           L1060 590
+           L1040 610
+           L800 610
+           L780 590
+           L780 520
+           Z" />
+
+  <text class="label" x="90" y="692">Ribbon</text>
+  <rect class="box-fill" x="260" y="650" width="280" height="110" rx="18"/>
+  <rect class="ribbon-fill" x="290" y="660" width="220" height="90" rx="14"/>
+  <path class="ribbon" fill="none"
+        d="M300 660
+           L520 660
+           L540 690
+           L520 740
+           L300 740
+           L280 690
+           Z" />
+
+  <text class="label" x="650" y="692">Inset glow</text>
+  <rect class="box-fill" x="780" y="650" width="280" height="110" rx="18"/>
+  <rect class="soft" x="780" y="650" width="280" height="110" rx="18" fill="none"/>
+  <rect class="inset" x="794" y="664" width="252" height="82" rx="14" fill="none"/>
+</svg>

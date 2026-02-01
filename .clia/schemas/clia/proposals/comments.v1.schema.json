@@ -1,0 +1,99 @@
+{
+  "$id" : "https://wrkstrm.dev/schemas/clia/proposals/comments.v1.schema.json",
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "properties" : {
+    "comments" : {
+      "items" : {
+        "properties" : {
+          "anchor" : {
+            "description" : "Where to attach this comment",
+            "properties" : {
+              "headingSlug" : {
+                "description" : "Slug of the nearest heading (kebab-case)",
+                "type" : "string"
+              },
+              "match" : {
+                "description" : "Optional text snippet to locate (exact or regex)",
+                "type" : "string"
+              },
+              "regex" : {
+                "default" : false,
+                "type" : "boolean"
+              }
+            },
+            "type" : "object"
+          },
+          "author" : {
+            "type" : "string"
+          },
+          "body" : {
+            "type" : "string"
+          },
+          "created" : {
+            "format" : "date-time",
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "string"
+          },
+          "links" : {
+            "items" : {
+              "properties" : {
+                "title" : {
+                  "type" : "string"
+                },
+                "url" : {
+                  "type" : "string"
+                }
+              },
+              "type" : "object"
+            },
+            "type" : "array"
+          },
+          "severity" : {
+            "default" : "suggestion",
+            "enum" : [
+              "nit",
+              "suggestion",
+              "blocking"
+            ],
+            "type" : "string"
+          },
+          "status" : {
+            "default" : "open",
+            "enum" : [
+              "open",
+              "resolved",
+              "wontfix"
+            ],
+            "type" : "string"
+          }
+        },
+        "required" : [
+          "id",
+          "author",
+          "created",
+          "anchor",
+          "body"
+        ],
+        "type" : "object"
+      },
+      "type" : "array"
+    },
+    "revisionId" : {
+      "description" : "Freeform rev (v1, r2, 2025-10-02)",
+      "type" : "string"
+    },
+    "source" : {
+      "description" : "Path to the proposal Markdown this comments file annotates (repo-relative).",
+      "type" : "string"
+    }
+  },
+  "required" : [
+    "revisionId",
+    "source",
+    "comments"
+  ],
+  "title" : "ProposalCommentsV1",
+  "type" : "object"
+}

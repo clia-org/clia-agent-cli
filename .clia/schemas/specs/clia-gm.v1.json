@@ -1,0 +1,132 @@
+{
+  "abstract" : "Morning ritual: print environment, start timer, update today’s note.",
+  "arguments" : [
+
+  ],
+  "discussion" : "Prints a concise environment snapshot to stdout (no writes), starts a detached task timer labeled 'gm', and ensures/updates the daily note with wake time, activities, and optional news.",
+  "environment" : [
+
+  ],
+  "examples" : [
+    {
+      "args" : [
+        "--no-banner",
+        "--did",
+        "Showered.",
+        "--news",
+        "Producer prices dropped; markets at ATHs."
+      ]
+    },
+    {
+      "args" : [
+        "--no-banner",
+        "--no-note",
+        "--no-timer"
+      ]
+    },
+    {
+      "args" : [
+        "--no-banner",
+        "--no-kawara-style"
+      ]
+    }
+  ],
+  "executionPlan" : [
+    {
+      "action" : "EnvironmentProbe.snapshot.renderPlain",
+      "sideEffects" : [
+
+      ],
+      "step" : "print-environment"
+    },
+    {
+      "action" : "TaskTimer.detached",
+      "enabledWhen" : "!no-timer",
+      "step" : "start-timer"
+    },
+    {
+      "action" : "Note.updateAlreadyDid",
+      "enabledWhen" : "!no-note",
+      "params" : {
+        "activities" : "did[]",
+        "news" : "news",
+        "wake" : "OnKawara if kawara-style else plain"
+      },
+      "step" : "update-note"
+    }
+  ],
+  "instantiation" : {
+    "fieldsMapping" : {
+      "did" : "--did",
+      "kawara-style" : "--kawara-style/--no-kawara-style",
+      "news" : "--news",
+      "no-note" : "--no-note",
+      "no-timer" : "--no-timer"
+    },
+    "jsonInstantiableHint" : true,
+    "parser" : "AsyncArgumentParser"
+  },
+  "io" : {
+    "idempotentNoteUpdate" : true,
+    "stdout" : "environment snapshot (plain text)",
+    "writes" : [
+      ".wrkstrm/tmp/task-heartbeat.json",
+      "notes/YYYY/YYYY-MM-DD.md"
+    ],
+    "writesFiles" : true
+  },
+  "options" : [
+    {
+      "default" : true,
+      "help" : "Render wake text in On Kawara style.",
+      "inversion" : "prefixedNo",
+      "name" : "kawara-style",
+      "repeatable" : false,
+      "required" : false,
+      "type" : "flag"
+    },
+    {
+      "default" : "",
+      "help" : "One-line news summary to record today.",
+      "name" : "news",
+      "repeatable" : false,
+      "required" : false,
+      "type" : "string"
+    },
+    {
+      "default" : [
+
+      ],
+      "help" : "Activities already done (repeatable).",
+      "name" : "did",
+      "repeatable" : true,
+      "required" : false,
+      "type" : "string[]"
+    },
+    {
+      "default" : false,
+      "help" : "Do not write to notes; print only if combined with --no-timer.",
+      "name" : "no-note",
+      "repeatable" : false,
+      "required" : false,
+      "type" : "flag"
+    },
+    {
+      "default" : false,
+      "help" : "Do not start task timer.",
+      "name" : "no-timer",
+      "repeatable" : false,
+      "required" : false,
+      "type" : "flag"
+    }
+  ],
+  "paths" : {
+    "heartbeat" : ".wrkstrm/tmp/task-heartbeat.json",
+    "notesDir" : "notes/<YYYY>/<YYYY-MM-DD>.md",
+    "notesTemplate" : "notes/daily-note-template.md"
+  },
+  "schema" : "https://wrkstrm.dev/schemas/clia/command-spec.v1.json",
+  "subcommand" : "gm",
+  "tool" : "clia",
+  "version" : 1
+}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" fill="none" role="img" aria-label="Hero: Stability">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1000" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5EDCFF" stop-opacity="0.12"/>
+      <stop offset="0.55" stop-color="#A78BFA" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#93C5FD" stop-opacity="0.08"/>
+    </linearGradient>
+    <clipPath id="clip">
+      <rect width="1000" height="300" rx="24"/>
+    </clipPath>
+    <style>
+      @keyframes pan {
+        0% { transform: translate(-50px, -10px); opacity: 0.6; }
+        50% { transform: translate(50px, 10px); opacity: 0.8; }
+        100% { transform: translate(-50px, -10px); opacity: 0.6; }
+      }
+      .layer { animation: pan 20s ease-in-out infinite; }
+    </style>
+  </defs>
+  <g clip-path="url(#clip)">
+    
+    <rect width="1200" height="400" fill="url(#g)" class="layer"/>
+    
+    <!-- Stable Structure -->
+    <rect x="300" y="220" width="400" height="40" rx="10" fill="#111C44" stroke="#5EDCFF" stroke-opacity="0.25" stroke-width="6"/>
+    <path d="M400 220 V 100 C 400 60 440 40 500 40 C 560 40 600 60 600 100 V 220" stroke="#E5EDFF" stroke-opacity="0.75" stroke-width="8" fill="none"/>
+    <line x1="440" y1="130" x2="560" y2="130" stroke="#A78BFA" stroke-opacity="0.55" stroke-width="8"/>
+  </g>
+</svg>

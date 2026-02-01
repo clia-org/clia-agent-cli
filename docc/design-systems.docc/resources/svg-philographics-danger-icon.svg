@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" role="img" aria-label="Icon: Danger">
+  <g transform="translate(256, 256)">
+     <circle r="240" fill="#450A0A"/> <!-- Red Background -->
+     <path d="M0 -140 L120 100 H-120 Z" stroke="#EF4444" stroke-width="20" fill="none" stroke-linejoin="round"/>
+     <circle cx="0" cy="0" r="15" fill="#EF4444"/>
+     <rect x="-10" y="-80" width="20" height="60" fill="#EF4444"/>
+  </g>
+</svg>

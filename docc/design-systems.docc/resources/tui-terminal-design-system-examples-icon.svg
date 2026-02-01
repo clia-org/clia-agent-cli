@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" role="img" aria-label="Icon: Calm">
+  <g transform="translate(256, 256)">
+     <circle r="240" fill="#064E3B"/> <!-- Green Background -->
+     <path d="M-150 0 Q 0 -100 150 0" stroke="#34D399" stroke-width="30" stroke-linecap="round" fill="none"/>
+     <path d="M-150 60 Q 0 -40 150 60" stroke="#34D399" stroke-width="30" stroke-linecap="round" fill="none" opacity="0.6"/>
+  </g>
+</svg>

@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "paletteCss": "Resources/memory-clia.docc.css"
+  },
+  "theme": {
+    "docc": {
+      "heading": {
+        "color": {
+          "light": "#1A1C21",
+          "dark": "#E9E4DA"
+        }
+      },
+      "link": {
+        "color": {
+          "light": "#3451A1",
+          "dark": "#4C6BD9"
+        },
+        "hover": {
+          "color": {
+          "light": "#B77A2B",
+          "dark": "#D9A441"
+          }
+        }
+      },
+      "code": {
+        "bg": {
+          "light": "#E9ECEF",
+          "dark": "#141821"
+        },
+        "fg": {
+          "light": "#1A1C21",
+          "dark": "#E9E4DA"
+        },
+        "border": {
+          "light": "#C8CDD6",
+          "dark": "#2B3240"
+        }
+      },
+      "inline": {
+        "code": {
+          "bg": {
+          "light": "#FFFFFF",
+          "dark": "#0F131A"
+          },
+          "fg": {
+          "light": "#1A1C21",
+          "dark": "#E9E4DA"
+          }
+        }
+      },
+      "callout": {
+        "note": {
+          "bg": {
+          "light": "#FFFFFF",
+          "dark": "#0F131A"
+          },
+          "border": {
+          "light": "#556070",
+          "dark": "#4A5368"
+          }
+        },
+        "tip": {
+          "bg": {
+          "light": "#FFFFFF",
+          "dark": "#0F131A"
+          },
+          "border": {
+          "light": "#B77A2B",
+          "dark": "#D9A441"
+          }
+        },
+        "important": {
+          "bg": {
+          "light": "#FFFFFF",
+          "dark": "#0F131A"
+          },
+          "border": {
+          "light": "#9B3C3C",
+          "dark": "#C14B4B"
+          }
+        }
+      }
+    }
+  }
+}

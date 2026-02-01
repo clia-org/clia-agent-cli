@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" role="img" aria-label="Icon: Curious">
+  <g transform="translate(256, 256)">
+     <circle r="240" fill="#3B0764"/> <!-- Purple Background -->
+     <circle r="100" stroke="#C084FC" stroke-width="20" stroke-dasharray="40 40" fill="none"/>
+     <circle cx="80" cy="-80" r="30" fill="#E879F9"/>
+  </g>
+</svg>

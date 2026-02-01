@@ -1,0 +1,77 @@
+{
+  "$id" : "https://local.schemas/cli/task-heartbeat.v1.schema.json",
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties" : false,
+  "description" : "Periodic status for long-running tasks to support agent polling.",
+  "properties" : {
+    "$id" : {
+      "type" : "string"
+    },
+    "$schema" : {
+      "type" : "string"
+    },
+    "elapsedSeconds" : {
+      "minimum" : 0,
+      "type" : "integer"
+    },
+    "host" : {
+      "type" : "string"
+    },
+    "intervalSeconds" : {
+      "minimum" : 1,
+      "type" : "integer"
+    },
+    "iterations" : {
+      "minimum" : 1,
+      "type" : "integer"
+    },
+    "nextCheckAt" : {
+      "format" : "date-time",
+      "type" : "string"
+    },
+    "notes" : {
+      "type" : [
+        "string",
+        "null"
+      ]
+    },
+    "pid" : {
+      "minimum" : 1,
+      "type" : "integer"
+    },
+    "startedAt" : {
+      "format" : "date-time",
+      "type" : "string"
+    },
+    "status" : {
+      "enum" : [
+        "running",
+        "stopped",
+        "error"
+      ],
+      "type" : "string"
+    },
+    "task" : {
+      "minLength" : 1,
+      "type" : "string"
+    },
+    "version" : {
+      "pattern" : "^1\\.\\d+(?:\\.\\d+)?$",
+      "type" : "string"
+    }
+  },
+  "required" : [
+    "version",
+    "task",
+    "startedAt",
+    "nextCheckAt",
+    "intervalSeconds",
+    "elapsedSeconds",
+    "iterations",
+    "status",
+    "host",
+    "pid"
+  ],
+  "title" : "Task Heartbeat",
+  "type" : "object"
+}

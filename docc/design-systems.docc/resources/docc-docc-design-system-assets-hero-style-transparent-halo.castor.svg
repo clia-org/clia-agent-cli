@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 720" role="img" aria-label="Hero style: transparent halo">
+  <defs>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.55">
+      <stop offset="0" stop-color="#3B82F6" stop-opacity="0.6"/>
+      <stop offset="0.45" stop-color="#22C55E" stop-opacity="0.35"/>
+      <stop offset="0.8" stop-color="#22C55E" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#22C55E" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="800" cy="360" r="260" fill="url(#halo)"/>
+  <circle cx="1100" cy="280" r="150" fill="url(#halo)"/>
+  <circle cx="520" cy="430" r="190" fill="url(#halo)"/>
+</svg>

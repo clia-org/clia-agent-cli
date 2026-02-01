@@ -1,0 +1,63 @@
+{
+  "entries" : [
+    {
+      "title" : "Swift Architect — AGENCY.md"
+    },
+    {
+      "details" : [
+        "context: new tools emerge without reusable libraries",
+        "decision: require each package to expose a library target and CLI executable",
+        "rationale: promotes reuse and testability",
+        "implications: update docs and templates",
+        "refs: code/spm/established-conventions.md"
+      ],
+      "timestamp" : "2025-09-02",
+      "title" : "2025-09-02 — Standardize library+CLI split"
+    },
+    {
+      "details" : [
+        "context: async boundaries were inconsistent",
+        "decision: document current async actors and isolate shared state",
+        "rationale: avoid race conditions and ease testing",
+        "links: swift-architect.agenda.md"
+      ],
+      "timestamp" : "2025-09-02",
+      "title" : "2025-09-02 — Log concurrency audit"
+    }
+  ],
+  "links" : [
+
+  ],
+  "mentors" : [
+
+  ],
+  "notes" : [
+    {
+      "author" : "",
+      "blocks" : [
+
+      ],
+      "date" : ""
+    },
+    {
+      "author" : "policy",
+      "blocks" : [
+        {
+          "kind" : "paragraph",
+          "text" : [
+            "Automation: use Swift-based launchpad/scratch tools (SPM) and avoid Python for repository automation."
+          ]
+        }
+      ]
+    }
+  ],
+  "schemaVersion" : "0.4.0",
+  "slug" : "swift-architect",
+  "sourcePath" : ".clia/agents/templates/swift-architect/swift-architect.agency.md",
+  "status" : "draft",
+  "tags" : [
+
+  ],
+  "title" : "Swift Architect Agency",
+  "updated" : "2025-09-22T03:36:15Z"
+}

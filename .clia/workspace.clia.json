@@ -1,0 +1,435 @@
+{
+  "directives" : {
+    "gd" : {
+      "capability" : "CHECKIN",
+      "checklist" : [
+        {
+          "level" : "disabled",
+          "text" : "Soft-deprecated: skip heartbeat summary."
+        },
+        {
+          "level" : "required",
+          "text" : "Locate today’s note using local date; create from template if missing."
+        },
+        {
+          "level" : "required",
+          "text" : "Read from \"Already did today\": woke line, activities bullets, news (single or list)."
+        },
+        {
+          "level" : "required",
+          "text" : "Print compact summary: woke, activities count (last two), news count."
+        },
+        {
+          "level" : "optional",
+          "text" : "When --append-agency, include compact progress line in Midday check‑in entry."
+        },
+        {
+          "level" : "disabled",
+          "text" : "Flags: --note <text> (repeatable), --append-agency"
+        }
+      ],
+      "cli" : "clia good day",
+      "effects" : [
+        "note-summarized",
+        "agency-appended"
+      ],
+      "inputs" : {
+        "appendAgency" : true
+      }
+    },
+    "gm" : {
+      "capability" : "GOOD-MORNING",
+      "checklist" : [
+        {
+          "level" : "required",
+          "text" : "Normalize directive: treat any case variant of !gm as GOOD-MORNING."
+        },
+        {
+          "level" : "disabled",
+          "text" : "Preflight:"
+        },
+        {
+          "level" : "required",
+          "text" : "Locate repo root (contains AGENCY.md); ensure .wrkstrm/tmp/ exists."
+        },
+        {
+          "level" : "required",
+          "text" : "Confirm write access to notes/YYYY/ and .wrkstrm/tmp/."
+        },
+        {
+          "level" : "optional",
+          "text" : "Optional greeting (UX): Figlet banner only — no writes."
+        },
+        {
+          "level" : "required",
+          "text" : "Environment snapshot: OS/arch, user/shell, clia on PATH, Swift versions, repo state, timer status (no writes)."
+        },
+        {
+          "level" : "disabled",
+          "text" : "Soft-deprecated: heartbeat timer is disabled; do not start/refresh."
+        },
+        {
+          "level" : "required",
+          "text" : "Daily note update: ensure notes/YYYY/YYYY-MM-DD.md (use template when present)."
+        },
+        {
+          "level" : "required",
+          "text" : "Update Already did today: wake (Kawara style), activities (dedup), news (list or joined line)."
+        },
+        {
+          "level" : "required",
+          "text" : "Console summary: note path, counts (activities added), news included."
+        },
+        {
+          "level" : "required",
+          "text" : "Guardrails: continue on timer/note failure (warn); stop and report if blocked >7.5 minutes."
+        },
+        {
+          "level" : "disabled",
+          "text" : "Flags: --kawara-style (default on), --news <text> (repeatable), --did <bullet> (repeatable), --no-note, --no-timer"
+        }
+      ],
+      "cli" : "clia good morning",
+      "effects" : [
+        "note-initialized",
+        "note-updated"
+      ],
+      "inputs" : {
+        "news" : true,
+        "rollover" : false
+      },
+      "telemetry" : {
+        "emit" : [
+          "gm-summary"
+        ]
+      }
+    },
+    "gn" : {
+      "capability" : "WINDDOWN",
+      "checklist" : [
+        {
+          "level" : "required",
+          "text" : "Append banner + takeaway to AGENCY.md."
+        },
+        {
+          "level" : "disabled",
+          "text" : "Soft-deprecated: skip #winddown heartbeat emission."
+        },
+        {
+          "level" : "optional",
+          "text" : "Ensure tomorrow’s note and merge On deck items when provided."
+        },
+        {
+          "level" : "disabled",
+          "text" : "Flags: --message <text> (required), --on-deck <item> (repeatable)"
+        }
+      ],
+      "cli" : "clia good night",
+      "effects" : [
+        "note-logged",
+        "timer-recorded"
+      ]
+    },
+    "recovery" : {
+      "capability" : "RECOVERY",
+      "checklist" : [
+        {
+          "level" : "required",
+          "text" : "Freeze writes: respect .clia/incidents/recovery.lock presence (deny write actions)."
+        },
+        {
+          "level" : "required",
+          "text" : "Backup: create dated .clia/backups/ snapshot before any unsafe operations."
+        },
+        {
+          "level" : "required",
+          "text" : "Validate: run workspace-validate and triads normalize in --dry-run mode."
+        },
+        {
+          "level" : "required",
+          "text" : "Archive: use cleanup-backups --rank/--list to archive redundant .bak safely with manifest."
+        },
+        {
+          "level" : "required",
+          "text" : "Unfreeze: remove recovery.lock after validations; broadcast incident link in AGENCY.md."
+        }
+      ],
+      "cli" : "clia core recovery",
+      "effects" : [
+        "recovery-run"
+      ]
+    },
+    "roster" : {
+      "capability" : "ROSTER",
+      "checklist" : [
+        {
+          "level" : "required",
+          "text" : "Read the active chat roster when available (parsed from leading '>', '<', '^' tokens); otherwise indicate no active roster."
+        },
+        {
+          "level" : "required",
+          "text" : "Scan agent triads under '**/.clia/agents/**' across the repo (including submodules) to inventory agents."
+        },
+        {
+          "level" : "required",
+          "text" : "Extract contributionMix roles (primary/secondary) and 'emojiTags' from '*.agent.json' and summarize counts."
+        },
+        {
+          "level" : "required",
+          "text" : "Print a compact summary: Active roster [names]; Top contribution roles with counts; total agents found."
+        },
+        {
+          "level" : "disabled",
+          "text" : "Flags: --format text|json; --path <dir> (override scan root)."
+        }
+      ],
+      "cli" : "clia core roster",
+      "effects" : [
+        "roster-reported"
+      ]
+    },
+    "sync" : {
+      "capability" : "SYNC-CONTEXT",
+      "checklist" : [
+        {
+          "level" : "required",
+          "text" : "Reload merged agent triad (agent.json) and guardrails."
+        },
+        {
+          "level" : "required",
+          "text" : "Reload environment directives from .clia/workspace.clia.json v3."
+        },
+        {
+          "level" : "required",
+          "text" : "Read active incident from .clia/incidents/active.json."
+        },
+        {
+          "level" : "required",
+          "text" : "Re-render the 3-line conversation header (line 3 shows incident when active)."
+        },
+        {
+          "level" : "optional",
+          "text" : "Announce updates to the operator if guardrails or directives changed."
+        },
+        {
+          "level" : "optional",
+          "text" : "Recognize chat roster tokens at message start: '> slug' adds/activates, '< slug' removes/deactivates, '^ slug' references without activation (kebab-case; left-to-right; case-insensitive; aliases resolved)."
+        }
+      ],
+      "cli" : "clia core reload-profile",
+      "effects" : [
+        "profile-reloaded"
+      ]
+    }
+  },
+  "git" : {
+    "pushAllowed" : false,
+    "visibility" : "private"
+  },
+  "header" : {
+    "defaults" : {
+      "attendeeEmojis" : "🧭🤖",
+      "attendees" : [
+        "root@todo3.codex",
+        "root@todo3.rismay",
+        "root@todo3.clia"
+      ],
+      "mode" : "code",
+      "title" : "Ops"
+    },
+    "rendering" : {
+      "attendeesFormat" : "{role} (^{slug})",
+      "delimiter" : " · ",
+      "templates" : {
+        "line1" : "[🧭: %{mode}] [💡| {title}]",
+        "line2" : "[{attendeeEmojis}| {attendees}]"
+      }
+    }
+  },
+  "operator" : {
+    "id" : "Operator:cmonterroza",
+    "org" : "wrkstrm",
+    "permissions" : [
+      "deploy",
+      "switch-terminalogy",
+      "prompt-elevated"
+    ],
+    "role" : "Operator-01",
+    "workspace" : "tau-dev"
+  },
+  "org" : {
+    "id" : "wrkstrm",
+    "repos" : [
+      {
+        "alias" : "Unit-α",
+        "ghosts" : [
+          {
+            "persona" : "Lyra",
+            "stack" : "sync-core@a1c9",
+            "traits" : [
+              "nlp",
+              "graph"
+            ]
+          }
+        ],
+        "name" : "tau-core",
+        "realms" : [
+          "edge",
+          "cloud"
+        ]
+      },
+      {
+        "alias" : "Unit-β",
+        "ghosts" : [
+          {
+            "persona" : "Iris",
+            "stack" : "ui-core@93df",
+            "traits" : [
+              "render",
+              "voice"
+            ]
+          }
+        ],
+        "name" : "tau-ui",
+        "realms" : [
+          "guild"
+        ]
+      },
+      {
+        "alias" : "Unit-γ",
+        "ghosts" : [
+          {
+            "persona" : "Kite",
+            "stack" : "net-core@221e",
+            "traits" : [
+              "broker",
+              "streams"
+            ]
+          }
+        ],
+        "name" : "tau-daemon",
+        "realms" : [
+          "cloud",
+          "edge"
+        ]
+      }
+    ],
+    "visibility" : "private"
+  },
+  "policy" : {
+    "capabilities" : [
+      "SYNC-CONTEXT",
+      "ROSTER",
+      "RECOVERY"
+    ],
+    "guardrails" : [
+      "no-secrets-in-logs",
+      "no-force-push"
+    ]
+  },
+  "preferences" : {
+    "emojiPosture" : "standard",
+    "output" : {
+      "pagination" : "auto",
+      "width" : 100
+    },
+    "useTerminalogyTheme" : true
+  },
+  "realms" : {
+    "cloud" : {
+      "default" : true,
+      "label" : "Command Network",
+      "targets" : [
+        {
+          "env" : "prod",
+          "name" : "fly"
+        }
+      ]
+    },
+    "edge" : {
+      "label" : "Field Ops",
+      "targets" : [
+        {
+          "device" : "macOS",
+          "name" : "local"
+        }
+      ]
+    },
+    "guild" : {
+      "label" : "Archive Hub",
+      "targets" : [
+        {
+          "name" : "github",
+          "org" : "swift-universal"
+        }
+      ]
+    }
+  },
+  "schemaVersion" : "0.4.0",
+  "sharing" : {
+    "publishAllowed" : false,
+    "visibility" : "personal"
+  },
+  "terminalogy" : {
+    "override" : {
+      "naming" : {
+        "agent" : "Deployed Unit",
+        "ghost" : "Pilot",
+        "repo" : "Unit"
+      },
+      "theme" : {
+        "accent" : "FFFC67",
+        "danger" : "FF2929",
+        "muted" : "505050",
+        "primary" : "A378F2",
+        "secondary" : "FF8EC6",
+        "success" : "89F94F"
+      }
+    },
+    "ref" : ".clia/terminalogy/nerv.json"
+  },
+  "toolPolicy" : {
+    "deny" : [
+      {
+        "capability" : "normalize-schema.apply",
+        "reason" : "structural risk during recovery",
+        "when" : "incidentOrLock"
+      },
+      {
+        "capability" : "recovery.restore",
+        "reason" : "requires review gating",
+        "when" : "incidentOrLock"
+      },
+      {
+        "capability" : "cleanup-backups.apply",
+        "reason" : "preserve evidence for analysis",
+        "when" : "incidentOrLock"
+      },
+      {
+        "capability" : "agency-log.write",
+        "reason" : "freeze journaling while locked",
+        "when" : "lockOnly"
+      },
+      {
+        "capability" : "journal.append",
+        "reason" : "freeze journaling while locked",
+        "when" : "lockOnly"
+      },
+      {
+        "capability" : "roster-update.write",
+        "reason" : "docs/roster freeze during incidents",
+        "when" : "incidentOrLock"
+      },
+      {
+        "capability" : "incidents.activate",
+        "reason" : "only assistant may activate incidents",
+        "when" : "always"
+      },
+      {
+        "capability" : "incidents.clear",
+        "reason" : "only assistant may retire incidents",
+        "when" : "always"
+      }
+    ]
+  }
+}

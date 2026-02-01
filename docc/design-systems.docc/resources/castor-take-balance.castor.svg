@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" role="img" aria-label="Philographic: Balance (Gemini Edition)">
+  <title>Philographic: Balance (Gemini Edition)</title>
+  <defs>
+    <clipPath id="clip">
+      <rect width="512" height="512" rx="72"/>
+    </clipPath>
+    <style>
+      @keyframes rock {
+        0%, 100% { transform: rotate(-10deg); }
+        50% { transform: rotate(10deg); }
+      }
+      @keyframes counter-rock {
+        0%, 100% { transform: rotate(10deg); }
+        50% { transform: rotate(-10deg); }
+      }
+      .seesaw { animation: rock 6s ease-in-out infinite; transform-origin: 256px 256px; }
+      .ball { animation: counter-rock 6s ease-in-out infinite; transform-origin: 256px 256px; }
+    </style>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="512" height="512" fill="#042F2E"/> <!-- Teal Dark -->
+    
+    <!-- Fulcrum -->
+    <path d="M236 350 L256 300 L276 350 Z" fill="#14B8A6"/>
+
+    <!-- Beam -->
+    <g class="seesaw">
+       <rect x="136" y="290" width="240" height="10" rx="5" fill="#2DD4BF"/>
+       <!-- Weights -->
+       <circle cx="156" cy="270" r="24" fill="#FDBA74"/> <!-- Orange Ball -->
+       <rect x="336" y="246" width="48" height="48" fill="#5EEAD4"/> <!-- Teal Box -->
+    </g>
+  </g>
+</svg>

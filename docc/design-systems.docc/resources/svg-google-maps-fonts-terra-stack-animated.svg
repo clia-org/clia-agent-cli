@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <title>Google Maps typography stack (animated)</title>
+  <style>
+    .label { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 21px; fill: #1f2328; font-weight: 700; }
+    .label-small { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 17px; fill: #1f2328; font-weight: 700; }
+    .os-1 { fill: #cfe3f7; }
+    .os-2 { fill: #b7d5f0; }
+    .os-3 { fill: #9cc5e8; }
+    .os-4 { fill: #84b5e0; }
+    .framework-1 { fill: #f3c5c1; }
+    .framework-2 { fill: #eca6a0; }
+    .framework-3 { fill: #e68780; }
+    .gm1 { fill: #d6f3d1; }
+    .gm2 { fill: #bfe9b7; }
+    .unknown { fill: #f4c4bf; }
+    .api { fill: #f2e2c7; }
+    .top { fill: #ffe08a; }
+    .tile { stroke: #ffffff; stroke-width: 1.5; }
+    .outline { stroke: #1f2328; stroke-width: 2; }
+  </style>
+
+  <rect width="1200" height="720" fill="none"/>
+
+  <g transform="translate(660 360)">
+    <g id="tilt">
+      <animateTransform attributeName="transform" type="skewX" values="0;-30;0" keyTimes="0;0.5;1" dur="8s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="scale" values="1 1;1 0.75;1 1" keyTimes="0;0.5;1" dur="8s" repeatCount="indefinite" additive="sum"/>
+
+      <g transform="translate(-600 -420)">
+        <!-- OS layer -->
+        <g>
+          <animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 0" keyTimes="0;0.5;1" dur="8s" repeatCount="indefinite"/>
+          <rect class="os-1 tile" x="200" y="420" width="200" height="120"/>
+          <rect class="os-2 tile" x="400" y="420" width="200" height="120"/>
+          <rect class="os-3 tile" x="600" y="420" width="200" height="120"/>
+          <rect class="os-4 tile" x="800" y="420" width="200" height="120"/>
+          <text class="label" x="300" y="525" text-anchor="middle" dominant-baseline="alphabetic">iOS-3</text>
+          <text class="label" x="500" y="525" text-anchor="middle" dominant-baseline="alphabetic">iOS-2</text>
+          <text class="label" x="700" y="525" text-anchor="middle" dominant-baseline="alphabetic">iOS-1</text>
+          <text class="label" x="900" y="525" text-anchor="middle" dominant-baseline="alphabetic">iOS</text>
+          <rect class="outline" x="200" y="420" width="800" height="120" fill="none"/>
+        </g>
+
+        <!-- Apple framework layer -->
+        <g>
+          <animateTransform attributeName="transform" type="translate" values="0 0;-46 -80;0 0" keyTimes="0;0.5;1" dur="8s" repeatCount="indefinite"/>
+          <rect class="framework-1 tile" x="200" y="420" width="266" height="120"/>
+          <rect class="framework-2 tile" x="466" y="420" width="267" height="120"/>
+          <rect class="framework-3 tile" x="733" y="420" width="267" height="120"/>
+          <text class="label" x="333" y="490" text-anchor="middle" dominant-baseline="middle">UIFont</text>
+          <text class="label" x="600" y="490" text-anchor="middle" dominant-baseline="middle">UIFontDescriptor</text>
+          <text class="label" x="866" y="490" text-anchor="middle" dominant-baseline="middle">CTFont</text>
+          <rect class="outline" x="200" y="420" width="800" height="120" fill="none"/>
+        </g>
+
+        <!-- Design system layer -->
+        <g>
+          <animateTransform attributeName="transform" type="translate" values="0 0;-92 -160;0 0" keyTimes="0;0.5;1" dur="8s" repeatCount="indefinite"/>
+          <!-- ? (12 uneven boxes) -->
+          <rect class="unknown tile" x="200" y="420" width="140" height="30"/>
+          <rect class="unknown tile" x="340" y="420" width="180" height="30"/>
+          <rect class="unknown tile" x="520" y="420" width="120" height="30"/>
+          <rect class="unknown tile" x="640" y="420" width="200" height="30"/>
+          <rect class="unknown tile" x="840" y="420" width="160" height="30"/>
+          <rect class="unknown tile" x="200" y="450" width="170" height="30"/>
+          <rect class="unknown tile" x="370" y="450" width="130" height="30"/>
+          <rect class="unknown tile" x="500" y="450" width="190" height="30"/>
+          <rect class="unknown tile" x="690" y="450" width="120" height="30"/>
+          <rect class="unknown tile" x="810" y="450" width="190" height="30"/>
+          <rect class="unknown tile" x="200" y="480" width="220" height="0"/>
+          <rect class="unknown tile" x="420" y="480" width="0" height="0"/>
+          <text class="label" x="600" y="450" text-anchor="middle" dominant-baseline="middle">?</text>
+
+          <!-- GM1 (12 uneven boxes) -->
+          <rect class="gm1 tile" x="200" y="480" width="70" height="30"/>
+          <rect class="gm1 tile" x="270" y="480" width="90" height="30"/>
+          <rect class="gm1 tile" x="360" y="480" width="60" height="30"/>
+          <rect class="gm1 tile" x="420" y="480" width="110" height="30"/>
+          <rect class="gm1 tile" x="530" y="480" width="70" height="30"/>
+          <rect class="gm1 tile" x="200" y="510" width="90" height="30"/>
+          <rect class="gm1 tile" x="290" y="510" width="60" height="30"/>
+          <rect class="gm1 tile" x="350" y="510" width="100" height="30"/>
+          <rect class="gm1 tile" x="450" y="510" width="80" height="30"/>
+          <rect class="gm1 tile" x="530" y="510" width="70" height="30"/>
+          <rect class="gm1 tile" x="200" y="540" width="120" height="0"/>
+          <rect class="gm1 tile" x="320" y="540" width="0" height="0"/>
+          <text class="label" x="400" y="510" text-anchor="middle" dominant-baseline="middle">GM1</text>
+
+          <!-- GM2 (12 uneven boxes) -->
+          <rect class="gm2 tile" x="600" y="480" width="90" height="30"/>
+          <rect class="gm2 tile" x="690" y="480" width="70" height="30"/>
+          <rect class="gm2 tile" x="760" y="480" width="110" height="30"/>
+          <rect class="gm2 tile" x="870" y="480" width="60" height="30"/>
+          <rect class="gm2 tile" x="930" y="480" width="70" height="30"/>
+          <rect class="gm2 tile" x="600" y="510" width="80" height="30"/>
+          <rect class="gm2 tile" x="680" y="510" width="100" height="30"/>
+          <rect class="gm2 tile" x="780" y="510" width="70" height="30"/>
+          <rect class="gm2 tile" x="850" y="510" width="90" height="30"/>
+          <rect class="gm2 tile" x="940" y="510" width="60" height="30"/>
+          <rect class="gm2 tile" x="600" y="540" width="120" height="0"/>
+          <rect class="gm2 tile" x="720" y="540" width="0" height="0"/>
+          <text class="label" x="800" y="510" text-anchor="middle" dominant-baseline="middle">GM2</text>
+          <rect class="outline" x="200" y="420" width="800" height="120" fill="none"/>
+        </g>
+
+        <!-- Google Maps typography -->
+        <g>
+          <animateTransform attributeName="transform" type="translate" values="0 0;-138 -240;0 0" keyTimes="0;0.5;1" dur="8s" repeatCount="indefinite"/>
+          <rect class="top tile" x="200" y="420" width="800" height="120" opacity="1">
+            <animate attributeName="opacity" values="1;0;1" keyTimes="0;0.6;1" dur="8s" repeatCount="indefinite"/>
+          </rect>
+          <text class="label" x="600" y="480" text-anchor="middle" dominant-baseline="middle">Google Maps Typography</text>
+          <rect class="outline" x="200" y="420" width="800" height="120" fill="none"/>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(120 658)">
+    <g transform="translate(0 0)">
+      <rect class="os-2 tile" x="0" y="0" width="16" height="16"/>
+      <text class="label-small" x="24" y="8" dominant-baseline="middle">OS</text>
+    </g>
+
+    <g transform="translate(160 0)">
+      <rect class="framework-2 tile" x="0" y="0" width="16" height="16"/>
+      <text class="label-small" x="24" y="8" dominant-baseline="middle">Apple Framework</text>
+    </g>
+
+    <g transform="translate(380 0)">
+      <rect class="gm1 tile" x="0" y="0" width="16" height="16"/>
+      <text class="label-small" x="24" y="8" dominant-baseline="middle">Google Frameworks</text>
+    </g>
+
+    <g transform="translate(620 0)">
+      <rect class="top tile" x="0" y="0" width="16" height="16"/>
+      <text class="label-small" x="24" y="8" dominant-baseline="middle">Developer Experience</text>
+    </g>
+  </g>
+</svg>

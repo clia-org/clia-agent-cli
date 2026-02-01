@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" fill="none" role="img" aria-label="Hero: Focus">
+  <defs>
+    <radialGradient id="focus-g" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#F59E0B" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="clip">
+      <rect width="1000" height="300" rx="24"/>
+    </clipPath>
+    <style>
+      @keyframes rotate {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .ring { transform-origin: center; animation: rotate 20s linear infinite; }
+    </style>
+  </defs>
+  <g clip-path="url(#clip)">
+    
+    
+    
+    <g transform="translate(500, 150)">
+       <circle r="80" stroke="#F59E0B" stroke-width="2" stroke-dasharray="20 10" class="ring"/>
+       <circle r="60" stroke="#F59E0B" stroke-width="1"/>
+       <line x1="-100" y1="0" x2="100" y2="0" stroke="#F59E0B" stroke-opacity="0.2"/>
+       <line x1="0" y1="-100" x2="0" y2="100" stroke="#F59E0B" stroke-opacity="0.2"/>
+    </g>
+  </g>
+</svg>

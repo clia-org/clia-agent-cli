@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" role="img"
+  aria-label="Philographic: Agent Goose">
+  <title>Philographic: Agent Goose</title>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#34D399" stop-opacity="0.18"/>
+      <stop offset="0.55" stop-color="#5EDCFF" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#A7F3D0" stop-opacity="0.10"/>
+    </linearGradient>
+    <clipPath id="clip">
+      <rect width="512" height="512" rx="72"/>
+    </clipPath>
+    <style>
+      :root { --loop: 22s; }
+
+      @keyframes pan {
+        0% { transform: translateX(-140px) translateY(-26px); opacity: 0.72; }
+        50% { transform: translateX(100px) translateY(18px); opacity: 0.9; }
+        100% { transform: translateX(-140px) translateY(-26px); opacity: 0.72; }
+      }
+
+      @keyframes bob {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-8px); }
+        100% { transform: translateY(0); }
+      }
+
+      @keyframes dash {
+        0% { stroke-dashoffset: 140; opacity: 0.24; }
+        40% { opacity: 0.55; }
+        100% { stroke-dashoffset: 0; opacity: 0.24; }
+      }
+
+      .layer { animation: pan var(--loop) ease-in-out infinite; transform-box: fill-box; }
+      .head { animation: bob 2.6s ease-in-out infinite; transform-origin: 324px 198px; }
+      .trail {
+        stroke-dasharray: 140;
+        stroke-dashoffset: 140;
+        animation: dash 3.4s ease-in-out infinite;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .layer, .head, .trail { animation: none; }
+      }
+    </style>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="512" height="512" fill="#064E3B"/>
+    <rect x="-200" y="-80" width="912" height="704" fill="url(#g)" class="layer"/>
+
+    <path d="M122 322c62-106 154-160 276-160" stroke="#E5EDFF" stroke-opacity="0.22"
+      stroke-width="12" stroke-linecap="round" class="trail"/>
+    <path d="M148 356c66-114 168-172 296-172" stroke="#E5EDFF" stroke-opacity="0.16"
+      stroke-width="12" stroke-linecap="round" class="trail"/>
+
+    <g class="head">
+      <path d="M270 340c-12-66 8-120 58-158" stroke="#E5EDFF" stroke-opacity="0.82"
+        stroke-width="12" stroke-linecap="round"/>
+      <circle cx="336" cy="188" r="40" fill="#E5EDFF" fill-opacity="0.12"
+        stroke="#E5EDFF" stroke-opacity="0.45" stroke-width="10"/>
+      <path d="M364 188l42 12-42 12Z" fill="#FBBF24" fill-opacity="0.78"/>
+      <circle cx="346" cy="178" r="6" fill="#E5EDFF" fill-opacity="0.78"/>
+    </g>
+  </g>
+</svg>

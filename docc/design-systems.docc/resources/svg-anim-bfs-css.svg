@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" role="img"
+  aria-label="BFS node highlight (CSS)">
+  <title>BFS node highlight (CSS)</title>
+  <style>
+    :root {
+      --loop: 3s;
+      --ink: #2B2B2B;
+      --hit: #00A3FF;
+    }
+    .node {
+      fill: var(--ink);
+      animation: hit var(--loop) ease-in-out infinite;
+    }
+    .s1 { animation-delay: 0s; }
+    .s2 { animation-delay: 1s; }
+    .s3 { animation-delay: 2s; }
+    @keyframes hit {
+      0%, 100% { fill: var(--ink); }
+      40% { fill: var(--hit); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .node { animation: none; }
+    }
+  </style>
+  <circle class="node s1" cx="30" cy="30" r="10" />
+  <circle class="node s2" cx="110" cy="30" r="10" />
+  <circle class="node s3" cx="190" cy="30" r="10" />
+</svg>

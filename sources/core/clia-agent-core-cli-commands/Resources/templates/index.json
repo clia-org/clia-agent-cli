@@ -1,0 +1,34 @@
+[
+  {
+    "files" : [
+      "ios-engineer@clia-agent-core-sample.agent.json",
+      "ios-engineer@clia-agent-core-sample.agenda.json",
+      "ios-engineer@clia-agent-core-sample.agency.json"
+    ],
+    "name" : "ios-engineer"
+  },
+  {
+    "files" : [
+      "product-owner@clia-agent-core-sample.agent.json",
+      "product-owner@clia-agent-core-sample.agenda.json",
+      "product-owner@clia-agent-core-sample.agency.json"
+    ],
+    "name" : "product-owner"
+  },
+  {
+    "files" : [
+      "project-manager@clia-agent-core-sample.agent.json",
+      "project-manager@clia-agent-core-sample.agenda.json",
+      "project-manager@clia-agent-core-sample.agency.json"
+    ],
+    "name" : "project-manager"
+  },
+  {
+    "files" : [
+      "swift-architect@clia-agent-core-sample.agent.json",
+      "swift-architect@clia-agent-core-sample.agenda.json",
+      "swift-architect@clia-agent-core-sample.agency.json"
+    ],
+    "name" : "swift-architect"
+  }
+]

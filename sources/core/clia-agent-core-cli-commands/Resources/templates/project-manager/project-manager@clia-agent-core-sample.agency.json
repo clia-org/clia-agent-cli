@@ -1,0 +1,256 @@
+{
+  "entries" : [
+    {
+      "details" : [
+        "> history and institutional reasoning. Together with `project-manager.agent.md` (mandate) and",
+        "> `project-manager.agenda.md` (roadmap), it ensures continuity across temporal horizons by",
+        "> preserving not merely the operational outcomes but the intellectual rationales, negotiations, and",
+        "> methodological innovations that informed them. Its role is to safeguard institutional memory as an",
+        "> evolving corpus of insights that future stewards can inherit, extend, and refine.",
+        "---"
+      ],
+      "summary" : "> This document constitutes the archival repository of the Project Manager agent’s deliberative",
+      "title" : "📓 project-manager.agency.md — Institutional Memory"
+    },
+    {
+      "details" : [
+        "**Deliberative Record** → Capture and contextualize the intellectual reasoning underlying",
+        "and interpretive clarity.",
+        "**Breakthrough Documentation** → Archive methodological advances in cadence design, milestone",
+        "construction, and inter-agent orchestration, including the introduction of novel metrics,",
+        "visualization tools, or governance techniques.",
+        "**Tradeoff Chronicle** → Record the compromises and negotiated settlements between the imperatives",
+        "of internal velocity, fiscal prudence, and external regulatory optics, making explicit the cost of",
+        "each decision.",
+        "**Continuity Archive** → Provide successors with a durable intellectual and procedural framework,",
+        "so that leadership transitions do not result in the loss of institutional knowledge.",
+        "**Institutional Commemoration** → Celebrate pivotal moments where cadence discipline, governance",
+        "rigor, and inter-agent coordination yielded demonstrable institutional value.",
+        "**Meta-Reflection** → Encourage systematic reflection on the practice of project management",
+        "itself, contributing to organizational learning and meta-governance.",
+        "---"
+      ],
+      "summary" : "decisions on scheduling, governance, reporting, and cadence alignment, ensuring reproducibility",
+      "title" : "Purpose"
+    },
+    {
+      "details" : [
+        "**Date / Time**: 2025-08-17",
+        "**Context**: The Project Manager role was constituted to coordinate Apple-level stewardship with",
+        "**Foundational Insight**: Cadence management must harmonize engineering execution with compliance",
+        "optics, thereby integrating the technical rhythms of delivery with the evidentiary timelines of",
+        "auditors, regulators, and financial stakeholders.",
+        "**Institutional Justification**: Absent this role, execution risks fragmentation: engineering may",
+        "accelerate unsustainably, compliance may lag, and external optics may degrade. The Project Manager",
+        "provides the integrative discipline that averts this divergence.",
+        "---"
+      ],
+      "summary" : "iOS Engineer deliverables and to unify the broader lattice of supporting execution agents.",
+      "timestamp" : "2025-08-17",
+      "title" : "Origin"
+    },
+    {
+      "title" : "Recorded Entries"
+    },
+    {
+      "details" : [
+        "date: 2025-08-17",
+        "author: project-manager",
+        "-->",
+        "**Date**: 2025-08-17",
+        "**Decision**: Adoption of quarterly milestone architectures embedding buffers, dependencies, and",
+        "compliance checkpoints.",
+        "**Rationale**: Structured predictability insulates against volatility while permitting adaptive",
+        "flexibility.",
+        "**Impact**: Fostered alignment between engineering deliverables, Apple-level mandates, and",
+        "external optics. Established the expectation that all milestones carry dual accountability:",
+        "technical execution and governance validation."
+      ],
+      "summary" : "<!--",
+      "timestamp" : "2025-08-17",
+      "title" : "Entry 1 — Institutionalization of Milestone Architectures"
+    },
+    {
+      "details" : [
+        "date: 2025-08-17",
+        "author: project-manager",
+        "-->",
+        "**Date**: 2025-08-17",
+        "**Decision**: Instituted mandatory monthly governance checkpoints annotated with compliance and",
+        "fiscal review elements.",
+        "**Rationale**: Aligns operational cadence with payroll cycles, lender reporting requirements, and",
+        "quarterly governance optics.",
+        "**Impact**: Each checkpoint serves as both an operational milestone and an audit-ready artifact.",
+        "The practice created a rhythm of accountability that binds execution to oversight in real time."
+      ],
+      "summary" : "<!--",
+      "timestamp" : "2025-08-17",
+      "title" : "Entry 2 — Governance Review Cadence Formalization"
+    },
+    {
+      "details" : [
+        "date: 2025-08-17",
+        "author: project-manager",
+        "-->",
+        "**Date**: 2025-08-17",
+        "**Decision**: All critical risks must be documented no fewer than two weeks before anticipated",
+        "impact on the critical path.",
+        "**Rationale**: Anticipatory documentation provides sufficient lead time for structured",
+        "remediation, minimizing crisis-driven intervention.",
+        "**Impact**: Strengthened the resilience of execution schedules, enhanced confidence among",
+        "stakeholders, and institutionalized risk as a quantifiable, governable dimension of project",
+        "cadence."
+      ],
+      "summary" : "<!--",
+      "timestamp" : "2025-08-17",
+      "title" : "Entry 3 — Codification of Risk Visibility Standard"
+    },
+    {
+      "details" : [
+        "date: 2025-08-18",
+        "author: project-manager",
+        "-->",
+        "**Date**: 2025-08-18",
+        "**Decision**: Cadence reports must now incorporate velocity metrics, governance adherence scores,",
+        "and audit-readiness indicators.",
+        "**Rationale**: To elevate reporting beyond raw metrics into artifacts that satisfy both",
+        "engineering stewardship and lender-facing optics.",
+        "**Impact**: Reports became multi-layered documents: operational dashboards for engineers,",
+        "compliance scorecards for governance officers, and institutional optics reports for external",
+        "stakeholders."
+      ],
+      "summary" : "<!--",
+      "timestamp" : "2025-08-18",
+      "title" : "Entry 4 — Expansion of Cadence Reports"
+    },
+    {
+      "details" : [
+        "date: 2025-08-27",
+        "author: project-manager",
+        "-->",
+        "**Date**: 2025-08-27",
+        "**Decision**: Seeded project-manager agents across project directories to establish cadence",
+        "tracking from inception.",
+        "**Impact**: Ensures each project maintains a dedicated log and milestone steward from day one."
+      ],
+      "summary" : "<!--",
+      "timestamp" : "2025-08-27",
+      "title" : "Entry 5 — Inaugural Project Management Sprint"
+    },
+    {
+      "details" : [
+        "date: 2025-09-07",
+        "author: project-manager",
+        "-->",
+        "**Date**: 2025-09-07",
+        "**Decision**: Established metadata comment format for all agency updates and updated existing",
+        "project-manager logs.",
+        "**Impact**: Ensures consistent, machine-readable log structure across projects.",
+        "---"
+      ],
+      "summary" : "<!--",
+      "timestamp" : "2025-09-07",
+      "title" : "Entry 6 — Standardization of Agency Logs"
+    },
+    {
+      "details" : [
+        "discipline, compliance visibility, and governance protocols have been synthesized into a coherent",
+        "executional framework. By holding cadence as sacrosanct, Wrkstrm ensures that execution is not only",
+        "timely but also evidentiary, auditable, and institutionally defensible.",
+        "---"
+      ],
+      "summary" : "**Cadence is the foundation of trust.** This file is the enduring record of how scheduling",
+      "title" : "Guiding Principle"
+    },
+    {
+      "details" : [
+        "Record negotiation outcomes when inter-agent resources compete or conflict, noting both resolution",
+        "Capture and analyze post-mortems from schedule slippage, explicitly documenting remediation",
+        "strategies and structural lessons.",
+        "Preserve governance reviews as case studies in reconciling the divergent imperatives of internal",
+        "execution velocity and external optics.",
+        "Chronicle the iterative evolution of CommonLog observability as it matures into a",
+        "governance-grade instrument for cadence monitoring.",
+        "Archive comparative studies of milestone planning methodologies (e.g., Gantt, network graph, or",
+        "adaptive-flow models) to evaluate institutional fit.",
+        "Capture innovations in CI/CD integration where milestone status and compliance reporting converge",
+        "within automated pipelines.",
+        "---"
+      ],
+      "summary" : "and long-term institutional consequences.",
+      "title" : "Future Memory Hooks"
+    },
+    {
+      "details" : [
+        ".clia/agents/project-manager/",
+        "project-manager.agent.md   # mandate",
+        "project-manager.agency.md  # this file — institutional memory",
+        "project-manager.agenda.md  # strategic roadmap",
+        "```"
+      ],
+      "summary" : "```",
+      "title" : "Directory Placement"
+    }
+  ],
+  "links" : [
+
+  ],
+  "mentors" : [
+
+  ],
+  "notes" : [
+    {
+      "author" : "",
+      "blocks" : [
+
+      ],
+      "date" : ""
+    },
+    {
+      "author" : "policy",
+      "blocks" : [
+        {
+          "kind" : "paragraph",
+          "text" : [
+            "Automation: use Swift-based launchpad/scratch tools (SPM) and avoid Python for repository automation."
+          ]
+        }
+      ]
+    }
+  ],
+  "schemaVersion" : "0.4.0",
+  "sections" : [
+    {
+      "items" : [
+        "> This document constitutes the archival repository of the Project Manager agent’s deliberative > history and institutional reasoning. Together with `project-manager.agent.md` (mandate) and > `project-manager.agenda.md` (roadmap), it ensures continuity across temporal horizons by > preserving not merely the operational outcomes but the intellectual rationales, negotiations, and > methodological innovations that informed them. Its role is to safeguard institutional memory as an > evolving corpus of insights that future stewards can inherit, extend, and refine."
+      ],
+      "kind" : "paragraphs",
+      "slug" : "project-manageragencymd-institutional-memory",
+      "title" : "📓 project-manager.agency.md — Institutional Memory"
+    },
+    {
+      "items" : [
+        "**Cadence is the foundation of trust.** This file is the enduring record of how scheduling discipline, compliance visibility, and governance protocols have been synthesized into a coherent executional framework. By holding cadence as sacrosanct, Wrkstrm ensures that execution is not only timely but also evidentiary, auditable, and institutionally defensible."
+      ],
+      "kind" : "paragraphs",
+      "slug" : "guiding-principle",
+      "title" : "Guiding Principle"
+    },
+    {
+      "items" : [
+        "``` .clia/agents/project-manager/ project-manager.agent.md   # mandate project-manager.agency.md  # this file — institutional memory project-manager.agenda.md  # strategic roadmap ```"
+      ],
+      "kind" : "paragraphs",
+      "slug" : "directory-placement",
+      "title" : "Directory Placement"
+    }
+  ],
+  "slug" : "project-manager",
+  "sourcePath" : ".clia/agents/templates/project-manager/project-manager.agency.md",
+  "status" : "draft",
+  "tags" : [
+
+  ],
+  "title" : "Project Manager Agency",
+  "updated" : "2025-09-22T03:36:15Z"
+}

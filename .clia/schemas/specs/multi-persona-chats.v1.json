@@ -1,0 +1,55 @@
+{
+  "$schemaVersion" : "0.1.0",
+  "addressing" : {
+    "handles" : [
+      "@codex",
+      "@carrie",
+      "@dot",
+      "@clia",
+      "@cadence",
+      "@carrie-credential"
+    ],
+    "slugs" : [
+      "codex",
+      "carrie",
+      "dot",
+      "clia",
+      "cadence"
+    ]
+  },
+  "journaling" : {
+    "handoffFormat" : "handoff: <from>-><to> — <why>",
+    "signatureSuffix" : "-<SIGNATURE>"
+  },
+  "patterns" : {
+    "all" : "^@all\\b",
+    "handleLineStart" : "^@(codex|carrie|dot|clia|cadence|carrie-credential)\\b",
+    "handoff" : "@handoff\\((?<from>[a-z0-9-]+)->(?<to>[a-z0-9-]+)\\)",
+    "pair" : "@pair\\((?<a>[a-z0-9-]+),(?<b>[a-z0-9-]+)\\)",
+    "slugLineStart" : "^\\s*(agent:[a-z0-9-]+)\\b",
+    "triage" : "^@triage\\b"
+  },
+  "references" : {
+    "roles" : ".clia/schemas/specs/roles.v1.json"
+  },
+  "routing" : {
+    "broadcastSet" : [
+      "codex",
+      "carrie",
+      "dot",
+      "clia",
+      "cadence"
+    ],
+    "defaults" : {
+      "triage" : "codex"
+    },
+    "precedence" : [
+      "role",
+      "handle",
+      "directiveExplicit",
+      "directiveDefault"
+    ]
+  },
+  "updated" : "2025-09-28T00:00:00Z",
+  "version" : "1.0.0-draft"
+}

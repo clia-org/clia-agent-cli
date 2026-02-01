@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" role="img"
+  aria-label="Philographic: Agent CLIA">
+  <title>Philographic: Agent CLIA</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#140b2b" />
+      <stop offset="0.6" stop-color="#1b1242" />
+      <stop offset="1" stop-color="#0a0a18" />
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff7ad9" />
+      <stop offset="1" stop-color="#ffb86b" />
+    </linearGradient>
+    <linearGradient id="grid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#35f7ff" stop-opacity="0.6" />
+      <stop offset="1" stop-color="#35f7ff" stop-opacity="0.05" />
+    </linearGradient>
+    <clipPath id="clip">
+      <rect width="512" height="512" rx="72" />
+    </clipPath>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="512" height="512" fill="url(#bg)" />
+
+    <g opacity="0.75">
+      <circle cx="80" cy="90" r="2" fill="#8be9fd" />
+      <circle cx="140" cy="140" r="1.5" fill="#f8f8f2" />
+      <circle cx="210" cy="70" r="2" fill="#ff79c6" />
+      <circle cx="320" cy="110" r="1.5" fill="#f8f8f2" />
+      <circle cx="410" cy="60" r="2" fill="#8be9fd" />
+    </g>
+
+    <circle cx="370" cy="120" r="46" fill="url(#sun)" stroke="#ff79c6"
+      stroke-width="4" />
+
+    <polygon points="0,290 120,210 240,290" fill="#0f0a25" />
+    <polygon points="160,290 260,200 360,290" fill="#120c2b" />
+    <polygon points="280,290 380,220 512,290" fill="#0f0a25" />
+
+    <rect x="0" y="290" width="512" height="222" fill="#0a0a18" />
+
+    <g stroke="url(#grid)" stroke-width="2">
+      <line x1="0" y1="310" x2="512" y2="310" />
+      <line x1="0" y1="330" x2="512" y2="330" />
+      <line x1="0" y1="356" x2="512" y2="356" />
+      <line x1="0" y1="388" x2="512" y2="388" />
+      <line x1="0" y1="424" x2="512" y2="424" />
+      <line x1="0" y1="466" x2="512" y2="466" />
+    </g>
+
+    <g stroke="#35f7ff" stroke-opacity="0.45" stroke-width="2">
+      <line x1="64" y1="512" x2="256" y2="300" />
+      <line x1="128" y1="512" x2="256" y2="300" />
+      <line x1="192" y1="512" x2="256" y2="300" />
+      <line x1="256" y1="512" x2="256" y2="300" />
+      <line x1="320" y1="512" x2="256" y2="300" />
+      <line x1="384" y1="512" x2="256" y2="300" />
+      <line x1="448" y1="512" x2="256" y2="300" />
+    </g>
+
+    <g>
+      <rect x="236" y="236" width="40" height="100" fill="#120f2e"
+        stroke="#ff79c6" stroke-width="4" />
+      <polygon points="256,200 272,236 240,236" fill="#f8f8f2"
+        stroke="#8be9fd" stroke-width="4" />
+      <rect x="244" y="336" width="24" height="70" fill="#2b1a4b"
+        stroke="#ff79c6" stroke-width="4" />
+    </g>
+
+    <rect x="32" y="32" width="448" height="448" fill="none" stroke="#8be9fd"
+      stroke-width="4" opacity="0.6" />
+  </g>
+</svg>

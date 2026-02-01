@@ -1,0 +1,34 @@
+{
+  "template": "daily.v1",
+  "date": "{{ date }}"
+}
+
+# {{ date }}
+
+<!-- wrkt:section:what-did-i-do-yesterday -->
+## What did I do yesterday?
+
+-
+
+<!-- wrkt:section:already-did -->
+## Already did today
+
+-
+
+<!-- wrkt:section:what-will-i-do-today -->
+## What will I do today?
+
+-
+
+<!-- wrkt:section:on-deck -->
+## On deck
+
+-
+
+<!-- wrkt:section:daily-qa -->
+## Daily Q&A
+
+- Energy (1–5):
+- One thing that makes today a win:
+- Learning from yesterday:
+- Someone to thank / follow-up:

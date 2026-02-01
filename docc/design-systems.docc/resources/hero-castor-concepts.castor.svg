@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" fill="none" role="img" aria-label="Hero: Gemini Concepts">
+  <defs>
+    <linearGradient id="spectrum" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#34D399"/> <!-- Calm -->
+      <stop offset="50%" stop-color="#F59E0B"/> <!-- Focus -->
+      <stop offset="100%" stop-color="#EF4444"/> <!-- Danger -->
+    </linearGradient>
+    <clipPath id="hero-clip">
+      <rect width="1200" height="400" rx="24"/>
+    </clipPath>
+    <style>
+      @keyframes wave-bg {
+        0% { transform: translateX(-50px); }
+        50% { transform: translateX(50px); }
+        100% { transform: translateX(-50px); }
+      }
+      .wave-path { animation: wave-bg 10s ease-in-out infinite; }
+    </style>
+  </defs>
+  <g clip-path="url(#hero-clip)">
+    <rect width="1200" height="400" fill="#0F172A"/>
+    
+    <!-- Flowing Spectrum -->
+    <path d="M-100 200 Q 300 0 600 200 T 1300 200 V 500 H -100 Z" fill="url(#spectrum)" opacity="0.2" class="wave-path"/>
+    <path d="M-100 300 Q 300 100 600 300 T 1300 300 V 500 H -100 Z" fill="url(#spectrum)" opacity="0.4" class="wave-path" style="animation-delay: -2s"/>
+    
+    <!-- Concept Nodes -->
+    <circle cx="200" cy="200" r="10" fill="#34D399"/>
+    <circle cx="600" cy="200" r="10" fill="#F59E0B"/>
+    <circle cx="1000" cy="200" r="10" fill="#EF4444"/>
+    
+    <line x1="210" y1="200" x2="590" y2="200" stroke="#fff" stroke-opacity="0.1" stroke-dasharray="10 10"/>
+    <line x1="610" y1="200" x2="990" y2="200" stroke="#fff" stroke-opacity="0.1" stroke-dasharray="10 10"/>
+  </g>
+</svg>

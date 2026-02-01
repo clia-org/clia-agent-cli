@@ -1,0 +1,25 @@
+{
+  "filters" : {
+    "labels" : [
+
+    ],
+    "owner" : "",
+    "status" : [
+
+    ]
+  },
+  "groupBy" : "status",
+  "output" : {
+    "doccDir" : "code/mono/apple/alphabeta/clia/docc/requests.docc/articles/generated",
+    "markdownDir" : "docs/requests/generated"
+  },
+  "schemaVersion" : "0.1.0",
+  "sort" : "created",
+  "sources" : [
+    ".clia/requests/*/request.json"
+  ],
+  "templates" : {
+    "index" : "code/mono/apple/spm/universal/DoccStencil/Templates/requests/index.stencil",
+    "request" : "code/mono/apple/spm/universal/DoccStencil/Templates/requests/request.stencil"
+  }
+}

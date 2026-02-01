@@ -1,0 +1,163 @@
+{
+  "$defs" : {
+    "AgentRef" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "lLevel" : {
+          "enum" : [
+            "L0",
+            "L1",
+            "L2",
+            "L3",
+            "L4"
+          ],
+          "type" : "string"
+        },
+        "role" : {
+          "type" : "string"
+        },
+        "scope" : {
+          "type" : "string"
+        },
+        "slug" : {
+          "pattern" : "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "type" : "string"
+        }
+      },
+      "required" : [
+        "slug"
+      ],
+      "type" : "object"
+    },
+    "Contribution" : {
+      "properties" : {
+        "type" : {
+          "description" : "S-Types identifier (kebab-case)",
+          "pattern" : "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "type" : "string"
+        },
+        "weight" : {
+          "description" : "> 0 when provided; writers may default to 1; readers normalize",
+          "exclusiveMinimum" : 0,
+          "type" : "number"
+        }
+      },
+      "required" : [
+        "type"
+      ],
+      "type" : "object"
+    },
+    "ContributionGroup" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "by" : {
+          "description" : "Agent slug (kebab-case)",
+          "pattern" : "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "type" : "string"
+        },
+        "types" : {
+          "items" : {
+            "$ref" : "#/$defs/ContributionItem"
+          },
+          "minItems" : 1,
+          "type" : "array"
+        }
+      },
+      "required" : [
+        "by",
+        "types"
+      ],
+      "type" : "object"
+    },
+    "ContributionItem" : {
+      "allOf" : [
+        {
+          "$ref" : "#/$defs/Contribution"
+        },
+        {
+          "properties" : {
+            "evidence" : {
+              "description" : "Artifact/note (e.g., PR #42)",
+              "minLength" : 1,
+              "type" : "string"
+            }
+          },
+          "required" : [
+            "evidence"
+          ],
+          "type" : "object",
+          "unevaluatedProperties" : false
+        }
+      ]
+    },
+    "Link" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "href" : {
+          "type" : "string"
+        },
+        "kind" : {
+          "type" : "string"
+        },
+        "title" : {
+          "type" : "string"
+        }
+      },
+      "required" : [
+        "href"
+      ],
+      "type" : "object"
+    },
+    "PersonRef" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "email" : {
+          "format" : "email",
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        }
+      },
+      "required" : [
+        "name"
+      ],
+      "type" : "object"
+    },
+    "Section" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "items" : {
+          "items" : {
+            "type" : "string"
+          },
+          "type" : "array"
+        },
+        "kind" : {
+          "type" : [
+            "string",
+            "null"
+          ]
+        },
+        "slug" : {
+          "pattern" : "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "type" : [
+            "string",
+            "null"
+          ]
+        },
+        "title" : {
+          "type" : [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "type" : "object"
+    }
+  },
+  "$id" : "https://wrkstrm.dev/schemas/triads/core.json",
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "description" : "Shared $defs for CLIA triads (Agent/Agency/Agenda) — 0.4.0 line.",
+  "title" : "CLIA Triads Core Types (v0)"
+}

@@ -1,0 +1,31 @@
+{
+  "agentVersion" : "",
+  "date" : "2025-09-29",
+  "entries" : [
+    {
+      "details" : null,
+      "kind" : "winddown",
+      "summary" : "End of day",
+      "timestamp" : "2025-09-29T10:23:06Z"
+    }
+  ],
+  "focus" : [
+    "Flip Dot/Cadence to central array append post cache visibility tweak"
+  ],
+  "highlights" : [
+    "Centralized shared commands (mirrors, render-agenda, journal, roster-update, doctor) in CLIAAgentCoreCLICommands.",
+    "CLIA appends one shared array; Dot/Cadence expose shared commands consistently."
+  ],
+  "nextSteps" : [
+    "Run doctor + agency checks tomorrow and finalize array append in Dot/Cadence"
+  ],
+  "signature" : "-CL",
+  "timestamp" : "2025-09-29T07:31:46Z",
+  "updated" : "2025-09-29T10:23:06Z",
+  "x-dirsTouched" : [
+    "code/mono/apple/spm/cli/agents/clia-agent-core/Sources/CLIAAgentCoreCLICommands/",
+    "code/mono/apple/spm/clis/agents/clia/Sources/CliaAgentCLI/Commands/",
+    "code/mono/apple/spm/clis/agents/dot/Sources/DotAgentCLI/",
+    "code/mono/apple/spm/clis/agents/cadence/Sources/CadenceAgentCLI/"
+  ]
+}

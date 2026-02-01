@@ -1,0 +1,143 @@
+{
+  "$id" : "https://wrkstrm.dev/schemas/epic.request.schema.json",
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "properties" : {
+    "children" : {
+      "items" : {
+        "type" : "string"
+      },
+      "type" : "array"
+    },
+    "id" : {
+      "type" : "string"
+    },
+    "links" : {
+      "items" : {
+        "properties" : {
+          "title" : {
+            "type" : "string"
+          },
+          "url" : {
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      },
+      "type" : "array"
+    },
+    "metrics" : {
+      "items" : {
+        "type" : "string"
+      },
+      "type" : "array"
+    },
+    "notes" : {
+      "items" : {
+        "type" : "string"
+      },
+      "type" : "array"
+    },
+    "outcomes" : {
+      "items" : {
+        "type" : "string"
+      },
+      "type" : "array"
+    },
+    "owner" : {
+      "type" : "string"
+    },
+    "risks" : {
+      "items" : {
+        "type" : "string"
+      },
+      "type" : "array"
+    },
+    "schemaVersion" : {
+      "default" : "0.1.0",
+      "type" : "string"
+    },
+    "startDate" : {
+      "type" : "string"
+    },
+    "status" : {
+      "enum" : [
+        "proposed",
+        "planned",
+        "in-progress",
+        "blocked",
+        "done"
+      ],
+      "type" : "string"
+    },
+    "summary" : {
+      "type" : "string"
+    },
+    "tags" : {
+      "items" : {
+        "type" : "string"
+      },
+      "type" : "array"
+    },
+    "targetDate" : {
+      "type" : "string"
+    },
+    "title" : {
+      "type" : "string"
+    },
+    "workstreams" : {
+      "items" : {
+        "properties" : {
+          "dependencies" : {
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
+          },
+          "id" : {
+            "type" : "string"
+          },
+          "notes" : {
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
+          },
+          "paths" : {
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
+          },
+          "status" : {
+            "enum" : [
+              "planned",
+              "in-progress",
+              "blocked",
+              "done"
+            ],
+            "type" : "string"
+          },
+          "title" : {
+            "type" : "string"
+          }
+        },
+        "required" : [
+          "id",
+          "title",
+          "status"
+        ],
+        "type" : "object"
+      },
+      "type" : "array"
+    }
+  },
+  "required" : [
+    "id",
+    "title",
+    "status",
+    "owner",
+    "summary"
+  ],
+  "title" : "EpicRequest",
+  "type" : "object"
+}

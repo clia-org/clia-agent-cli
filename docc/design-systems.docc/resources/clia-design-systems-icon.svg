@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none"
+  role="img" aria-label="CLIA design systems icon">
+  <title>CLIA design systems</title>
+  <defs>
+    <linearGradient id="g" x1="10" y1="10" x2="118" y2="118" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5EDCFF" stop-opacity="0.75"/>
+      <stop offset="0.55" stop-color="#A78BFA" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#FF9F6E" stop-opacity="0.65"/>
+    </linearGradient>
+  </defs>
+  <rect x="10" y="10" width="108" height="108" rx="26" fill="#0B1636" stroke="url(#g)"
+    stroke-opacity="0.95" stroke-width="4"/>
+  <rect x="30" y="34" width="68" height="18" rx="9" fill="#101D44" stroke="#93C5FD"
+    stroke-opacity="0.45" stroke-width="2"/>
+  <rect x="30" y="58" width="68" height="18" rx="9" fill="#101D44" stroke="#A78BFA"
+    stroke-opacity="0.45" stroke-width="2"/>
+  <rect x="30" y="82" width="68" height="18" rx="9" fill="#101D44" stroke="#FF9F6E"
+    stroke-opacity="0.45" stroke-width="2"/>
+  <path d="M38 43h22" stroke="#E5EDFF" stroke-opacity="0.9" stroke-width="3"
+    stroke-linecap="round"/>
+  <path d="M38 67h28" stroke="#E5EDFF" stroke-opacity="0.9" stroke-width="3"
+    stroke-linecap="round"/>
+  <path d="M38 91h18" stroke="#E5EDFF" stroke-opacity="0.9" stroke-width="3"
+    stroke-linecap="round"/>
+</svg>

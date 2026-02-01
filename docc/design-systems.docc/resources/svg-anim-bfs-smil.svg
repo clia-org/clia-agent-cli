@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" role="img"
+  aria-label="BFS node highlight (SMIL)">
+  <title>BFS node highlight (SMIL)</title>
+  <circle id="n1" cx="30" cy="30" r="10" fill="#2B2B2B">
+    <animate attributeName="fill" values="#2B2B2B;#00A3FF;#2B2B2B"
+      begin="0s" dur="3s" repeatCount="indefinite" />
+  </circle>
+  <circle id="n2" cx="110" cy="30" r="10" fill="#2B2B2B">
+    <animate attributeName="fill" values="#2B2B2B;#00A3FF;#2B2B2B"
+      begin="1s" dur="3s" repeatCount="indefinite" />
+  </circle>
+  <circle id="n3" cx="190" cy="30" r="10" fill="#2B2B2B">
+    <animate attributeName="fill" values="#2B2B2B;#00A3FF;#2B2B2B"
+      begin="2s" dur="3s" repeatCount="indefinite" />
+  </circle>
+</svg>

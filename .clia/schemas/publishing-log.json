@@ -1,0 +1,13 @@
+{
+  "entries" : [
+    {
+      "docsUrl" : "http://localhost:8080",
+      "package" : "demo-docc-bundle",
+      "result" : "skipped",
+      "visibility" : "private",
+      "warningsCount" : 0,
+      "when" : "2025-09-29T10:35:00Z"
+    }
+  ],
+  "schemaVersion" : 1
+}

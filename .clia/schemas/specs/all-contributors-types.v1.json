@@ -1,0 +1,290 @@
+{
+  "$schema" : "wrkspec://clia/all-contributors-types.v1",
+  "source" : "https://allcontributors.org/docs/en/emoji-key",
+  "types" : {
+    "a11y" : {
+      "emoji" : "♿️",
+      "synonyms" : [
+        "a11y",
+        "access"
+      ]
+    },
+    "audio" : {
+      "emoji" : "🔊",
+      "synonyms" : [
+        "podcast"
+      ]
+    },
+    "blog" : {
+      "emoji" : "📝",
+      "synonyms" : [
+        "blogging",
+        "blog-post",
+        "post"
+      ]
+    },
+    "bug" : {
+      "emoji" : "🐛",
+      "synonyms" : [
+        "bugs",
+        "fixes"
+      ]
+    },
+    "business" : {
+      "emoji" : "💼",
+      "synonyms" : [
+        "bizdev",
+        "partnerships",
+        "sales"
+      ]
+    },
+    "code" : {
+      "emoji" : "💻",
+      "synonyms" : [
+        "coding",
+        "implementation"
+      ]
+    },
+    "community" : {
+      "emoji" : "👥",
+      "synonyms" : [
+        "community-building",
+        "community management",
+        "moderation"
+      ]
+    },
+    "content" : {
+      "emoji" : "🖋",
+      "synonyms" : [
+        "writing",
+        "blog"
+      ]
+    },
+    "data" : {
+      "emoji" : "🔣",
+      "synonyms" : [
+        "dataset",
+        "metrics"
+      ]
+    },
+    "design" : {
+      "emoji" : "🎨",
+      "synonyms" : [
+        "ui",
+        "ux",
+        "visual-design"
+      ]
+    },
+    "doc" : {
+      "emoji" : "📖",
+      "synonyms" : [
+        "docc",
+        "docs",
+        "documentation",
+        "readme"
+      ]
+    },
+    "eventOrganizing" : {
+      "emoji" : "📋",
+      "synonyms" : [
+        "events",
+        "meetup",
+        "organizing"
+      ]
+    },
+    "example" : {
+      "emoji" : "💡",
+      "synonyms" : [
+        "samples",
+        "snippets"
+      ]
+    },
+    "financial" : {
+      "emoji" : "💵",
+      "synonyms" : [
+        "finance",
+        "accounting",
+        "budget"
+      ]
+    },
+    "fundingFinding" : {
+      "emoji" : "🔍",
+      "synonyms" : [
+        "fundraising",
+        "sponsorships",
+        "grants"
+      ]
+    },
+    "ideas" : {
+      "emoji" : "🤔",
+      "synonyms" : [
+        "brainstorm",
+        "proposal"
+      ]
+    },
+    "infra" : {
+      "emoji" : "🚇",
+      "synonyms" : [
+        "ci",
+        "incident-response",
+        "infrastructure",
+        "ir",
+        "on-call",
+        "oncall",
+        "ops",
+        "pager",
+        "platform-engineering",
+        "sre"
+      ]
+    },
+    "maintenance" : {
+      "emoji" : "🚧",
+      "synonyms" : [
+        "blameless",
+        "incident",
+        "incidents",
+        "maintain",
+        "post-mortem",
+        "postmortem",
+        "refactor",
+        "retro",
+        "retrospective",
+        "runbook",
+        "runbooks"
+      ]
+    },
+    "mentoring" : {
+      "emoji" : "🧑‍🏫",
+      "synonyms" : [
+        "teaching",
+        "coaching"
+      ]
+    },
+    "platform" : {
+      "emoji" : "📦",
+      "synonyms" : [
+        "packaging",
+        "distribution",
+        "release-engineering"
+      ]
+    },
+    "plugin" : {
+      "emoji" : "🔌",
+      "synonyms" : [
+        "extension",
+        "integration",
+        "adapter"
+      ]
+    },
+    "projectManagement" : {
+      "emoji" : "📆",
+      "synonyms" : [
+        "project-manager",
+        "project manager",
+        "pjm",
+        "pm",
+        "projectManagement"
+      ]
+    },
+    "promotion" : {
+      "emoji" : "📣",
+      "synonyms" : [
+        "brand",
+        "branding",
+        "campaign",
+        "comms",
+        "communication",
+        "communications",
+        "marketing",
+        "media",
+        "outreach",
+        "pr",
+        "press",
+        "press-release",
+        "public-relations",
+        "social",
+        "social-media"
+      ]
+    },
+    "question" : {
+      "emoji" : "💬",
+      "synonyms" : [
+        "support",
+        "help",
+        "q&a",
+        "q-and-a"
+      ]
+    },
+    "research" : {
+      "emoji" : "🔬",
+      "synonyms" : [
+        "analysis",
+        "investigation"
+      ]
+    },
+    "review" : {
+      "emoji" : "👀",
+      "synonyms" : [
+        "code-review",
+        "pr-review"
+      ]
+    },
+    "security" : {
+      "emoji" : "🛡️",
+      "synonyms" : [
+        "vuln",
+        "hardening"
+      ]
+    },
+    "talk" : {
+      "emoji" : "📢",
+      "synonyms" : [
+        "presentation",
+        "speaking"
+      ]
+    },
+    "test" : {
+      "emoji" : "⚠️",
+      "synonyms" : [
+        "tests",
+        "qa"
+      ]
+    },
+    "tool" : {
+      "emoji" : "🔧",
+      "synonyms" : [
+        "tooling",
+        "cli"
+      ]
+    },
+    "translation" : {
+      "emoji" : "🌍",
+      "synonyms" : [
+        "i18n",
+        "l10n",
+        "localization"
+      ]
+    },
+    "tutorial" : {
+      "emoji" : "✅",
+      "synonyms" : [
+        "howto",
+        "guide"
+      ]
+    },
+    "userTesting" : {
+      "emoji" : "📓",
+      "synonyms" : [
+        "usability",
+        "ux-testing"
+      ]
+    },
+    "video" : {
+      "emoji" : "📹",
+      "synonyms" : [
+        "screencast"
+      ]
+    }
+  },
+  "version" : "1.0.0"
+}

@@ -1,0 +1,525 @@
+{
+  "multipliers" : {
+    "neutral" : 1,
+    "stabilizes_with" : 1.5,
+    "strains_with" : 0.69999999999999996,
+    "synergizes_with" : 2
+  },
+  "schema" : [
+    "synergizes_with",
+    "stabilizes_with",
+    "strains_with"
+  ],
+  "types" : {
+    "a11y" : {
+      "stabilizes_with" : [
+        "review",
+        "projectManagement"
+      ],
+      "strains_with" : [
+        "plugin",
+        "promotion"
+      ],
+      "synergizes_with" : [
+        "design",
+        "doc",
+        "userTesting"
+      ]
+    },
+    "audio" : {
+      "stabilizes_with" : [
+        "content",
+        "community"
+      ],
+      "strains_with" : [
+        "doc"
+      ],
+      "synergizes_with" : [
+        "promotion",
+        "talk",
+        "video"
+      ]
+    },
+    "blog" : {
+      "stabilizes_with" : [
+        "doc",
+        "community"
+      ],
+      "strains_with" : [
+        "maintenance",
+        "bug"
+      ],
+      "synergizes_with" : [
+        "promotion",
+        "research",
+        "content"
+      ]
+    },
+    "bug" : {
+      "stabilizes_with" : [
+        "security",
+        "infra"
+      ],
+      "strains_with" : [
+        "code",
+        "promotion"
+      ],
+      "synergizes_with" : [
+        "test",
+        "review",
+        "maintenance"
+      ]
+    },
+    "business" : {
+      "stabilizes_with" : [
+        "projectManagement"
+      ],
+      "strains_with" : [
+        "code",
+        "design"
+      ],
+      "synergizes_with" : [
+        "fundingFinding",
+        "promotion",
+        "financial"
+      ]
+    },
+    "code" : {
+      "stabilizes_with" : [
+        "test",
+        "review",
+        "infra",
+        "maintenance"
+      ],
+      "strains_with" : [
+        "bug",
+        "ideas",
+        "promotion"
+      ],
+      "synergizes_with" : [
+        "design",
+        "tool",
+        "platform",
+        "mentoring"
+      ]
+    },
+    "community" : {
+      "stabilizes_with" : [
+        "doc",
+        "userTesting"
+      ],
+      "strains_with" : [
+        "security",
+        "plugin"
+      ],
+      "synergizes_with" : [
+        "mentoring",
+        "promotion",
+        "question",
+        "eventOrganizing"
+      ]
+    },
+    "content" : {
+      "stabilizes_with" : [
+        "doc",
+        "community"
+      ],
+      "strains_with" : [
+        "maintenance"
+      ],
+      "synergizes_with" : [
+        "promotion",
+        "blog",
+        "video",
+        "audio"
+      ]
+    },
+    "data" : {
+      "stabilizes_with" : [
+        "ideas",
+        "promotion"
+      ],
+      "strains_with" : [
+        "design",
+        "content"
+      ],
+      "synergizes_with" : [
+        "research",
+        "test"
+      ]
+    },
+    "design" : {
+      "stabilizes_with" : [
+        "code",
+        "infra"
+      ],
+      "strains_with" : [
+        "maintenance",
+        "bug"
+      ],
+      "synergizes_with" : [
+        "doc",
+        "userTesting",
+        "ideas",
+        "content"
+      ]
+    },
+    "doc" : {
+      "stabilizes_with" : [
+        "code",
+        "design",
+        "platform"
+      ],
+      "strains_with" : [
+        "ideas",
+        "infra"
+      ],
+      "synergizes_with" : [
+        "example",
+        "tutorial",
+        "translation",
+        "mentoring"
+      ]
+    },
+    "eventOrganizing" : {
+      "stabilizes_with" : [
+        "mentoring"
+      ],
+      "strains_with" : [
+        "code",
+        "test"
+      ],
+      "synergizes_with" : [
+        "community",
+        "promotion",
+        "talk"
+      ]
+    },
+    "example" : {
+      "stabilizes_with" : [
+        "code"
+      ],
+      "strains_with" : [
+        "design",
+        "research"
+      ],
+      "synergizes_with" : [
+        "doc",
+        "tutorial",
+        "mentoring"
+      ]
+    },
+    "financial" : {
+      "stabilizes_with" : [
+        "infra",
+        "platform"
+      ],
+      "strains_with" : [
+        "ideas",
+        "design"
+      ],
+      "synergizes_with" : [
+        "fundingFinding",
+        "business"
+      ]
+    },
+    "fundingFinding" : {
+      "stabilizes_with" : [
+        "projectManagement"
+      ],
+      "strains_with" : [
+        "research",
+        "code"
+      ],
+      "synergizes_with" : [
+        "business",
+        "promotion",
+        "financial"
+      ]
+    },
+    "ideas" : {
+      "stabilizes_with" : [
+        "projectManagement",
+        "mentoring"
+      ],
+      "strains_with" : [
+        "test",
+        "maintenance",
+        "infra"
+      ],
+      "synergizes_with" : [
+        "design",
+        "research",
+        "content"
+      ]
+    },
+    "infra" : {
+      "stabilizes_with" : [
+        "code",
+        "security",
+        "maintenance"
+      ],
+      "strains_with" : [
+        "design",
+        "doc"
+      ],
+      "synergizes_with" : [
+        "platform",
+        "tool",
+        "test"
+      ]
+    },
+    "maintenance" : {
+      "stabilizes_with" : [
+        "infra",
+        "security"
+      ],
+      "strains_with" : [
+        "promotion",
+        "ideas"
+      ],
+      "synergizes_with" : [
+        "test",
+        "review",
+        "tool"
+      ]
+    },
+    "mentoring" : {
+      "stabilizes_with" : [
+        "code",
+        "projectManagement"
+      ],
+      "strains_with" : [
+        "ideas"
+      ],
+      "synergizes_with" : [
+        "doc",
+        "tutorial",
+        "community"
+      ]
+    },
+    "platform" : {
+      "stabilizes_with" : [
+        "doc",
+        "test"
+      ],
+      "strains_with" : [
+        "design",
+        "content"
+      ],
+      "synergizes_with" : [
+        "infra",
+        "tool",
+        "code"
+      ]
+    },
+    "plugin" : {
+      "stabilizes_with" : [
+        "infra"
+      ],
+      "strains_with" : [
+        "security",
+        "maintenance"
+      ],
+      "synergizes_with" : [
+        "code",
+        "tool",
+        "platform"
+      ]
+    },
+    "projectManagement" : {
+      "stabilizes_with" : [
+        "ideas",
+        "promotion"
+      ],
+      "strains_with" : [
+        "code",
+        "design"
+      ],
+      "synergizes_with" : [
+        "doc",
+        "business",
+        "research"
+      ]
+    },
+    "promotion" : {
+      "stabilizes_with" : [
+        "business",
+        "fundingFinding"
+      ],
+      "strains_with" : [
+        "bug",
+        "test",
+        "security"
+      ],
+      "synergizes_with" : [
+        "content",
+        "audio",
+        "video",
+        "talk",
+        "community",
+        "blog"
+      ]
+    },
+    "question" : {
+      "stabilizes_with" : [
+        "userTesting",
+        "design"
+      ],
+      "strains_with" : [
+        "promotion"
+      ],
+      "synergizes_with" : [
+        "doc",
+        "mentoring",
+        "community"
+      ]
+    },
+    "research" : {
+      "stabilizes_with" : [
+        "security",
+        "design"
+      ],
+      "strains_with" : [
+        "promotion",
+        "code"
+      ],
+      "synergizes_with" : [
+        "data",
+        "ideas"
+      ]
+    },
+    "review" : {
+      "stabilizes_with" : [
+        "maintenance",
+        "test"
+      ],
+      "strains_with" : [
+        "promotion",
+        "plugin"
+      ],
+      "synergizes_with" : [
+        "code",
+        "doc",
+        "security"
+      ]
+    },
+    "security" : {
+      "stabilizes_with" : [
+        "infra",
+        "platform"
+      ],
+      "strains_with" : [
+        "plugin",
+        "promotion"
+      ],
+      "synergizes_with" : [
+        "review",
+        "test"
+      ]
+    },
+    "talk" : {
+      "stabilizes_with" : [
+        "doc"
+      ],
+      "strains_with" : [
+        "bug"
+      ],
+      "synergizes_with" : [
+        "promotion",
+        "community",
+        "content"
+      ]
+    },
+    "test" : {
+      "stabilizes_with" : [
+        "code",
+        "platform",
+        "maintenance"
+      ],
+      "strains_with" : [
+        "ideas",
+        "promotion"
+      ],
+      "synergizes_with" : [
+        "bug",
+        "infra",
+        "tool"
+      ]
+    },
+    "tool" : {
+      "stabilizes_with" : [
+        "maintenance",
+        "test"
+      ],
+      "strains_with" : [
+        "design",
+        "content"
+      ],
+      "synergizes_with" : [
+        "code",
+        "infra",
+        "platform"
+      ]
+    },
+    "translation" : {
+      "stabilizes_with" : [
+        "promotion",
+        "tutorial"
+      ],
+      "strains_with" : [
+        "code",
+        "platform"
+      ],
+      "synergizes_with" : [
+        "doc",
+        "content",
+        "community"
+      ]
+    },
+    "tutorial" : {
+      "stabilizes_with" : [
+        "community"
+      ],
+      "strains_with" : [
+        "research"
+      ],
+      "synergizes_with" : [
+        "doc",
+        "example",
+        "mentoring"
+      ]
+    },
+    "userTesting" : {
+      "stabilizes_with" : [
+        "doc",
+        "projectManagement"
+      ],
+      "strains_with" : [
+        "ideas",
+        "promotion"
+      ],
+      "synergizes_with" : [
+        "design",
+        "research",
+        "question"
+      ]
+    },
+    "video" : {
+      "stabilizes_with" : [
+        "doc",
+        "content"
+      ],
+      "strains_with" : [
+        "maintenance",
+        "code"
+      ],
+      "synergizes_with" : [
+        "promotion",
+        "tutorial",
+        "talk"
+      ]
+    }
+  },
+  "version" : 1
+}

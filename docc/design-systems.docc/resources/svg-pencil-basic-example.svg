@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220">
+  <title>Pencil stroke: basic</title>
+  <style>
+    .pencil { stroke: #1f2328; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-opacity: 0.55; fill: none; }
+  </style>
+
+  <rect width="900" height="220" fill="#f9fafb"/>
+
+  <path class="pencil" d="M80 120 C220 40, 480 40, 680 120"/>
+  <path class="pencil" d="M76 124 C220 46, 490 52, 684 124"/>
+  <path class="pencil" d="M84 112 C226 34, 470 30, 676 112"/>
+</svg>

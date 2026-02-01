@@ -1,0 +1,10 @@
+<!-- generator: codex -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" fill="none">
+  
+  <rect x="120" y="140" width="1360" height="720" rx="28" fill="#FFFFFF" stroke="#1E1E1E" stroke-width="2"/>
+  <path d="M120 260H1480" stroke="#E2E2E2" stroke-width="2"/>
+  <path d="M120 420H1480" stroke="#E2E2E2" stroke-width="2"/>
+  <path d="M120 580H1480" stroke="#E2E2E2" stroke-width="2"/>
+  <text x="160" y="220" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#1E1E1E">Starter hero</text>
+  <text x="160" y="320" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#4D4D4D">Use this layout to anchor narrative content.</text>
+</svg>

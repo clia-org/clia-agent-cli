@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420">
+  <title>Sketch exploration: exploded circles isometric opaque</title>
+  <style>
+    .disc { fill: #247ba0; fill-opacity: 1; stroke: #1f2328; stroke-width: 2; }
+    .disc-2 { fill: #f25f5c; fill-opacity: 1; stroke: #1f2328; stroke-width: 2; }
+    .disc-3 { fill: #ffe066; fill-opacity: 1; stroke: #1f2328; stroke-width: 2; }
+  </style>
+
+  <g transform="translate(220 80) skewX(-12)">
+    <ellipse class="disc" cx="240" cy="140" rx="150" ry="70"/>
+  </g>
+  <g transform="translate(320 40) skewX(-12)">
+    <ellipse class="disc-2" cx="240" cy="140" rx="150" ry="70"/>
+  </g>
+  <g transform="translate(420 10) skewX(-12)">
+    <ellipse class="disc-3" cx="240" cy="140" rx="150" ry="70"/>
+  </g>
+</svg>

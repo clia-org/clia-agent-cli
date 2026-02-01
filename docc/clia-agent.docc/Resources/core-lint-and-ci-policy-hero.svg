@@ -1,0 +1,17 @@
+<!-- generator: codex -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f3c907"/>
+      <stop offset="1" stop-color="#5f358e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ba2786"/>
+      <stop offset="1" stop-color="#17f6c4"/>
+    </linearGradient>
+  </defs>
+  
+  <path d="M80 260C220 140 380 120 520 190C660 260 820 260 1120 110" stroke="url(#accent)" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <circle cx="43" cy="72" r="80" fill="#566f3e" fill-opacity="0.28"/>
+  <circle cx="175" cy="49" r="81" fill="#17f6c4" fill-opacity="0.22"/>
+</svg>

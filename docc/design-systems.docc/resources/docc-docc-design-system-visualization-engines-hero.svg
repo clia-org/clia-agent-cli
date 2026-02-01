@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" fill="none" role="img" aria-label="Hero: Curious">
+  <defs>
+    <clipPath id="clip">
+      <rect width="1000" height="300" rx="24"/>
+    </clipPath>
+    <style>
+      @keyframes float {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0); }
+      }
+      .orb { animation: float 6s ease-in-out infinite; }
+    </style>
+  </defs>
+  <g clip-path="url(#clip)">
+    
+    
+    <!-- Floating Orbs -->
+    <circle cx="300" cy="150" r="40" fill="#A855F7" opacity="0.4" class="orb"/>
+    <circle cx="700" cy="200" r="20" fill="#E879F9" opacity="0.6" class="orb" style="animation-delay: 1s"/>
+    <circle cx="500" cy="100" r="10" fill="#fff" opacity="0.2" class="orb" style="animation-delay: 2s"/>
+    
+    <!-- Connection -->
+    <path d="M300 150 Q 500 250 700 200" stroke="#A855F7" stroke-width="2" stroke-dasharray="4 4" fill="none" opacity="0.4"/>
+  </g>
+</svg>

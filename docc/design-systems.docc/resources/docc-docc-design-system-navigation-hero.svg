@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" fill="none" role="img" aria-label="Hero: Balance">
+  <defs>
+    <clipPath id="clip">
+      <rect width="1000" height="300" rx="24"/>
+    </clipPath>
+    <style>
+      @keyframes rock-hero {
+        0%, 100% { transform: rotate(-5deg); }
+        50% { transform: rotate(5deg); }
+      }
+      .beam { animation: rock-hero 10s ease-in-out infinite; transform-origin: 500px 250px; }
+    </style>
+  </defs>
+  <g clip-path="url(#clip)">
+    
+    
+    <g class="beam">
+       <rect x="200" y="240" width="600" height="20" rx="10" fill="#2DD4BF"/>
+       <circle cx="250" cy="220" r="30" fill="#FDBA74"/>
+       <rect x="720" y="190" width="60" height="60" fill="#5EEAD4"/>
+    </g>
+    
+    <path d="M480 300 L500 240 L520 300 Z" fill="#14B8A6"/>
+  </g>
+</svg>

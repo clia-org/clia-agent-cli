@@ -1,0 +1,18 @@
+{
+  "mappings" : [
+    {
+      "approvedAt" : null,
+      "internalPath" : "attachments/diagrams/internal/docc-pipeline.dot",
+      "publicPath" : "assets/diagrams/public/docc-pipeline.dot",
+      "redactions" : [
+        "removed hostnames",
+        "removed IP addresses"
+      ],
+      "reviewers" : [
+        "dot",
+        "cadence"
+      ]
+    }
+  ],
+  "schemaVersion" : 1
+}

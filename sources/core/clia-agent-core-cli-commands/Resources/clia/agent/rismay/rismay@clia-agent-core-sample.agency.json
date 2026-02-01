@@ -1,0 +1,44 @@
+{
+  "entries" : [
+    {
+      "kind" : "decision",
+      "participants" : [
+        "rismay"
+      ],
+      "summary" : "Initialized public sample agent triads for CLIA demonstrations (Rismay persona).",
+      "timestamp" : "2026-01-25T00:00:00Z"
+    }
+  ],
+  "handle" : "Rismay",
+  "links" : [
+
+  ],
+  "mentors" : [
+
+  ],
+  "notes" : [
+    {
+      "author" : "policy",
+      "blocks" : [
+        {
+          "kind" : "paragraph",
+          "text" : [
+            "Keep examples lightweight, reviewed, and free of private data. Prefer Swift-based automation."
+          ]
+        }
+      ]
+    }
+  ],
+  "schemaVersion" : "0.4.0",
+  "sections" : [
+
+  ],
+  "slug" : "rismay",
+  "sourcePath" : ".clia/agents/rismay/.generated/rismay.agency.md",
+  "status" : "draft",
+  "tags" : [
+
+  ],
+  "title" : "Rismay",
+  "updated" : "2026-01-25T00:00:00Z"
+}

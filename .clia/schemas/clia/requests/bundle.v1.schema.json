@@ -1,0 +1,88 @@
+{
+  "$id" : "https://wrkstrm.dev/schemas/clia/requests/bundle.v1.schema.json",
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties" : true,
+  "properties" : {
+    "filters" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "labels" : {
+          "items" : {
+            "type" : "string"
+          },
+          "type" : "array"
+        },
+        "owner" : {
+          "type" : "string"
+        },
+        "status" : {
+          "items" : {
+            "type" : "string"
+          },
+          "type" : "array"
+        }
+      },
+      "type" : "object"
+    },
+    "groupBy" : {
+      "enum" : [
+        "status",
+        "owner",
+        "label",
+        "none"
+      ],
+      "type" : "string"
+    },
+    "output" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "doccDir" : {
+          "type" : "string"
+        },
+        "markdownDir" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "schemaVersion" : {
+      "pattern" : "^0\\.[0-9]+\\.[0-9]+$",
+      "type" : "string"
+    },
+    "sort" : {
+      "enum" : [
+        "created",
+        "updated",
+        "priority",
+        "title"
+      ],
+      "type" : "string"
+    },
+    "sources" : {
+      "items" : {
+        "type" : "string"
+      },
+      "type" : "array"
+    },
+    "templates" : {
+      "additionalProperties" : true,
+      "properties" : {
+        "index" : {
+          "type" : "string"
+        },
+        "request" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    }
+  },
+  "required" : [
+    "schemaVersion",
+    "sources",
+    "output",
+    "templates"
+  ],
+  "title" : "CLIA Request Bundle",
+  "type" : "object"
+}

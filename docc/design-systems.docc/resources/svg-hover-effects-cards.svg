@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" fill="none"
+  role="img" aria-label="SVG hover effects board">
+  <title>SVG hover effects board</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#20124D"/>
+      <stop offset="0.55" stop-color="#22C55E" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#F472B6" stop-opacity="0.16"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#A78BFA" stroke-opacity="0.10" stroke-width="1"/>
+    </pattern>
+    <clipPath id="clipShell" clipPathUnits="userSpaceOnUse">
+      <rect x="40" y="40" width="1120" height="320" rx="22"/>
+    </clipPath>
+    <style>
+      .shell { fill: #0B1636; stroke: #2A4B9F; stroke-opacity: 0.65; stroke-width: 2; }
+      .panel { fill: #0A1330; stroke: #3C82F6; stroke-opacity: 0.55; stroke-width: 2; }
+      .cardBody { fill: #101D44; stroke: #60A5FA; stroke-opacity: 0.35; stroke-width: 2; }
+      .t { fill: #E5EDFF; font: 700 18px -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif; }
+      .s { fill: #C7D2FE; font: 500 13px -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif; opacity: 0.95; }
+      .hint { fill: #93C5FD; opacity: 0.0; }
+      .tag { opacity: 0.65; }
+      .shine { opacity: 0; }
+
+      svg { cursor: default; }
+
+      /* Hover-only behavior (best-effort in DocC): show hints + increase emphasis. */
+      .shell, .panel, .cardBody, .hint, .shine, .tag {
+        transition:
+          opacity 120ms ease-out,
+          stroke-opacity 120ms ease-out,
+          stroke 120ms ease-out,
+          stroke-width 120ms ease-out,
+          filter 120ms ease-out;
+      }
+
+      svg:hover .shell { stroke: #93C5FD; stroke-opacity: 0.95; }
+      svg:hover .panel { stroke: #93C5FD; stroke-opacity: 0.95; filter: drop-shadow(0px 10px 18px rgba(94, 220, 255, 0.10)); }
+      svg:hover .cardBody { stroke: #E5EDFF; stroke-opacity: 0.95; stroke-width: 3; filter: drop-shadow(0px 12px 22px rgba(147, 197, 253, 0.14)); }
+      svg:hover .hint { opacity: 1; }
+      svg:hover .shine { opacity: 0.28; }
+      svg:hover .tag { opacity: 1; }
+    </style>
+  </defs>
+
+  <rect x="40" y="40" width="1120" height="320" rx="22" class="shell"/>
+  <g clip-path="url(#clipShell)">
+    <rect x="-200" y="-120" width="1600" height="720" fill="url(#bg)"/>
+    <rect x="40" y="40" width="1120" height="320" fill="url(#grid)"/>
+  </g>
+
+  <text x="72" y="82" class="t">Hover effects (CSS)</text>
+  <text x="72" y="104" class="s">Global hover is safest. Region hover is best-effort.</text>
+
+  <rect x="72" y="132" width="344" height="208" rx="18" class="panel"/>
+  <rect x="428" y="132" width="344" height="208" rx="18" class="panel"/>
+  <rect x="784" y="132" width="344" height="208" rx="18" class="panel"/>
+
+  <g aria-label="Hover: stroke emphasis">
+    <rect x="96" y="170" width="296" height="128" rx="16" class="cardBody"/>
+    <rect x="96" y="170" width="120" height="128" rx="16" class="shine" fill="#93C5FD" opacity="0"/>
+    <text x="112" y="160" class="t">Emphasis</text>
+    <text x="112" y="210" class="s">stroke + shimmer</text>
+    <text x="112" y="236" class="s tag">:hover → highlight</text>
+  </g>
+
+  <g aria-label="Hover: reveal annotation">
+    <rect x="452" y="170" width="296" height="128" rx="16" class="cardBody"/>
+    <rect x="452" y="170" width="296" height="128" rx="16" class="shine" fill="#5EDCFF" opacity="0"/>
+    <text x="468" y="160" class="t">Annotation</text>
+    <text x="468" y="210" class="s">reveal a hint</text>
+    <text x="468" y="236" class="s tag">:hover → show label</text>
+    <circle class="hint" cx="716" cy="206" r="6"/>
+    <path class="hint" d="M716 206 C690 198 646 194 600 202" stroke="#93C5FD" stroke-width="3"
+      stroke-linecap="round" fill="none"/>
+  </g>
+
+  <g aria-label="Hover: speed up background">
+    <rect x="808" y="170" width="296" height="128" rx="16" class="cardBody"/>
+    <rect x="808" y="170" width="296" height="128" rx="16" class="shine" fill="#FF9F6E" opacity="0"/>
+    <text x="824" y="160" class="t">Energy</text>
+    <text x="824" y="210" class="s">focus + emphasis</text>
+    <text x="824" y="236" class="s tag">svg:hover → hint</text>
+  </g>
+</svg>

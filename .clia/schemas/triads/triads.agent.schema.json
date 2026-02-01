@@ -1,0 +1,283 @@
+{
+  "$defs" : {
+    "Checklist" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "items" : {
+          "items" : {
+            "$ref" : "#/$defs/ChecklistItem"
+          },
+          "type" : "array"
+        },
+        "title" : {
+          "type" : [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "type" : "object"
+    },
+    "ChecklistItem" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "level" : {
+          "enum" : [
+            "required",
+            "optional",
+            "disabled"
+          ],
+          "type" : "string"
+        },
+        "text" : {
+          "type" : "string"
+        }
+      },
+      "required" : [
+        "text"
+      ],
+      "type" : "object"
+    },
+    "ContributionMix" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "primary" : {
+          "description" : "Primary contribution types and weights",
+          "items" : {
+            "$ref" : "triads.core.json#/$defs/Contribution"
+          },
+          "type" : "array"
+        },
+        "secondary" : {
+          "description" : "Optional secondary contribution types and weights",
+          "items" : {
+            "$ref" : "triads.core.json#/$defs/Contribution"
+          },
+          "type" : "array"
+        }
+      },
+      "required" : [
+        "primary"
+      ],
+      "type" : "object"
+    },
+    "FocusDomain" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "identifier" : {
+          "pattern" : "^[A-Za-z0-9._-]+$",
+          "type" : "string"
+        },
+        "label" : {
+          "type" : "string"
+        },
+        "weight" : {
+          "exclusiveMinimum" : 0,
+          "type" : "number"
+        }
+      },
+      "required" : [
+        "label",
+        "identifier"
+      ],
+      "type" : "object"
+    }
+  },
+  "$id" : "https://wrkstrm.dev/schemas/triads/agent.schema.json",
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties" : false,
+  "description" : "Mandate (present) for a single agent. Canonical source for <slug>.agent.md.",
+  "properties" : {
+    "artifacts" : {
+      "items" : {
+        "$ref" : "triads.core.json#/$defs/Link"
+      },
+      "type" : "array"
+    },
+    "checklists" : {
+      "items" : {
+        "$ref" : "#/$defs/Checklist"
+      },
+      "type" : "array"
+    },
+    "contributionMix" : {
+      "$ref" : "#/$defs/ContributionMix"
+    },
+    "documentVersion" : {
+      "type" : "string"
+    },
+    "extensions" : {
+      "additionalProperties" : true,
+      "propertyNames" : {
+        "pattern" : "^x-"
+      },
+      "type" : "object"
+    },
+    "focusDomains" : {
+      "items" : {
+        "$ref" : "#/$defs/FocusDomain"
+      },
+      "type" : "array"
+    },
+    "inherits" : {
+      "description" : "Optional inheritance chain. Each item is a repo-relative file path or HTTP(S) URL to an agent triad JSON (typically .agent.json). Lower-precedence items should appear first.",
+      "items" : {
+        "type" : "string"
+      },
+      "type" : "array"
+    },
+    "interfaces" : {
+      "items" : {
+        "additionalProperties" : false,
+        "properties" : {
+          "responsibilities" : {
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
+          },
+          "with" : {
+            "type" : "string"
+          }
+        },
+        "required" : [
+          "with"
+        ],
+        "type" : "object"
+      },
+      "type" : "array"
+    },
+    "links" : {
+      "items" : {
+        "$ref" : "triads.core.json#/$defs/Link"
+      },
+      "type" : "array"
+    },
+    "lLevel" : {
+      "enum" : [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "type" : "string"
+    },
+    "objectives" : {
+      "items" : {
+        "type" : "string"
+      },
+      "type" : "array"
+    },
+    "operatingRhythm" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "daily" : {
+          "type" : "string"
+        },
+        "quarterly" : {
+          "type" : "string"
+        },
+        "release" : {
+          "type" : "string"
+        },
+        "weekly" : {
+          "type" : "string"
+        }
+      },
+      "type" : "object"
+    },
+    "owners" : {
+      "items" : {
+        "$ref" : "triads.core.json#/$defs/PersonRef"
+      },
+      "type" : "array"
+    },
+    "purpose" : {
+      "type" : "string"
+    },
+    "role" : {
+      "description" : "Agent role (e.g., product-owner)",
+      "type" : "string"
+    },
+    "schemaVersion" : {
+      "type" : "string"
+    },
+    "scope" : {
+      "type" : "string"
+    },
+    "scopeDetail" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "domains" : {
+          "items" : {
+            "type" : "string"
+          },
+          "type" : "array"
+        },
+        "exclusions" : {
+          "items" : {
+            "type" : "string"
+          },
+          "type" : "array"
+        },
+        "platforms" : {
+          "items" : {
+            "type" : "string"
+          },
+          "type" : "array"
+        }
+      },
+      "type" : "object"
+    },
+    "sections" : {
+      "items" : {
+        "$ref" : "triads.core.json#/$defs/Section"
+      },
+      "type" : "array"
+    },
+    "slug" : {
+      "pattern" : "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "type" : "string"
+    },
+    "sourcePath" : {
+      "description" : "Optional repo-relative path to the authoritative human-authored source (e.g., Markdown mirror).",
+      "type" : "string"
+    },
+    "status" : {
+      "enum" : [
+        "draft",
+        "active",
+        "paused",
+        "deprecated"
+      ],
+      "type" : "string"
+    },
+    "subtitle" : {
+      "type" : "string"
+    },
+    "tags" : {
+      "items" : {
+        "type" : "string"
+      },
+      "type" : "array"
+    },
+    "title" : {
+      "type" : "string"
+    },
+    "updated" : {
+      "format" : "date-time",
+      "type" : "string"
+    }
+  },
+  "required" : [
+    "schemaVersion",
+    "slug",
+    "title",
+    "updated",
+    "status",
+    "role"
+  ],
+  "title" : "CLIA Agent Mandate (0.4.0)",
+  "type" : "object"
+}

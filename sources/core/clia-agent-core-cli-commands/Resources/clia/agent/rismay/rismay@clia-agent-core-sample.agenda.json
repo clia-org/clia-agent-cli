@@ -1,0 +1,54 @@
+{
+  "agent" : {
+    "role" : "sample-clia"
+  },
+  "backlog" : [
+
+  ],
+  "dependencies" : [
+
+  ],
+  "horizons" : [
+
+  ],
+  "initiatives" : [
+
+  ],
+  "links" : [
+
+  ],
+  "mentors" : [
+
+  ],
+  "milestones" : [
+
+  ],
+  "notes" : [
+    {
+      "blocks" : [
+
+      ]
+    }
+  ],
+  "principles" : [
+    "Favor Swift-based automation and clearly document human approval steps."
+  ],
+  "risks" : [
+
+  ],
+  "schemaVersion" : "0.3.1",
+  "sections" : [
+
+  ],
+  "slug" : "rismay",
+  "sourcePath" : ".clia/agents/rismay/.generated/rismay.agenda.md",
+  "status" : "draft",
+  "tags" : [
+
+  ],
+  "themes" : [
+
+  ],
+  "title" : "Rismay",
+  "updated" : "2026-01-25T00:00:00Z"
+}

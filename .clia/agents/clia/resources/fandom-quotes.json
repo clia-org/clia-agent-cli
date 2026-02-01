@@ -1,0 +1,96 @@
+{
+  "$schema" : "wrkspec://clia/resources/fandom-quotes.v1",
+  "notes" : "Curated quotes for opt-in mottos/headers. Keep safe, short, attribution-only.",
+  "quotes" : [
+    {
+      "character" : "Vash the Stampede",
+      "key" : "trigun-love-and-peace",
+      "quote" : "Love and peace!",
+      "safe" : true,
+      "series" : "Trigun",
+      "tags" : [
+        "anime",
+        "catchphrase"
+      ],
+      "tone" : [
+        "optimistic",
+        "non-violent"
+      ]
+    },
+    {
+      "character" : "Narration",
+      "key" : "cowboy-bebop-see-you-space-cowboy",
+      "quote" : "See you, space cowboy…",
+      "safe" : true,
+      "series" : "Cowboy Bebop",
+      "tags" : [
+        "anime",
+        "signoff"
+      ],
+      "tone" : [
+        "melancholic",
+        "cool"
+      ]
+    },
+    {
+      "character" : "Tagline",
+      "key" : "akira-neo-tokyo-explodes",
+      "quote" : "Neo-Tokyo is about to E.X.P.L.O.D.E.",
+      "safe" : true,
+      "series" : "Akira",
+      "tags" : [
+        "anime",
+        "tagline"
+      ],
+      "tone" : [
+        "dramatic"
+      ]
+    },
+    {
+      "character" : "Kamina",
+      "key" : "gurren-lagann-believe-in-the-you",
+      "quote" : "Believe in the you that believes in yourself!",
+      "safe" : true,
+      "series" : "Gurren Lagann",
+      "tags" : [
+        "anime",
+        "motivation"
+      ],
+      "tone" : [
+        "encouraging",
+        "hype"
+      ]
+    },
+    {
+      "character" : "Fandom paraphrase",
+      "key" : "evangelion-get-in-the-robot",
+      "quote" : "Get in the robot, Shinji.",
+      "safe" : true,
+      "series" : "Neon Genesis Evangelion",
+      "tags" : [
+        "anime",
+        "meme"
+      ],
+      "tone" : [
+        "urgent",
+        "meme"
+      ]
+    },
+    {
+      "character" : "Monkey D. Luffy",
+      "key" : "one-piece-dreams-never-die",
+      "quote" : "I’m going to be King of the Pirates!",
+      "safe" : true,
+      "series" : "One Piece",
+      "tags" : [
+        "anime",
+        "goal"
+      ],
+      "tone" : [
+        "aspirational",
+        "bold"
+      ]
+    }
+  ],
+  "version" : "1"
+}

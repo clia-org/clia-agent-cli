@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220">
+  <title>Pencil stroke: hello animation</title>
+  <style>
+    .pencil { stroke: #1f2328; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-opacity: 0.55; fill: none; }
+  </style>
+
+  <rect width="900" height="220" fill="#f9fafb"/>
+
+  <path class="pencil" d="M80 60 L80 160" pathLength="100" stroke-dasharray="100 100" stroke-dashoffset="100">
+    <animate attributeName="stroke-dashoffset" values="100;0" dur="2.8s" begin="0s" fill="freeze"/>
+  </path>
+  <path class="pencil" d="M80 110 L120 110" pathLength="100" stroke-dasharray="100 100" stroke-dashoffset="100">
+    <animate attributeName="stroke-dashoffset" values="100;0" dur="2.8s" begin="0.15s" fill="freeze"/>
+  </path>
+  <path class="pencil" d="M140 60 L140 160" pathLength="100" stroke-dasharray="100 100" stroke-dashoffset="100">
+    <animate attributeName="stroke-dashoffset" values="100;0" dur="2.8s" begin="0.3s" fill="freeze"/>
+  </path>
+  <path class="pencil" d="M140 160 Q160 140 140 120" pathLength="100" stroke-dasharray="100 100" stroke-dashoffset="100">
+    <animate attributeName="stroke-dashoffset" values="100;0" dur="2.8s" begin="0.45s" fill="freeze"/>
+  </path>
+
+  <path class="pencil" d="M200 160 Q180 110 200 60" pathLength="100" stroke-dasharray="100 100" stroke-dashoffset="100">
+    <animate attributeName="stroke-dashoffset" values="100;0" dur="2.8s" begin="0.7s" fill="freeze"/>
+  </path>
+  <path class="pencil" d="M200 160 Q230 190 250 160" pathLength="100" stroke-dasharray="100 100" stroke-dashoffset="100">
+    <animate attributeName="stroke-dashoffset" values="100;0" dur="2.8s" begin="0.9s" fill="freeze"/>
+  </path>
+
+  <path class="pencil" d="M280 60 L280 160" pathLength="100" stroke-dasharray="100 100" stroke-dashoffset="100">
+    <animate attributeName="stroke-dashoffset" values="100;0" dur="2.8s" begin="1.1s" fill="freeze"/>
+  </path>
+  <path class="pencil" d="M280 110 L320 110" pathLength="100" stroke-dasharray="100 100" stroke-dashoffset="100">
+    <animate attributeName="stroke-dashoffset" values="100;0" dur="2.8s" begin="1.25s" fill="freeze"/>
+  </path>
+
+  <path class="pencil" d="M360 60 L360 160" pathLength="100" stroke-dasharray="100 100" stroke-dashoffset="100">
+    <animate attributeName="stroke-dashoffset" values="100;0" dur="2.8s" begin="1.4s" fill="freeze"/>
+  </path>
+  <path class="pencil" d="M360 160 Q380 140 360 120" pathLength="100" stroke-dasharray="100 100" stroke-dashoffset="100">
+    <animate attributeName="stroke-dashoffset" values="100;0" dur="2.8s" begin="1.55s" fill="freeze"/>
+  </path>
+
+  <path class="pencil" d="M440 110 Q440 60 470 60 Q520 60 520 110 Q520 160 470 160 Q440 160 440 110 Z" pathLength="100" stroke-dasharray="100 100" stroke-dashoffset="100">
+    <animate attributeName="stroke-dashoffset" values="100;0" dur="2.8s" begin="1.8s" fill="freeze"/>
+  </path>
+</svg>

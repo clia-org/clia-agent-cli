@@ -1,0 +1,72 @@
+{
+  "$id" : "https://wrkstrm.local/schemas/clia/commission.schema.json",
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "properties" : {
+    "dirTag" : {
+      "type" : "string"
+    },
+    "handles" : {
+      "items" : {
+        "properties" : {
+          "notes" : {
+            "type" : "string"
+          },
+          "service" : {
+            "type" : "string"
+          },
+          "status" : {
+            "enum" : [
+              "reserved",
+              "claimed",
+              "verified",
+              "tbd"
+            ],
+            "type" : "string"
+          },
+          "type" : {
+            "type" : "string"
+          },
+          "url" : {
+            "type" : "string"
+          },
+          "value" : {
+            "type" : "string"
+          },
+          "verified" : {
+            "type" : "boolean"
+          }
+        },
+        "required" : [
+          "service",
+          "type",
+          "value"
+        ],
+        "type" : "object"
+      },
+      "type" : "array"
+    },
+    "notes" : {
+      "type" : "string"
+    },
+    "schemaVersion" : {
+      "type" : "string"
+    },
+    "slug" : {
+      "pattern" : "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "type" : "string"
+    },
+    "title" : {
+      "type" : "string"
+    },
+    "updated" : {
+      "type" : "string"
+    }
+  },
+  "required" : [
+    "schemaVersion",
+    "slug",
+    "handles"
+  ],
+  "title" : "CLIA Agent Commission Record",
+  "type" : "object"
+}

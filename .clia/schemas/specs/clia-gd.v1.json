@@ -1,0 +1,95 @@
+{
+  "abstract" : "Midday check-in: print current heartbeat summary and optional note.",
+  "arguments" : [
+
+  ],
+  "discussion" : "Ensures a detached task heartbeat exists (writes one labeled 'gd' if missing), reads it, and prints task, status, started/next-check times, elapsed, and points. Optionally appends a concise check-in entry to the agency triad (JSON).",
+  "environment" : [
+
+  ],
+  "examples" : [
+    {
+      "args" : [
+        "--no-banner"
+      ]
+    },
+    {
+      "args" : [
+        "--no-banner",
+        "--note",
+        "Quick stretch + water"
+      ]
+    },
+    {
+      "args" : [
+        "--no-banner",
+        "--append-agency"
+      ]
+    }
+  ],
+  "executionPlan" : [
+    {
+      "action" : "TaskTimer.detachedIfMissing",
+      "step" : "ensure-heartbeat"
+    },
+    {
+      "action" : "readHeartbeat + formatSummary",
+      "step" : "print-status"
+    },
+    {
+      "action" : "AgencyTriad.appendCheckin",
+      "enabledWhen" : "append-agency",
+      "step" : "append-agency"
+    }
+  ],
+  "instantiation" : {
+    "fieldsMapping" : {
+      "append-agency" : "--append-agency",
+      "note" : "--note"
+    },
+    "jsonInstantiableHint" : true,
+    "parser" : "AsyncArgumentParser"
+  },
+  "io" : {
+    "idempotentNoteUpdate" : false,
+    "stdout" : "status summary (plain text)",
+    "writes" : [
+      ".clia/tmp/task-heartbeat.json",
+      ".clia/agents/<slug>/root@todo3.<slug>.agency.json (when --append-agency is set)"
+    ],
+    "writesFiles" : true
+  },
+  "options" : [
+    {
+      "default" : "",
+      "help" : "Optional note to include in printed summary.",
+      "name" : "note",
+      "repeatable" : false,
+      "required" : false,
+      "type" : "string"
+    },
+    {
+      "default" : "",
+      "help" : "Agent slug to write to (default: auto)",
+      "name" : "slug",
+      "repeatable" : false,
+      "required" : false,
+      "type" : "string"
+    },
+    {
+      "default" : false,
+      "help" : "Append a concise check-in entry to agency triad (JSON).",
+      "name" : "append-agency",
+      "repeatable" : false,
+      "required" : false,
+      "type" : "flag"
+    }
+  ],
+  "paths" : {
+    "heartbeat" : ".clia/tmp/task-heartbeat.json"
+  },
+  "schema" : "https://wrkstrm.dev/schemas/clia/command-spec.v1.json",
+  "subcommand" : "good-day",
+  "tool" : "clia",
+  "version" : 1
+}

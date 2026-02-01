@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" fill="none" role="img" aria-label="Hero: Gemini Reimagined">
+  <defs>
+    <radialGradient id="hero-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#020617" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="hero-clip">
+      <rect width="1200" height="400" rx="24"/>
+    </clipPath>
+    <style>
+       @keyframes float-hero {
+         0%, 100% { transform: translateY(0); }
+         50% { transform: translateY(-10px); }
+       }
+       .symbol { animation: float-hero 6s ease-in-out infinite; transform-origin: center; }
+       .s-left { animation-delay: 0s; }
+       .s-center { animation-delay: 2s; }
+       .s-right { animation-delay: 4s; }
+    </style>
+  </defs>
+  <g clip-path="url(#hero-clip)">
+    <rect width="1200" height="400" fill="#020617"/>
+    
+    <!-- Background Glows -->
+    <circle cx="200" cy="200" r="300" fill="#10B981" opacity="0.1"/> <!-- Codex Green -->
+    <circle cx="600" cy="200" r="400" fill="url(#hero-glow)"/> <!-- Gemini Purple -->
+    <circle cx="1000" cy="200" r="300" fill="#DB2777" opacity="0.1"/> <!-- CLIA Pink -->
+    
+    <!-- Symbols -->
+    <g transform="translate(200, 200) scale(0.6)" class="symbol s-left">
+       <!-- Codex Prompt -->
+       <text x="-40" y="20" font-family="monospace" font-size="80" fill="#34D399" font-weight="bold" text-anchor="middle">&gt;_</text>
+    </g>
+
+    <g transform="translate(600, 200)" class="symbol s-center">
+       <!-- Gemini Stars -->
+       <circle cx="0" cy="0" r="40" fill="#A78BFA" opacity="0.8"/>
+       <ellipse rx="80" ry="20" stroke="#A78BFA" stroke-width="2" transform="rotate(45)"/>
+       <ellipse rx="80" ry="20" stroke="#60A5FA" stroke-width="2" transform="rotate(-45)"/>
+    </g>
+
+    <g transform="translate(1000, 200) scale(0.6)" class="symbol s-right">
+       <!-- CLIA Network -->
+       <circle r="40" fill="#F472B6" opacity="0.8"/>
+       <circle r="60" stroke="#F472B6" stroke-width="4" stroke-dasharray="10 10"/>
+    </g>
+  </g>
+</svg>

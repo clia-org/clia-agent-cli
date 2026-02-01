@@ -1,0 +1,16 @@
+<!-- generator: codex -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" fill="none">
+  <rect width="1200" height="360" rx="28" fill="#F7F7F5"/>
+  <path d="M0 250C180 210 360 290 540 250C720 210 900 170 1200 210" stroke="#D4D4D4" stroke-width="2"/>
+  <path d="M0 130C210 90 390 170 600 130C810 90 990 50 1200 90" stroke="#E2E2E2" stroke-width="2"/>
+  <circle cx="190" cy="180" r="80" fill="#FFFFFF" stroke="#1E1E1E" stroke-width="2"/>
+  <circle cx="165" cy="165" r="8" fill="#1E1E1E"/>
+  <circle cx="215" cy="165" r="8" fill="#1E1E1E"/>
+  <path d="M160 205C175 220 190 226 200 226C210 226 225 220 240 205" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round"/>
+  <rect x="320" y="110" width="280" height="40" rx="12" fill="#FFFFFF" stroke="#1E1E1E" stroke-width="1.5"/>
+  <rect x="320" y="170" width="420" height="40" rx="12" fill="#FFFFFF" stroke="#1E1E1E" stroke-width="1.5"/>
+  <rect x="320" y="230" width="360" height="40" rx="12" fill="#FFFFFF" stroke="#1E1E1E" stroke-width="1.5"/>
+  <text x="340" y="137" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#1E1E1E">CLIA Agent Core</text>
+  <text x="340" y="197" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#4D4D4D">A^3: Agent · Agenda · Agency</text>
+  <text x="340" y="257" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#4D4D4D">Typed rituals, auditable history</text>
+</svg>

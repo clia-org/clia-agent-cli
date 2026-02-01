@@ -1,0 +1,111 @@
+{
+  "checklists" : [
+
+  ],
+  "contributionMix" : {
+    "primary" : [
+      { "type" : "a11y", "weight" : 1 },
+      { "type" : "app", "weight" : 1 },
+      { "type" : "audio", "weight" : 1 },
+      { "type" : "blog", "weight" : 1 },
+      { "type" : "bug", "weight" : 1 },
+      { "type" : "business", "weight" : 1 },
+      { "type" : "code", "weight" : 1 },
+      { "type" : "content", "weight" : 1 },
+      { "type" : "data", "weight" : 1 },
+      { "type" : "design", "weight" : 1 },
+      { "type" : "doc", "weight" : 1 },
+      { "type" : "eventOrganizing", "weight" : 1 },
+      { "type" : "example", "weight" : 1 },
+      { "type" : "financial", "weight" : 1 },
+      { "type" : "fundingFinding", "weight" : 1 },
+      { "type" : "ideas", "weight" : 1 },
+      { "type" : "infra", "weight" : 1 },
+      { "type" : "maintenance", "weight" : 1 },
+      { "type" : "mentoring", "weight" : 1 },
+      { "type" : "platform", "weight" : 1 },
+      { "type" : "plugin", "weight" : 1 },
+      { "type" : "projectManagement", "weight" : 1 },
+      { "type" : "promotion", "weight" : 1 },
+      { "type" : "question", "weight" : 1 },
+      { "type" : "research", "weight" : 1 },
+      { "type" : "review", "weight" : 1 },
+      { "type" : "security", "weight" : 1 },
+      { "type" : "talk", "weight" : 1 },
+      { "type" : "test", "weight" : 1 },
+      { "type" : "tool", "weight" : 1 },
+      { "type" : "translation", "weight" : 1 },
+      { "type" : "tutorial", "weight" : 1 },
+      { "type" : "userTesting", "weight" : 1 },
+      { "type" : "video", "weight" : 1 }
+    ],
+    "secondary" : [
+
+    ]
+  },
+  "emojiTags" : [
+    "💡",
+    "🧠",
+    "📝"
+  ],
+  "focusDomains" : [
+    {
+      "identifier" : "demo",
+      "label" : "Demo",
+      "weight" : 1
+    },
+    {
+      "identifier" : "swift",
+      "label" : "Swift",
+      "weight" : 1
+    }
+  ],
+  "guardrails" : [
+    "Specify when humans or other agents must be notified.",
+    "Automation: use Swift-based launchpad/scratch tools (SPM) and avoid Python for repository automation."
+  ],
+  "handle" : "Rismay",
+  "inherits" : [
+
+  ],
+  "links" : [
+
+  ],
+  "mentors" : [
+
+  ],
+  "notes" : [
+    {
+      "blocks" : [
+
+      ]
+    }
+  ],
+  "persona" : {
+    "profilePath" : ".clia/agents/rismay/rismay@clia-agent-core-sample.agent.persona.md",
+    "reveriesPath" : ".clia/agents/rismay/rismay@clia-agent-core-sample.agent.reveries.md"
+  },
+  "purpose" : "Sample agent modeled on Rismay: pragmatic, typed-CLI-first, and safety-forward. Use as the public starting point.",
+  "responsibilities" : [
+    "List core strengths or tools.",
+    "Mention any guardrails or scope boundaries."
+  ],
+  "role" : "Sample CLIA Agent",
+  "schemaVersion" : "0.4.0",
+  "sections" : [
+
+  ],
+  "slug" : "rismay",
+  "sourcePath" : ".clia/agents/rismay/.generated/rismay.agent.md",
+  "status" : "draft",
+  "systemInstructions" : {
+    "compactPath" : ".clia/agents/rismay/rismay@clia-agent-core-sample.agent.system-instructions.compact.md",
+    "fullPath" : ".clia/agents/rismay/rismay@clia-agent-core-sample.agent.system-instructions.full.md",
+    "lastUpdated" : "2026-01-25"
+  },
+  "tags" : [
+
+  ],
+  "title" : "Rismay",
+  "updated" : "2026-01-25T00:00:00Z"
+}

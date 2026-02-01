@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <style>
+    .label { font: 16px Helvetica, Arial, sans-serif; fill: #1f2328; }
+    .stroke-solid { stroke: #1f2328; stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; }
+    .stroke-hairline { stroke: #1f2328; stroke-width: 1.5; stroke-opacity: 0.45; stroke-linecap: round; stroke-linejoin: round; }
+    .stroke-dashed { stroke: #1f2328; stroke-width: 3; stroke-dasharray: 10 8; stroke-linecap: round; }
+    .stroke-dotted { stroke: #1f2328; stroke-width: 3; stroke-dasharray: 2 10; stroke-linecap: round; }
+    .stroke-dash-dot { stroke: #1f2328; stroke-width: 3; stroke-dasharray: 10 8 3 8; stroke-linecap: round; }
+    .stroke-double { stroke: #1f2328; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+    .stroke-marker { stroke: #1f2328; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+    .stroke-brush { stroke: #1f2328; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; stroke-opacity: 0.8; }
+    .stroke-pencil { stroke: #1f2328; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-opacity: 0.6; }
+  </style>
+
+  <rect x="0" y="0" width="1200" height="720" fill="#f9fafb"/>
+
+  <text class="label" x="80" y="90">Solid</text>
+  <line class="stroke-solid" x1="240" y1="84" x2="1080" y2="84"/>
+
+  <text class="label" x="80" y="160">Hairline</text>
+  <line class="stroke-hairline" x1="240" y1="154" x2="1080" y2="154"/>
+
+  <text class="label" x="80" y="230">Dashed</text>
+  <line class="stroke-dashed" x1="240" y1="224" x2="1080" y2="224"/>
+
+  <text class="label" x="80" y="300">Dotted</text>
+  <line class="stroke-dotted" x1="240" y1="294" x2="1080" y2="294"/>
+
+  <text class="label" x="80" y="370">Dash-dot</text>
+  <line class="stroke-dash-dot" x1="240" y1="364" x2="1080" y2="364"/>
+
+  <text class="label" x="80" y="440">Double-line</text>
+  <line class="stroke-double" x1="240" y1="434" x2="1080" y2="434"/>
+  <line class="stroke-hairline" x1="240" y1="446" x2="1080" y2="446"/>
+
+  <text class="label" x="80" y="510">Marker</text>
+  <line class="stroke-marker" x1="240" y1="504" x2="1080" y2="504"/>
+
+  <text class="label" x="80" y="580">Brush</text>
+  <line class="stroke-brush" x1="240" y1="574" x2="1080" y2="574"/>
+
+  <text class="label" x="80" y="650">Pencil</text>
+  <line class="stroke-pencil" x1="240" y1="644" x2="1080" y2="644"/>
+  <line class="stroke-pencil" x1="236" y1="650" x2="1076" y2="650"/>
+  <line class="stroke-pencil" x1="244" y1="638" x2="1084" y2="638"/>
+</svg>

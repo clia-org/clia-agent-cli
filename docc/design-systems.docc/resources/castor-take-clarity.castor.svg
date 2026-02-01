@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" role="img" aria-label="Philographic: Clarity (Gemini Edition)">
+  <title>Philographic: Clarity (Gemini Edition)</title>
+  <defs>
+    <linearGradient id="crystal-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#A5F3FC" stop-opacity="0.8"/> <!-- Cyan-200 -->
+      <stop offset="100%" stop-color="#0891B2" stop-opacity="0.2"/> <!-- Cyan-600 -->
+    </linearGradient>
+    <clipPath id="clip">
+      <rect width="512" height="512" rx="72"/>
+    </clipPath>
+    <style>
+      @keyframes shine {
+        0% { transform: translateX(-150%) rotate(45deg); }
+        100% { transform: translateX(150%) rotate(45deg); }
+      }
+      @keyframes float-facets {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+      }
+      .shine-bar { animation: shine 6s ease-in-out infinite; }
+      .facet { animation: float-facets 8s ease-in-out infinite; }
+    </style>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="512" height="512" fill="#0E7490"/> <!-- Cyan-700 Base -->
+    
+    <!-- Crystal Facets -->
+    <path d="M256 100 L400 256 L256 412 L112 256 Z" fill="url(#crystal-grad)" class="facet"/>
+    <path d="M256 100 L400 256 L256 256 Z" fill="#fff" fill-opacity="0.1" class="facet"/>
+    <path d="M112 256 L256 412 L256 256 Z" fill="#000" fill-opacity="0.1" class="facet"/>
+
+    <!-- Internal refraction lines -->
+    <path d="M256 100 V 412" stroke="#fff" stroke-opacity="0.3" stroke-width="2" class="facet"/>
+    <path d="M112 256 H 400" stroke="#fff" stroke-opacity="0.3" stroke-width="2" class="facet"/>
+
+    <!-- Shine Effect -->
+    <rect x="0" y="0" width="100" height="600" fill="#fff" fill-opacity="0.1" class="shine-bar" transform-origin="center"/>
+  </g>
+</svg>

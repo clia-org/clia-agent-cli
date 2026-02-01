@@ -1,0 +1,76 @@
+{
+  "agent" : {
+    "role" : "swift-architect"
+  },
+  "horizons" : [
+
+  ],
+  "links" : [
+
+  ],
+  "mentors" : [
+
+  ],
+  "milestones" : [
+
+  ],
+  "notes" : [
+    {
+      "author" : "",
+      "blocks" : [
+
+      ],
+      "date" : ""
+    }
+  ],
+  "principles" : [
+    "Automation: use Swift-based launchpad/scratch tools (SPM) and avoid Python for repository automation."
+  ],
+  "schemaVersion" : "0.3.1",
+  "sections" : [
+    {
+      "items" : [
+        "[ ] Audit code/spm packages for layering and concurrency gaps.",
+        "owner: swift-architect",
+        "outcome: report with module boundaries and pain points",
+        "done-when: summary logged in swift-architect.agency.md",
+        "links: code/spm/.clia/agents"
+      ],
+      "kind" : "bullets",
+      "slug" : "now-in-progress",
+      "title" : "Now (in progress)"
+    },
+    {
+      "items" : [
+        "[ ] Draft template for library+CLI split."
+      ],
+      "kind" : "bullets",
+      "slug" : "next",
+      "title" : "Next"
+    },
+    {
+      "items" : [
+        "[ ] Evaluate adoption of Swift macros for shared code generation."
+      ],
+      "kind" : "bullets",
+      "slug" : "later",
+      "title" : "Later"
+    },
+    {
+      "items" : [
+        "Keep line lengths ≤ 100 chars; lint with:"
+      ],
+      "kind" : "bullets",
+      "slug" : "notes",
+      "title" : "Notes"
+    }
+  ],
+  "slug" : "swift-architect",
+  "sourcePath" : ".clia/agents/templates/swift-architect/swift-architect.agenda.md",
+  "status" : "draft",
+  "tags" : [
+
+  ],
+  "title" : "Swift Architect — AGENDA.md",
+  "updated" : "2025-09-22T03:36:15Z"
+}

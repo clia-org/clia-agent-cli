@@ -1,0 +1,100 @@
+{
+  "$schemaVersion" : "0.1.0",
+  "notes" : "Canonical agent display roles for profiles; mentions resolve by slug, not role.",
+  "roles" : [
+    {
+      "role" : "Utility Engineer",
+      "slug" : "codex"
+    },
+    {
+      "role" : "Documentation Steward",
+      "slug" : "carrie"
+    },
+    {
+      "role" : "Command Line Assistant",
+      "slug" : "clia"
+    },
+    {
+      "role" : "Program Manager",
+      "slug" : "cadence"
+    },
+    {
+      "role" : "Technical Writer",
+      "slug" : "quill"
+    },
+    {
+      "role" : "Release & Patch Engineer",
+      "slug" : "patch"
+    },
+    {
+      "role" : "Tempo Coordinator",
+      "slug" : "tempo"
+    },
+    {
+      "role" : "Cloud Platform Engineer",
+      "slug" : "cloud"
+    },
+    {
+      "role" : "Tau Application",
+      "slug" : "tau"
+    },
+    {
+      "role" : "Founder & Operator",
+      "slug" : "rismay"
+    },
+    {
+      "role" : "Marketing Lead",
+      "slug" : "marketer"
+    },
+    {
+      "role" : "Daily Notes Steward",
+      "slug" : "daily-notes"
+    },
+    {
+      "role" : "Product Owner",
+      "slug" : "product-owner"
+    },
+    {
+      "role" : "Commissioner",
+      "slug" : "commissioner-morrie"
+    },
+    {
+      "role" : "Documentation Infrastructure Engineer",
+      "slug" : "dott"
+    },
+    {
+      "role" : "Rust Systems Engineer",
+      "slug" : "rust-expert"
+    },
+    {
+      "role" : "Code Slayer",
+      "slug" : "swift-engineer"
+    },
+    {
+      "role" : "Demo Agent",
+      "slug" : "demo-agent"
+    },
+    {
+      "role" : "Repository Profile",
+      "slug" : "agent-profile"
+    },
+    {
+      "role" : "iOS Engineer",
+      "slug" : "ios-engineer"
+    },
+    {
+      "role" : "Swift Architect",
+      "slug" : "swift-architect"
+    },
+    {
+      "role" : "Product Manager",
+      "slug" : "product-manager"
+    },
+    {
+      "role" : "Project Manager",
+      "slug" : "project-manager"
+    }
+  ],
+  "updated" : "2025-10-05T00:00:00Z",
+  "version" : "1.0.0-draft"
+}

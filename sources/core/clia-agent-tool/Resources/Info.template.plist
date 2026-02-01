@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>CFBundleShortVersionString</key>
+  <string>0.0.2</string>
+  <key>CFBundleVersion</key>
+  <string>1757631033</string>
+  <key>WrkPackagePath</key>
+  <string>.</string>
+  <key>WrkSwiftToolchain</key>
+  <string>Apple Swift version 6.2 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)</string>
+</dict>
+</plist>

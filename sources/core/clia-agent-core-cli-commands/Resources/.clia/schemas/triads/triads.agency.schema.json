@@ -1,0 +1,448 @@
+{
+  "$defs" : {
+    "Compliance" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "controls" : {
+          "items" : {
+            "type" : "string"
+          },
+          "type" : "array"
+        },
+        "evidence" : {
+          "items" : {
+            "$ref" : "triads.core.json#/$defs/Link"
+          },
+          "type" : "array"
+        },
+        "id" : {
+          "type" : "string"
+        },
+        "summary" : {
+          "type" : "string"
+        },
+        "type" : {
+          "const" : "compliance"
+        }
+      },
+      "required" : [
+        "type",
+        "id",
+        "summary"
+      ],
+      "type" : "object"
+    },
+    "ContributionEntry" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "contributions" : {
+          "description" : "Per-actor contributions grouped by agent slug; evidence is required for every contribution item.",
+          "items" : {
+            "$ref" : "triads.core.json#/$defs/ContributionGroup"
+          },
+          "minItems" : 1,
+          "type" : "array"
+        },
+        "details" : {
+          "items" : {
+            "type" : "string"
+          },
+          "type" : "array"
+        },
+        "kind" : {
+          "type" : "string"
+        },
+        "links" : {
+          "items" : {
+            "$ref" : "triads.core.json#/$defs/Link"
+          },
+          "type" : "array"
+        },
+        "summary" : {
+          "type" : "string"
+        },
+        "tags" : {
+          "items" : {
+            "type" : "string"
+          },
+          "type" : "array"
+        },
+        "timestamp" : {
+          "format" : "date-time",
+          "type" : "string"
+        },
+        "title" : {
+          "type" : "string"
+        }
+      },
+      "required" : [
+        "timestamp",
+        "contributions"
+      ],
+      "type" : "object"
+    },
+    "Decision" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "alternatives" : {
+          "items" : {
+            "type" : "string"
+          },
+          "type" : "array"
+        },
+        "authors" : {
+          "items" : {
+            "$ref" : "triads.core.json#/$defs/PersonRef"
+          },
+          "type" : "array"
+        },
+        "complianceTrace" : {
+          "type" : "string"
+        },
+        "consequences" : {
+          "type" : "string"
+        },
+        "context" : {
+          "type" : "string"
+        },
+        "date" : {
+          "format" : "date",
+          "type" : "string"
+        },
+        "decision" : {
+          "type" : "string"
+        },
+        "evidence" : {
+          "items" : {
+            "$ref" : "triads.core.json#/$defs/Link"
+          },
+          "type" : "array"
+        },
+        "id" : {
+          "type" : "string"
+        },
+        "rollout" : {
+          "type" : "string"
+        },
+        "status" : {
+          "enum" : [
+            "proposed",
+            "accepted",
+            "superseded",
+            "rejected"
+          ],
+          "type" : "string"
+        },
+        "type" : {
+          "const" : "decision"
+        }
+      },
+      "required" : [
+        "type",
+        "id",
+        "date",
+        "status",
+        "context",
+        "decision"
+      ],
+      "type" : "object"
+    },
+    "Experiment" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "date" : {
+          "format" : "date",
+          "type" : "string"
+        },
+        "evidence" : {
+          "items" : {
+            "$ref" : "triads.core.v0.json#/$defs/Link"
+          },
+          "type" : "array"
+        },
+        "hypothesis" : {
+          "type" : "string"
+        },
+        "id" : {
+          "type" : "string"
+        },
+        "impact" : {
+          "type" : "string"
+        },
+        "interpretation" : {
+          "type" : "string"
+        },
+        "method" : {
+          "type" : "string"
+        },
+        "results" : {
+          "type" : "string"
+        },
+        "type" : {
+          "const" : "experiment"
+        }
+      },
+      "required" : [
+        "type",
+        "id",
+        "date",
+        "hypothesis",
+        "method",
+        "results"
+      ],
+      "type" : "object"
+    },
+    "Incident" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "controls" : {
+          "type" : "string"
+        },
+        "date" : {
+          "format" : "date-time",
+          "type" : "string"
+        },
+        "id" : {
+          "type" : "string"
+        },
+        "remediation" : {
+          "type" : "string"
+        },
+        "rootCause" : {
+          "type" : "string"
+        },
+        "severity" : {
+          "enum" : [
+            "S0",
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "type" : "string"
+        },
+        "summary" : {
+          "type" : "string"
+        },
+        "timeline" : {
+          "items" : {
+            "type" : "string"
+          },
+          "type" : "array"
+        },
+        "type" : {
+          "const" : "incident"
+        }
+      },
+      "required" : [
+        "type",
+        "id",
+        "date",
+        "severity",
+        "summary"
+      ],
+      "type" : "object"
+    },
+    "Risk" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "assumption" : {
+          "type" : "string"
+        },
+        "id" : {
+          "type" : "string"
+        },
+        "impact" : {
+          "enum" : [
+            "low",
+            "medium",
+            "high"
+          ],
+          "type" : "string"
+        },
+        "likelihood" : {
+          "enum" : [
+            "low",
+            "medium",
+            "high"
+          ],
+          "type" : "string"
+        },
+        "mitigation" : {
+          "type" : "string"
+        },
+        "owner" : {
+          "$ref" : "triads.core.v0.json#/$defs/PersonRef"
+        },
+        "status" : {
+          "enum" : [
+            "open",
+            "tracking",
+            "mitigating",
+            "closed"
+          ],
+          "type" : "string"
+        },
+        "surface" : {
+          "type" : "string"
+        },
+        "title" : {
+          "type" : "string"
+        },
+        "trigger" : {
+          "type" : "string"
+        },
+        "type" : {
+          "const" : "risk"
+        }
+      },
+      "required" : [
+        "type",
+        "id",
+        "title",
+        "likelihood",
+        "impact"
+      ],
+      "type" : "object"
+    },
+    "Update" : {
+      "additionalProperties" : false,
+      "properties" : {
+        "date" : {
+          "format" : "date",
+          "type" : "string"
+        },
+        "finance" : {
+          "type" : "string"
+        },
+        "next" : {
+          "type" : "string"
+        },
+        "progress" : {
+          "type" : "string"
+        },
+        "scope" : {
+          "type" : "string"
+        },
+        "type" : {
+          "const" : "update"
+        },
+        "variances" : {
+          "type" : "string"
+        }
+      },
+      "required" : [
+        "type",
+        "date",
+        "scope",
+        "progress"
+      ],
+      "type" : "object"
+    }
+  },
+  "$id" : "https://wrkstrm.dev/schemas/triads/agency.schema.json",
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties" : false,
+  "description" : "Institutional memory (past) for a single agent. Canonical source for <slug>.agency.md.",
+  "properties" : {
+    "entries" : {
+      "description" : "Journal entries. Supports grouped, evidenced contributions plus legacy ADR/incidents/updates.",
+      "items" : {
+        "oneOf" : [
+          {
+            "$ref" : "#/$defs/ContributionEntry"
+          },
+          {
+            "$ref" : "#/$defs/Decision"
+          },
+          {
+            "$ref" : "#/$defs/Experiment"
+          },
+          {
+            "$ref" : "#/$defs/Incident"
+          },
+          {
+            "$ref" : "#/$defs/Update"
+          },
+          {
+            "$ref" : "#/$defs/Risk"
+          },
+          {
+            "$ref" : "#/$defs/Compliance"
+          }
+        ]
+      },
+      "type" : "array"
+    },
+    "extensions" : {
+      "additionalProperties" : true,
+      "propertyNames" : {
+        "pattern" : "^x-"
+      },
+      "type" : "object"
+    },
+    "links" : {
+      "items" : {
+        "$ref" : "triads.core.v0.json#/$defs/Link"
+      },
+      "type" : "array"
+    },
+    "owners" : {
+      "items" : {
+        "$ref" : "triads.core.json#/$defs/PersonRef"
+      },
+      "type" : "array"
+    },
+    "schemaVersion" : {
+      "const" : "0.4.0",
+      "type" : "string"
+    },
+    "sections" : {
+      "items" : {
+        "$ref" : "triads.core.v0.json#/$defs/Section"
+      },
+      "type" : "array"
+    },
+    "slug" : {
+      "pattern" : "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "type" : "string"
+    },
+    "sourcePath" : {
+      "description" : "Optional repo-relative path to the authoritative source (e.g., Markdown mirror).",
+      "type" : "string"
+    },
+    "status" : {
+      "enum" : [
+        "draft",
+        "active",
+        "archived"
+      ],
+      "type" : "string"
+    },
+    "subtitle" : {
+      "type" : "string"
+    },
+    "tags" : {
+      "items" : {
+        "type" : "string"
+      },
+      "type" : "array"
+    },
+    "title" : {
+      "type" : "string"
+    },
+    "updated" : {
+      "format" : "date-time",
+      "type" : "string"
+    }
+  },
+  "required" : [
+    "schemaVersion",
+    "slug",
+    "title",
+    "updated",
+    "status",
+    "entries"
+  ],
+  "title" : "CLIA Agent Agency (0.4.0)",
+  "type" : "object"
+}

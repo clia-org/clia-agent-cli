@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="180" viewBox="0 0 900 180">
+  <title>Stroke dotted: static</title>
+  <style>
+    .stroke { stroke: #1f2328; stroke-width: 3; stroke-linecap: round; stroke-dasharray: 2 10; fill: none; }
+  </style>
+  <rect width="900" height="180" fill="#f9fafb"/>
+  <line class="stroke" x1="80" y1="90" x2="820" y2="90"/>
+</svg>
