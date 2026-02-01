@@ -34,38 +34,38 @@ let package = Package(
     // Local or remote (set SPM_USE_LOCAL_DEPS=1 for local)
     localOrRemote(
       name: "common-process",
-      path: "../../../../../../swift-universal/spm/universal/common/domain/system/common-process",
+      path: "../../../../../../swift-universal/spm/universal/domain/system/common-process",
       remote: { .package(url: "https://github.com/wrkstrm/common-process.git", branch: "main") }),
     localOrRemote(
       name: "common-shell",
-      path: "../../../../../../swift-universal/spm/universal/common/domain/system/common-shell",
+      path: "../../../../../../swift-universal/spm/universal/domain/system/common-shell",
       remote: { .package(url: "https://github.com/wrkstrm/common-shell.git", branch: "main") }),
     localOrRemote(
       name: "common-cli",
-      path: "../../../../../../swift-universal/spm/universal/common/domain/system/common-cli",
+      path: "../../../../../../swift-universal/spm/universal/domain/system/common-cli",
       remote: { .package(url: "https://github.com/wrkstrm/common-cli.git", branch: "main") }),
     localOrRemote(
       name: "common-log",
-      path: "../../common/domain/system/common-log",
+      path: "../../../../../../swift-universal/spm/universal/domain/system/common-log",
       remote: { .package(url: "https://github.com/swift-universal/common-log", branch: "main") }),
     localOrRemote(
       name: "wrkstrm-foundation",
-      path: "../../domain/system/wrkstrm-foundation",
+      path: "../../../../../../wrkstrm/spm/universal/domain/system/wrkstrm-foundation",
       remote: { .package(url: "https://github.com/wrkstrm/wrkstrm-foundation.git", from: "3.0.0") }),
     localOrRemote(
       name: "wrkstrm-main",
-      path: "../../domain/system/wrkstrm-main",
+      path: "../../../../../../wrkstrm/spm/universal/domain/system/wrkstrm-main",
       remote: { .package(url: "https://github.com/wrkstrm/wrkstrm-main", branch: "main") }),
     localOrRemote(
       name: "wrkstrm-performance",
-      path: "../../wrkstrm-performance",
+      path: "../../../../../../wrkstrm/spm/universal/domain/system/wrkstrm-performance",
       remote: { .package(url: "https://github.com/wrkstrm/wrkstrm-performance", branch: "main") }),
     localOrRemote(
       name: "swift-figlet-kit",
       path: "../../../../../../wrkstrm/spm/universal/domain/tooling/swift-figlet-kit",
       remote: { .package(url: "https://github.com/wrkstrm/swift-figlet-kit.git", branch: "main") }),
     // Remaining local-only deps (no public repo published yet)
-    .package(path: "../../domain/system/swift-directory-tools"),
+    .package(path: "../../../../../../wrkstrm/spm/universal/domain/system/swift-directory-tools"),
     .package(path: "../../../../../../wrkstrm/spm/universal/domain/tooling/swift-json-formatter"),
     .package(path: "../../../../../../wrkstrm/spm/universal/domain/tooling/swift-md-formatter"),
     .package(
@@ -73,7 +73,10 @@ let package = Package(
       path: "../../../../../../wrkstrm/spm/universal/domain/tooling/swift-terminal-link-rewriter"
     ),
     // AI providers (local for now)
-    .package(name: "CommonAI", path: "../../common/domain/ai/common-ai"),
+    .package(
+      name: "CommonAI",
+      path: "../../../../../../swift-universal/spm/universal/domain/ai/common-ai"
+    ),
     // Remotes
     .package(url: "https://github.com/apple/swift-argument-parser.git", from: "1.6.0"),
     .package(url: "https://github.com/stencilproject/Stencil.git", from: "0.15.0"),
