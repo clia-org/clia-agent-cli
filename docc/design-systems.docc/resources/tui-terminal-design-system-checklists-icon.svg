@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" role="img" aria-label="Icon: Focus">
-  <g transform="translate(256, 256)">
-     <circle r="240" fill="#292524"/> <!-- Stone Background -->
-     <circle r="120" stroke="#F59E0B" stroke-width="30" fill="none"/>
-     <circle r="40" fill="#F59E0B"/>
-  </g>
-</svg>

@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" role="img" aria-label="Icon: Stability">
-  <g transform="translate(256, 256)">
-     <circle r="240" fill="#1E293B"/> <!-- Slate Background -->
-     <path d="M0 -120 L100 80 H-100 Z" fill="#94A3B8"/> <!-- Triangle -->
-     <rect x="-120" y="80" width="240" height="40" fill="#334155"/> <!-- Base -->
-  </g>
-</svg>

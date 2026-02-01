@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" role="img" aria-label="Icon: Clarity">
-  <g transform="translate(256, 256)">
-     <circle r="240" fill="#172554"/> <!-- Blue Background -->
-     <rect x="0" y="0" width="160" height="160" rx="20" transform="rotate(45) translate(-80, -80)" stroke="#60A5FA" stroke-width="20" fill="none"/>
-     <circle r="40" fill="#60A5FA"/>
-  </g>
-</svg>
