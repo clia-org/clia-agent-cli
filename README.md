@@ -227,7 +227,7 @@ my-cli lineage-lint --json --strict
 # Append an agency entry using lineage write target (submodule-aware)
 my-cli agency-log --agent cadence \
   --kind decision \
-  --summary "Adopt typed timestamps via cli-kit time now" \
+  --summary "Adopt typed timestamps via swift-cli-kit time now" \
   --participants codex,cadence,example
 
 # Previews (read-only):
