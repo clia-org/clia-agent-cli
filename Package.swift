@@ -65,9 +65,9 @@ let package = Package(
       path: "../../../../../../wrkstrm/spm/universal/domain/tooling/swift-figlet-kit",
       remote: { .package(url: "https://github.com/wrkstrm/swift-figlet-kit.git", branch: "main") }),
     // Remaining local-only deps (no public repo published yet)
-    .package(path: "../../../../../../wrkstrm/spm/universal/domain/system/swift-directory-tools"),
-    .package(path: "../../../../../../wrkstrm/spm/universal/domain/tooling/swift-json-formatter"),
-    .package(path: "../../../../../../wrkstrm/spm/universal/domain/tooling/swift-md-formatter"),
+    .package(path: "../../../../../../swift-universal/spm/universal/domain/system/swift-directory-tools"),
+    .package(path: "../../../../../../swift-universal/spm/universal/domain/tooling/swift-json-formatter"),
+    .package(path: "../../../../../../swift-universal/spm/universal/domain/tooling/swift-md-formatter"),
     .package(
       name: "swift-terminal-link-rewriter",
       path: "../../../../../../wrkstrm/spm/universal/domain/tooling/swift-terminal-link-rewriter"

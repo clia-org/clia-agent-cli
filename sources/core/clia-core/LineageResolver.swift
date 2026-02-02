@@ -66,7 +66,7 @@ public enum LineageResolver {
     func agentDoc(in resolvedAgentsDir: URL) -> (agentURL: URL, prefix: String)? {
       let contents = (try? fm.contentsOfDirectory(atPath: resolvedAgentsDir.path)) ?? []
       let candidates = contents
-        .filter { $0.hasSuffix(".agent.json") && !$0.contains(".agency.") }
+        .filter { $0.hasSuffix(".agent.triad.json") && !$0.contains(".agency.") }
         .sorted()
       guard let agentName = candidates.first else { return nil }
       let agentURL = resolvedAgentsDir.appendingPathComponent(agentName)

@@ -195,7 +195,7 @@ Use callouts to break up dense sections and highlight intent.
 ## Icon System (SFSymbols-inspired)
 
 - Keep a standard 24x24 grid, 1.7-2.0 stroke, rounded caps, and simple geometry.
-- Use kebab-case filenames under the DocC catalog `Resources/` directory.
+- Use kebab-case filenames under the DocC catalog `resources/` directory.
 - Prefer one icon per topic and reuse across related pages for consistency.
 - Avoid heavy fills; use stroke-first icons so they work in light or dark themes.
 

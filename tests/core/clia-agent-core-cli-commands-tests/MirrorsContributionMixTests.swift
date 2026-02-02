@@ -19,7 +19,7 @@ struct MirrorsContributionMixTests {
     try fm.createDirectory(at: agentDir, withIntermediateDirectories: true)
 
     // Minimal agent triad with contributionMix
-    let triad = agentDir.appendingPathComponent("demo@sample.agent.json")
+    let triad = agentDir.appendingPathComponent("demo@sample.agent.triad.json")
     let json: [String: Any] = [
       "schemaVersion": "0.3.2",
       "slug": "demo",

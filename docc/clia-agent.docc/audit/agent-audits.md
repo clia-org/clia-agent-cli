@@ -29,9 +29,10 @@ Repo‑level
 
 Per‑agent (for each `<slug>`, sorted ascending)
 
-- `agent-<slug>-files` — requires `<slug>.agent.triad.md`, `<slug>.agenda.triad.md`, `<slug>.agency.triad.md`; agent.md must include “> Slug: `<slug>`” (blocking)
+- `agent-<slug>-files` — requires `<slug>.agent.triad.md`, `<slug>.agenda.triad.md`,
+  `<slug>.agency.triad.md`; agent.triad.md must include “> Slug: `<slug>`” (blocking)
 - `agent-<slug>-placeholders` — flags template phrases in mirrors (advisory)
-- `agent-<slug>-json` — checks presence of `*.agent.json`, `*.agenda.json`, `*.agency.json` (advisory)
+- `agent-<slug>-json` — checks presence of `*.agent.triad.json`, `*.agenda.triad.json`, `*.agency.triad.json` (advisory)
 - `agent-<slug>-json-core` — `purpose`, `responsibilities`, `guardrails` must be set (advisory)
 - `agent-<slug>-json-notes` — agenda `notes.blocks` non‑empty (advisory)
 - `agent-<slug>-roster` — roster token “`.clia/agents/<slug>/`” present in `AGENTS.md` (advisory)

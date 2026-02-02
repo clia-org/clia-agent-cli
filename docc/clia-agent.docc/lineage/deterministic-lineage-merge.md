@@ -48,7 +48,7 @@ predictable, auditable, and safe for automation.
 ### Reading Order
 
 1. Discover lineage directories (ancestors + submodules) for given `slug`.
-2. For each triad file (`*.agent.json`, `*.agenda.json`, `*.agency.json`):
+2. For each triad file (`*.agent.triad.json`, `*.agenda.triad.json`, `*.agency.triad.json`):
    - Decode raw JSON; if `inherits` exists, recursively load those docs first
      (repo‑relative or absolute paths). Track visited paths to avoid cycles.
    - Append the referencing document after its inherited documents.
@@ -108,5 +108,5 @@ predictable, auditable, and safe for automation.
 ## References
 
 - Spec: `.clia/specs/agents-lineage.v1.md`
-- Root profile: `.clia/agents/root/root@<dirTag>.agent.json` (e.g., `root@todo3.agent.json`, `root@mono.agent.json`)
+- Root profile: `.clia/agents/root/root@<dirTag>.agent.triad.json` (e.g., `root@todo3.agent.triad.json`, `root@mono.agent.triad.json`)
 - Request: `.clia/requests/lineage-inherits-merge.md`

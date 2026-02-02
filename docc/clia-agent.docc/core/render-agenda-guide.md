@@ -12,7 +12,7 @@ Render a single agent's agenda to Markdown for quick status visibility.
 
 ## What it Does
 
-- Finds the nearest `*.agenda.json` for a given slug via lineage.
+- Finds the nearest `*.agenda.triad.json` for a given slug via lineage.
 - Renders human‑readable Markdown and optionally writes it next to JSON under `.generated/`.
 
 ## Usage (CLI)
@@ -40,7 +40,7 @@ let contexts = LineageResolver.findAgentDirs(for: "dot", under: root)
 guard let ctx = contexts.last else { fatalError("no context") }
 let files = try FileManager.default.contentsOfDirectory(
   at: ctx.dir, includingPropertiesForKeys: nil)
-let agendaURL = files.first { $0.lastPathComponent.hasSuffix(".agenda.json") }!
+let agendaURL = files.first { $0.lastPathComponent.hasSuffix(".agenda.triad.json") }!
 let (slug, markdown) = try MirrorRenderer.agendaMarkdown(from: agendaURL)
 print(slug)
 print(markdown)

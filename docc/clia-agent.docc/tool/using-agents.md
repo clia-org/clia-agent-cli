@@ -8,8 +8,8 @@ This guide covers the `agents` subcommands consolidated into `clia`.
 clia agents validate-triad --path .
 ```
 
-Checks each agent directory contains `*.agent.json`, `*.agenda.json`, and
-`*.agency.json`, and flags slug mismatches.
+Checks each agent directory contains `*.agent.triad.json`, `*.agenda.triad.json`, and
+`*.agency.triad.json`, and flags slug mismatches.
 
 ## Lineage Context
 
@@ -50,7 +50,7 @@ Implementation note: agenda rendering is centralized in `CLIAAgentCore.MirrorRen
 clia core triads aggregate --kind agenda --format md
 ```
 
-Scans `.clia/agents/**/ *.agenda.json` and prints a consolidated Markdown view. Use `--calendar`
+Scans `.clia/agents/**/ *.agenda.triad.json` and prints a consolidated Markdown view. Use `--calendar`
 for day/week/month rollups. Read-only.
 
 ## Generate Agent DocC Bundles (via CLIAAgentCore)

@@ -27,7 +27,7 @@ This guide helps agents journal progress and create feature requests using CLIA 
   ```
 
 - Notes
-  - Writes to `<dirTag>.<slug>.agency.json` resolved via lineage.
+  - Writes to `<dirTag>.<slug>.agency.triad.json` resolved via lineage.
   - Respects guardrails; refuses during recovery locks/incidents where applicable.
 
 ## Daily Notes (Good Morning Day Winddown)
@@ -106,7 +106,7 @@ Add entries to `.clia/workspace.clia.json` (schemaVersion `0.4.0`) under `direct
       "capability": "JOURNAL",
       "cli": "clia agency-log",
       "checklist": [
-        {"level":"required","text":"Resolve agent slug lineage; locate agency.json"},
+        {"level":"required","text":"Resolve agent slug lineage; locate agency.triad.json"},
         {"level":"required","text":"Append summary/details with timestamp"},
         {"level":"optional","text":"Create agency file when missing"}
       ]

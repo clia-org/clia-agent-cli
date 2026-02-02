@@ -17,7 +17,7 @@ struct MirrorsFocusDomainsTests {
     let agentDir = agentsRoot.appendingPathComponent("demo")
     try fm.createDirectory(at: agentDir, withIntermediateDirectories: true)
 
-    let triad = agentDir.appendingPathComponent("demo@sample.agent.json")
+    let triad = agentDir.appendingPathComponent("demo@sample.agent.triad.json")
     let json: [String: Any] = [
       "schemaVersion": "0.4.0",
       "slug": "demo",

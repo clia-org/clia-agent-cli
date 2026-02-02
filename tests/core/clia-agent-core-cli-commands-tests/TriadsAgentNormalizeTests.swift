@@ -12,7 +12,7 @@ func agentNormalizeLinksAndModes() throws {
   try fm.createDirectory(at: tmp.appendingPathComponent(".git"), withIntermediateDirectories: true)
 
   let slug = "norm-agent"
-  let url = tmp.appendingPathComponent(".clia/agents/\(slug)/\(slug)@sample.agent.json")
+  let url = tmp.appendingPathComponent(".clia/agents/\(slug)/\(slug)@sample.agent.triad.json")
   try fm.createDirectory(at: url.deletingLastPathComponent(), withIntermediateDirectories: true)
 
   let links: [LinkRef] = [
@@ -70,7 +70,7 @@ func agentNormalizeCanonicalRewrite() throws {
   try fm.createDirectory(at: tmp.appendingPathComponent(".git"), withIntermediateDirectories: true)
 
   let slug = "norm-agent-canon"
-  let url = tmp.appendingPathComponent(".clia/agents/\(slug)/\(slug)@sample.agent.json")
+  let url = tmp.appendingPathComponent(".clia/agents/\(slug)/\(slug)@sample.agent.triad.json")
   try fm.createDirectory(at: url.deletingLastPathComponent(), withIntermediateDirectories: true)
 
   // Write non-canonical JSON (no pretty print, unsorted keys)

@@ -12,7 +12,7 @@ This note captures the practical lessons learned while evolving
 
 For DocC tutorials (`*.tutorial`), prefer `@Code` over inline `CodeListing` for anything non-trivial.
 
-- Put Swift snippets in the catalog’s `Resources/` directory as real `.swift` files.
+- Put Swift snippets in the catalog’s `resources/` directory as real `.swift` files.
 - Reference them from steps using `@Code(name:file:)`.
 
 Example:
@@ -29,7 +29,7 @@ Example:
 
 Notes:
 
-- `file:` points to the snippet file inside the DocC catalog `Resources/` folder.
+- `file:` points to the snippet file inside the DocC catalog `resources/` folder.
 - `name:` is the “file the reader edits” label in the UI; include `.swift` so the pane reads like
   Apple’s own tutorials and stays unambiguous.
 
@@ -101,7 +101,7 @@ root URLs for that catalog.
 
 ## 6) Diagrams and Images: Keep Them DocC-friendly
 
-- Prefer `Resources/*.svg` with embedded CSS variables and `prefers-color-scheme` for
+- Prefer `resources/*.svg` with embedded CSS variables and `prefers-color-scheme` for
   dark/light-friendly diagrams.
 - Reference the SVG from an article with a normal Markdown image:
   `![Alt](diagram.svg)`

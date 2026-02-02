@@ -16,7 +16,7 @@ merge rules. Agents may declare:
 ```json
 {
   "extensions": {
-    "inherits": [".clia/agents/root/root@<dirTag>.agent.json"]
+    "inherits": [".clia/agents/root/root@<dirTag>.agent.triad.json"]
   }
 }
 ```

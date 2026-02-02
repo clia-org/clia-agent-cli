@@ -36,7 +36,7 @@ func testMergerInheritsGuardrails() throws {
     ] as [String: Any]
   let rootData = try JSONSerialization.data(
     withJSONObject: rootDoc, options: [.prettyPrinted, .sortedKeys])
-  try rootData.write(to: rootDir.appendingPathComponent("root@sample.agent.json"))
+  try rootData.write(to: rootDir.appendingPathComponent("root@sample.agent.triad.json"))
 
   // Write child agent that inherits root
   let slug = "smokey"
@@ -58,11 +58,11 @@ func testMergerInheritsGuardrails() throws {
       "checklists": [],
       "sections": [],
       "notes": [],
-      "inherits": [".clia/agents/root/root@sample.agent.json"],
+      "inherits": [".clia/agents/root/root@sample.agent.triad.json"],
     ] as [String: Any]
   let childData = try JSONSerialization.data(
     withJSONObject: childDoc, options: [.prettyPrinted, .sortedKeys])
-  try childData.write(to: childDir.appendingPathComponent("\(slug)@sample.agent.json"))
+  try childData.write(to: childDir.appendingPathComponent("\(slug)@sample.agent.triad.json"))
 
   let merged = Merger.mergeAgent(slug: slug, under: tmp)
   #expect(merged.slug == slug)

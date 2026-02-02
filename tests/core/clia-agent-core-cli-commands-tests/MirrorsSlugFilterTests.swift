@@ -30,9 +30,9 @@ struct MirrorsSlugFilterTests {
       let enc = { (obj: [String: Any]) throws -> Data in
         try JSONSerialization.data(withJSONObject: obj, options: [.sortedKeys])
       }
-      try enc(base).write(to: dir.appendingPathComponent("\(slug)@sample.agent.json"))
-      try enc(base).write(to: dir.appendingPathComponent("\(slug)@sample.agenda.json"))
-      try enc(base).write(to: dir.appendingPathComponent("\(slug)@sample.agency.json"))
+      try enc(base).write(to: dir.appendingPathComponent("\(slug)@sample.agent.triad.json"))
+      try enc(base).write(to: dir.appendingPathComponent("\(slug)@sample.agenda.triad.json"))
+      try enc(base).write(to: dir.appendingPathComponent("\(slug)@sample.agency.triad.json"))
     }
     try writeTriads(a1, slug: "one")
     try writeTriads(a2, slug: "two")

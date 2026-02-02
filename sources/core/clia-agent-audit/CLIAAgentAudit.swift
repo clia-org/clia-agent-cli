@@ -300,13 +300,13 @@ private struct LocalEngine {
     func find(_ suffix: String) -> URL? {
       files.first(where: { $0.lastPathComponent.hasSuffix(suffix) })
     }
-    let agentJSON = find(".agent.json")
-    let agendaJSON = find(".agenda.json")
-    let agencyJSON = find(".agency.json")
+    let agentJSON = find(".agent.triad.json")
+    let agendaJSON = find(".agenda.triad.json")
+    let agencyJSON = find(".agency.triad.json")
     var jsonMissing: [String] = []
-    if agentJSON == nil { jsonMissing.append("*.agent.json") }
-    if agendaJSON == nil { jsonMissing.append("*.agenda.json") }
-    if agencyJSON == nil { jsonMissing.append("*.agency.json") }
+    if agentJSON == nil { jsonMissing.append("*.agent.triad.json") }
+    if agendaJSON == nil { jsonMissing.append("*.agenda.triad.json") }
+    if agencyJSON == nil { jsonMissing.append("*.agency.triad.json") }
     let jsonStatus: AuditStatus = jsonMissing.isEmpty ? .pass : .warn
     let jsonMsg =
       jsonMissing.isEmpty

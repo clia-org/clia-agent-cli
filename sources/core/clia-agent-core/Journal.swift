@@ -77,7 +77,7 @@ public enum JournalWriter {
     guard
       let url = try fm.contentsOfDirectory(at: agentDir, includingPropertiesForKeys: nil)
         .first(where: {
-          $0.lastPathComponent.hasSuffix(".agent.json")
+          $0.lastPathComponent.hasSuffix(".agent.triad.json")
             && !$0.lastPathComponent.contains(".agency.")
         })
     else { return nil }
@@ -99,7 +99,7 @@ public enum JournalWriter {
     let fm = FileManager.default
     guard
       let agencyURL = try fm.contentsOfDirectory(at: agentDir, includingPropertiesForKeys: nil)
-        .first(where: { $0.lastPathComponent.hasSuffix(".agency.json") })
+        .first(where: { $0.lastPathComponent.hasSuffix(".agency.triad.json") })
     else { return }
     guard
       var obj = try JSONSerialization.jsonObject(with: Data(contentsOf: agencyURL))

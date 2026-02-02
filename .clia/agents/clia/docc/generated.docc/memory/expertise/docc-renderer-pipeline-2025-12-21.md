@@ -16,7 +16,7 @@ preview navigator index aliasing, and renamed the technology root file for a cle
 
 ## Solution
 
-- Vendor Swift-DocC-Render under `code/spm/tools/docc-palette/Sources/docc-palette/Resources/docc-render`.
+- Vendor Swift-DocC-Render under `code/spm/tools/docc-palette/Sources/docc-palette/resources/docc-render`.
 - Set `DOCC_HTML_DIR` via docc-palette so preview uses the vendored renderer by default.
 - Inject `/css/carrie.docc.css` into `index.html` and `index-template.html` for default theming.
 - Mirror `/index/index.json` to `/index/documentation/index.json` and `/index/<module>/index.json`

@@ -72,11 +72,11 @@ func localAuditPassesForWellFormedAgent() throws {
   let enc = JSONEncoder()
   enc.outputFormatting = [.prettyPrinted, .withoutEscapingSlashes]
   try Data(enc.encode(agent)).write(
-    to: agentDir.appendingPathComponent("\(slug)@Repo.\(slug).agent.json"))
+    to: agentDir.appendingPathComponent("\(slug)@Repo.\(slug).agent.triad.json"))
   try Data(enc.encode(agenda)).write(
-    to: agentDir.appendingPathComponent("\(slug)@Repo.\(slug).agenda.json"))
+    to: agentDir.appendingPathComponent("\(slug)@Repo.\(slug).agenda.triad.json"))
   try Data(enc.encode(agency)).write(
-    to: agentDir.appendingPathComponent("\(slug)@Repo.\(slug).agency.json"))
+    to: agentDir.appendingPathComponent("\(slug)@Repo.\(slug).agency.triad.json"))
 
   // Roster entry
   let roster = """

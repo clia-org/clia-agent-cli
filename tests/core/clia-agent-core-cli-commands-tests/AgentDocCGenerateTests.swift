@@ -107,7 +107,7 @@ func agentDocCGenerateWritesGeneratedBundle() throws {
 
   let generatedDocc = agentDir.appendingPathComponent("docc/generated.docc", isDirectory: true)
 
-  let generatedRoot = generatedDocc.appendingPathComponent("triads/\(slug)-agent.md")
+  let generatedRoot = generatedDocc.appendingPathComponent("triads/\(slug)-agent.triad.md")
   #expect(FileManager.default.fileExists(atPath: generatedRoot.path))
 
   let generatedMemoryRoot = generatedDocc.appendingPathComponent("memory/memory.md")
@@ -199,7 +199,7 @@ private func makeTemporaryRepoRoot() throws -> URL {
 
 private func writeAgentDoc(at root: URL, slug: String, avatarPath: URL) throws -> URL {
   let fileManager = FileManager.default
-  let agentURL = root.appendingPathComponent(".clia/agents/\(slug)/\(slug)@sample.agent.json")
+  let agentURL = root.appendingPathComponent(".clia/agents/\(slug)/\(slug)@sample.agent.triad.json")
   try fileManager.createDirectory(
     at: agentURL.deletingLastPathComponent(), withIntermediateDirectories: true)
 
@@ -227,7 +227,7 @@ private func makeAvatar(at root: URL, slug: String) throws -> URL {
 
 private func writeAgendaDoc(at root: URL, slug: String) throws -> URL {
   let fileManager = FileManager.default
-  let agendaURL = root.appendingPathComponent(".clia/agents/\(slug)/\(slug)@sample.agenda.json")
+  let agendaURL = root.appendingPathComponent(".clia/agents/\(slug)/\(slug)@sample.agenda.triad.json")
   try fileManager.createDirectory(
     at: agendaURL.deletingLastPathComponent(), withIntermediateDirectories: true)
 
@@ -248,7 +248,7 @@ private func writeAgendaDoc(at root: URL, slug: String) throws -> URL {
 
 private func writeAgencyDoc(at root: URL, slug: String) throws -> URL {
   let fileManager = FileManager.default
-  let agencyURL = root.appendingPathComponent(".clia/agents/\(slug)/\(slug)@sample.agency.json")
+  let agencyURL = root.appendingPathComponent(".clia/agents/\(slug)/\(slug)@sample.agency.triad.json")
   try fileManager.createDirectory(
     at: agencyURL.deletingLastPathComponent(), withIntermediateDirectories: true)
 

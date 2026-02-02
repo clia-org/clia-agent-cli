@@ -216,14 +216,14 @@ private func agencyTriadPath(for slug: String, agentsRoot: URL) -> URL {
   let dir = agentsRoot.appendingPathComponent(slug)
   let fm = FileManager.default
   if let contents = try? fm.contentsOfDirectory(at: dir, includingPropertiesForKeys: nil) {
-    if let match = contents.first(where: { $0.lastPathComponent.hasSuffix(".agency.json") }) {
+    if let match = contents.first(where: { $0.lastPathComponent.hasSuffix(".agency.triad.json") }) {
       return match
     }
   }
   let dirTag =
     agentsRoot.deletingLastPathComponent().deletingLastPathComponent().lastPathComponent
   // New naming only.
-  return dir.appendingPathComponent("\(slug)@\(dirTag).agency.json")
+  return dir.appendingPathComponent("\(slug)@\(dirTag).agency.triad.json")
 }
 
 private func performCheckInRitual(note: [String], appendAgency: Bool, slug: String?) throws {

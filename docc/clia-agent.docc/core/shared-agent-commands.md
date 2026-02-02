@@ -18,7 +18,7 @@ Client CLIs can register them via ``AgentCoreCommands.standard`` or
 
 ## Triads Render (Agenda) — `Triads Render --Kind Agenda`
 
-- Purpose: render a single agent’s `*.agenda.json` to Markdown.
+- Purpose: render a single agent’s `*.agenda.triad.json` to Markdown.
 - Flags:
   - `--kind agenda`: triad kind to render (required).
   - `--slug <agent>`: agent slug (required).
@@ -37,7 +37,7 @@ Client CLIs can register them via ``AgentCoreCommands.standard`` or
   - `--current-only`: include only current (Next) items.
   - `--backlog-only`: include only backlog items.
   - `--active-only`: include only agendas with status=active.
-- Notes: read-only; scans `.clia/agents/**/ *.agenda.json`.
+- Notes: read-only; scans `.clia/agents/**/ *.agenda.triad.json`.
 
 ## Agent DocC — `Agents Generate-docc`
 

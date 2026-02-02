@@ -99,14 +99,14 @@ aside.important { background: var(--docc-callout-important-bg); border-left: 3px
 ## Theme Settings (Catalog Wiring)
 
 - Theme settings live at `.clia/agents/carrie/docc/expertise.docc/theme-settings.json`.
-- The CSS file lives at `.clia/agents/carrie/docc/expertise.docc/Resources/memory-carrie.docc.css`.
+- The CSS file lives at `.clia/agents/carrie/docc/expertise.docc/resources/memory-carrie.docc.css`.
 - DocC preview reads `theme-settings.json` and maps values to CSS custom properties; static hosting
   still needs a CSS link injection or custom renderer to apply selector mappings.
 
 ## Renderer Pipeline (Docc-palette)
 
 - `docc-palette` vendors Swift-DocC-Render at
-  `code/spm/tools/docc-palette/Sources/docc-palette/Resources/docc-render`.
+  `code/spm/tools/docc-palette/Sources/docc-palette/resources/docc-render`.
 - `docc-palette docc convert` and `docc-palette docc preview` set `DOCC_HTML_DIR` to the vendored
   renderer unless you override it.
 - The renderer includes `/css/carrie.docc.css` and links it in `index.html`, so previews apply the

@@ -173,9 +173,9 @@ extension AgentDocCCommandGroup {
           .appendingPathComponent(
             "clia-agent-docc-merged-\(normalizedSlug)-\(UUID().uuidString)", isDirectory: true)
         try FileManager.default.createDirectory(at: tmpRoot, withIntermediateDirectories: true)
-        let mergedAgentURL = tmpRoot.appendingPathComponent("\(normalizedSlug).agent.json")
-        let mergedAgendaURL = tmpRoot.appendingPathComponent("\(normalizedSlug).agenda.json")
-        let mergedAgencyURL = tmpRoot.appendingPathComponent("\(normalizedSlug).agency.json")
+        let mergedAgentURL = tmpRoot.appendingPathComponent("\(normalizedSlug).agent.triad.json")
+        let mergedAgendaURL = tmpRoot.appendingPathComponent("\(normalizedSlug).agenda.triad.json")
+        let mergedAgencyURL = tmpRoot.appendingPathComponent("\(normalizedSlug).agency.triad.json")
         try writeJSON(mergedAgent, to: mergedAgentURL)
         try writeJSON(mergedAgenda, to: mergedAgendaURL)
         try writeJSON(mergedAgency, to: mergedAgencyURL)
@@ -301,19 +301,19 @@ extension AgentDocCCommandGroup {
         at: agentDir, includingPropertiesForKeys: nil, options: [.skipsHiddenFiles])
       guard
         let agentURL = files.first(where: {
-          $0.lastPathComponent.hasSuffix(".agent.json")
+          $0.lastPathComponent.hasSuffix(".agent.triad.json")
             && !$0.lastPathComponent.contains(".agency.")
         })
       else {
-        throw ValidationError("Missing *.agent.json in \(agentDir.path)")
+        throw ValidationError("Missing *.agent.triad.json in \(agentDir.path)")
       }
-      guard let agendaURL = files.first(where: { $0.lastPathComponent.hasSuffix(".agenda.json") })
+      guard let agendaURL = files.first(where: { $0.lastPathComponent.hasSuffix(".agenda.triad.json") })
       else {
-        throw ValidationError("Missing *.agenda.json in \(agentDir.path)")
+        throw ValidationError("Missing *.agenda.triad.json in \(agentDir.path)")
       }
-      guard let agencyURL = files.first(where: { $0.lastPathComponent.hasSuffix(".agency.json") })
+      guard let agencyURL = files.first(where: { $0.lastPathComponent.hasSuffix(".agency.triad.json") })
       else {
-        throw ValidationError("Missing *.agency.json in \(agentDir.path)")
+        throw ValidationError("Missing *.agency.triad.json in \(agentDir.path)")
       }
       return TriadFiles(agentURL: agentURL, agendaURL: agendaURL, agencyURL: agencyURL)
     }
@@ -561,8 +561,8 @@ extension AgentDocCCommandGroup {
       let agencyDocContent = replaceFirstHeading(in: triadDocs.agencyMarkdown, with: agencyHeading)
 
       let agentArticle = generatedArticles.appendingPathComponent("\(slug)-agent-profile.md")
-      let agendaArticle = generatedArticles.appendingPathComponent("\(slug)-agenda.md")
-      let agencyArticle = generatedArticles.appendingPathComponent("\(slug)-agency.md")
+      let agendaArticle = generatedArticles.appendingPathComponent("\(slug)-agenda.triad.md")
+      let agencyArticle = generatedArticles.appendingPathComponent("\(slug)-agency.triad.md")
 
       let expertiseRootName = expertiseRoot.lastPathComponent
       let journalRootName = "\(slug)-journal.md"
@@ -584,8 +584,8 @@ extension AgentDocCCommandGroup {
 
       let triadDocIds = [
         "\(slug)-agent-profile",
-        "\(slug)-agenda",
-        "\(slug)-agency",
+        "\(slug)-agenda.triad",
+        "\(slug)-agency.triad",
       ]
       let aStarTriadsDocId = "\(slug)-a-star-triads"
       let sTypeContributionDocId = "\(slug)-s-type-contribution-system"
@@ -786,7 +786,7 @@ extension AgentDocCCommandGroup {
       }
 
       // Triads mirror under generated.docc/triads
-      let triadAgent = triadsDir.appendingPathComponent("\(slug)-agent.md")
+      let triadAgent = triadsDir.appendingPathComponent("\(slug)-agent.triad.md")
       try writeText(agentDocContent, to: triadAgent, write: write, outputs: &outputs)
     }
 

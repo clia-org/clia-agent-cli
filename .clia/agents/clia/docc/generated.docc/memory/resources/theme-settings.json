@@ -1,6 +1,6 @@
 {
   "meta": {
-    "paletteCss": "Resources/memory-clia.docc.css"
+    "paletteCss": "resources/memory-clia.docc.css"
   },
   "theme": {
     "docc": {

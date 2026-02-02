@@ -109,7 +109,7 @@ private func makeTemporaryRepoRoot() throws -> URL {
 
 private func writeAgendaDoc(at root: URL, slug: String, title: String) throws -> URL {
   let fileManager = FileManager.default
-  let agendaURL = root.appendingPathComponent(".clia/agents/\(slug)/\(slug)@sample.agenda.json")
+  let agendaURL = root.appendingPathComponent(".clia/agents/\(slug)/\(slug)@sample.agenda.triad.json")
   try fileManager.createDirectory(
     at: agendaURL.deletingLastPathComponent(), withIntermediateDirectories: true)
 
@@ -132,7 +132,7 @@ private func writeAgendaDoc(at root: URL, slug: String, title: String) throws ->
 
 private func writeAgentDoc(at root: URL, slug: String, title: String) throws -> URL {
   let fileManager = FileManager.default
-  let agentURL = root.appendingPathComponent(".clia/agents/\(slug)/\(slug)@sample.agent.json")
+  let agentURL = root.appendingPathComponent(".clia/agents/\(slug)/\(slug)@sample.agent.triad.json")
   try fileManager.createDirectory(
     at: agentURL.deletingLastPathComponent(), withIntermediateDirectories: true)
 
@@ -151,7 +151,7 @@ private func writeAgentDoc(at root: URL, slug: String, title: String) throws -> 
 
 private func writeAgencyDoc(at root: URL, slug: String, title: String) throws -> URL {
   let fileManager = FileManager.default
-  let agencyURL = root.appendingPathComponent(".clia/agents/\(slug)/\(slug)@sample.agency.json")
+  let agencyURL = root.appendingPathComponent(".clia/agents/\(slug)/\(slug)@sample.agency.triad.json")
   try fileManager.createDirectory(
     at: agencyURL.deletingLastPathComponent(), withIntermediateDirectories: true)
 

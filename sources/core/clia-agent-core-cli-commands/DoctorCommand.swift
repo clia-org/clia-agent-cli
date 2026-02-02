@@ -47,13 +47,13 @@ public struct DoctorCommand: ParsableCommand {
       let contents =
         (try? fm.contentsOfDirectory(at: agentDir, includingPropertiesForKeys: nil)) ?? []
       let hasAgent = contents.contains {
-        $0.lastPathComponent.hasSuffix(".agent.json") && !$0.lastPathComponent.contains(".agency.")
+        $0.lastPathComponent.hasSuffix(".agent.triad.json") && !$0.lastPathComponent.contains(".agency.")
       }
-      let hasAgenda = contents.contains { $0.lastPathComponent.hasSuffix(".agenda.json") }
-      let hasAgency = contents.contains { $0.lastPathComponent.hasSuffix(".agency.json") }
-      if !hasAgent { errors.append("missing *.agent.json at \(agentDir.path)") }
-      if !hasAgenda { errors.append("missing *.agenda.json at \(agentDir.path)") }
-      if !hasAgency { errors.append("missing *.agency.json at \(agentDir.path)") }
+      let hasAgenda = contents.contains { $0.lastPathComponent.hasSuffix(".agenda.triad.json") }
+      let hasAgency = contents.contains { $0.lastPathComponent.hasSuffix(".agency.triad.json") }
+      if !hasAgent { errors.append("missing *.agent.triad.json at \(agentDir.path)") }
+      if !hasAgenda { errors.append("missing *.agenda.triad.json at \(agentDir.path)") }
+      if !hasAgency { errors.append("missing *.agency.triad.json at \(agentDir.path)") }
     }
 
     // Lineage preview (merge) to catch decode issues

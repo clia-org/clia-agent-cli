@@ -42,9 +42,9 @@ public struct RestoreTriadCommand: ParsableCommand {
     func want(_ name: String) -> Bool {
       switch kind {
       case .all: return name.contains(".json")
-      case .agent: return name.contains(".agent.json")
-      case .agenda: return name.contains(".agenda.json")
-      case .agency: return name.contains(".agency.json")
+      case .agent: return name.contains(".agent.triad.json")
+      case .agenda: return name.contains(".agenda.triad.json")
+      case .agency: return name.contains(".agency.triad.json")
       }
     }
     for f in files where f.lastPathComponent.hasSuffix(".bak") {

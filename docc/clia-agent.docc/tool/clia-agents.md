@@ -8,12 +8,12 @@ rendering.
 
 - ``ValidateTriad`` — validate triad presence/consistency
 - ``Context`` — print lineage chain (e.g., `codex@sample → codex@mono → area → local`)
-- ``PreviewAgent`` — merged `agent.json` across lineage
-- ``PreviewAgenda`` — merged `agenda.json` across lineage
-- ``PreviewAgency`` — merged `agency.json` across lineage
+- ``PreviewAgent`` — merged `agent.triad.json` across lineage
+- ``PreviewAgenda`` — merged `agenda.triad.json` across lineage
+- ``PreviewAgency`` — merged `agency.triad.json` across lineage
 - ``Audit`` — agent audits (local/docs engines), JSON previews
 - ``Mirrors`` — render Markdown mirrors from JSON triads under .clia/agents (via `CLIAAgentCore.MirrorRenderer.mirrorAgents`)
-- `triads render --kind agenda` — render `*.agenda.json` to Markdown mirrors (via `CLIAAgentCore.MirrorRenderer.agendaMarkdown`)
+- `triads render --kind agenda` — render `*.agenda.triad.json` to Markdown mirrors (via `CLIAAgentCore.MirrorRenderer.agendaMarkdown`)
 - `triads aggregate --kind agenda` — aggregate agenda triads across agents (read-only)
 - `generate-docc` — generate `generated.docc` for an agent, sourcing from
   `memory.docc/expertise` + `memory.docc/journal` (memory bundle is read-only)

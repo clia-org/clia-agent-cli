@@ -100,7 +100,7 @@ Example:
 ## Icon System
 
 - Keep a 24x24 grid, 1.7 to 2.0 stroke, rounded caps, and simple geometry.
-- Store icons in `Resources/` using kebab-case names like `icon-docc-style-kit.svg`.
+- Store icons in `resources/` using kebab-case names like `icon-docc-style-kit.svg`.
 - Reuse one icon per topic to keep the visual system predictable.
 
 ## Page Imagery
@@ -135,7 +135,7 @@ Example:
 ## SVG Output
 
 - Creating SVG assets for the style examples was successful and renders cleanly in DocC.
-- Keep SVGs ASCII-only, 24x24 for icons, and use stable filenames in `Resources/`.
+- Keep SVGs ASCII-only, 24x24 for icons, and use stable filenames in `resources/`.
 
 ## Palette Standardization
 

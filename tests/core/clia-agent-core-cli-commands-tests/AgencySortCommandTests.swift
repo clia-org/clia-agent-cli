@@ -15,7 +15,7 @@ func agencySortApplies() async throws {
   let slug = "sorter"
   let url =
     tmp
-    .appendingPathComponent(".clia/agents/\(slug)/\(slug)@sample.agency.json")
+    .appendingPathComponent(".clia/agents/\(slug)/\(slug)@sample.agency.triad.json")
   try fm.createDirectory(at: url.deletingLastPathComponent(), withIntermediateDirectories: true)
   let eOld = AgencyEntry(
     timestamp: "2025-09-01T10:00:00Z",

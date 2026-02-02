@@ -45,14 +45,14 @@ submodule patch requests and is explicitly excluded from feature requests.
 
 ## See Also
 
-- Codex agent triad: `.clia/agents/codex/codex@sample.agent.json`
-- Carrie agent triad: `.clia/agents/carrie/carrie@sample.agent.json`
-- Cadence agent triad: `.clia/agents/cadence/cadence@sample.agent.json`
-- Tau agent triad: `.clia/agents/tau/tau@mono.agent.json`
-- Common agent triad: `.clia/agents/common/common@mono.agent.json` (agent),
-  `.clia/agents/common/common@mono.agenda.json` (agenda),
-  `.clia/agents/common/common@mono.agency.json` (agency);
+- Codex agent triad: `.clia/agents/codex/codex@sample.agent.triad.json`
+- Carrie agent triad: `.clia/agents/carrie/carrie@sample.agent.triad.json`
+- Cadence agent triad: `.clia/agents/cadence/cadence@sample.agent.triad.json`
+- Tau agent triad: `.clia/agents/tau/tau@mono.agent.triad.json`
+- Common agent triad: `.clia/agents/common/common@mono.agent.triad.json` (agent),
+  `.clia/agents/common/common@mono.agenda.triad.json` (agenda),
+  `.clia/agents/common/common@mono.agency.triad.json` (agency);
   DocC memory bundle: `.clia/agents/common/docc/memory.docc`
-- CLIA agent triad: `.clia/agents/clia/clia@sample.agent.json` (agent),
-   `.clia/agents/clia/clia@sample.agenda.json` (agenda),
-   `.clia/agents/clia/clia@sample.agency.json` (agency)
+- CLIA agent triad: `.clia/agents/clia/clia@sample.agent.triad.json` (agent),
+   `.clia/agents/clia/clia@sample.agenda.triad.json` (agenda),
+   `.clia/agents/clia/clia@sample.agency.triad.json` (agency)

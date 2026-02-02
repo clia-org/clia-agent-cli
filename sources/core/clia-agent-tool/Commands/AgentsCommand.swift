@@ -669,17 +669,17 @@ extension Agents {
 
       try JSON.FileWriter.write(
         agent,
-        to: agentDir.appendingPathComponent("\(prefix).agent.json"),
+        to: agentDir.appendingPathComponent("\(prefix).agent.triad.json"),
         encoder: JSON.Formatting.humanEncoder
       )
       try JSON.FileWriter.write(
         agenda,
-        to: agentDir.appendingPathComponent("\(prefix).agenda.json"),
+        to: agentDir.appendingPathComponent("\(prefix).agenda.triad.json"),
         encoder: JSON.Formatting.humanEncoder
       )
       try JSON.FileWriter.write(
         agency,
-        to: agentDir.appendingPathComponent("\(prefix).agency.json"),
+        to: agentDir.appendingPathComponent("\(prefix).agency.triad.json"),
         encoder: JSON.Formatting.humanEncoder
       )
     }
@@ -799,7 +799,7 @@ extension Agents {
           at: target.agentDir, includingPropertiesForKeys: nil
         )
         .first(where: { $0.lastPathComponent.contains(".agent.") && $0.pathExtension == "json" })
-      else { throw ValidationError("*.agent.json not found for \(slug)") }
+      else { throw ValidationError("*.agent.triad.json not found for \(slug)") }
 
       let decoder = JSONDecoder()
       var doc = try decoder.decode(AgentDoc.self, from: Data(contentsOf: fileURL))
@@ -925,7 +925,7 @@ extension Agents {
           at: target.agentDir, includingPropertiesForKeys: nil
         )
         .first(where: { $0.lastPathComponent.contains(".agent.") && $0.pathExtension == "json" })
-      else { throw ValidationError("*.agent.json not found for \(slug)") }
+      else { throw ValidationError("*.agent.triad.json not found for \(slug)") }
 
       let decoder = JSONDecoder()
       var doc = try decoder.decode(AgentDoc.self, from: Data(contentsOf: fileURL))
@@ -1047,19 +1047,19 @@ extension Agents {
       let files = try fm.contentsOfDirectory(at: agentsDir, includingPropertiesForKeys: nil)
       guard
         let agentURL = files.first(where: {
-          $0.lastPathComponent.hasSuffix(".agent.json")
+          $0.lastPathComponent.hasSuffix(".agent.triad.json")
             && !$0.lastPathComponent.contains(".agency.")
         })
       else {
-        throw ValidationError("Missing *.agent.json in \(agentsDir.path)")
+        throw ValidationError("Missing *.agent.triad.json in \(agentsDir.path)")
       }
-      guard let agendaURL = files.first(where: { $0.lastPathComponent.hasSuffix(".agenda.json") })
+      guard let agendaURL = files.first(where: { $0.lastPathComponent.hasSuffix(".agenda.triad.json") })
       else {
-        throw ValidationError("Missing *.agenda.json in \(agentsDir.path)")
+        throw ValidationError("Missing *.agenda.triad.json in \(agentsDir.path)")
       }
-      guard let agencyURL = files.first(where: { $0.lastPathComponent.hasSuffix(".agency.json") })
+      guard let agencyURL = files.first(where: { $0.lastPathComponent.hasSuffix(".agency.triad.json") })
       else {
-        throw ValidationError("Missing *.agency.json in \(agentsDir.path)")
+        throw ValidationError("Missing *.agency.triad.json in \(agentsDir.path)")
       }
 
       let dec = JSONDecoder()
@@ -1163,7 +1163,8 @@ extension Agents {
   struct ValidateTriad: AsyncParsableCommand {
     static let configuration = CommandConfiguration(
       commandName: "validate-triad",
-      abstract: "Validate presence + consistency of *.agent/agenda/agency.json per agent directory"
+      abstract:
+        "Validate presence + consistency of *.{agent,agenda,agency}.triad.json per agent directory"
     )
     @Option(name: .customLong("path"), help: "Root directory (defaults to CWD)") var path: String?
     func run() async throws {
@@ -1178,7 +1179,7 @@ extension Agents {
       while let url = e?.nextObject() as? URL {
         let p = url.path
         if !p.contains("/.clia/agents/") { continue }
-        if url.lastPathComponent.hasSuffix(".agent.json"), url.hasDirectoryPath == false {
+        if url.lastPathComponent.hasSuffix(".agent.triad.json"), url.hasDirectoryPath == false {
           let dir = url.deletingLastPathComponent()
           let key = dir.path
           if validatedDirs.contains(key) { continue }
@@ -1186,16 +1187,16 @@ extension Agents {
           let contents =
             (try? fm.contentsOfDirectory(at: dir, includingPropertiesForKeys: nil)) ?? []
           let agentURLs = contents.filter {
-            $0.lastPathComponent.hasSuffix(".agent.json")
+            $0.lastPathComponent.hasSuffix(".agent.triad.json")
               && !$0.lastPathComponent.contains(".agency.")
           }
-          let agencyURLs = contents.filter { $0.lastPathComponent.hasSuffix(".agency.json") }
-          let agendaURLs = contents.filter { $0.lastPathComponent.hasSuffix(".agenda.json") }
+          let agencyURLs = contents.filter { $0.lastPathComponent.hasSuffix(".agency.triad.json") }
+          let agendaURLs = contents.filter { $0.lastPathComponent.hasSuffix(".agenda.triad.json") }
           if agentURLs.isEmpty || agencyURLs.isEmpty || agendaURLs.isEmpty {
             var missing: [String] = []
-            if agentURLs.isEmpty { missing.append("*.agent.json") }
-            if agencyURLs.isEmpty { missing.append("*.agency.json") }
-            if agendaURLs.isEmpty { missing.append("*.agenda.json") }
+            if agentURLs.isEmpty { missing.append("*.agent.triad.json") }
+            if agencyURLs.isEmpty { missing.append("*.agency.triad.json") }
+            if agendaURLs.isEmpty { missing.append("*.agenda.triad.json") }
             missingCount += 1
             fputs("[error] \(dir.path): missing \(missing.joined(separator: ", "))\n", stderr)
             continue
@@ -1261,9 +1262,9 @@ extension Agents {
         let slug = dir.lastPathComponent
         let files = (try? fm.contentsOfDirectory(at: dir, includingPropertiesForKeys: nil)) ?? []
         guard
-          let agentURL = files.first(where: { $0.lastPathComponent.hasSuffix(".agent.json") }),
-          let agencyURL = files.first(where: { $0.lastPathComponent.hasSuffix(".agency.json") }),
-          let agendaURL = files.first(where: { $0.lastPathComponent.hasSuffix(".agenda.json") })
+          let agentURL = files.first(where: { $0.lastPathComponent.hasSuffix(".agent.triad.json") }),
+          let agencyURL = files.first(where: { $0.lastPathComponent.hasSuffix(".agency.triad.json") }),
+          let agendaURL = files.first(where: { $0.lastPathComponent.hasSuffix(".agenda.triad.json") })
         else {
           issues.append("[error] \(slug): missing triad JSON files")
           continue
@@ -1294,7 +1295,7 @@ extension Agents {
             }
           }
         } catch {
-          issues.append("[error] \(slug): failed to decode agency.json — \(error)")
+          issues.append("[error] \(slug): failed to decode agency.triad.json — \(error)")
         }
 
         do {
@@ -1326,7 +1327,7 @@ extension Agents {
             validateExpected("milestone \(milestone.slug)", milestone.expectedContributions)
           }
         } catch {
-          issues.append("[error] \(slug): failed to decode agenda.json — \(error)")
+          issues.append("[error] \(slug): failed to decode agenda.triad.json — \(error)")
         }
 
         do {
@@ -1339,7 +1340,7 @@ extension Agents {
             )
           }
         } catch {
-          issues.append("[error] \(slug): failed to decode agent.json — \(error)")
+          issues.append("[error] \(slug): failed to decode agent.triad.json — \(error)")
         }
       }
 
@@ -1416,7 +1417,9 @@ extension Agents {
 extension Agents {
   struct PreviewAgent: AsyncParsableCommand {
     static let configuration = CommandConfiguration(
-      commandName: "preview-agent", abstract: "Preview merged agent.json across context layers")
+      commandName: "preview-agent",
+      abstract: "Preview merged agent.triad.json across context layers"
+    )
     @Option(name: .customLong("path")) var path: String?
     @Option(name: .customLong("slug")) var slug: String
     @Flag(name: .customLong("pretty")) var pretty: Bool = false
@@ -1442,7 +1445,9 @@ extension Agents {
 extension Agents {
   struct PreviewAgenda: AsyncParsableCommand {
     static let configuration = CommandConfiguration(
-      commandName: "preview-agenda", abstract: "Preview merged agenda.json across context layers")
+      commandName: "preview-agenda",
+      abstract: "Preview merged agenda.triad.json across context layers"
+    )
     @Option(name: .customLong("path")) var path: String?
     @Option(name: .customLong("slug")) var slug: String
     @Flag(name: .customLong("pretty")) var pretty: Bool = false
@@ -1468,7 +1473,9 @@ extension Agents {
 extension Agents {
   struct PreviewAgency: AsyncParsableCommand {
     static let configuration = CommandConfiguration(
-      commandName: "preview-agency", abstract: "Preview merged agency.json across context layers")
+      commandName: "preview-agency",
+      abstract: "Preview merged agency.triad.json across context layers"
+    )
     @Option(name: .customLong("path")) var path: String?
     @Option(name: .customLong("slug")) var slug: String
     @Flag(name: .customLong("pretty")) var pretty: Bool = false
@@ -1629,8 +1636,8 @@ extension Agents {
         let name = url.lastPathComponent
         let dir = url.deletingLastPathComponent()
         if name.hasSuffix(".json") {
-          if name.contains(".agent.json") || name.contains(".agenda.json")
-            || name.contains(".agency.json")
+          if name.contains(".agent.triad.json") || name.contains(".agenda.triad.json")
+            || name.contains(".agency.triad.json")
           {
             let comps = name.split(separator: ".").map(String.init)
             if comps.count >= 3 {
@@ -1669,7 +1676,7 @@ extension Agents {
           do {
             let data = try Data(contentsOf: url)
             let name = url.lastPathComponent
-            if name.contains(".agent.json") {
+            if name.contains(".agent.triad.json") {
               var doc = try JSONDecoder().decode(AgentDoc.self, from: data)
               // For AgentDoc, slug is canonical; migrate by slug when matching.
               if doc.slug == fromRole { doc.slug = toRole }
@@ -1678,7 +1685,7 @@ extension Agents {
                 doc.sourcePath = xsrc.replacingOccurrences(of: fromRole, with: toRole)
               }
               try JSON.FileWriter.write(doc, to: url, encoder: JSON.Formatting.humanEncoder)
-            } else if name.contains(".agenda.json") {
+            } else if name.contains(".agenda.triad.json") {
               var doc = try JSONDecoder().decode(AgendaDoc.self, from: data)
               if doc.agent.role == fromRole { doc.agent.role = toRole }
               if doc.slug == fromRole { doc.slug = toRole }
@@ -1686,7 +1693,7 @@ extension Agents {
                 doc.sourcePath = xsrc.replacingOccurrences(of: fromRole, with: toRole)
               }
               try JSON.FileWriter.write(doc, to: url, encoder: JSON.Formatting.humanEncoder)
-            } else if name.contains(".agency.json") {
+            } else if name.contains(".agency.triad.json") {
               var doc = try JSONDecoder().decode(AgencyDoc.self, from: data)
               if doc.slug == fromRole { doc.slug = toRole }
               if let xsrc = doc.sourcePath, xsrc.contains(fromRole) {
@@ -1749,7 +1756,7 @@ extension Agents {
         let slug = dir.lastPathComponent
         guard
           let agencyURL = try fm.contentsOfDirectory(at: dir, includingPropertiesForKeys: nil)
-            .first(where: { $0.lastPathComponent.hasSuffix(".agency.json") })
+            .first(where: { $0.lastPathComponent.hasSuffix(".agency.triad.json") })
         else { continue }
         let data = try Data(contentsOf: agencyURL)
         guard var root = try JSONSerialization.jsonObject(with: data) as? [String: Any] else {

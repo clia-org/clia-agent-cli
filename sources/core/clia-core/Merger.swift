@@ -5,7 +5,7 @@ public enum Merger {
   public static func mergeAgent(slug: String, under root: URL, options: MergeOptions = .init())
     -> MergedAgentView
   {
-    let docs = loadDocs(AgentDoc.self, slug: slug, under: root, suffix: ".agent.json")
+    let docs = loadDocs(AgentDoc.self, slug: slug, under: root, suffix: ".agent.triad.json")
     var view = reduceAgentDocs(docs)
     // Preserve requested identity: when reduction cannot determine a specific slug
     // or only root profile contributed, prefer the input slug.
@@ -19,7 +19,7 @@ public enum Merger {
   public static func mergeAgenda(slug: String, under root: URL, options: MergeOptions = .init())
     -> MergedAgendaView
   {
-    let docs = loadDocs(AgendaDoc.self, slug: slug, under: root, suffix: ".agenda.json")
+    let docs = loadDocs(AgendaDoc.self, slug: slug, under: root, suffix: ".agenda.triad.json")
     var view = reduceAgendaDocs(docs)
     if view.slug.isEmpty || view.slug == "unknown" || view.slug == "agent-profile" {
       view.slug = slug
@@ -30,7 +30,7 @@ public enum Merger {
   public static func mergeAgency(slug: String, under root: URL, options: MergeOptions = .init())
     -> MergedAgencyView
   {
-    let docs = loadDocs(AgencyDoc.self, slug: slug, under: root, suffix: ".agency.json")
+    let docs = loadDocs(AgencyDoc.self, slug: slug, under: root, suffix: ".agency.triad.json")
     var view = reduceAgencyDocs(docs)
     if view.slug.isEmpty || view.slug == "unknown" || view.slug == "agent-profile" {
       view.slug = slug

@@ -113,7 +113,7 @@ private func collectMentions(under root: URL) throws -> [MentionItem] {
   for dir in agents {
     var isDir: ObjCBool = false
     if !fm.fileExists(atPath: dir.path, isDirectory: &isDir) || !isDir.boolValue { continue }
-    // find an *.agent.json file
+    // find an *.agent.triad.json file
     if let file = try fm.contentsOfDirectory(at: dir, includingPropertiesForKeys: nil).first(
       where: { $0.lastPathComponent.contains(".agent.") && $0.pathExtension == "json" })
     {

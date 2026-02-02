@@ -60,13 +60,13 @@ internal enum AgencySortCore {
   private static func agencyTriadPath(in dir: URL, slug: String) -> URL {
     let fm = FileManager.default
     if let contents = try? fm.contentsOfDirectory(at: dir, includingPropertiesForKeys: nil) {
-      if let match = contents.first(where: { $0.lastPathComponent.hasSuffix(".agency.json") }) {
+      if let match = contents.first(where: { $0.lastPathComponent.hasSuffix(".agency.triad.json") }) {
         return match
       }
     }
     let dirTag =
       dir.deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent()
       .lastPathComponent
-    return dir.appendingPathComponent("\(slug)@\(dirTag).agency.json")
+    return dir.appendingPathComponent("\(slug)@\(dirTag).agency.triad.json")
   }
 }

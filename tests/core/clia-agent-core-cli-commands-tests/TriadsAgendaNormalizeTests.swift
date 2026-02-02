@@ -12,7 +12,7 @@ func agendaNormalizeMilestones() throws {
   try fm.createDirectory(at: tmp.appendingPathComponent(".git"), withIntermediateDirectories: true)
 
   let slug = "norm-agenda"
-  let url = tmp.appendingPathComponent(".clia/agents/\(slug)/\(slug)@sample.agenda.json")
+  let url = tmp.appendingPathComponent(".clia/agents/\(slug)/\(slug)@sample.agenda.triad.json")
   try fm.createDirectory(at: url.deletingLastPathComponent(), withIntermediateDirectories: true)
 
   let ms: [Milestone] = [
@@ -48,7 +48,7 @@ func agendaNormalizeBacklog() throws {
   try fm.createDirectory(at: tmp.appendingPathComponent(".git"), withIntermediateDirectories: true)
 
   let slug = "norm-backlog"
-  let url = tmp.appendingPathComponent(".clia/agents/\(slug)/\(slug)@sample.agenda.json")
+  let url = tmp.appendingPathComponent(".clia/agents/\(slug)/\(slug)@sample.agenda.triad.json")
   try fm.createDirectory(at: url.deletingLastPathComponent(), withIntermediateDirectories: true)
 
   let backlog: [BacklogItem] = [

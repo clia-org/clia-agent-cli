@@ -25,7 +25,10 @@ extension TriadsCommandGroup {
 
     public struct Log: AsyncParsableCommand {
       public static var configuration: CommandConfiguration {
-        .init(commandName: "log", abstract: "Append a 0.4.0 ContributionEntry to agency.json")
+        .init(
+          commandName: "log",
+          abstract: "Append a 0.4.0 ContributionEntry to *.agency.triad.json"
+        )
       }
 
       public init() {}
@@ -131,7 +134,7 @@ extension TriadsCommandGroup {
             timestamp: ts
           )
           print(
-            "[triads agency log] wrote entry to .clia/agents/\(slug)/\(slug)@sample.agency.json"
+            "[triads agency log] wrote entry to .clia/agents/\(slug)/\(slug)@sample.agency.triad.json"
           )
         }
       }
@@ -224,7 +227,7 @@ extension TriadsCommandGroup {
               }
               continue
             }
-            guard last.hasSuffix(".agency.json") else { continue }
+            guard last.hasSuffix(".agency.triad.json") else { continue }
             total += 1
             let did = try AgencySortCore.applyFile(url: url, write: write)
             if did { changed += 1 }
@@ -270,7 +273,7 @@ extension TriadsCommandGroup {
               }
               continue
             }
-            guard last.hasSuffix(".agenda.json") else { continue }
+            guard last.hasSuffix(".agenda.triad.json") else { continue }
             total += 1
             let did = try AgendaNormalizeCore.applyFile(
               url: url, write: write, backlogSort: map(sortBacklog))
@@ -316,7 +319,7 @@ extension TriadsCommandGroup {
               }
               continue
             }
-            guard last.hasSuffix(".agent.json") else { continue }
+            guard last.hasSuffix(".agent.triad.json") else { continue }
             total += 1
             let did = try AgentNormalizeCore.applyFile(url: url, write: write)
             if did { changed += 1 }
@@ -380,13 +383,13 @@ extension TriadsCommandGroup {
       let fileManager = FileManager.default
       let files = try fileManager.contentsOfDirectory(
         at: contextDir, includingPropertiesForKeys: nil, options: [.skipsHiddenFiles])
-      guard let agendaURL = files.first(where: { $0.lastPathComponent.hasSuffix(".agenda.json") })
+      guard let agendaURL = files.first(where: { $0.lastPathComponent.hasSuffix(".agenda.triad.json") })
       else {
-        throw ValidationError("Missing *.agenda.json in \(contextDir.path)")
+        throw ValidationError("Missing *.agenda.triad.json in \(contextDir.path)")
       }
       let (slugOutput, renderedMarkdown) = try MirrorRenderer.agendaMarkdown(from: agendaURL)
       try writeOrPrint(
-        renderedMarkdown, slug: slugOutput, suffix: "agenda.md", sourceURL: agendaURL)
+        renderedMarkdown, slug: slugOutput, suffix: "agenda.triad.md", sourceURL: agendaURL)
     }
 
     private func renderAgency() throws {
@@ -394,13 +397,13 @@ extension TriadsCommandGroup {
       let fileManager = FileManager.default
       let files = try fileManager.contentsOfDirectory(
         at: contextDir, includingPropertiesForKeys: nil, options: [.skipsHiddenFiles])
-      guard let agencyURL = files.first(where: { $0.lastPathComponent.hasSuffix(".agency.json") })
+      guard let agencyURL = files.first(where: { $0.lastPathComponent.hasSuffix(".agency.triad.json") })
       else {
-        throw ValidationError("Missing *.agency.json in \(contextDir.path)")
+        throw ValidationError("Missing *.agency.triad.json in \(contextDir.path)")
       }
       let (slugOutput, renderedMarkdown) = try MirrorRenderer.agencyMarkdown(from: agencyURL)
       try writeOrPrint(
-        renderedMarkdown, slug: slugOutput, suffix: "agency.md", sourceURL: agencyURL)
+        renderedMarkdown, slug: slugOutput, suffix: "agency.triad.md", sourceURL: agencyURL)
     }
 
     private func renderAgent() throws {
@@ -408,12 +411,13 @@ extension TriadsCommandGroup {
       let fileManager = FileManager.default
       let files = try fileManager.contentsOfDirectory(
         at: contextDir, includingPropertiesForKeys: nil, options: [.skipsHiddenFiles])
-      guard let agentURL = files.first(where: { $0.lastPathComponent.hasSuffix(".agent.json") })
+      guard let agentURL = files.first(where: { $0.lastPathComponent.hasSuffix(".agent.triad.json") })
       else {
-        throw ValidationError("Missing *.agent.json in \(contextDir.path)")
+        throw ValidationError("Missing *.agent.triad.json in \(contextDir.path)")
       }
       let (slugOutput, renderedMarkdown) = try MirrorRenderer.agentMarkdown(from: agentURL)
-      try writeOrPrint(renderedMarkdown, slug: slugOutput, suffix: "agent.md", sourceURL: agentURL)
+      try writeOrPrint(
+        renderedMarkdown, slug: slugOutput, suffix: "agent.triad.md", sourceURL: agentURL)
     }
 
     private func resolveAgentDir() throws -> URL {
@@ -509,7 +513,7 @@ extension TriadsCommandGroup {
         return interval >= 0 && interval <= Double(days) * 86400.0
       }
       for case let url as URL in enumerator {
-        if url.lastPathComponent.hasSuffix(".agenda.json") == false { continue }
+        if url.lastPathComponent.hasSuffix(".agenda.triad.json") == false { continue }
         guard let data = try? Data(contentsOf: url) else { continue }
         guard let obj = try? JSONSerialization.jsonObject(with: data, options: []) else { continue }
         guard let doc = obj as? [String: Any] else { continue }

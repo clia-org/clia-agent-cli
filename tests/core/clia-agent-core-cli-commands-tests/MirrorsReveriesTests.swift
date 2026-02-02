@@ -25,7 +25,7 @@ struct MirrorsReveriesTests {
     try "- tiny hook".write(to: reveries, atomically: true, encoding: .utf8)
 
     // Minimal agent triad with persona paths
-    let triad = agentDir.appendingPathComponent("demo@sample.agent.json")
+    let triad = agentDir.appendingPathComponent("demo@sample.agent.triad.json")
     let json: [String: Any] = [
       "schemaVersion": "0.3.2",
       "slug": "demo",

@@ -38,7 +38,7 @@ Swift
 import CLIAAgentCore
 import Foundation
 
-let url = URL(fileURLWithPath: ".clia/agents/dott/dott@mono.agenda.json")
+let url = URL(fileURLWithPath: ".clia/agents/dott/dott@mono.agenda.triad.json")
 let (slug, markdown) = try MirrorRenderer.agendaMarkdown(from: url)
 print(slug)
 print(markdown)

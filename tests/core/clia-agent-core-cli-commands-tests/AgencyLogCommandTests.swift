@@ -31,7 +31,7 @@ func createsV040Entry() async throws {
 
   let docURL =
     tmp
-    .appendingPathComponent(".clia/agents/test-agent/test-agent@sample.agency.json")
+    .appendingPathComponent(".clia/agents/test-agent/test-agent@sample.agency.triad.json")
   let data = try Data(contentsOf: docURL)
   let doc = try JSONDecoder().decode(AgencyDoc.self, from: data)
   #expect(doc.schemaVersion == TriadSchemaVersion.current)
@@ -91,7 +91,7 @@ func upsertsByTitle() async throws {
     )
   }
 
-  let url = tmp.appendingPathComponent(".clia/agents/alpha/alpha@sample.agency.json")
+  let url = tmp.appendingPathComponent(".clia/agents/alpha/alpha@sample.agency.triad.json")
   let data = try Data(contentsOf: url)
   let doc = try JSONDecoder().decode(AgencyDoc.self, from: data)
   #expect(doc.entries.count == 1)
@@ -125,7 +125,7 @@ func explicitContribsAndLinks() async throws {
     timestamp: ISO8601DateFormatter().string(from: Date())
   )
 
-  let url = tmp.appendingPathComponent(".clia/agents/beta/beta@sample.agency.json")
+  let url = tmp.appendingPathComponent(".clia/agents/beta/beta@sample.agency.triad.json")
   let data = try Data(contentsOf: url)
   let doc = try JSONDecoder().decode(AgencyDoc.self, from: data)
   #expect(doc.entries.count == 1)
@@ -200,7 +200,7 @@ func sortsNewestFirst() async throws {
     timestamp: "2025-09-02T08:00:00Z"
   )
 
-  let url = tmp.appendingPathComponent(".clia/agents/gamma/gamma@sample.agency.json")
+  let url = tmp.appendingPathComponent(".clia/agents/gamma/gamma@sample.agency.triad.json")
   let data = try Data(contentsOf: url)
   let doc = try JSONDecoder().decode(AgencyDoc.self, from: data)
   #expect(doc.entries.count == 2)

@@ -1,33 +1,33 @@
 [
   {
     "files" : [
-      "ios-engineer@clia-agent-core-sample.agent.json",
-      "ios-engineer@clia-agent-core-sample.agenda.json",
-      "ios-engineer@clia-agent-core-sample.agency.json"
+      "ios-engineer@clia-agent-core-sample.agent.triad.json",
+      "ios-engineer@clia-agent-core-sample.agenda.triad.json",
+      "ios-engineer@clia-agent-core-sample.agency.triad.json"
     ],
     "name" : "ios-engineer"
   },
   {
     "files" : [
-      "product-owner@clia-agent-core-sample.agent.json",
-      "product-owner@clia-agent-core-sample.agenda.json",
-      "product-owner@clia-agent-core-sample.agency.json"
+      "product-owner@clia-agent-core-sample.agent.triad.json",
+      "product-owner@clia-agent-core-sample.agenda.triad.json",
+      "product-owner@clia-agent-core-sample.agency.triad.json"
     ],
     "name" : "product-owner"
   },
   {
     "files" : [
-      "project-manager@clia-agent-core-sample.agent.json",
-      "project-manager@clia-agent-core-sample.agenda.json",
-      "project-manager@clia-agent-core-sample.agency.json"
+      "project-manager@clia-agent-core-sample.agent.triad.json",
+      "project-manager@clia-agent-core-sample.agenda.triad.json",
+      "project-manager@clia-agent-core-sample.agency.triad.json"
     ],
     "name" : "project-manager"
   },
   {
     "files" : [
-      "swift-architect@clia-agent-core-sample.agent.json",
-      "swift-architect@clia-agent-core-sample.agenda.json",
-      "swift-architect@clia-agent-core-sample.agency.json"
+      "swift-architect@clia-agent-core-sample.agent.triad.json",
+      "swift-architect@clia-agent-core-sample.agenda.triad.json",
+      "swift-architect@clia-agent-core-sample.agency.triad.json"
     ],
     "name" : "swift-architect"
   }

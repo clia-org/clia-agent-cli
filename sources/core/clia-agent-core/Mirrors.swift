@@ -13,7 +13,7 @@ public enum MirrorRenderer {
         domain: "MirrorRenderer", code: 1,
         userInfo: [NSLocalizedDescriptionKey: "Agents directory not found: \(agentsRoot.path)"])
     }
-    let triadSuffixes = ["agent.json", "agenda.json", "agency.json"]
+    let triadSuffixes = [".agent.triad.json", ".agenda.triad.json", ".agency.triad.json"]
     var agentDirs = try fm.contentsOfDirectory(
       at: agentsRoot, includingPropertiesForKeys: [.isDirectoryKey], options: [.skipsHiddenFiles]
     ).filter { url in
@@ -39,10 +39,10 @@ public enum MirrorRenderer {
           let updated = json["updated"] as? String
           let handle = json["handle"] as? String
           let type: String =
-            file.lastPathComponent.hasSuffix("agent.json")
-            ? "agent" : (file.lastPathComponent.hasSuffix("agenda.json") ? "agenda" : "agency")
-          // Output filename: write legacy-consistent agent.md for agent profile mirrors
-          let mdName = type == "agent" ? "\(slug).agent.triad.md" : "\(slug).\(type).md"
+            file.lastPathComponent.hasSuffix(".agent.triad.json")
+            ? "agent" : (file.lastPathComponent.hasSuffix(".agenda.triad.json") ? "agenda" : "agency")
+          // Output filename: always emit <slug>.<type>.triad.md mirrors
+          let mdName = "\(slug).\(type).triad.md"
           let generatedDir = dir.appendingPathComponent(".generated")
           if !dryRun {
             try? fm.createDirectory(at: generatedDir, withIntermediateDirectories: true)
@@ -383,7 +383,7 @@ public enum MirrorRenderer {
     guard fm.fileExists(atPath: dir.path) else { return nil }
     if let files = try? fm.contentsOfDirectory(at: dir, includingPropertiesForKeys: nil) {
       if let agentURL = files.first(where: {
-        $0.lastPathComponent.hasSuffix(".agent.json") && !$0.lastPathComponent.contains(".agency.")
+        $0.lastPathComponent.hasSuffix(".agent.triad.json") && !$0.lastPathComponent.contains(".agency.")
       }) {
         if let data = try? Data(contentsOf: agentURL),
           let obj = try? JSONSerialization.jsonObject(with: data) as? [String: Any]

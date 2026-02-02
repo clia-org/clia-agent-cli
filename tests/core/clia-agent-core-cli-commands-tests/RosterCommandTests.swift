@@ -43,7 +43,7 @@ func testRosterReportSegments() throws {
   let enc = JSONEncoder()
   enc.outputFormatting = [.prettyPrinted, .sortedKeys]
   try enc.encode(cameron).write(
-    to: rootAgents.appendingPathComponent("cameron@sample.agent.json"))
+    to: rootAgents.appendingPathComponent("cameron@sample.agent.triad.json"))
 
   // Submodule agent: tau (app + tool)
   let sampleRoot = tmpRoot.appendingPathComponent("code/sample")
@@ -71,7 +71,7 @@ func testRosterReportSegments() throws {
     )
   )
   try enc.encode(tau).write(
-    to: sampleAgents.appendingPathComponent("tau@sample.agent.json"))
+    to: sampleAgents.appendingPathComponent("tau@sample.agent.triad.json"))
 
   // Advertise the submodule so the command scans it
   let gitmodules = """

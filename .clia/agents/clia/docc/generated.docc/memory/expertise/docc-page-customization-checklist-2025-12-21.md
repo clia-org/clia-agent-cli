@@ -57,7 +57,7 @@ consistent and fast to scan.
 
 - `@Image(source: "...", alt: "...")` with required alt text.
 - `@Video(source: "...", poster: "...", alt: "...")` for tutorials or demos.
-- Keep assets in `Resources/` with kebab-case names.
+- Keep assets in `resources/` with kebab-case names.
 - Use `@PageImage` for badges or cards rather than inline images.
 
 ## Checklist: Tutorials
@@ -112,7 +112,7 @@ Summary paragraph.
 - Use `@PageColor`, `@PageImage`, and `@TitleHeading` for identity.
 - Use `@Links` visual styles and `@Row/@Column` grids for layout rhythm.
 - Keep callout usage consistent with the palette and icon system.
-- Apply catalog-wide CSS with `theme-settings.json` and a CSS file in `Resources/`.
+- Apply catalog-wide CSS with `theme-settings.json` and a CSS file in `resources/`.
 - Reuse the Carrie palette (`docc-palette`) for consistent tokens.
 
 See also:

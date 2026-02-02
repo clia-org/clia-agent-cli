@@ -26,7 +26,7 @@ func testDeterministicUnionOrder() throws {
     "notes": [],
   ]
   try JSONSerialization.data(withJSONObject: rootDoc, options: .prettyPrinted)
-    .write(to: rootDir.appendingPathComponent("root@sample.agent.json"))
+    .write(to: rootDir.appendingPathComponent("root@sample.agent.triad.json"))
 
   // Child with guardrails B, C and inheritance
   let slug = "smoke-order"
@@ -41,10 +41,10 @@ func testDeterministicUnionOrder() throws {
     "mentors": [], "tags": [], "links": [],
     "responsibilities": [], "guardrails": ["B", "C"], "checklists": [], "sections": [],
     "notes": [],
-    "inherits": [".clia/agents/root/root@sample.agent.json"],
+    "inherits": [".clia/agents/root/root@sample.agent.triad.json"],
   ]
   try JSONSerialization.data(withJSONObject: childDoc, options: .prettyPrinted)
-    .write(to: childDir.appendingPathComponent("\(slug)@sample.agent.json"))
+    .write(to: childDir.appendingPathComponent("\(slug)@sample.agent.triad.json"))
 
   let merged = Merger.mergeAgent(slug: slug, under: tmp)
   // Expect A, B, C with single B
@@ -64,8 +64,8 @@ func testCycleSafeInheritance() throws {
   let slug = "cycle"
   let dir = agentsRoot.appendingPathComponent(slug)
   try fm.createDirectory(at: dir, withIntermediateDirectories: true)
-  let a = dir.appendingPathComponent("a.agent.json")
-  let b = dir.appendingPathComponent("b.agent.json")
+  let a = dir.appendingPathComponent("a.agent.triad.json")
+  let b = dir.appendingPathComponent("b.agent.triad.json")
   let docA: [String: Any] = [
     "schemaVersion": "0.4.0", "slug": slug, "title": "CycleA",
     "updated": ISO8601DateFormatter().string(from: Date()), "role": slug,
@@ -86,7 +86,7 @@ func testCycleSafeInheritance() throws {
   try JSONSerialization.data(withJSONObject: docB, options: .prettyPrinted).write(to: b)
 
   // The loader looks for a triad file at lineage dirs; place one with standard name referencing A
-  try fm.copyItem(at: a, to: dir.appendingPathComponent("\(slug)@sample.agent.json"))
+  try fm.copyItem(at: a, to: dir.appendingPathComponent("\(slug)@sample.agent.triad.json"))
   let merged = Merger.mergeAgent(slug: slug, under: tmp)
   // Both X and Y appear once each
   let g = merged.guardrails
@@ -114,7 +114,7 @@ func testMissingInheritedIgnored() throws {
     "inherits": ["/no/such/file.json"],
   ]
   try JSONSerialization.data(withJSONObject: doc, options: .prettyPrinted)
-    .write(to: dir.appendingPathComponent("\(slug)@sample.agent.json"))
+    .write(to: dir.appendingPathComponent("\(slug)@sample.agent.triad.json"))
   let merged = Merger.mergeAgent(slug: slug, under: tmp)
   #expect(merged.guardrails == ["local"])  // still decodes
 }

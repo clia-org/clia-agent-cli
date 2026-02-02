@@ -42,12 +42,12 @@ public struct LineageLintCommand: ParsableCommand {
     if let rootList = try? fm.contentsOfDirectory(
       atPath: agentsDir.appendingPathComponent("root").path),
       let agentFile = rootList.first(where: {
-        $0.hasSuffix(".agent.json") && !$0.contains(".agency.") && !$0.contains(".agenda.")
+        $0.hasSuffix(".agent.triad.json") && !$0.contains(".agency.") && !$0.contains(".agenda.")
       })
     {
       rootDirectives = ".clia/agents/root/\(agentFile)"
     } else {
-      rootDirectives = ".clia/agents/root/root@sample.agent.json"
+      rootDirectives = ".clia/agents/root/root@sample.agent.triad.json"
       warnings.append("root directives not found; using fallback \(rootDirectives)")
     }
 
@@ -58,7 +58,7 @@ public struct LineageLintCommand: ParsableCommand {
       var hasAgent = false
       if let urls = try? fm.contentsOfDirectory(at: dir, includingPropertiesForKeys: nil) {
         if let agentURL = urls.first(where: {
-          $0.lastPathComponent.hasSuffix(".agent.json")
+          $0.lastPathComponent.hasSuffix(".agent.triad.json")
             && !$0.lastPathComponent.contains(".agency.")
         }) {
           hasAgent = true

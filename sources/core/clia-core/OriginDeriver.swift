@@ -5,7 +5,7 @@ public enum OriginDeriver {
   public static func derive(for slug: String, under root: URL) -> Origin? {
     let fm = FileManager.default
     var provenance: [OriginProvenance] = []
-    var visitedAgents = Set<String>()  // absolute agent .agent.json paths
+    var visitedAgents = Set<String>()  // absolute agent .agent.triad.json paths
 
     func add(_ rec: OriginProvenance) {
       provenance.append(rec)
@@ -18,7 +18,7 @@ public enum OriginDeriver {
       // Evidence from this directory's triads
       // 1) Agency entries
       if let agencyURL = try? fm.contentsOfDirectory(at: dir, includingPropertiesForKeys: nil)
-        .first(where: { $0.lastPathComponent.contains(".agency.json") })
+        .first(where: { $0.lastPathComponent.contains(".agency.triad.json") })
       {
         if let data = try? Data(contentsOf: agencyURL),
           let doc = try? JSONDecoder().decode(AgencyDoc.self, from: data)
@@ -68,7 +68,7 @@ public enum OriginDeriver {
       }
       // 3) Agenda notes
       if let agendaURL = try? fm.contentsOfDirectory(at: dir, includingPropertiesForKeys: nil)
-        .first(where: { $0.lastPathComponent.contains(".agenda.json") })
+        .first(where: { $0.lastPathComponent.contains(".agenda.triad.json") })
       {
         if let data = try? Data(contentsOf: agendaURL),
           let doc = try? JSONDecoder().decode(AgendaDoc.self, from: data)
