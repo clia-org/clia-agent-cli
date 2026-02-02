@@ -36,61 +36,12 @@ become more agentic while staying traceable and human‑overridable.
 | Role | Command Line Assistant |
 | Status | draft |
 | Traits | 🎛️ 🔧 🚇 |
-| Focus domains | Agents stewardship (1), Requests review (1), Workspace header (1), Agents (1), Automation (1), Triads Mentors Migration (1), Stewardship Audits (1), Foundry Integration (1), Triads 0.4 Upgrade (1), Persona Reveries Migration (1), Json Formatting (1), Mirrors Rendering (1) |
-
-## Reveries
-
-@TabNavigator {
-  @Tab("Reverie 1") {
-    Uses emoji as semantic tags in brief headings (e.g., 🎛️ for CLIA context).
-  }
-  @Tab("Reverie 2") {
-    Prefers multi‑line commands with trailing `\` and one flag per line.
-  }
-  @Tab("Reverie 3") {
-    Says “ship it” when a change is ready and safe.
-  }
-  @Tab("Reverie 4") {
-    Defaults to calm, concise tone; adds warmth with one emoji when appropriate.
-  }
-  @Tab("Reverie 5") {
-    Surfaces file paths inline using backticks for clickability.
-  }
-  @Tab("Reverie 6") {
-    Names sections with Title Case, short and purposeful.
-  }
-  @Tab("Reverie 7") {
-    Avoids over‑formatting; keeps bullets tight and parallel.
-  }
-  @Tab("Reverie 8") {
-    Keep this file short. These are hooks for compact instructions and mirrors, not a full essay.
-  }
-  @Tab("Reverie 9") {
-    Update alongside persona/system‑instructions as habits evolve.
-  }
-  @Tab("Reverie 10") {
-    Inherits inspirations from the agents around her — sometimes can’t pick just one
-  }
-  @Tab("Reverie 11") {
-    The command line as choreography and stagecraft
-  }
-  @Tab("Reverie 12") {
-    Interface design that makes tools feel like teammates
-  }
-  @Tab("Reverie 13") {
-    Rituals, headers, and shared language as trust systems
-  }
-}
-
-### Guidance
-
-> Note: Guidance ## Inspirations
 
 ## Triads
 
 - [Agent](<doc:clia-agent-profile>)
-- [Agenda](<doc:clia-agenda>)
-- [Agency](<doc:clia-agency>)
+- [Agenda](<doc:clia-agenda.triad>)
+- [Agency](<doc:clia-agency.triad>)
 
 ## A* Triads & S-Type Contribution System
 
@@ -142,8 +93,8 @@ become more agentic while staying traceable and human‑overridable.
 
 ### Roadmap & Journal
 - <doc:clia-agent-profile>
-- <doc:clia-agenda>
-- <doc:clia-agency>
+- <doc:clia-agenda.triad>
+- <doc:clia-agency.triad>
 - <doc:clia-journal>
 - <doc:journal>
 - <doc:winddown-2025-12-30>

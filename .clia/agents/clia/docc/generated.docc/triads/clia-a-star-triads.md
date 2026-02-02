@@ -6,8 +6,8 @@ A* Triads names the agent, agency, and agenda triads.
 
 ### Triads
 - [Agent](<doc:clia-agent-profile>)
-- [Agenda](<doc:clia-agenda>)
-- [Agency](<doc:clia-agency>)
+- [Agenda](<doc:clia-agenda.triad>)
+- [Agency](<doc:clia-agency.triad>)
 
 ## References
 

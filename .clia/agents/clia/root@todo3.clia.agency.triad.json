@@ -386,6 +386,38 @@
       "title" : "AgencyLog 0.4.0 typed writer + tests"
     },
     {
+      "contributions" : [
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Documented tau mac AI chat wiring and AnyGenUI input behavior updates.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "codex",
+          "types" : [
+            {
+              "evidence" : "Documented tau mac AI chat wiring and AnyGenUI input behavior updates.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "rismay",
+          "types" : [
+            {
+              "evidence" : "Documented tau mac AI chat wiring and AnyGenUI input behavior updates.",
+              "type" : "journal",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
       "details" : [
         "Tracked macTau AI chat wiring (toolbar entry + visibleAtLaunch) and Apple Foundation fallback diagnostics.",
         "Noted AnyGenUI input updates: Enter sends and terminal styling for ! commands."
@@ -1495,19 +1527,24 @@
     {
       "contributions" : [
         {
-          "summary" : "Maintained AnyLanguageModelKit dependency traits while testing local/remote package identity behavior.",
-          "type" : "code",
-          "who" : "clia"
-        },
-        {
-          "summary" : "Executed tau-mac builds to confirm MLX-enabled setup is stable.",
-          "type" : "tool",
-          "who" : "clia"
-        },
-        {
-          "summary" : "Captured the decision to keep the local AnyLanguageModel checkout during remote dependency work.",
-          "type" : "log",
-          "who" : "clia"
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "Maintained AnyLanguageModelKit dependency traits while testing local/remote package identity behavior.",
+              "type" : "code",
+              "weight" : 1
+            },
+            {
+              "evidence" : "Executed tau-mac builds to confirm MLX-enabled setup is stable.",
+              "type" : "tool",
+              "weight" : 1
+            },
+            {
+              "evidence" : "Captured the decision to keep the local AnyLanguageModel checkout during remote dependency work.",
+              "type" : "log",
+              "weight" : 1
+            }
+          ]
         }
       ],
       "summary" : "Verified tau-mac builds with AnyLanguageModel MLX traits and preserved the local AnyLanguageModel checkout to avoid identity mismatch issues.",

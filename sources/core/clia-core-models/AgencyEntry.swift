@@ -2,12 +2,8 @@ import Foundation
 
 /// A journal entry in Agency that can carry evidenced, per-actor contributions.
 ///
-/// Backward compatibility:
-/// - Legacy entries may provide `participants: [String]` and a flat
-///   `contributions: [String]` list. These remain decodable.
-/// - Preferred shape groups contributions by actor (agent slug) with required
-///   per-item evidence. When present, `contributionGroups` is encoded at the
-///   `contributions` key.
+/// Preferred shape groups contributions by actor (agent slug) with required
+/// per-item evidence. `contributionGroups` is encoded at the `contributions` key.
 public struct AgencyEntry: Codable, Sendable {
   public var timestamp: String
   public var kind: String?

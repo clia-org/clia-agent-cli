@@ -3,9 +3,9 @@ import PackageDescription
 import Foundation
 
 let useLocalDeps: Bool = {
-  guard let raw = ProcessInfo.processInfo.environment["SPM_USE_LOCAL_DEPS"] else { return false }
+  guard let raw = ProcessInfo.processInfo.environment["SPM_USE_LOCAL_DEPS"] else { return true }
   let normalized = raw.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
-  return normalized == "1" || normalized == "true" || normalized == "yes"
+  return !(normalized == "0" || normalized == "false" || normalized == "no")
 }()
 
 func localOrRemote(
@@ -35,15 +35,15 @@ let package = Package(
     localOrRemote(
       name: "common-process",
       path: "../../../../../../swift-universal/public/spm/universal/domain/system/common-process",
-      remote: { .package(url: "https://github.com/wrkstrm/common-process.git", branch: "main") }),
+      remote: { .package(url: "https://github.com/swift-universal/common-process.git", from: "0.3.0") }),
     localOrRemote(
       name: "common-shell",
       path: "../../../../../../swift-universal/public/spm/universal/domain/system/common-shell",
-      remote: { .package(url: "https://github.com/wrkstrm/common-shell.git", branch: "main") }),
+      remote: { .package(url: "https://github.com/swift-universal/common-shell.git", from: "0.0.1") }),
     localOrRemote(
       name: "common-cli",
       path: "../../../../../../swift-universal/public/spm/universal/domain/system/common-cli",
-      remote: { .package(url: "https://github.com/wrkstrm/common-cli.git", branch: "main") }),
+      remote: { .package(url: "https://github.com/swift-universal/common-cli.git", from: "0.1.0") }),
     localOrRemote(
       name: "common-log",
       path: "../../../../../../swift-universal/public/spm/universal/domain/system/common-log",
