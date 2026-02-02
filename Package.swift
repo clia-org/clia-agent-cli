@@ -50,19 +50,19 @@ let package = Package(
       remote: { .package(url: "https://github.com/swift-universal/common-log", branch: "main") }),
     localOrRemote(
       name: "wrkstrm-foundation",
-      path: "../../../../../../wrkstrm/spm/universal/domain/system/wrkstrm-foundation",
+      path: "../../../../../../wrkstrm/public/spm/universal/domain/system/wrkstrm-foundation",
       remote: { .package(url: "https://github.com/wrkstrm/wrkstrm-foundation.git", from: "3.0.0") }),
     localOrRemote(
       name: "wrkstrm-main",
-      path: "../../../../../../wrkstrm/spm/universal/domain/system/wrkstrm-main",
+      path: "../../../../../../wrkstrm/public/spm/universal/domain/system/wrkstrm-main",
       remote: { .package(url: "https://github.com/wrkstrm/wrkstrm-main", branch: "main") }),
     localOrRemote(
       name: "wrkstrm-performance",
-      path: "../../../../../../wrkstrm/spm/universal/domain/system/wrkstrm-performance",
+      path: "../../../../../../wrkstrm/public/spm/universal/domain/system/wrkstrm-performance",
       remote: { .package(url: "https://github.com/wrkstrm/wrkstrm-performance", branch: "main") }),
     localOrRemote(
       name: "swift-figlet-kit",
-      path: "../../../../../../wrkstrm/spm/universal/domain/tooling/swift-figlet-kit",
+      path: "../../../../../../wrkstrm/public/spm/universal/domain/tooling/swift-figlet-kit",
       remote: { .package(url: "https://github.com/wrkstrm/swift-figlet-kit.git", branch: "main") }),
     // Remaining local-only deps (no public repo published yet)
     .package(path: "../../../../../../swift-universal/public/spm/universal/domain/system/swift-directory-tools"),
@@ -70,7 +70,7 @@ let package = Package(
     .package(path: "../../../../../../swift-universal/public/spm/universal/domain/tooling/swift-md-formatter"),
     .package(
       name: "swift-terminal-link-rewriter",
-      path: "../../../../../../wrkstrm/spm/universal/domain/tooling/swift-terminal-link-rewriter"
+      path: "../../../../../../wrkstrm/public/spm/universal/domain/tooling/swift-terminal-link-rewriter"
     ),
     // AI providers (local for now)
     .package(
