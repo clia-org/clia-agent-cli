@@ -34,19 +34,19 @@ let package = Package(
     // Local or remote (set SPM_USE_LOCAL_DEPS=1 for local)
     localOrRemote(
       name: "common-process",
-      path: "../../../../../../swift-universal/spm/universal/domain/system/common-process",
+      path: "../../../../../../swift-universal/public/spm/universal/domain/system/common-process",
       remote: { .package(url: "https://github.com/wrkstrm/common-process.git", branch: "main") }),
     localOrRemote(
       name: "common-shell",
-      path: "../../../../../../swift-universal/spm/universal/domain/system/common-shell",
+      path: "../../../../../../swift-universal/public/spm/universal/domain/system/common-shell",
       remote: { .package(url: "https://github.com/wrkstrm/common-shell.git", branch: "main") }),
     localOrRemote(
       name: "common-cli",
-      path: "../../../../../../swift-universal/spm/universal/domain/system/common-cli",
+      path: "../../../../../../swift-universal/public/spm/universal/domain/system/common-cli",
       remote: { .package(url: "https://github.com/wrkstrm/common-cli.git", branch: "main") }),
     localOrRemote(
       name: "common-log",
-      path: "../../../../../../swift-universal/spm/universal/domain/system/common-log",
+      path: "../../../../../../swift-universal/public/spm/universal/domain/system/common-log",
       remote: { .package(url: "https://github.com/swift-universal/common-log", branch: "main") }),
     localOrRemote(
       name: "wrkstrm-foundation",
@@ -65,9 +65,9 @@ let package = Package(
       path: "../../../../../../wrkstrm/spm/universal/domain/tooling/swift-figlet-kit",
       remote: { .package(url: "https://github.com/wrkstrm/swift-figlet-kit.git", branch: "main") }),
     // Remaining local-only deps (no public repo published yet)
-    .package(path: "../../../../../../swift-universal/spm/universal/domain/system/swift-directory-tools"),
-    .package(path: "../../../../../../swift-universal/spm/universal/domain/tooling/swift-json-formatter"),
-    .package(path: "../../../../../../swift-universal/spm/universal/domain/tooling/swift-md-formatter"),
+    .package(path: "../../../../../../swift-universal/public/spm/universal/domain/system/swift-directory-tools"),
+    .package(path: "../../../../../../swift-universal/public/spm/universal/domain/tooling/swift-json-formatter"),
+    .package(path: "../../../../../../swift-universal/public/spm/universal/domain/tooling/swift-md-formatter"),
     .package(
       name: "swift-terminal-link-rewriter",
       path: "../../../../../../wrkstrm/spm/universal/domain/tooling/swift-terminal-link-rewriter"
@@ -75,7 +75,7 @@ let package = Package(
     // AI providers (local for now)
     .package(
       name: "CommonAI",
-      path: "../../../../../../swift-universal/spm/universal/domain/ai/common-ai"
+      path: "../../../../../../swift-universal/public/spm/universal/domain/ai/common-ai"
     ),
     // Remotes
     .package(url: "https://github.com/apple/swift-argument-parser.git", from: "1.6.0"),
