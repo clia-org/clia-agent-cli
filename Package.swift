@@ -85,10 +85,11 @@ let package = Package(
       name: "swift-terminal-link-rewriter",
       path: "../../../../../../wrkstrm/public/spm/universal/domain/tooling/swift-terminal-link-rewriter"
     ),
-    // AI providers (local for now)
-    .package(
+    // AI providers
+    localOrRemote(
       name: "CommonAI",
-      path: "../../../../../../swift-universal/public/spm/universal/domain/ai/common-ai"
+      path: "../../../../../../wrkstrm/public/spm/universal/domain/ai/common-ai",
+      remote: { .package(url: "https://github.com/wrkstrm/common-ai.git", from: "0.1.0") }
     ),
     // Remotes
     .package(url: "https://github.com/apple/swift-argument-parser.git", from: "1.6.0"),
