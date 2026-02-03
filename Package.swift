@@ -64,10 +64,23 @@ let package = Package(
       name: "swift-figlet-kit",
       path: "../../../../../../wrkstrm/public/spm/universal/domain/tooling/swift-figlet-kit",
       remote: { .package(url: "https://github.com/wrkstrm/swift-figlet-kit.git", branch: "main") }),
+    // Local or remote (published)
+    localOrRemote(
+      name: "swift-directory-tools",
+      path: "../../../../../../swift-universal/public/spm/universal/domain/system/swift-directory-tools",
+      remote: { .package(url: "https://github.com/swift-universal/swift-directory-tools.git", from: "0.1.0") }
+    ),
+    localOrRemote(
+      name: "swift-json-formatter",
+      path: "../../../../../../swift-universal/public/spm/universal/domain/tooling/swift-json-formatter",
+      remote: { .package(url: "https://github.com/swift-universal/swift-json-formatter.git", from: "0.1.0") }
+    ),
+    localOrRemote(
+      name: "swift-md-formatter",
+      path: "../../../../../../swift-universal/public/spm/universal/domain/tooling/swift-md-formatter",
+      remote: { .package(url: "https://github.com/swift-universal/swift-md-formatter.git", from: "0.1.0") }
+    ),
     // Remaining local-only deps (no public repo published yet)
-    .package(path: "../../../../../../swift-universal/public/spm/universal/domain/system/swift-directory-tools"),
-    .package(path: "../../../../../../swift-universal/public/spm/universal/domain/tooling/swift-json-formatter"),
-    .package(path: "../../../../../../swift-universal/public/spm/universal/domain/tooling/swift-md-formatter"),
     .package(
       name: "swift-terminal-link-rewriter",
       path: "../../../../../../wrkstrm/public/spm/universal/domain/tooling/swift-terminal-link-rewriter"
