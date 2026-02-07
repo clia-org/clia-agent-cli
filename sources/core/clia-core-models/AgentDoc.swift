@@ -9,6 +9,12 @@ public struct AgentDoc: Codable, Sendable {
   // Agent identity is represented by `slug`; no separate alias field
   // Display identity (profiles only; not used for mentions)
   public var role: String?
+  // Profile kind (optional for backward compatibility): operator (human) vs agent (automation)
+  public var profileType: String?
+  // Canonical operation modes (optional for backward compatibility): cloud | edge | real-world
+  public var operationModes: [String]?
+  // Canonical primary emoji marker (optional for backward compatibility)
+  public var emoji: String?
   // Inheritance: top-level optional list of file paths or HTTP(S) URLs
   public var inherits: [String]?
   // Optional repo-relative path to human-authored source (e.g., Markdown)
@@ -45,6 +51,9 @@ public struct AgentDoc: Codable, Sendable {
     updated: String,
     status: String? = nil,
     role: String? = nil,
+    profileType: String? = nil,
+    operationModes: [String]? = nil,
+    emoji: String? = nil,
     inherits: [String]? = nil,
     sourcePath: String? = nil,
     avatarPath: String? = nil,
@@ -72,6 +81,9 @@ public struct AgentDoc: Codable, Sendable {
     self.updated = updated
     self.status = status
     self.role = role
+    self.profileType = profileType
+    self.operationModes = operationModes
+    self.emoji = emoji
     self.inherits = inherits
     self.sourcePath = sourcePath
     self.avatarPath = avatarPath
@@ -101,6 +113,9 @@ public struct AgentDoc: Codable, Sendable {
     case updated
     case status
     case role  // display role (profiles)
+    case profileType
+    case operationModes
+    case emoji
     case inherits
     case sourcePath
     case avatarPath
@@ -144,6 +159,9 @@ public struct AgentDoc: Codable, Sendable {
     } else {
       self.role = nil
     }
+    self.profileType = try c.decodeIfPresent(String.self, forKey: .profileType)
+    self.operationModes = try c.decodeIfPresent([String].self, forKey: .operationModes)
+    self.emoji = try c.decodeIfPresent(String.self, forKey: .emoji)
     self.inherits = try c.decodeIfPresent([String].self, forKey: .inherits)
     self.sourcePath = try c.decodeIfPresent(String.self, forKey: .sourcePath)
     self.avatarPath = try c.decodeIfPresent(String.self, forKey: .avatarPath)
@@ -193,6 +211,9 @@ public struct AgentDoc: Codable, Sendable {
     try c.encode(updated, forKey: .updated)
     try c.encodeIfPresent(status, forKey: .status)
     try c.encodeIfPresent(role, forKey: .role)
+    try c.encodeIfPresent(profileType, forKey: .profileType)
+    try c.encodeIfPresent(operationModes, forKey: .operationModes)
+    try c.encodeIfPresent(emoji, forKey: .emoji)
     try c.encodeIfPresent(inherits, forKey: .inherits)
     try c.encodeIfPresent(sourcePath, forKey: .sourcePath)
     try c.encodeIfPresent(avatarPath, forKey: .avatarPath)

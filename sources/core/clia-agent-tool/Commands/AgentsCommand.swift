@@ -211,6 +211,17 @@ extension Agents {
     @Option(name: .customLong("mission"), help: "Override the default mission paragraph")
     var mission: String?
 
+    enum ProfileType: String, ExpressibleByArgument, CaseIterable {
+      case `operator` = "operator"
+      case agent = "agent"
+    }
+
+    @Option(
+      name: .customLong("profile-type"),
+      help: "Profile kind (optional): operator (human) vs agent (automation persona)"
+    )
+    var profileType: ProfileType?
+
     enum AgentRole: String, ExpressibleByArgument, CaseIterable {
       case maintainer
       case documentor
@@ -348,6 +359,7 @@ extension Agents {
         at: agentDir,
         slug: normalizedSlug,
         title: agentTitle,
+        profileType: profileType,
         workingRoot: workingRoot,
         values: values,
         withMarkdown: withMarkdown
@@ -596,6 +608,7 @@ extension Agents {
       at agentDir: URL,
       slug: String,
       title: String,
+      profileType: ProfileType?,
       workingRoot: URL,
       values: [String: String],
       withMarkdown: Bool
@@ -622,12 +635,27 @@ extension Agents {
         return url.lastPathComponent
       }
 
+      let opModes: [String]? = {
+        // Prefer explicit profileType; fall back to nil.
+        if let pt = profileType?.rawValue {
+          switch pt {
+          case "operator": return ["edge", "real-world"]
+          case "agent": return ["cloud"]
+          default: return nil
+          }
+        }
+        return nil
+      }()
+
       var agent = AgentDoc(
         slug: slug,
         title: title,
         updated: now,
         status: "draft",
-        role: nil
+        role: nil,
+        profileType: profileType?.rawValue,
+        operationModes: opModes,
+        emoji: nil
       )
       if withMarkdown, let xsrc = rel(agentMD) { agent.sourcePath = xsrc }
       agent.purpose = values["AGENT_MISSION"].flatMap { $0.isEmpty ? nil : $0 }

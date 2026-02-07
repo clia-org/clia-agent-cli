@@ -200,7 +200,32 @@
       "description" : "Agent role (e.g., product-owner)",
       "type" : "string"
     },
+    "profileType" : {
+      "description" : "Profile kind: operator (human) vs agent (automation persona). Optional for backward compatibility; new profiles should set it.",
+      "enum" : [
+        "operator",
+        "agent"
+      ],
+      "type" : "string"
+    },
+    "operationModes" : {
+      "description" : "Where this profile runs (canonical). Optional for backward compatibility; new profiles should set it.",
+      "items" : {
+        "enum" : [
+          "cloud",
+          "edge",
+          "real-world"
+        ],
+        "type" : "string"
+      },
+      "type" : "array"
+    },
+    "emoji" : {
+      "description" : "Primary emoji marker for the profile (canonical). Optional for backward compatibility.",
+      "type" : "string"
+    },
     "schemaVersion" : {
+      "const" : "0.4.0",
       "type" : "string"
     },
     "scope" : {
